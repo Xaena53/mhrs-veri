@@ -1,0 +1,5 @@
+cikti/*.db
+cikti/*.csv
+!cikti/ornek_*.csv
+__pycache__/
+.venv/
