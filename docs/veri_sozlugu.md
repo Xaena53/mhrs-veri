@@ -5,6 +5,7 @@ Kaynak: [`schema/schema.sql`](../schema/schema.sql). Tarih alanları `YYYY-MM-DD
 
 **Biçim kuralları (şema zorlar):** `2026-3-2`, `9:00`, `2026-03-02T09:00:00` ya da 30 Şubat gibi değerler reddedilir.
 Telefonlar `0500XXXXXXX` biçimindedir; 0500 ön eki GSM operatörlerine atanmış bloklar (50x, 53x, 54x, 55x) arasında kullanılmadığı için gerçek bir kişiye denk gelmez. CSV'yi Excel'de açıp kaydederseniz baştaki 0 silinebilir; şema bu durumda satırı reddeder.
+`kurulum.py` Türkçe Excel'in noktalı virgüllü CSV'sini ve ondalık virgülünü (`4,2`) de okur; dosya UTF-8 olmalıdır.
 
 **SQLite notu:** Yabancı anahtar kontrolü bağlantı başına açılır. Kendi kodunuzda bağlandıktan sonra `PRAGMA foreign_keys = ON;` çalıştırın.
 
@@ -162,7 +163,7 @@ Kurallar: `randevu_zamani ≥ olusturma_zamani`. Aynı doktor ve saate, ya da ay
 
 | Görünüm | Kimin için | Ne verir |
 |---|---|---|
-| `v_noshow_ozellikleri` | 3. grup | Randevu başına model özellikleri: yaş, cinsiyet, kronik_var, bekleme_gun, gün/saat, hava, tatil_yakin (±1 gün), mesafe, hatırlatma, önceki randevu/gelmeme/iptal sayısı ve hedef `hedef_gelmedi` (1 = gelmedi, 0 = geldi, NULL = henüz gerçekleşmedi). **Tahmin anı randevudan 24 saat öncedir**; geçmiş sayaçlar yalnızca bu andan önce gerçekleşmiş randevulardan hesaplanır, gelecekten bilgi sızmaz. |
+| `v_noshow_ozellikleri` | 3. grup | Randevu başına model özellikleri: yaş (doğum gününe göre tam), cinsiyet, kronik_var, bekleme_gun, gün/saat, hava, tatil_yakin (±1 gün), mesafe, hatırlatma, önceki randevu/gelmeme/iptal sayısı ve hedef `hedef_gelmedi` (1 = gelmedi, 0 = geldi, NULL = henüz gerçekleşmedi). **Tahmin anı randevudan 24 saat öncedir**; geçmiş sayaçlar yalnızca bu andan önce gerçekleşmiş randevulardan hesaplanır, gelecekten bilgi sızmaz. |
 | `v_aylik_ozet` | 6. grup | Ay bazında toplam, geldi, gelmedi, iptal, yedek listeden dolan, gelmeme oranı |
 | `v_doluluk` | 6. grup | Doktor-gün başına doluluk yüzdesi |
 | `v_bekleyen_yedek` | 5. grup | Bekleyen yedek liste kayıtları, hasta konumu ve iletişim kanalıyla birlikte, aciliyete göre sıralı |

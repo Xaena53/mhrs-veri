@@ -39,7 +39,7 @@ python schema/kurulum.py --csv cikti/csv  # üretilen CSV'leri yükler ve denetl
 ### 2. Ekip için CSV sözleşmesi
 
 Üretici kod her tablo için `cikti/csv/<tablo_adi>.csv` yazar: ilk satır sütun adları (şemayla birebir),
-UTF-8, boş hücre = NULL. `kurulum.py --csv` dosyaları doğru sırayla yükler; şema kuralına aykırı satır
+UTF-8, boş hücre = NULL (Türkçe Excel'in `;` ayırıcısı da kabul edilir). `kurulum.py --csv` dosyaları doğru sırayla yükler; şema kuralına aykırı satır
 varsa hiçbir şeyi yüklemez; dosya adı, satır numarası ve ihlal edilen kuralı gösterir.
 Sütun adında yazım hatası varsa (`dogumtarihi` gibi) bunu da söyler. Örnek biçim için:
 `python schema/kurulum.py --ornek --disa-aktar cikti/ornek_csv`

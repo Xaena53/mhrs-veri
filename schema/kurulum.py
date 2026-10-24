@@ -12,6 +12,7 @@ Hatalı satır varsa hiçbir şey yüklenmez; dosya, satır numarası ve ihlal e
 """
 import argparse
 import csv
+import re
 import sqlite3
 import sys
 from pathlib import Path
@@ -20,6 +21,7 @@ KOK = Path(__file__).resolve().parent.parent
 SEMA = KOK / "schema" / "schema.sql"
 ORNEK = KOK / "schema" / "ornek_veri.sql"
 EN_FAZLA_HATA = 10
+ONDALIK_VIRGUL = re.compile(r"^(-?\d+),(\d+)$")
 
 TABLOLAR = [
     "branslar", "hastaneler", "doktorlar", "hastalar", "hava_durumu", "tatiller",
@@ -34,6 +36,10 @@ class YuklemeHatasi(Exception):
 def kur(db_yolu: Path) -> sqlite3.Connection:
     db_yolu.parent.mkdir(parents=True, exist_ok=True)
     if db_yolu.exists():
+        # Yanlışlıkla --db schema/schema.sql verilirse kaynak dosya silinmesin: yalnızca SQLite dosyası silinir.
+        with db_yolu.open("rb") as f:
+            if db_yolu.stat().st_size and f.read(16) != b"SQLite format 3\x00":
+                raise YuklemeHatasi(f"{db_yolu} bir SQLite veritabanı değil; üzerine yazılmadı.")
         try:
             db_yolu.unlink()
         except PermissionError:
@@ -61,8 +67,15 @@ def csv_yukle(con: sqlite3.Connection, klasor: Path) -> None:
             print(f"  - {tablo}: CSV yok, atlandı")
             continue
         bilgi = sutun_bilgisi(con, tablo)
+        try:
+            ilk_satir = dosya.open(encoding="utf-8-sig").readline()
+        except UnicodeDecodeError:
+            raise YuklemeHatasi(f"{dosya.name} UTF-8 değil. Excel'de 'CSV UTF-8 (virgülle ayrılmış)' "
+                                f"olarak kaydedin ya da pandas ile encoding='utf-8' yazın.")
+        # Türkçe Excel CSV'yi noktalı virgülle kaydeder; ikisini de kabul et.
+        ayirici = ";" if ilk_satir.count(";") > ilk_satir.count(",") else ","
         with dosya.open(encoding="utf-8-sig", newline="") as f:
-            okuyucu = csv.reader(f)
+            okuyucu = csv.reader(f, delimiter=ayirici)
             sutunlar = [s.strip() for s in next(okuyucu, [])]
             bilinmeyen = [s for s in sutunlar if s not in bilgi]
             eksik = [ad for ad, (zorunlu, varsayilan) in bilgi.items()
@@ -75,8 +88,11 @@ def csv_yukle(con: sqlite3.Connection, klasor: Path) -> None:
                 if len(satir) != len(sutunlar):
                     hatalar.append(f"{dosya.name} satır {satir_no}: {len(satir)} hücre var, {len(sutunlar)} bekleniyordu")
                     continue
+                degerler = [h if h != "" else None for h in satir]
+                if ayirici == ";":  # Türkçe Excel ondalığı: '4,2' → '4.2' (yoksa metin olarak saklanırdı)
+                    degerler = [ONDALIK_VIRGUL.sub(r"\1.\2", h) if h else h for h in degerler]
                 try:
-                    con.execute(sql, [h if h != "" else None for h in satir])
+                    con.execute(sql, degerler)
                 except sqlite3.IntegrityError as e:
                     hatalar.append(f"{dosya.name} satır {satir_no}: {e}")
                 if len(hatalar) >= EN_FAZLA_HATA:
@@ -104,14 +120,15 @@ def disa_aktar(con: sqlite3.Connection, klasor: Path) -> None:
 # Şemanın CHECK kısıtlarıyla yakalanamayan, tablolar arası mantık kuralları.
 # Her sorgu kurala UYMAYAN satır sayısını döndürür; 0 = temiz.
 DENETIMLER = {
+    # Yaş sınırları doğum gününe göre tam hesaplanır (365.25'e bölmek doğum günü civarında 1 gün kayar).
     "Branşın yaş üst sınırını aşan hasta":
         """SELECT COUNT(*) FROM randevular r JOIN hastalar h USING(hasta_id) JOIN branslar b USING(brans_id)
            WHERE b.yas_max IS NOT NULL
-             AND (julianday(r.randevu_zamani) - julianday(h.dogum_tarihi)) / 365.25 >= b.yas_max + 1""",
+             AND date(r.randevu_zamani) >= date(h.dogum_tarihi, '+' || (b.yas_max + 1) || ' years')""",
     "Branşın yaş alt sınırının altında hasta":
         """SELECT COUNT(*) FROM randevular r JOIN hastalar h USING(hasta_id) JOIN branslar b USING(brans_id)
            WHERE b.yas_min IS NOT NULL
-             AND (julianday(r.randevu_zamani) - julianday(h.dogum_tarihi)) / 365.25 < b.yas_min""",
+             AND date(r.randevu_zamani) < date(h.dogum_tarihi, '+' || b.yas_min || ' years')""",
     "Cinsiyet kısıtına uymayan randevu":
         """SELECT COUNT(*) FROM randevular r JOIN hastalar h USING(hasta_id) JOIN branslar b USING(brans_id)
            WHERE b.cinsiyet_kisiti IS NOT NULL AND h.cinsiyet <> b.cinsiyet_kisiti""",
@@ -158,6 +175,10 @@ DENETIMLER = {
            WHERE r.kaynak <> 'YEDEK_LISTE' OR r.hasta_id <> y.hasta_id OR r.brans_id <> y.brans_id
               OR r.olusturma_zamani < y.kayit_zamani
               OR (y.hastane_id IS NOT NULL AND r.hastane_id <> y.hastane_id)""",
+    "Kaynağı YEDEK_LISTE ama hiçbir yedek kaydına atanmamış randevu":
+        """SELECT COUNT(*) FROM randevular r
+           WHERE r.kaynak = 'YEDEK_LISTE'
+             AND NOT EXISTS (SELECT 1 FROM yedek_liste y WHERE y.atanan_randevu_id = r.randevu_id)""",
     "hatirlatma_gonderildi bayrağı ile HATIRLATMA bildirimi uyuşmuyor":
         """SELECT COUNT(*) FROM randevular r
            WHERE EXISTS (SELECT 1 FROM bildirimler)

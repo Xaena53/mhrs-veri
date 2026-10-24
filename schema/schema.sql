@@ -213,6 +213,7 @@ CREATE TABLE bildirimler (
 CREATE INDEX ix_randevu_hasta    ON randevular(hasta_id, randevu_zamani);
 CREATE INDEX ix_randevu_brans    ON randevular(brans_id, randevu_zamani);
 CREATE INDEX ix_randevu_durum    ON randevular(durum);
+CREATE INDEX ix_randevu_doktor   ON randevular(doktor_id, randevu_zamani);
 CREATE INDEX ix_yedek_bekleyen   ON yedek_liste(brans_id, durum, kayit_zamani);
 CREATE INDEX ix_bildirim_randevu ON bildirimler(randevu_id);
 CREATE INDEX ix_doktor_brans     ON doktorlar(brans_id, hastane_id);
@@ -240,7 +241,9 @@ SELECT
     g.hasta_id,
     g.brans_id,
     g.hastane_id,
-    CAST((julianday(g.randevu_zamani) - julianday(h.dogum_tarihi)) / 365.25 AS INTEGER)       AS yas,
+    -- tam yaş: yıl farkı, doğum günü henüz gelmediyse bir eksik
+    CAST(strftime('%Y', g.randevu_zamani) AS INTEGER) - CAST(strftime('%Y', h.dogum_tarihi) AS INTEGER)
+      - (strftime('%m-%d', g.randevu_zamani) < strftime('%m-%d', h.dogum_tarihi))            AS yas,
     h.cinsiyet,
     CASE WHEN h.kronik_hastalik IS NULL OR h.kronik_hastalik = '' THEN 0 ELSE 1 END          AS kronik_var,
     CAST(julianday(date(g.randevu_zamani)) - julianday(date(g.olusturma_zamani)) AS INTEGER) AS bekleme_gun,
@@ -289,7 +292,8 @@ SELECT
 FROM doktor_takvimi dt
 LEFT JOIN randevular r
        ON r.doktor_id = dt.doktor_id
-      AND date(r.randevu_zamani) = dt.tarih
+      AND r.randevu_zamani >= dt.tarih                    -- date() yerine aralık: indeks kullanılır
+      AND r.randevu_zamani <  date(dt.tarih, '+1 day')
       AND r.durum <> 'IPTAL'
 WHERE dt.calisiyor = 1
 GROUP BY dt.doktor_id, dt.tarih;
