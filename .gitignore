@@ -1,5 +1,13 @@
-cikti/*.db
-cikti/*.csv
-!cikti/ornek_*.csv
+# Üretilen veri repoya girmez (büyük olur); yalnızca küçük örnek klasörü girebilir
+cikti/*
+!cikti/.gitkeep
+!cikti/ornek_csv/
+*.db
+*.sqlite
 __pycache__/
+*.pyc
 .venv/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

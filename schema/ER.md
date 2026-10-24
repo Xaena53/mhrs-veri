@@ -1,4 +1,4 @@
-# ER Diyagramı (Şema v0)
+# ER Diyagramı (Şema v0.1)
 
 GitHub bu diyagramı otomatik çizer.
 
@@ -9,12 +9,12 @@ erDiagram
     doktorlar  ||--o{ doktor_takvimi : "çalışma günü"
     hastalar   ||--o{ randevular     : "alır"
     doktorlar  ||--o{ randevular     : "muayene eder"
-    branslar   ||--o{ randevular     : ""
-    hastaneler ||--o{ randevular     : ""
+    branslar   ||--o{ randevular     : "branşı"
+    hastaneler ||--o{ randevular     : "hastanesi"
     sikayetler |o--o{ randevular     : "şikayet"
     branslar   |o--o{ sikayetler     : "doğru branş"
     hastalar   ||--o{ yedek_liste    : "bekler"
-    branslar   ||--o{ yedek_liste    : ""
+    branslar   ||--o{ yedek_liste    : "istenen branş"
     randevular |o--o| yedek_liste    : "atanan randevu"
     randevular ||--o{ bildirimler    : "hakkında"
     hastalar   ||--o{ bildirimler    : "alır"
@@ -58,6 +58,11 @@ erDiagram
     doktor_takvimi {
         int doktor_id PK
         text tarih PK
+        text baslangic_saat
+        text bitis_saat
+        text ogle_baslangic
+        text ogle_bitis
+        int slot_dk
         int toplam_slot
         int calisiyor
     }

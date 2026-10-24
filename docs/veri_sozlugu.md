@@ -1,7 +1,12 @@
-# Veri Sözlüğü (Şema v0)
+# Veri Sözlüğü (Şema v0.1)
 
 Kaynak: [`schema/schema.sql`](../schema/schema.sql). Tarih alanları `YYYY-MM-DD`, zaman alanları `YYYY-MM-DD HH:MM:SS` biçimindedir.
 **Tüm veriler sentetiktir.** TC kimlik no tutulmaz, hastalar yalnızca `hasta_id` ile tanınır.
+
+**Biçim kuralları (şema zorlar):** `2026-3-2`, `9:00`, `2026-03-02T09:00:00` ya da 30 Şubat gibi değerler reddedilir.
+Telefonlar `0500XXXXXXX` biçimindedir; 0500 ön eki GSM operatörlerine atanmış bloklar (50x, 53x, 54x, 55x) arasında kullanılmadığı için gerçek bir kişiye denk gelmez. CSV'yi Excel'de açıp kaydederseniz baştaki 0 silinebilir; şema bu durumda satırı reddeder.
+
+**SQLite notu:** Yabancı anahtar kontrolü bağlantı başına açılır. Kendi kodunuzda bağlandıktan sonra `PRAGMA foreign_keys = ON;` çalıştırın.
 
 ## Hangi grup hangi tabloyu kullanır?
 
@@ -34,7 +39,7 @@ Kaynak: [`schema/schema.sql`](../schema/schema.sql). Tarih alanları `YYYY-MM-DD
 | Sütun | Tip | Açıklama | Örnek |
 |---|---|---|---|
 | hastane_id | INTEGER PK | | 1 |
-| hastane_adi | TEXT | Kurgusal ad | Merkez Devlet Hastanesi (sentetik) |
+| hastane_adi | TEXT | Kurgusal ad | Odunpazarı Devlet Hastanesi (sentetik) |
 | tur | TEXT | `DEVLET`, `EGITIM_ARASTIRMA`, `SEHIR`, `ILCE` | DEVLET |
 | il, ilce | TEXT | | Eskişehir, Odunpazarı |
 | enlem, boylam | REAL | Mesafe hesabı için | 39.7667, 30.5256 |
@@ -56,7 +61,7 @@ Kaynak: [`schema/schema.sql`](../schema/schema.sql). Tarih alanları `YYYY-MM-DD
 | ad, soyad | TEXT | Faker `tr_TR` | Ahmet Yılmaz |
 | cinsiyet | TEXT | `K` / `E` | E |
 | dogum_tarihi | TEXT | Yaş buradan hesaplanır | 1981-03-12 |
-| telefon | TEXT | Sahte, `05XXXXXXXXX` | 05321234567 |
+| telefon | TEXT | Sahte, `0500XXXXXXX` | 05001234567 |
 | il, ilce | TEXT | | Eskişehir, Odunpazarı |
 | enlem, boylam | REAL | Ev konumu (yaklaşık) | 39.76, 30.52 |
 | kronik_hastalik | TEXT | Virgülle ayrık, NULL = yok | Hipertansiyon |
@@ -69,7 +74,7 @@ Kaynak: [`schema/schema.sql`](../schema/schema.sql). Tarih alanları `YYYY-MM-DD
 | Sütun | Tip | Açıklama | Örnek |
 |---|---|---|---|
 | durum | TEXT | `GUNESLI`, `BULUTLU`, `YAGMURLU`, `KARLI` | YAGMURLU |
-| sicaklik_c | REAL | Günlük ortalama | 6.5 |
+| sicaklik_c | REAL | Günlük ortalama, −40…50 | 6.5 |
 
 ### `tatiller`
 | Sütun | Tip | Açıklama | Örnek |
@@ -81,9 +86,10 @@ Kaynak: [`schema/schema.sql`](../schema/schema.sql). Tarih alanları `YYYY-MM-DD
 ### `doktor_takvimi` — PK (doktor_id, tarih)
 | Sütun | Tip | Açıklama | Örnek |
 |---|---|---|---|
-| baslangic_saat / bitis_saat | TEXT | Mesai, öğle arası hariç | 08:00 / 16:00 |
+| baslangic_saat / bitis_saat | TEXT | Mesai (`HH:MM`) | 08:00 / 16:00 |
+| ogle_baslangic / ogle_bitis | TEXT | Öğle arası, ikisi birlikte NULL olabilir | 12:00 / 13:00 |
 | slot_dk | INTEGER | Slot süresi | 15 |
-| toplam_slot | INTEGER | O gün açılan randevu sayısı | 28 |
+| toplam_slot | INTEGER | (Mesai − öğle arası) / slot_dk; denetim uyuşmazlığı yakalar | 28 |
 | calisiyor | 0/1 | 0 = izin/rapor | 1 |
 
 ## Metin korpusları
@@ -122,8 +128,9 @@ Kural: `aciliyet` ACIL değilse `brans_id` boş olamaz.
 | hatirlatma_gonderildi | 0/1 | 24 saat önce mesaj gitti mi | 1 |
 | mesafe_km | REAL | Ev ile hastane arası | 4.2 |
 
-Kurallar: `randevu_zamani ≥ olusturma_zamani`. Aynı doktor ve saate iki aktif randevu olamaz.
-`IPTAL` ⇔ `iptal_zamani` dolu.
+Kurallar: `randevu_zamani ≥ olusturma_zamani`. Aynı doktor ve saate, ya da aynı hastaya aynı saatte iki aktif randevu olamaz.
+`IPTAL` ⇔ `iptal_zamani` ve `iptal_kanali` dolu. Randevu saati doktorun mesaisinde, öğle arası dışında ve slot ızgarasında olmalıdır (denetim).
+`hatirlatma_gonderildi = 1` ise `bildirimler` tablosunda o randevu için bir `HATIRLATMA` kaydı bulunmalıdır (denetim).
 
 ### `yedek_liste`
 | Sütun | Tip | Açıklama | Örnek |
@@ -136,7 +143,8 @@ Kurallar: `randevu_zamani ≥ olusturma_zamani`. Aynı doktor ve saate iki aktif
 | tercih_zaman | TEXT | `SABAH`, `OGLEDEN_SONRA`, `FARK_ETMEZ` | SABAH |
 | kayit_zamani | TEXT | Listeye girdiği an (sıra için) | 2026-02-25 09:00:00 |
 | durum | TEXT | `BEKLIYOR`, `ATANDI`, `SURESI_DOLDU`, `VAZGECTI` | ATANDI |
-| atanan_randevu_id | FK | Yalnızca ATANDI ise dolu | 3 |
+| atanan_randevu_id | FK, UNIQUE | Yalnızca ATANDI ise dolu; bir randevu tek kayda atanır | 3 |
+| guncelleme_zamani | TEXT | Durum değiştiği an; BEKLIYOR iken NULL | 2026-03-02 10:06:00 |
 
 ### `bildirimler`
 | Sütun | Tip | Açıklama | Örnek |
@@ -147,14 +155,14 @@ Kurallar: `randevu_zamani ≥ olusturma_zamani`. Aynı doktor ve saate iki aktif
 | kanal | TEXT | `WHATSAPP`, `TELEGRAM`, `SMS`, `WEB` | WHATSAPP |
 | mesaj_metni | TEXT | Bot mesajı | Yarın saat 10:00'da... |
 | gonderim_zamani / yanit_zamani | TEXT | Yanıt süresi buradan hesaplanır | |
-| yanit_metni | TEXT | Hastanın cevabı, NULL = yanıtsız | Gelemeyeceğim |
+| yanit_metni | TEXT | Hastanın cevabı, NULL = yanıtsız (o zaman yanit_zamani da NULL) | Gelemeyeceğim |
 | yanit_niyeti | TEXT | `yanit_ornekleri.niyet` ile aynı etiketler | IPTAL |
 
 ## Hazır görünümler
 
 | Görünüm | Kimin için | Ne verir |
 |---|---|---|
-| `v_noshow_ozellikleri` | 3. grup | Randevu başına model özellikleri: yaş, bekleme_gun, gün/saat, hava, tatil_yakin, mesafe, önceki randevu/gelmeme sayısı ve hedef `hedef_gelmedi`. Geçmiş sayaçlar yalnızca **önceki** randevulardan hesaplanır, gelecekten bilgi sızmaz. |
+| `v_noshow_ozellikleri` | 3. grup | Randevu başına model özellikleri: yaş, cinsiyet, kronik_var, bekleme_gun, gün/saat, hava, tatil_yakin (±1 gün), mesafe, hatırlatma, önceki randevu/gelmeme/iptal sayısı ve hedef `hedef_gelmedi` (1 = gelmedi, 0 = geldi, NULL = henüz gerçekleşmedi). **Tahmin anı randevudan 24 saat öncedir**; geçmiş sayaçlar yalnızca bu andan önce gerçekleşmiş randevulardan hesaplanır, gelecekten bilgi sızmaz. |
 | `v_aylik_ozet` | 6. grup | Ay bazında toplam, geldi, gelmedi, iptal, yedek listeden dolan, gelmeme oranı |
 | `v_doluluk` | 6. grup | Doktor-gün başına doluluk yüzdesi |
 | `v_bekleyen_yedek` | 5. grup | Bekleyen yedek liste kayıtları, hasta konumu ve iletişim kanalıyla birlikte, aciliyete göre sıralı |

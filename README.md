@@ -24,14 +24,15 @@ cikti/     → üretilen CSV / SQLite dosyaları
 
 ## Kurulum ve Kullanım
 
-Gerekli: Python 3.10+ (veritabanı kurulumu için ek kütüphane gerekmez).
+Gerekli: Python 3.10+ (veritabanı kurulumu için ek kütüphane gerekmez). Veritabanı SQLite'tır;
+`.db` dosyası [DB Browser for SQLite](https://sqlitebrowser.org/) ile açılıp incelenebilir.
 
 ```bash
 python schema/kurulum.py --ornek          # örnek veriyle cikti/mhrs.db oluşturur ve denetler
 python schema/kurulum.py --csv cikti/csv  # üretilen CSV'leri yükler ve denetler
 ```
 
-- Şema: [`schema/schema.sql`](schema/schema.sql) — 12 tablo, 4 hazır görünüm
+- Şema: [`schema/schema.sql`](schema/schema.sql) — 12 tablo, 4 hazır görünüm, biçim ve tutarlılık kuralları
 - ER diyagramı: [`schema/ER.md`](schema/ER.md)
 - Veri sözlüğü: [`docs/veri_sozlugu.md`](docs/veri_sozlugu.md)
 
@@ -39,7 +40,8 @@ python schema/kurulum.py --csv cikti/csv  # üretilen CSV'leri yükler ve denetl
 
 Üretici kod her tablo için `cikti/csv/<tablo_adi>.csv` yazar: ilk satır sütun adları (şemayla birebir),
 UTF-8, boş hücre = NULL. `kurulum.py --csv` dosyaları doğru sırayla yükler; şema kuralına aykırı satır
-varsa yüklemeyi reddeder ve hatayı gösterir. Örnek biçim için:
+varsa hiçbir şeyi yüklemez; dosya adı, satır numarası ve ihlal edilen kuralı gösterir.
+Sütun adında yazım hatası varsa (`dogumtarihi` gibi) bunu da söyler. Örnek biçim için:
 `python schema/kurulum.py --ornek --disa-aktar cikti/ornek_csv`
 
 ## Diğer Modüllerin Veri İhtiyaçları
