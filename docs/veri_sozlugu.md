@@ -1,4 +1,4 @@
-# Veri Sözlüğü (Şema v0.1)
+# Veri Sözlüğü (Şema v1.0)
 
 Kaynak: [`schema/schema.sql`](../schema/schema.sql). Tarih alanları `YYYY-MM-DD`, zaman alanları `YYYY-MM-DD HH:MM:SS` biçimindedir.
 **Tüm veriler sentetiktir.** TC kimlik no tutulmaz, hastalar yalnızca `hasta_id` ile tanınır.
@@ -8,20 +8,26 @@ Telefonlar `0500XXXXXXX` biçimindedir; 0500 ön eki GSM operatörlerine atanmı
 `kurulum.py` Türkçe Excel'in noktalı virgüllü CSV'sini ve ondalık virgülünü (`4,2`) de okur; dosya UTF-8 olmalıdır.
 
 **SQLite notu:** Yabancı anahtar kontrolü bağlantı başına açılır. Kendi kodunuzda bağlandıktan sonra `PRAGMA foreign_keys = ON;` çalıştırın.
+Şema sürümü `PRAGMA user_version;` ile okunur (`100` = v1.0). Sürümler arası farklar: [`degisiklikler.md`](degisiklikler.md).
+
+**Referans listeler:** Branşlar ([`schema/referans/branslar.csv`](../schema/referans/branslar.csv), 16 branş) ve
+2025–2026 resmî tatilleri ([`schema/referans/tatiller.csv`](../schema/referans/tatiller.csv)) sabittir, üretilmez.
+`brans_id` değerleri bu listeden alınmalıdır; triyaj etiketleri de bu adları kullanır.
 
 ## Hangi grup hangi tabloyu kullanır?
 
 | Tablo / Görünüm | 2 Triyaj | 3 No-Show | 4 Chatbot | 5 Yedek Liste | 6 Dashboard |
 |---|:-:|:-:|:-:|:-:|:-:|
-| `sikayetler` | ● | | | ● | |
+| `sikayetler`, `v_triyaj_veri` | ● | | | ● | |
 | `v_noshow_ozellikleri` | | ● | | | ● |
 | `randevular` | | ● | ● | ● | ● |
+| `v_bekleyen_randevular` | | | ● | | |
 | `hastalar` | | ● | ● | ● | ● |
 | `doktor_takvimi`, `v_doluluk` | | ● | | ● | ● |
 | `hava_durumu`, `tatiller` | | ● | | | |
 | `bildirimler`, `yanit_ornekleri` | | | ● | ● | ● |
 | `yedek_liste`, `v_bekleyen_yedek` | | | | ● | ● |
-| `v_aylik_ozet` | | | | | ● |
+| `v_aylik_ozet`, `v_aylik_brans_ozet` | | | | | ● |
 
 ---
 
@@ -167,3 +173,6 @@ Kurallar: `randevu_zamani ≥ olusturma_zamani`. Aynı doktor ve saate, ya da ay
 | `v_aylik_ozet` | 6. grup | Ay bazında toplam, geldi, gelmedi, iptal, yedek listeden dolan, gelmeme oranı |
 | `v_doluluk` | 6. grup | Doktor-gün başına doluluk yüzdesi |
 | `v_bekleyen_yedek` | 5. grup | Bekleyen yedek liste kayıtları, hasta konumu ve iletişim kanalıyla birlikte, aciliyete göre sıralı |
+| `v_triyaj_veri` | 2. grup | Şikayet metni, aciliyet, doğru branşın id'si **ve adı**, varsa alternatif branş. ACIL vakada branş boştur |
+| `v_bekleyen_randevular` | 4. grup | Durumu BEKLIYOR olan randevular: hasta adı, telefon, iletişim kanalı, branş, doktor (unvanıyla), hastane, hatırlatma gitti mi. Zaman süzmesi sorguda yapılır, ör. yarınkiler: `WHERE date(randevu_zamani) = date('now','localtime','+1 day')` |
+| `v_aylik_brans_ozet` | 6. grup | `v_aylik_ozet` ile aynı sayılar, ay × hastane × branş kırılımında (adlarıyla) |

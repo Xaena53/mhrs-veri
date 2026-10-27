@@ -1,6 +1,10 @@
 -- =====================================================================
 -- MHRS Akıllı Otomasyon — Modül 1: Veri Yönetimi ve Sentetik Veri
--- Veritabanı şeması v0.1  (SQLite 3.28+)
+-- Veritabanı şeması v1.0  (SQLite 3.28+)
+--
+-- Sürüm PRAGMA user_version'da tutulur: büyük*100 + küçük (v1.0 = 100, v1.1 = 101).
+-- Kendi kodunuzda "PRAGMA user_version;" ile beklediğiniz sürüme karşı kontrol edebilirsiniz.
+-- Değişiklikler: docs/degisiklikler.md
 --
 -- Zaman alanları ISO-8601 metin: tarih 'YYYY-MM-DD', zaman 'YYYY-MM-DD HH:MM:SS',
 -- saat 'HH:MM'. Biçim CHECK ile zorlanır: '2026-3-2', '9:00', 30 Şubat reddedilir.
@@ -12,6 +16,7 @@
 -- =====================================================================
 
 PRAGMA foreign_keys = ON;
+PRAGMA user_version = 100;
 
 -- ---------------------------------------------------------------------
 -- 1) ANA (SABİT) TABLOLAR
@@ -305,3 +310,61 @@ FROM yedek_liste y
 JOIN hastalar h ON h.hasta_id = y.hasta_id
 WHERE y.durum = 'BEKLIYOR'
 ORDER BY y.brans_id, y.aciliyet_puani DESC, y.kayit_zamani;
+
+-- 6. Grup (Dashboard): ay × hastane × branş kırılımı; filtreli grafikler için.
+CREATE VIEW v_aylik_brans_ozet AS
+SELECT
+    strftime('%Y-%m', r.randevu_zamani)                        AS ay,
+    r.hastane_id,
+    hs.hastane_adi,
+    r.brans_id,
+    b.brans_adi,
+    COUNT(*)                                                   AS toplam_randevu,
+    SUM(r.durum = 'GELDI')                                     AS geldi,
+    SUM(r.durum = 'GELMEDI')                                   AS gelmedi,
+    SUM(r.durum = 'IPTAL')                                     AS iptal,
+    SUM(r.kaynak = 'YEDEK_LISTE')                              AS yedek_listeden_dolan,
+    ROUND(100.0 * SUM(r.durum = 'GELMEDI')
+          / NULLIF(SUM(r.durum IN ('GELDI','GELMEDI')), 0), 1) AS gelmeme_orani_yuzde
+FROM randevular r
+JOIN hastaneler hs ON hs.hastane_id = r.hastane_id
+JOIN branslar b    ON b.brans_id = r.brans_id
+GROUP BY ay, r.hastane_id, r.brans_id;
+
+-- 2. Grup (Triyaj): eğitim verisi, etiketler branş adıyla. ACIL vakada brans_adi NULL.
+CREATE VIEW v_triyaj_veri AS
+SELECT
+    s.sikayet_id,
+    s.metin,
+    s.aciliyet,
+    s.brans_id,
+    b.brans_adi,
+    s.alternatif_brans_id,
+    ab.brans_adi AS alternatif_brans_adi,
+    s.kaynak
+FROM sikayetler s
+LEFT JOIN branslar b  ON b.brans_id  = s.brans_id
+LEFT JOIN branslar ab ON ab.brans_id = s.alternatif_brans_id;
+
+-- 4. Grup (Chatbot): henüz gerçekleşmemiş randevular, mesaj atmak için gereken her şeyle.
+-- Zamana göre süzme sorguda yapılır, ör. yarınki randevular:
+--   WHERE date(randevu_zamani) = date('now','localtime','+1 day')
+CREATE VIEW v_bekleyen_randevular AS
+SELECT
+    r.randevu_id,
+    r.randevu_zamani,
+    r.hasta_id,
+    h.ad,
+    h.soyad,
+    h.telefon,
+    h.iletisim_kanali,
+    b.brans_adi,
+    d.unvan || ' ' || d.ad || ' ' || d.soyad AS doktor,
+    hs.hastane_adi,
+    r.hatirlatma_gonderildi
+FROM randevular r
+JOIN hastalar h    ON h.hasta_id = r.hasta_id
+JOIN branslar b    ON b.brans_id = r.brans_id
+JOIN doktorlar d   ON d.doktor_id = r.doktor_id
+JOIN hastaneler hs ON hs.hastane_id = r.hastane_id
+WHERE r.durum = 'BEKLIYOR';

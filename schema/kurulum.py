@@ -8,6 +8,7 @@ Kullanım:
 
 CSV sözleşmesi: her tablo için <tablo_adi>.csv, ilk satır sütun adları (schema.sql ile aynı),
 UTF-8, boş hücre = NULL. Yükleme sırası yabancı anahtarlara göre aşağıdaki TABLOLAR listesidir.
+Klasörde branslar.csv / tatiller.csv yoksa schema/referans/ altındaki sabit listeler kullanılır.
 Hatalı satır varsa hiçbir şey yüklenmez; dosya, satır numarası ve ihlal edilen kural yazdırılır.
 """
 import argparse
@@ -20,6 +21,7 @@ from pathlib import Path
 KOK = Path(__file__).resolve().parent.parent
 SEMA = KOK / "schema" / "schema.sql"
 ORNEK = KOK / "schema" / "ornek_veri.sql"
+REFERANS = KOK / "schema" / "referans"
 EN_FAZLA_HATA = 10
 ONDALIK_VIRGUL = re.compile(r"^(-?\d+),(\d+)$")
 
@@ -50,6 +52,11 @@ def kur(db_yolu: Path) -> sqlite3.Connection:
     return con
 
 
+def sema_surumu(con: sqlite3.Connection) -> str:
+    v = con.execute("PRAGMA user_version").fetchone()[0]
+    return f"v{v // 100}.{v % 100}"
+
+
 def sutun_bilgisi(con: sqlite3.Connection, tablo: str) -> dict:
     # ad -> (zorunlu mu, varsayılanı var mı)
     return {r[1]: (bool(r[3]) and not r[5], r[4] is not None)
@@ -62,13 +69,16 @@ def csv_yukle(con: sqlite3.Connection, klasor: Path) -> None:
     hatalar = []
     con.execute("BEGIN")
     for tablo in TABLOLAR:
-        dosya = klasor / f"{tablo}.csv"
+        dosya, etiket = klasor / f"{tablo}.csv", ""
+        if not dosya.exists() and (REFERANS / f"{tablo}.csv").exists():
+            dosya, etiket = REFERANS / f"{tablo}.csv", " (schema/referans)"
         if not dosya.exists():
             print(f"  - {tablo}: CSV yok, atlandı")
             continue
         bilgi = sutun_bilgisi(con, tablo)
         try:
-            ilk_satir = dosya.open(encoding="utf-8-sig").readline()
+            with dosya.open(encoding="utf-8-sig") as f:
+                ilk_satir = f.readline()
         except UnicodeDecodeError:
             raise YuklemeHatasi(f"{dosya.name} UTF-8 değil. Excel'de 'CSV UTF-8 (virgülle ayrılmış)' "
                                 f"olarak kaydedin ya da pandas ile encoding='utf-8' yazın.")
@@ -85,6 +95,9 @@ def csv_yukle(con: sqlite3.Connection, klasor: Path) -> None:
                                     f"eksik zorunlu sütun {eksik or '-'}")
             sql = f"INSERT INTO {tablo} ({','.join(sutunlar)}) VALUES ({','.join('?' * len(sutunlar))})"
             for satir_no, satir in enumerate(okuyucu, start=2):
+                # Windows'ta newline="" verilmeden yazılan CSV'lerde her satır arasında boş satır olur.
+                if not any(h.strip() for h in satir):
+                    continue
                 if len(satir) != len(sutunlar):
                     hatalar.append(f"{dosya.name} satır {satir_no}: {len(satir)} hücre var, {len(sutunlar)} bekleniyordu")
                     continue
@@ -99,7 +112,7 @@ def csv_yukle(con: sqlite3.Connection, klasor: Path) -> None:
                     break
         if len(hatalar) >= EN_FAZLA_HATA:
             break
-        print(f"  + {tablo}: {con.execute(f'SELECT COUNT(*) FROM {tablo}').fetchone()[0]} satır")
+        print(f"  + {tablo}: {con.execute(f'SELECT COUNT(*) FROM {tablo}').fetchone()[0]} satır{etiket}")
     if hatalar:
         con.rollback()
         raise YuklemeHatasi("Şema kuralına aykırı satırlar (ilk %d):\n    " % EN_FAZLA_HATA + "\n    ".join(hatalar))
@@ -224,7 +237,7 @@ def main() -> int:
 
     try:
         con = kur(a.db)
-        print(f"Veritabanı kuruldu: {a.db}")
+        print(f"Veritabanı kuruldu: {a.db}  (şema {sema_surumu(con)})")
         if a.ornek:
             con.executescript(ORNEK.read_text(encoding="utf-8"))
         if a.csv:
