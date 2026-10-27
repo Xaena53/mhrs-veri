@@ -37,6 +37,8 @@ class YuklemeHatasi(Exception):
 
 
 def kur(db_yolu: Path) -> sqlite3.Connection:
+    if db_yolu.is_dir():
+        raise YuklemeHatasi(f"{db_yolu} bir klasör; --db'ye dosya yolu verin (ör. cikti/mhrs.db).")
     db_yolu.parent.mkdir(parents=True, exist_ok=True)
     if db_yolu.exists():
         # Yanlışlıkla --db schema/schema.sql verilirse kaynak dosya silinmesin: yalnızca SQLite dosyası silinir.
@@ -48,6 +50,11 @@ def kur(db_yolu: Path) -> sqlite3.Connection:
         except PermissionError:
             raise YuklemeHatasi(f"{db_yolu} başka bir programda açık (DB Browser vb.); kapatıp tekrar deneyin.")
         print(f"Eski veritabanı silindi: {db_yolu}")
+    # Yarıda kalmış eski bir çalıştırmanın günlük dosyası kalırsa SQLite onu yeni veritabanına uygulamaya çalışır.
+    for ek in ("-journal", "-wal", "-shm"):
+        artik = db_yolu.with_name(db_yolu.name + ek)
+        if artik.exists():
+            artik.unlink()
     con = sqlite3.connect(db_yolu)
     con.executescript(SEMA.read_text(encoding="utf-8"))
     return con
@@ -107,10 +114,17 @@ def csv_yukle(con: sqlite3.Connection, klasor: Path) -> None:
 
 
 def _csv_tablolari_yukle(con: sqlite3.Connection, klasor: Path) -> list[str]:
+    # Dosya adı da sütun adı kadar önemli: 'hasta.csv' sessizce atlanırsa tablo boş kalır.
+    # Büyük/küçük harf Windows'ta ve Linux'ta aynı davransın diye adlar küçük harfle eşlenir.
+    dosyalar = {p.name.lower(): p for p in klasor.iterdir() if p.is_file() and p.suffix.lower() == ".csv"}
+    tanimsiz = sorted(dosyalar[ad].name for ad in dosyalar if ad[:-4] not in TABLOLAR)
+    if tanimsiz:
+        raise YuklemeHatasi(f"Tanınmayan CSV dosyası: {tanimsiz}. Dosya adı tablo adıyla aynı olmalı: "
+                            + ", ".join(f"{t}.csv" for t in TABLOLAR))
     hatalar = []
     for tablo in TABLOLAR:
-        dosya, etiket = klasor / f"{tablo}.csv", ""
-        if not dosya.exists():
+        dosya, etiket = dosyalar.get(f"{tablo}.csv"), ""
+        if dosya is None:
             # Sabit listeler (branşlar, tatiller): tablo boşsa referans dosyası kullanılır.
             # --ornek ile birlikte kullanılınca örnek verinin üzerine yazılmaz.
             bos = con.execute(f"SELECT NOT EXISTS (SELECT 1 FROM {tablo})").fetchone()[0]
@@ -128,6 +142,8 @@ def _csv_tablolari_yukle(con: sqlite3.Connection, klasor: Path) -> list[str]:
             raise YuklemeHatasi(f"{dosya.name}: tekrarlanan sütun {tekrar or '-'}, bilinmeyen sütun {bilinmeyen or '-'}, "
                                 f"eksik zorunlu sütun {eksik or '-'}")
         sql = f"INSERT INTO {tablo} ({','.join(sutunlar)}) VALUES ({','.join('?' * len(sutunlar))})"
+        tipler = {r[1]: r[2].upper() for r in con.execute(f"PRAGMA table_info({tablo})")}
+        sayisal = {i for i, s in enumerate(sutunlar) if tipler[s] in ("INTEGER", "REAL")}
         for satir_no, satir in satirlar:
             # Windows'ta newline="" verilmeden yazılan CSV'lerde her satır arasında boş satır olur.
             if not any(h.strip() for h in satir):
@@ -136,8 +152,9 @@ def _csv_tablolari_yukle(con: sqlite3.Connection, klasor: Path) -> list[str]:
                 hatalar.append(f"{dosya.name} satır {satir_no}: {len(satir)} hücre var, {len(sutunlar)} bekleniyordu")
             else:
                 degerler = [h if h != "" else None for h in satir]
-                if ayirici == ";":  # Türkçe Excel ondalığı: '4,2' → '4.2' (yoksa metin olarak saklanırdı)
-                    degerler = [ONDALIK_VIRGUL.sub(r"\1.\2", h) if h else h for h in degerler]
+                if ayirici == ";":  # Türkçe Excel ondalığı: '4,2' → '4.2'; yalnızca sayı sütunlarında
+                    degerler = [ONDALIK_VIRGUL.sub(r"\1.\2", h) if h and i in sayisal else h
+                                for i, h in enumerate(degerler)]
                 try:
                     con.execute(sql, degerler)
                 except sqlite3.DatabaseError as e:
@@ -163,23 +180,54 @@ def disa_aktar(con: sqlite3.Connection, klasor: Path) -> None:
 # Her sorgu kurala UYMAYAN satır sayısını döndürür; 0 = temiz.
 DENETIMLER = {
     # Yaş sınırları doğum gününe göre tam hesaplanır (365.25'e bölmek doğum günü civarında 1 gün kayar).
-    "Branşın yaş üst sınırını aşan hasta":
-        """SELECT COUNT(*) FROM randevular r JOIN hastalar h USING(hasta_id) JOIN branslar b USING(brans_id)
+    # Branş kısıtları hem randevuya hem yedek listeye uygulanır (yedekte yaş, listeye giriş anına göre).
+    "Branşın yaş üst sınırını aşan hasta (randevu / yedek liste)":
+        """SELECT COUNT(*) FROM (
+             SELECT r.hasta_id, r.brans_id, r.randevu_zamani AS an FROM randevular r
+             UNION ALL SELECT y.hasta_id, y.brans_id, y.kayit_zamani FROM yedek_liste y
+           ) k JOIN hastalar h USING(hasta_id) JOIN branslar b USING(brans_id)
            WHERE b.yas_max IS NOT NULL
-             AND date(r.randevu_zamani) >= date(h.dogum_tarihi, '+' || (b.yas_max + 1) || ' years')""",
-    "Branşın yaş alt sınırının altında hasta":
-        """SELECT COUNT(*) FROM randevular r JOIN hastalar h USING(hasta_id) JOIN branslar b USING(brans_id)
+             AND date(k.an) >= date(h.dogum_tarihi, '+' || (b.yas_max + 1) || ' years')""",
+    "Branşın yaş alt sınırının altında hasta (randevu / yedek liste)":
+        """SELECT COUNT(*) FROM (
+             SELECT r.hasta_id, r.brans_id, r.randevu_zamani AS an FROM randevular r
+             UNION ALL SELECT y.hasta_id, y.brans_id, y.kayit_zamani FROM yedek_liste y
+           ) k JOIN hastalar h USING(hasta_id) JOIN branslar b USING(brans_id)
            WHERE b.yas_min IS NOT NULL
-             AND date(r.randevu_zamani) < date(h.dogum_tarihi, '+' || b.yas_min || ' years')""",
-    "Cinsiyet kısıtına uymayan randevu":
-        """SELECT COUNT(*) FROM randevular r JOIN hastalar h USING(hasta_id) JOIN branslar b USING(brans_id)
+             AND date(k.an) < date(h.dogum_tarihi, '+' || b.yas_min || ' years')""",
+    "Cinsiyet kısıtına uymayan hasta (randevu / yedek liste)":
+        """SELECT COUNT(*) FROM (
+             SELECT hasta_id, brans_id FROM randevular UNION ALL SELECT hasta_id, brans_id FROM yedek_liste
+           ) k JOIN hastalar h USING(hasta_id) JOIN branslar b USING(brans_id)
            WHERE b.cinsiyet_kisiti IS NOT NULL AND h.cinsiyet <> b.cinsiyet_kisiti""",
     "Randevu branşı/hastanesi doktorunkinden farklı":
         """SELECT COUNT(*) FROM randevular r JOIN doktorlar d USING(doktor_id)
            WHERE r.brans_id <> d.brans_id OR r.hastane_id <> d.hastane_id""",
-    "Hasta sisteme kaydolmadan alınmış randevu":
-        """SELECT COUNT(*) FROM randevular r JOIN hastalar h USING(hasta_id)
-           WHERE date(r.olusturma_zamani) < h.kayit_tarihi""",
+    "Aktif olmayan doktora bekleyen randevu":
+        """SELECT COUNT(*) FROM randevular r JOIN doktorlar d USING(doktor_id)
+           WHERE r.durum = 'BEKLIYOR' AND d.aktif = 0""",
+    "Hasta sisteme kaydolmadan alınmış randevu / yedek kaydı":
+        """SELECT (SELECT COUNT(*) FROM randevular r JOIN hastalar h USING(hasta_id)
+                   WHERE date(r.olusturma_zamani) < h.kayit_tarihi)
+                + (SELECT COUNT(*) FROM yedek_liste y JOIN hastalar h USING(hasta_id)
+                   WHERE date(y.kayit_zamani) < h.kayit_tarihi)""",
+    # Veri 'şu an'a kadar olan geçmişi anlatır; sonradan yapılmış bir işlem olamaz.
+    "Şu andan sonraya tarihli işlem kaydı (oluşturma, iptal, mesaj, yanıt, yedek)":
+        """SELECT (SELECT COUNT(*) FROM randevular
+                   WHERE olusturma_zamani > datetime('now','localtime') OR iptal_zamani > datetime('now','localtime'))
+                + (SELECT COUNT(*) FROM bildirimler
+                   WHERE gonderim_zamani > datetime('now','localtime') OR yanit_zamani > datetime('now','localtime'))
+                + (SELECT COUNT(*) FROM yedek_liste
+                   WHERE kayit_zamani > datetime('now','localtime') OR guncelleme_zamani > datetime('now','localtime'))""",
+    # Poliklinikler resmî tatil ve bayramlarda kapalı; arifede 13:00'ten sonra kapalı.
+    "Resmî tatil / bayram gününe ya da arife öğleden sonrasına randevu":
+        """SELECT COUNT(*) FROM randevular r JOIN tatiller t ON t.tarih = date(r.randevu_zamani)
+           WHERE t.tur IN ('RESMI','BAYRAM')
+              OR (t.tur = 'ARIFE' AND strftime('%H:%M', r.randevu_zamani) >= '13:00')""",
+    "Tatil listesinin kapsamadığı yılda randevu (tatil_yakin hep 0 çıkar)":
+        """SELECT COUNT(*) FROM randevular r
+           WHERE EXISTS (SELECT 1 FROM tatiller) AND NOT EXISTS (
+               SELECT 1 FROM tatiller t WHERE substr(t.tarih, 1, 4) = substr(r.randevu_zamani, 1, 4))""",
     "Doktorun çalışmadığı güne randevu":
         """SELECT COUNT(*) FROM randevular r
            WHERE EXISTS (SELECT 1 FROM doktor_takvimi) AND NOT EXISTS (
@@ -226,15 +274,29 @@ DENETIMLER = {
            WHERE EXISTS (SELECT 1 FROM bildirimler)
              AND r.hatirlatma_gonderildi <> EXISTS (
                  SELECT 1 FROM bildirimler b WHERE b.randevu_id = r.randevu_id AND b.tur = 'HATIRLATMA')""",
-    "Hatırlatma randevu hastasına gitmemiş ya da randevudan sonra gitmiş":
+    # Bildirim türlerinin her biri için: kime gider, hangi zaman aralığında gider.
+    "Hatırlatma randevu sahibine gitmemiş, randevu alınmadan önce / randevudan ya da iptalden sonra gitmiş":
         """SELECT COUNT(*) FROM bildirimler b JOIN randevular r USING(randevu_id)
            WHERE b.tur = 'HATIRLATMA'
              AND (b.hasta_id <> r.hasta_id OR b.gonderim_zamani > r.randevu_zamani
-                  OR b.gonderim_zamani < r.olusturma_zamani)""",
-    "Boş randevu teklifi iptal edilmemiş bir randevu için":
+                  OR b.gonderim_zamani < r.olusturma_zamani OR b.gonderim_zamani > r.iptal_zamani)""",
+    "İptal onayı randevu sahibine gitmemiş ya da iptal edilmemiş / iptalden önce":
+        """SELECT COUNT(*) FROM bildirimler b JOIN randevular r USING(randevu_id)
+           WHERE b.tur = 'IPTAL_ONAYI'
+             AND (b.hasta_id <> r.hasta_id OR r.durum <> 'IPTAL' OR b.gonderim_zamani < r.iptal_zamani)""",
+    "Boş randevu teklifi iptal edilmemiş randevu için, iptalden önce ya da iptal edenin kendisine":
         """SELECT COUNT(*) FROM bildirimler b JOIN randevular r USING(randevu_id)
            WHERE b.tur = 'BOS_RANDEVU_TEKLIFI'
-             AND (r.durum <> 'IPTAL' OR b.gonderim_zamani < r.iptal_zamani)""",
+             AND (r.durum <> 'IPTAL' OR b.gonderim_zamani < r.iptal_zamani OR b.hasta_id = r.hasta_id)""",
+    # Chatbot (4. grup) akışı: hasta 'iptal' derse randevu iptal edilir; chatbot iptali bir cevaba dayanır.
+    "Hatırlatmaya IPTAL cevabı verilmiş ama randevu iptal edilmemiş":
+        """SELECT COUNT(*) FROM bildirimler b JOIN randevular r USING(randevu_id)
+           WHERE b.tur = 'HATIRLATMA' AND b.yanit_niyeti = 'IPTAL' AND r.durum <> 'IPTAL'""",
+    "CHATBOT ile iptal edilmiş ama öncesinde hastadan IPTAL/ERTELEME cevabı yok":
+        """SELECT COUNT(*) FROM randevular r
+           WHERE r.iptal_kanali = 'CHATBOT' AND NOT EXISTS (
+               SELECT 1 FROM bildirimler b WHERE b.randevu_id = r.randevu_id
+                 AND b.yanit_niyeti IN ('IPTAL','ERTELEME') AND b.yanit_zamani <= r.iptal_zamani)""",
 }
 
 

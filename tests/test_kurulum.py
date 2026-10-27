@@ -100,6 +100,35 @@ class KurulumTesti(unittest.TestCase):
         sorgu = "SELECT * FROM branslar WHERE brans_id <= 4 ORDER BY brans_id"
         self.assertEqual(ornek.execute(sorgu).fetchall(), ref.execute(sorgu).fetchall())
 
+    def test_turkce_excel_metin_sutunundaki_virgule_dokunulmaz(self):
+        # Ondalık virgül düzeltmesi yalnız sayı sütunlarına uygulanmalı: "10,30" bir cevap metnidir.
+        (self.csv / "yanit_ornekleri.csv").write_text("ornek_id;metin;niyet\n1;10,30;SORU\n2;4,2;SORU\n",
+                                                      encoding="utf-8")
+        con = self.yukle()
+        self.assertEqual(con.execute("SELECT metin FROM yanit_ornekleri ORDER BY ornek_id").fetchall(),
+                         [("10,30",), ("4,2",)])
+
+    def test_tanimsiz_csv_dosyasi(self):
+        (self.csv / "hastalar.csv").rename(self.csv / "hasta.csv")
+        self.reddedilmeli("Tanınmayan CSV dosyası", "hasta.csv")
+
+    def test_buyuk_harfli_dosya_adi_her_sistemde_ayni(self):
+        (self.csv / "hastalar.csv").rename(self.csv / "Hastalar.CSV")
+        con = self.yukle()
+        self.assertEqual(con.execute("SELECT COUNT(*) FROM hastalar").fetchone()[0], 2)
+
+    def test_db_yolu_klasor_olamaz(self):
+        with self.assertRaises(kurulum.YuklemeHatasi):
+            sessiz(kurulum.kur, self.csv)
+        self.assertTrue((self.csv / "hastalar.csv").exists())
+
+    def test_yarim_kalmis_calistirmanin_gunluk_dosyasi_temizlenir(self):
+        db = self.gecici / "test.db"
+        (self.gecici / "test.db-journal").write_bytes(b"eski yarim islem")
+        con = sessiz(kurulum.kur, db)
+        con.close()
+        self.assertFalse((self.gecici / "test.db-journal").exists())
+
     def test_turkce_excel_csv_kabul_edilir(self):
         for dosya in self.csv.glob("*.csv"):
             okunan = list(csv.reader(dosya.read_text(encoding="utf-8").splitlines()))
@@ -220,12 +249,12 @@ class KurulumTesti(unittest.TestCase):
     def test_cinsiyet_kisiti(self):
         # Kardiyolojiyi yalnız kadınlara açınca Ahmet'in (E) 3 randevusu kurala aykırı düşer.
         self.degistir("branslar", "Kardiyoloji,15,18,,", "Kardiyoloji,15,18,,K")
-        self.denetimde_yalniz({"Cinsiyet kısıtına uymayan randevu": 3})
+        self.denetimde_yalniz({"Cinsiyet kısıtına uymayan hasta (randevu / yedek liste)": 3})
 
     def test_on_sekizinci_dogum_gunu_siniri(self):
         # 2008-03-03 doğumlu: 2 Mart'ta 17 yaşında (aykırı), 3 Mart'ta tam 18 (uygun).
         self.degistir("hastalar", "1981-03-12", "2008-03-03")
-        self.denetimde_yalniz({"Branşın yaş alt sınırının altında hasta": 1})
+        self.denetimde_yalniz({"Branşın yaş alt sınırının altında hasta (randevu / yedek liste)": 1})
 
     def test_yedek_kaydi_olmayan_yedek_randevu(self):
         self.degistir("randevular", "NORMAL,1,4.2\n", "YEDEK_LISTE,1,4.2\n")

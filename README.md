@@ -44,7 +44,8 @@ python schema/kurulum.py --csv cikti/csv  # üretilen CSV'leri yükler ve denetl
 Üretici kod her tablo için `cikti/csv/<tablo_adi>.csv` yazar: ilk satır sütun adları (şemayla birebir),
 UTF-8, boş hücre = NULL (Türkçe Excel'in `;` ayırıcısı da kabul edilir). `kurulum.py --csv` dosyaları doğru sırayla yükler; şema kuralına aykırı satır
 varsa hiçbir şeyi yüklemez; dosya adı, satır numarası ve ihlal edilen kuralı gösterir.
-Sütun adında yazım hatası varsa (`dogumtarihi` gibi) bunu da söyler.
+Sütun adında (`dogumtarihi`) ya da dosya adında (`hasta.csv`) yazım hatası varsa bunu da söyler.
+Yüklenen verinin uyması gereken tablolar arası kurallar [veri sözlüğünde](docs/veri_sozlugu.md#üretilen-verinin-uyması-gereken-kurallar) listelidir.
 `branslar.csv` ve `tatiller.csv` üretmenize gerek yok: klasörde yoksa `schema/referans/` altındakiler yüklenir.
 Pandas ile yazarken `df.to_csv(yol, index=False, encoding="utf-8")` yeterli. Örnek biçim için:
 `python schema/kurulum.py --ornek --disa-aktar cikti/ornek_csv`
@@ -63,7 +64,7 @@ Pandas ile yazarken `df.to_csv(yol, index=False, encoding="utf-8")` yeterli. Ör
 
 - [x] Hafta 1 — Repo, şema v0 (12 tablo + 4 görünüm), ER diyagramı, veri sözlüğü
 - [x] Hafta 1 — Şema diğer 5 gruba iletildi, ilk dönüşlerde eksik yok ([notlar](docs/toplanti_notlari.md)); kalan gruplardan dönüş bekleniyor
-- [x] Hafta 2 — Şema v1.0 sabitlendi, ER diyagramı tüm sütunlarla, branş/tatil referansları, 3 yeni görünüm, 29 test ([değişiklikler](docs/degisiklikler.md))
+- [x] Hafta 2 — Şema v1.0 sabitlendi, ER diyagramı tüm sütunlarla, branş/tatil referansları, 3 yeni görünüm, 55 test ([değişiklikler](docs/degisiklikler.md))
 - [ ] Hafta 2 — Hasta/hastane/doktor verisi (Sentetik Veri ekibi)
 - [ ] Hafta 3 — Randevu geçmişi + no-show desenleri, 100 satırlık örnek veri
 - [ ] Hafta 4 — Şikayet metinleri, yedek liste, mesajlar

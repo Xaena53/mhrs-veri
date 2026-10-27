@@ -199,6 +199,10 @@ CREATE TABLE yedek_liste (
     CHECK (guncelleme_zamani IS NULL OR guncelleme_zamani >= kayit_zamani)
 );
 
+-- Bir hasta aynı branş için listede bir kez bekler (atanan/düşen eski kayıtlar hariç).
+CREATE UNIQUE INDEX ux_yedek_bekleyen_hasta
+    ON yedek_liste(hasta_id, brans_id) WHERE durum = 'BEKLIYOR';
+
 -- Hastaya giden her mesaj ve hastanın yanıtı (hatırlatma, boş randevu teklifi...).
 CREATE TABLE bildirimler (
     bildirim_id     INTEGER PRIMARY KEY,

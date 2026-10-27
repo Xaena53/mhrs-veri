@@ -4,6 +4,7 @@ Kaynak: [`schema/schema.sql`](../schema/schema.sql). Tarih alanları `YYYY-MM-DD
 **Tüm veriler sentetiktir.** TC kimlik no tutulmaz, hastalar yalnızca `hasta_id` ile tanınır.
 
 **Biçim kuralları (şema zorlar):** `2026-3-2`, `9:00`, `2026-03-02T09:00:00` ya da 30 Şubat gibi değerler reddedilir.
+Sayı sütunlarına metin (`4.2 km`) girilemez; tam sayı sütunlarına ondalık (`15.5`) girilemez, `15.0` ise 15 sayılır.
 Telefonlar `0500XXXXXXX` biçimindedir; 0500 ön eki GSM operatörlerine atanmış bloklar (50x, 53x, 54x, 55x) arasında kullanılmadığı için gerçek bir kişiye denk gelmez. CSV'yi Excel'de açıp kaydederseniz baştaki 0 silinebilir; şema bu durumda satırı reddeder.
 `kurulum.py` Türkçe Excel'in noktalı virgüllü CSV'sini ve ondalık virgülünü (`4,2`) de okur; dosya UTF-8 olmalıdır.
 
@@ -138,6 +139,7 @@ Kural: `aciliyet` ACIL değilse `brans_id` boş olamaz.
 Kurallar: `randevu_zamani ≥ olusturma_zamani`. Aynı doktor ve saate, ya da aynı hastaya aynı saatte iki aktif randevu olamaz.
 `IPTAL` ⇔ `iptal_zamani` ve `iptal_kanali` dolu. Randevu saati doktorun mesaisinde, öğle arası dışında ve slot ızgarasında olmalıdır (denetim).
 `hatirlatma_gonderildi = 1` ise `bildirimler` tablosunda o randevu için bir `HATIRLATMA` kaydı bulunmalıdır (denetim).
+Resmî tatil ve bayram günlerine, arifelerde 13:00'ten sonrasına randevu verilmez (denetim).
 
 ### `yedek_liste`
 | Sütun | Tip | Açıklama | Örnek |
@@ -164,6 +166,21 @@ Kurallar: `randevu_zamani ≥ olusturma_zamani`. Aynı doktor ve saate, ya da ay
 | gonderim_zamani / yanit_zamani | TEXT | Yanıt süresi buradan hesaplanır | |
 | yanit_metni | TEXT | Hastanın cevabı, NULL = yanıtsız (o zaman yanit_zamani da NULL) | Gelemeyeceğim |
 | yanit_niyeti | TEXT | `yanit_ornekleri.niyet` ile aynı etiketler | IPTAL |
+
+## Üretilen verinin uyması gereken kurallar
+
+`kurulum.py` yüklemeden sonra bunları denetler; her biri `SONUÇ: TEMİZ` için 0 olmalıdır.
+Testleri: [`tests/test_denetimler.py`](../tests/test_denetimler.py).
+
+| Konu | Kural |
+|---|---|
+| Branş | Hastanın yaşı (randevu günündeki tam yaş; yedek listede listeye giriş günündeki) ve cinsiyeti branşın sınırlarına uyar. Randevunun branşı ve hastanesi doktorunkiyle aynıdır |
+| Doktor | Randevu, doktorun `doktor_takvimi`nde çalıştığı bir güne, mesai içine, öğle arası dışına ve slot ızgarasına (`baslangic_saat` + k × `slot_dk`) düşer. `toplam_slot` mesaiyle uyuşur. Aktif olmayan doktorun bekleyen randevusu olmaz |
+| Takvim | Resmî tatil/bayram gününe, arifede 13:00 sonrasına randevu olmaz. Randevu yılları tatil listesinde bulunur (referans: 2025–2026). Her randevu günü için hastanenin ilinde hava kaydı vardır |
+| Zaman | Hasta, kayıt tarihinden önce randevu alamaz ya da yedek listeye giremez. Geçmiş randevu BEKLIYOR kalmaz, gelecekteki randevunun GELDI/GELMEDI sonucu olmaz. Oluşturma, iptal, mesaj, yanıt ve yedek kayıt zamanları şu andan sonra olamaz |
+| Yedek liste | Hasta aynı branş için en fazla bir BEKLIYOR kaydına sahiptir (şema zorlar). ATANDI kaydın randevusu aynı hasta ve branştadır, kaynağı `YEDEK_LISTE`dir ve kayıttan sonra oluşturulmuştur. Kaynağı `YEDEK_LISTE` olan her randevunun bir yedek kaydı vardır |
+| Bildirim | `HATIRLATMA` ve `IPTAL_ONAYI` randevu sahibine gider. Hatırlatma randevu alındıktan sonra, randevudan ve varsa iptalden önce gider. İptal onayı yalnız iptal edilmiş randevuya, iptalden sonra gider. `BOS_RANDEVU_TEKLIFI` iptal edilmiş randevu için, iptalden sonra ve iptal eden hasta dışında birine gider |
+| Chatbot | Hatırlatmaya `IPTAL` cevabı verilen randevu iptal edilir. `iptal_kanali = CHATBOT` olan iptalden önce hastanın `IPTAL` ya da `ERTELEME` cevabı vardır |
 
 ## Hazır görünümler
 

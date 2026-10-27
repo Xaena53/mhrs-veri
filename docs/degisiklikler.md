@@ -22,9 +22,24 @@ Yalnızca kurallar sıkılaştı: daha önce sessizce kabul edilen hatalı değe
 - `v_aylik_brans_ozet` (6. grup): `v_aylik_ozet`'in ay × hastane × branş kırılımı.
 - `schema/referans/branslar.csv` (16 branş, yaş/cinsiyet kısıtlarıyla) ve `schema/referans/tatiller.csv`
   (2025–2026 resmî tatiller, bayramlar, arifeler). `kurulum.py --csv` klasörde bu dosyalar yoksa referansları kullanır.
-- `tests/`: 29 otomatik test (`python -m unittest discover tests -v`). Aşağıdaki her düzeltmenin bir testi var.
+- `tests/`: 55 otomatik test (`python -m unittest discover tests -v`). Aşağıdaki her düzeltmenin bir testi var.
+- Üretilen verinin uyması gereken kuralların listesi: veri sözlüğünde "Üretilen verinin uyması gereken kurallar".
+
+**Yeni ve genişleyen denetimler (`kurulum.py`)** — daha önce hiçbiri yakalanmıyordu
+- Branş yaş/cinsiyet kuralları yalnız randevulara uygulanıyordu; artık yedek listeye de (erkek hasta Kadın Doğum
+  yedek listesinde, yetişkin Çocuk Sağlığı listesinde). Hasta kaydından önce yedek listeye giriş de yakalanıyor.
+- Tatil listesi tutuluyor ama hiç denetlenmiyordu: resmî tatil/bayram gününe, arife öğleden sonrasına randevu;
+  tatil listesinin kapsamadığı yıldaki randevu (no-show modelinde `tatil_yakin` sessizce hep 0 çıkardı).
+- Boş randevu teklifi için konan kurallar diğer bildirim türlerine taşınmamıştı: iptal onayı yanlış hastaya,
+  iptal edilmemiş randevuya ya da iptalden önce; hatırlatma iptalden sonra; boş yer teklifi iptal edenin kendisine.
+- Chatbot akışı: hatırlatmaya IPTAL cevabı verilmiş ama iptal edilmemiş randevu; CHATBOT kanalıyla iptal edilmiş
+  ama öncesinde hastanın IPTAL/ERTELEME cevabı olmayan randevu.
+- "Gelecekteki GELDI" kuralının diğer zaman alanlarına genişletilmesi: şu andan sonraya tarihli oluşturma, iptal,
+  mesaj, yanıt, yedek kaydı.
+- Aktif olmayan doktora bekleyen randevu.
 
 **Sıkılaşan kurallar (`schema.sql`)**
+- Bir hasta aynı branş için yedek listede yalnızca bir kez BEKLIYOR olabilir (`ux_yedek_bekleyen_hasta`).
 - Sayısal sütunlarda tip denetimi (`typeof`): SQLite tip zorlamadığı için `4.2 km` gibi bir metin `mesafe_km`'ye
   girip `>= 0` kontrolünü de geçiyordu. Tam sayı sütunlarında (`slot_dk`, `toplam_slot`, `aciliyet_puani`,
   `ortalama_muayene_dk`, `yas_min/max`) `15.5` reddedilir; pandas'ın yazdığı `15.0` ise 15 olarak kabul edilir.
@@ -42,6 +57,13 @@ Yalnızca kurallar sıkılaştı: daha önce sessizce kabul edilen hatalı değe
 - Yükleme yarıda bir istisnayla kesilirse işlem geri alınıyor (yarım veri kalmıyor).
 - Windows'ta `newline=""` verilmeden yazılan CSV'lerdeki boş satırlar artık hata sayılmıyor, atlanıyor.
 - CSV başlığını okumak için açılan dosya kapatılmıyordu; Windows'ta dosya kilitli kalabiliyordu.
+- Türkçe Excel ondalık düzeltmesi (`4,2` → `4.2`) metin sütunlarına da uygulanıyordu: "10,30" cevabı "10.30" oluyordu.
+  Artık yalnız sayı sütunlarında.
+- Dosya adı yazım hatası (`hasta.csv`) sessizce atlanıp tablo boş kalıyordu; artık reddediliyor. `Hastalar.CSV` gibi
+  büyük harfli adlar Windows'ta ve Linux'ta aynı şekilde kabul ediliyor.
+- `--db` bir klasörü gösterirse açıklamasız hata yerine açık mesaj; yarıda kalmış eski çalıştırmanın
+  `-journal`/`-wal` dosyaları yeni veritabanına karışmasın diye siliniyor.
+- Referans tatil listesinde yazım: "Millî Birlik".
 
 ## v0.1.1 — 25 Ekim 2026
 
