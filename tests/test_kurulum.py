@@ -7,6 +7,7 @@ import csv
 import io
 import shutil
 import sqlite3
+import subprocess
 import sys
 import tempfile
 import unittest
@@ -128,6 +129,32 @@ class KurulumTesti(unittest.TestCase):
         con = sessiz(kurulum.kur, db)
         con.close()
         self.assertFalse((self.gecici / "test.db-journal").exists())
+
+    def komut(self, *argumanlar):
+        sonuc = subprocess.run([sys.executable, str(KOK / "schema" / "kurulum.py"), *map(str, argumanlar)],
+                               capture_output=True, text=True, encoding="utf-8")
+        return sonuc.returncode, sonuc.stdout + sonuc.stderr
+
+    def test_komut_satiri_reddedilen_yukleme_eski_veritabanini_korur(self):
+        db = self.gecici / "calisan.db"
+        kod, cikti = self.komut("--db", db, "--ornek")
+        self.assertEqual(kod, 0, cikti)
+        self.assertIn("SONUÇ: TEMİZ", cikti)
+        self.degistir("hastalar", "1981-03-12", "1981-3-12")
+        kod, cikti = self.komut("--db", db, "--csv", self.csv)
+        self.assertEqual(kod, 1, cikti)
+        self.assertIn("Önceki veritabanı korundu", cikti)
+        self.assertFalse(db.with_name(db.name + ".yeni").exists())
+        eski = sqlite3.connect(db)
+        self.addCleanup(eski.close)
+        self.assertEqual(eski.execute("SELECT COUNT(*) FROM randevular").fetchone()[0], 4)
+
+    def test_komut_satiri_denetim_hatasinda_cikis_kodu_1(self):
+        self.degistir("branslar", "Kardiyoloji,15,18,,", "Kardiyoloji,15,18,,K")
+        kod, cikti = self.komut("--db", self.gecici / "t.db", "--csv", self.csv)
+        self.assertEqual(kod, 1, cikti)
+        self.assertIn("SORUNLU", cikti)
+        self.assertNotIn("Traceback", cikti)
 
     def test_turkce_excel_csv_kabul_edilir(self):
         for dosya in self.csv.glob("*.csv"):

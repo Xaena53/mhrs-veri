@@ -163,6 +163,61 @@ class DenetimTesti(unittest.TestCase):
         self.calistir("UPDATE bildirimler SET yanit_niyeti = 'ERTELEME' WHERE bildirim_id = 2")
         self.yalniz({})
 
+    # --- yanlış alarm vermemesi gereken geçerli durumlar -----------------------
+
+    def test_doktor_izne_cikinca_sistem_iptali_gecerli(self):
+        self.calistir("INSERT INTO doktor_takvimi VALUES (2,'2026-03-05','08:00','16:00','12:00','13:00',15,28,0)",
+                      "INSERT INTO hava_durumu VALUES ('2026-03-05','Eskişehir','GUNESLI',9)",
+                      """INSERT INTO randevular (hasta_id, doktor_id, brans_id, hastane_id, olusturma_zamani,
+                             randevu_zamani, durum, iptal_zamani, iptal_kanali)
+                         VALUES (2, 2, 2, 2, '2026-02-20 10:00:00', '2026-03-05 09:00:00', 'IPTAL',
+                                 '2026-03-01 08:00:00', 'SISTEM')""")
+        self.yalniz({})
+        # Aynı randevu hasta tarafından (WEB) iptal edildiyse o gün zaten hiç verilmemeliydi.
+        self.calistir("UPDATE randevular SET iptal_kanali = 'WEB' WHERE randevu_zamani = '2026-03-05 09:00:00'")
+        self.yalniz({"çalışmadığı güne": 1})
+
+    def test_ogle_arasi_olmayan_ve_20_dakikalik_takvim(self):
+        self.calistir("INSERT INTO doktor_takvimi VALUES (2,'2026-03-05','08:00','12:00',NULL,NULL,20,12,1)",
+                      "INSERT INTO hava_durumu VALUES ('2026-03-05','Eskişehir','GUNESLI',9)")
+        self.randevu("2026-03-05 11:40:00")
+        self.yalniz({})
+
+    def test_web_iptali_chatbot_cevabi_gerektirmez(self):
+        self.calistir("UPDATE randevular SET iptal_kanali = 'WEB' WHERE randevu_id = 2",
+                      "UPDATE bildirimler SET yanit_niyeti = 'ONAY' WHERE bildirim_id = 2")
+        self.yalniz({})
+
+    def test_yanitsiz_hatirlatma_ve_gelmeme_gecerli(self):
+        self.calistir("UPDATE bildirimler SET yanit_metni = NULL, yanit_niyeti = NULL, yanit_zamani = NULL "
+                      "WHERE bildirim_id = 4",
+                      "UPDATE randevular SET durum = 'GELMEDI' WHERE randevu_id = 4")
+        self.yalniz({})
+
+    # --- son taramada eklenenler ---------------------------------------------
+
+    def test_bos_randevu_teklifi_yedek_listede_olmayana(self):
+        self.calistir("""INSERT INTO hastalar (hasta_id, ad, soyad, cinsiyet, dogum_tarihi, telefon, il, ilce,
+                             iletisim_kanali, kayit_tarihi)
+                         VALUES (3, 'Ece', 'Er', 'K', '1990-01-01', '05001112233', 'Eskişehir', 'Tepebaşı',
+                                 'SMS', '2020-01-01')""")
+        self.bildirim(2, 3, "BOS_RANDEVU_TEKLIFI", "2026-03-02 10:06:00")
+        self.yalniz({"Boş randevu": 1})
+
+    def test_yedek_randevu_olusmadan_atandi_sayilmis(self):
+        self.calistir("UPDATE yedek_liste SET guncelleme_zamani = '2026-03-02 09:00:00' WHERE kayit_id = 1")
+        self.yalniz({"Yedekten atanan": 1})
+
+    def test_gelecekte_hasta_kaydi(self):
+        self.calistir(f"UPDATE hastalar SET kayit_tarihi = '{GELECEK}' WHERE hasta_id = 2")
+        # Hastanın geçmiş randevuları da artık kayıttan önce kalır.
+        self.yalniz({"Şu andan sonraya": 1, "kaydolmadan": 2})
+
+    def test_telefonsuz_hasta_yalniz_web_kanali(self):
+        with self.assertRaises(sqlite3.IntegrityError):
+            self.calistir("UPDATE hastalar SET telefon = NULL WHERE hasta_id = 1")
+        self.calistir("UPDATE hastalar SET telefon = NULL, iletisim_kanali = 'WEB' WHERE hasta_id = 1")
+
     def test_chatbot_iptali_cevaptan_once_olamaz(self):
         self.calistir("UPDATE randevular SET iptal_zamani = '2026-03-02 10:04:00' WHERE randevu_id = 2")
         self.yalniz({"CHATBOT ile": 1})

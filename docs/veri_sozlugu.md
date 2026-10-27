@@ -69,7 +69,7 @@ Telefonlar `0500XXXXXXX` biçimindedir; 0500 ön eki GSM operatörlerine atanmı
 | ad, soyad | TEXT | Faker `tr_TR` | Ahmet Yılmaz |
 | cinsiyet | TEXT | `K` / `E` | E |
 | dogum_tarihi | TEXT | Yaş buradan hesaplanır | 1981-03-12 |
-| telefon | TEXT | Sahte, `0500XXXXXXX` | 05001234567 |
+| telefon | TEXT | Sahte, `0500XXXXXXX`. Yalnız `iletisim_kanali = WEB` ise boş olabilir | 05001234567 |
 | il, ilce | TEXT | | Eskişehir, Odunpazarı |
 | enlem, boylam | REAL | Ev konumu (yaklaşık) | 39.76, 30.52 |
 | kronik_hastalik | TEXT | Virgülle ayrık, NULL = yok | Hipertansiyon |
@@ -81,6 +81,8 @@ Telefonlar `0500XXXXXXX` biçimindedir; 0500 ön eki GSM operatörlerine atanmı
 ### `hava_durumu` — PK (tarih, il)
 | Sütun | Tip | Açıklama | Örnek |
 |---|---|---|---|
+| tarih | TEXT PK | Gün | 2026-03-02 |
+| il | TEXT PK | Hastanenin ili (`hastaneler.il` ile aynı yazım) | Eskişehir |
 | durum | TEXT | `GUNESLI`, `BULUTLU`, `YAGMURLU`, `KARLI` | YAGMURLU |
 | sicaklik_c | REAL | Günlük ortalama, −40…50 | 6.5 |
 
@@ -94,6 +96,8 @@ Telefonlar `0500XXXXXXX` biçimindedir; 0500 ön eki GSM operatörlerine atanmı
 ### `doktor_takvimi` — PK (doktor_id, tarih)
 | Sütun | Tip | Açıklama | Örnek |
 |---|---|---|---|
+| doktor_id | FK → doktorlar, PK | | 2 |
+| tarih | TEXT PK | Çalışma günü | 2026-03-02 |
 | baslangic_saat / bitis_saat | TEXT | Mesai (`HH:MM`) | 08:00 / 16:00 |
 | ogle_baslangic / ogle_bitis | TEXT | Öğle arası, ikisi birlikte NULL olabilir | 12:00 / 13:00 |
 | slot_dk | INTEGER | Slot süresi | 15 |
@@ -105,6 +109,7 @@ Telefonlar `0500XXXXXXX` biçimindedir; 0500 ön eki GSM operatörlerine atanmı
 ### `sikayetler` (2. grup eğitim verisi)
 | Sütun | Tip | Açıklama | Örnek |
 |---|---|---|---|
+| sikayet_id | INTEGER PK | | 1 |
 | metin | TEXT | Hastanın kendi cümlesi | Merdiven çıkarken göğsüm sıkışıyor |
 | brans_id | FK, NULL olabilir | Doğru branş; ACİL vakada NULL | 2 |
 | alternatif_brans_id | FK | Belirsiz vakalarda 2. seçenek | NULL |
@@ -116,6 +121,7 @@ Kural: `aciliyet` ACIL değilse `brans_id` boş olamaz.
 ### `yanit_ornekleri` (4. grup niyet sınıflandırma verisi)
 | Sütun | Tip | Açıklama | Örnek |
 |---|---|---|---|
+| ornek_id | INTEGER PK | | 1 |
 | metin | TEXT | Hastanın kısa cevabı | Gelemeyeceğim |
 | niyet | TEXT | `ONAY`, `IPTAL`, `ERTELEME`, `SORU`, `BELIRSIZ` | IPTAL |
 
@@ -158,6 +164,7 @@ Resmî tatil ve bayram günlerine, arifelerde 13:00'ten sonrasına randevu veril
 ### `bildirimler`
 | Sütun | Tip | Açıklama | Örnek |
 |---|---|---|---|
+| bildirim_id | INTEGER PK | | 1 |
 | randevu_id | FK | İlgili randevu / boş slot | 2 |
 | hasta_id | FK | Mesajı alan hasta | 1 |
 | tur | TEXT | `HATIRLATMA`, `BOS_RANDEVU_TEKLIFI`, `IPTAL_ONAYI` | HATIRLATMA |
@@ -175,11 +182,11 @@ Testleri: [`tests/test_denetimler.py`](../tests/test_denetimler.py).
 | Konu | Kural |
 |---|---|
 | Branş | Hastanın yaşı (randevu günündeki tam yaş; yedek listede listeye giriş günündeki) ve cinsiyeti branşın sınırlarına uyar. Randevunun branşı ve hastanesi doktorunkiyle aynıdır |
-| Doktor | Randevu, doktorun `doktor_takvimi`nde çalıştığı bir güne, mesai içine, öğle arası dışına ve slot ızgarasına (`baslangic_saat` + k × `slot_dk`) düşer. `toplam_slot` mesaiyle uyuşur. Aktif olmayan doktorun bekleyen randevusu olmaz |
+| Doktor | Randevu, doktorun `doktor_takvimi`nde çalıştığı bir güne, mesai içine, öğle arası dışına ve slot ızgarasına (`baslangic_saat` + k × `slot_dk`) düşer. `toplam_slot` mesaiyle uyuşur. Aktif olmayan doktorun bekleyen randevusu olmaz. Doktor sonradan izne çıkarsa o günün randevuları `iptal_kanali = SISTEM` ile iptal edilir; bunlar geçerlidir |
 | Takvim | Resmî tatil/bayram gününe, arifede 13:00 sonrasına randevu olmaz. Randevu yılları tatil listesinde bulunur (referans: 2025–2026). Her randevu günü için hastanenin ilinde hava kaydı vardır |
-| Zaman | Hasta, kayıt tarihinden önce randevu alamaz ya da yedek listeye giremez. Geçmiş randevu BEKLIYOR kalmaz, gelecekteki randevunun GELDI/GELMEDI sonucu olmaz. Oluşturma, iptal, mesaj, yanıt ve yedek kayıt zamanları şu andan sonra olamaz |
-| Yedek liste | Hasta aynı branş için en fazla bir BEKLIYOR kaydına sahiptir (şema zorlar). ATANDI kaydın randevusu aynı hasta ve branştadır, kaynağı `YEDEK_LISTE`dir ve kayıttan sonra oluşturulmuştur. Kaynağı `YEDEK_LISTE` olan her randevunun bir yedek kaydı vardır |
-| Bildirim | `HATIRLATMA` ve `IPTAL_ONAYI` randevu sahibine gider. Hatırlatma randevu alındıktan sonra, randevudan ve varsa iptalden önce gider. İptal onayı yalnız iptal edilmiş randevuya, iptalden sonra gider. `BOS_RANDEVU_TEKLIFI` iptal edilmiş randevu için, iptalden sonra ve iptal eden hasta dışında birine gider |
+| Zaman | Hasta kaydı bugünden sonra olamaz. Hasta, kayıt tarihinden önce randevu alamaz ya da yedek listeye giremez. Geçmiş randevu BEKLIYOR kalmaz, gelecekteki randevunun GELDI/GELMEDI sonucu olmaz. Oluşturma, iptal, mesaj, yanıt ve yedek kayıt zamanları şu andan sonra olamaz |
+| Yedek liste | Hasta aynı branş için en fazla bir BEKLIYOR kaydına sahiptir (şema zorlar). ATANDI kaydın randevusu aynı hasta ve branştadır, kaynağı `YEDEK_LISTE`dir ve kayıttan sonra oluşturulmuştur; kayıt, randevu oluşturulduktan sonra ATANDI olur. Kaynağı `YEDEK_LISTE` olan her randevunun bir yedek kaydı vardır |
+| Bildirim | `HATIRLATMA` ve `IPTAL_ONAYI` randevu sahibine gider. Hatırlatma randevu alındıktan sonra, randevudan ve varsa iptalden önce gider. İptal onayı yalnız iptal edilmiş randevuya, iptalden sonra gider. `BOS_RANDEVU_TEKLIFI` iptal edilmiş randevu için, iptalden sonra, iptal eden hasta dışında ve o branşın yedek listesine teklif anından önce girmiş birine gider |
 | Chatbot | Hatırlatmaya `IPTAL` cevabı verilen randevu iptal edilir. `iptal_kanali = CHATBOT` olan iptalden önce hastanın `IPTAL` ya da `ERTELEME` cevabı vardır |
 
 ## Hazır görünümler

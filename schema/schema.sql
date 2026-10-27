@@ -73,7 +73,9 @@ CREATE TABLE hastalar (
     iletisim_kanali TEXT NOT NULL DEFAULT 'SMS'
                     CHECK (iletisim_kanali IN ('WHATSAPP','TELEGRAM','SMS','WEB')),
     kayit_tarihi    TEXT NOT NULL CHECK (date(kayit_tarihi) IS kayit_tarihi),
-    CHECK (kayit_tarihi >= dogum_tarihi)
+    CHECK (kayit_tarihi >= dogum_tarihi),
+    -- Chatbot mesajı telefon numarasına gider; telefonsuz hasta yalnız WEB kanalını kullanabilir.
+    CHECK (iletisim_kanali = 'WEB' OR telefon IS NOT NULL)
 );
 
 -- ---------------------------------------------------------------------

@@ -22,7 +22,7 @@ Yalnızca kurallar sıkılaştı: daha önce sessizce kabul edilen hatalı değe
 - `v_aylik_brans_ozet` (6. grup): `v_aylik_ozet`'in ay × hastane × branş kırılımı.
 - `schema/referans/branslar.csv` (16 branş, yaş/cinsiyet kısıtlarıyla) ve `schema/referans/tatiller.csv`
   (2025–2026 resmî tatiller, bayramlar, arifeler). `kurulum.py --csv` klasörde bu dosyalar yoksa referansları kullanır.
-- `tests/`: 55 otomatik test (`python -m unittest discover tests -v`). Aşağıdaki her düzeltmenin bir testi var.
+- `tests/`: 65 otomatik test (`python -m unittest discover tests -v`). Aşağıdaki her düzeltmenin bir testi var.
 - Üretilen verinin uyması gereken kuralların listesi: veri sözlüğünde "Üretilen verinin uyması gereken kurallar".
 
 **Yeni ve genişleyen denetimler (`kurulum.py`)** — daha önce hiçbiri yakalanmıyordu
@@ -37,9 +37,14 @@ Yalnızca kurallar sıkılaştı: daha önce sessizce kabul edilen hatalı değe
 - "Gelecekteki GELDI" kuralının diğer zaman alanlarına genişletilmesi: şu andan sonraya tarihli oluşturma, iptal,
   mesaj, yanıt, yedek kaydı.
 - Aktif olmayan doktora bekleyen randevu.
+- Boş yer teklifi yedek listede olmayan hastaya; yedek kaydının randevu oluşmadan ATANDI sayılması;
+  gelecek tarihli hasta kaydı.
+- Yanlış alarm düzeltmesi: doktor izne çıkınca sistemin iptal ettiği randevu (`SISTEM`) artık
+  "çalışmadığı güne randevu" sayılmıyor.
 
 **Sıkılaşan kurallar (`schema.sql`)**
 - Bir hasta aynı branş için yedek listede yalnızca bir kez BEKLIYOR olabilir (`ux_yedek_bekleyen_hasta`).
+- Telefonu olmayan hasta yalnız `WEB` kanalını seçebilir (chatbot mesajı telefona gider).
 - Sayısal sütunlarda tip denetimi (`typeof`): SQLite tip zorlamadığı için `4.2 km` gibi bir metin `mesafe_km`'ye
   girip `>= 0` kontrolünü de geçiyordu. Tam sayı sütunlarında (`slot_dk`, `toplam_slot`, `aciliyet_puani`,
   `ortalama_muayene_dk`, `yas_min/max`) `15.5` reddedilir; pandas'ın yazdığı `15.0` ise 15 olarak kabul edilir.
@@ -63,7 +68,12 @@ Yalnızca kurallar sıkılaştı: daha önce sessizce kabul edilen hatalı değe
   büyük harfli adlar Windows'ta ve Linux'ta aynı şekilde kabul ediliyor.
 - `--db` bir klasörü gösterirse açıklamasız hata yerine açık mesaj; yarıda kalmış eski çalıştırmanın
   `-journal`/`-wal` dosyaları yeni veritabanına karışmasın diye siliniyor.
+- Yükleme reddedildiğinde önceki çalışan `mhrs.db` silinmiş oluyordu (diğer grupların kullandığı veritabanı
+  bir hatalı CSV denemesiyle kayboluyordu). Artık yeni veritabanı yanına kurulur, yalnız yükleme başarılıysa
+  eskisinin yerine geçer.
 - Referans tatil listesinde yazım: "Millî Birlik".
+- Veri sözlüğüne eksik anahtar sütunları eklendi; "2. ekip" ifadesi 2. grupla (Triyaj) karışmasın diye
+  "Sentetik Veri ekibi" yapıldı.
 
 ## v0.1.1 — 25 Ekim 2026
 

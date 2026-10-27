@@ -4,6 +4,7 @@ cikti/*
 !cikti/ornek_csv/
 *.db
 *.sqlite
+*.db.yeni
 __pycache__/
 *.pyc
 .venv/

@@ -3,7 +3,7 @@
 Kullanım:
     python schema/kurulum.py                  # boş veritabanı: cikti/mhrs.db
     python schema/kurulum.py --ornek          # + elle yazılmış test verisi
-    python schema/kurulum.py --csv cikti/csv  # + 2. ekibin ürettiği CSV'ler
+    python schema/kurulum.py --csv cikti/csv  # + Sentetik Veri ekibinin ürettiği CSV'ler
     python schema/kurulum.py --ornek --disa-aktar cikti/ornek_csv   # tabloları CSV'ye yaz
 
 CSV sözleşmesi: her tablo için <tablo_adi>.csv, ilk satır sütun adları (schema.sql ile aynı),
@@ -36,15 +36,20 @@ class YuklemeHatasi(Exception):
     pass
 
 
-def kur(db_yolu: Path) -> sqlite3.Connection:
+def hedef_kontrol(db_yolu: Path) -> None:
+    """Yanlışlıkla --db schema/schema.sql ya da bir klasör verilirse kaynak dosyalar silinmesin."""
     if db_yolu.is_dir():
         raise YuklemeHatasi(f"{db_yolu} bir klasör; --db'ye dosya yolu verin (ör. cikti/mhrs.db).")
+    if db_yolu.exists() and db_yolu.stat().st_size:
+        with db_yolu.open("rb") as f:
+            if f.read(16) != b"SQLite format 3\x00":
+                raise YuklemeHatasi(f"{db_yolu} bir SQLite veritabanı değil; üzerine yazılmadı.")
+
+
+def kur(db_yolu: Path) -> sqlite3.Connection:
+    hedef_kontrol(db_yolu)
     db_yolu.parent.mkdir(parents=True, exist_ok=True)
     if db_yolu.exists():
-        # Yanlışlıkla --db schema/schema.sql verilirse kaynak dosya silinmesin: yalnızca SQLite dosyası silinir.
-        with db_yolu.open("rb") as f:
-            if db_yolu.stat().st_size and f.read(16) != b"SQLite format 3\x00":
-                raise YuklemeHatasi(f"{db_yolu} bir SQLite veritabanı değil; üzerine yazılmadı.")
         try:
             db_yolu.unlink()
         except PermissionError:
@@ -212,8 +217,9 @@ DENETIMLER = {
                 + (SELECT COUNT(*) FROM yedek_liste y JOIN hastalar h USING(hasta_id)
                    WHERE date(y.kayit_zamani) < h.kayit_tarihi)""",
     # Veri 'şu an'a kadar olan geçmişi anlatır; sonradan yapılmış bir işlem olamaz.
-    "Şu andan sonraya tarihli işlem kaydı (oluşturma, iptal, mesaj, yanıt, yedek)":
-        """SELECT (SELECT COUNT(*) FROM randevular
+    "Şu andan sonraya tarihli işlem kaydı (hasta kaydı, oluşturma, iptal, mesaj, yanıt, yedek)":
+        """SELECT (SELECT COUNT(*) FROM hastalar WHERE kayit_tarihi > date('now','localtime'))
+                + (SELECT COUNT(*) FROM randevular
                    WHERE olusturma_zamani > datetime('now','localtime') OR iptal_zamani > datetime('now','localtime'))
                 + (SELECT COUNT(*) FROM bildirimler
                    WHERE gonderim_zamani > datetime('now','localtime') OR yanit_zamani > datetime('now','localtime'))
@@ -228,9 +234,12 @@ DENETIMLER = {
         """SELECT COUNT(*) FROM randevular r
            WHERE EXISTS (SELECT 1 FROM tatiller) AND NOT EXISTS (
                SELECT 1 FROM tatiller t WHERE substr(t.tarih, 1, 4) = substr(r.randevu_zamani, 1, 4))""",
+    # Doktor sonradan izne çıkınca sistemin iptal ettiği randevular (iptal_kanali = SISTEM) geçerlidir.
     "Doktorun çalışmadığı güne randevu":
         """SELECT COUNT(*) FROM randevular r
-           WHERE EXISTS (SELECT 1 FROM doktor_takvimi) AND NOT EXISTS (
+           WHERE EXISTS (SELECT 1 FROM doktor_takvimi)
+             AND NOT (r.durum = 'IPTAL' AND r.iptal_kanali = 'SISTEM')
+             AND NOT EXISTS (
                SELECT 1 FROM doktor_takvimi dt WHERE dt.doktor_id = r.doktor_id
                  AND dt.tarih = date(r.randevu_zamani) AND dt.calisiyor = 1)""",
     "Mesai dışı / öğle arası / slot ızgarasına oturmayan saat":
@@ -263,7 +272,7 @@ DENETIMLER = {
     "Yedekten atanan randevu yedek kaydıyla uyuşmuyor":
         """SELECT COUNT(*) FROM yedek_liste y JOIN randevular r ON r.randevu_id = y.atanan_randevu_id
            WHERE r.kaynak <> 'YEDEK_LISTE' OR r.hasta_id <> y.hasta_id OR r.brans_id <> y.brans_id
-              OR r.olusturma_zamani < y.kayit_zamani
+              OR r.olusturma_zamani < y.kayit_zamani OR y.guncelleme_zamani < r.olusturma_zamani
               OR (y.hastane_id IS NOT NULL AND r.hastane_id <> y.hastane_id)""",
     "Kaynağı YEDEK_LISTE ama hiçbir yedek kaydına atanmamış randevu":
         """SELECT COUNT(*) FROM randevular r
@@ -284,10 +293,13 @@ DENETIMLER = {
         """SELECT COUNT(*) FROM bildirimler b JOIN randevular r USING(randevu_id)
            WHERE b.tur = 'IPTAL_ONAYI'
              AND (b.hasta_id <> r.hasta_id OR r.durum <> 'IPTAL' OR b.gonderim_zamani < r.iptal_zamani)""",
-    "Boş randevu teklifi iptal edilmemiş randevu için, iptalden önce ya da iptal edenin kendisine":
+    "Boş randevu teklifi iptal edilmemiş randevu için, iptalden önce, iptal edene ya da yedek listede olmayana":
         """SELECT COUNT(*) FROM bildirimler b JOIN randevular r USING(randevu_id)
            WHERE b.tur = 'BOS_RANDEVU_TEKLIFI'
-             AND (r.durum <> 'IPTAL' OR b.gonderim_zamani < r.iptal_zamani OR b.hasta_id = r.hasta_id)""",
+             AND (r.durum <> 'IPTAL' OR b.gonderim_zamani < r.iptal_zamani OR b.hasta_id = r.hasta_id
+                  OR NOT EXISTS (SELECT 1 FROM yedek_liste y   -- teklif o branşın yedek listesindekine gider
+                                 WHERE y.hasta_id = b.hasta_id AND y.brans_id = r.brans_id
+                                   AND y.kayit_zamani <= b.gonderim_zamani))""",
     # Chatbot (4. grup) akışı: hasta 'iptal' derse randevu iptal edilir; chatbot iptali bir cevaba dayanır.
     "Hatırlatmaya IPTAL cevabı verilmiş ama randevu iptal edilmemiş":
         """SELECT COUNT(*) FROM bildirimler b JOIN randevular r USING(randevu_id)
@@ -326,20 +338,35 @@ def main() -> int:
     p.add_argument("--disa-aktar", type=Path, help="tabloları bu klasöre CSV olarak yaz")
     a = p.parse_args()
 
+    # Yeni veritabanı önce yanına kurulur; yükleme reddedilirse çalışan eski mhrs.db olduğu gibi kalır.
+    gecici = a.db.with_name(a.db.name + ".yeni")
+    con = None
     try:
-        con = kur(a.db)
-        print(f"Veritabanı kuruldu: {a.db}  (şema {sema_surumu(con)})")
+        hedef_kontrol(a.db)
+        con = kur(gecici)
         if a.ornek:
             con.executescript(ORNEK.read_text(encoding="utf-8"))
         if a.csv:
             csv_yukle(con, a.csv)
     except (YuklemeHatasi, sqlite3.IntegrityError) as e:
+        if con is not None:
+            con.close()
+            gecici.unlink(missing_ok=True)
         print(f"\nYÜKLEME REDDEDİLDİ: {e}")
+        if a.db.exists():
+            print(f"Önceki veritabanı korundu: {a.db}")
         return 1
     temiz = denetle(con)
     if a.disa_aktar:
         disa_aktar(con, a.disa_aktar)
+    surum = sema_surumu(con)
     con.close()
+    try:
+        gecici.replace(a.db)
+    except PermissionError:
+        print(f"\n{a.db} başka bir programda açık (DB Browser vb.); yeni veritabanı {gecici} olarak bırakıldı.")
+        return 1
+    print(f"\nVeritabanı hazır: {a.db}  (şema {surum})")
     return 0 if temiz else 1
 
 
