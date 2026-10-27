@@ -13,6 +13,7 @@ Sürüm veritabanında da yazılıdır: `PRAGMA user_version;` → `100` = v1.0,
 ## v1.0 — 27 Ekim 2026
 
 Şema sabitlendi. v0.1.1'deki 12 tablonun **hiçbir sütunu değişmedi**; v0.1.1'e göre yazılmış kod aynen çalışır.
+Yalnızca kurallar sıkılaştı: daha önce sessizce kabul edilen hatalı değerler artık reddediliyor (aşağıda).
 
 **Eklenenler**
 - `PRAGMA user_version = 100` (şema sürümü veritabanının içinde).
@@ -21,9 +22,24 @@ Sürüm veritabanında da yazılıdır: `PRAGMA user_version;` → `100` = v1.0,
 - `v_aylik_brans_ozet` (6. grup): `v_aylik_ozet`'in ay × hastane × branş kırılımı.
 - `schema/referans/branslar.csv` (16 branş, yaş/cinsiyet kısıtlarıyla) ve `schema/referans/tatiller.csv`
   (2025–2026 resmî tatiller, bayramlar, arifeler). `kurulum.py --csv` klasörde bu dosyalar yoksa referansları kullanır.
-- `tests/`: 16 otomatik test (`python -m unittest discover tests -v`).
+- `tests/`: 29 otomatik test (`python -m unittest discover tests -v`). Aşağıdaki her düzeltmenin bir testi var.
+
+**Sıkılaşan kurallar (`schema.sql`)**
+- Sayısal sütunlarda tip denetimi (`typeof`): SQLite tip zorlamadığı için `4.2 km` gibi bir metin `mesafe_km`'ye
+  girip `>= 0` kontrolünü de geçiyordu. Tam sayı sütunlarında (`slot_dk`, `toplam_slot`, `aciliyet_puani`,
+  `ortalama_muayene_dk`, `yas_min/max`) `15.5` reddedilir; pandas'ın yazdığı `15.0` ise 15 olarak kabul edilir.
+- `tatiller.tarih` boş bırakılabiliyordu (SQLite'ta metin birincil anahtar NULL alabilir); `NOT NULL` eklendi.
 
 **Düzeltilenler (`kurulum.py`)**
+- Büyük bir CSV'de UTF-8 dışı karakter ilk 8 KB'tan sonra geliyorsa program açıklamasız çöküyordu; artık
+  "UTF-8 değil" mesajı ve bozuk baytın yeri veriliyor.
+- `--ornek` ile `--csv` birlikte kullanılınca referans branşlar örnek branşların üzerine yüklenmeye çalışıp
+  her şeyi reddediyordu; referans artık yalnızca tablo boşsa yüklenir.
+- Metin birincil anahtarlı tablolarda (`hava_durumu`: tarih + il) eksik anahtar sütunu başlıkta yakalanmıyordu.
+- Tekrarlanan sütun adı ve boş dosya için yanıltıcı mesaj yerine açık mesaj.
+- Tırnak içinde satır atlayan hücreden sonra satır numaraları doğru; hata listesinin sonunda
+  "ilk hatadan başlayın" ipucu (bir hatalı hasta satırı onlarca FOREIGN KEY hatasına yol açar).
+- Yükleme yarıda bir istisnayla kesilirse işlem geri alınıyor (yarım veri kalmıyor).
 - Windows'ta `newline=""` verilmeden yazılan CSV'lerdeki boş satırlar artık hata sayılmıyor, atlanıyor.
 - CSV başlığını okumak için açılan dosya kapatılmıyordu; Windows'ta dosya kilitli kalabiliyordu.
 

@@ -13,6 +13,7 @@ Hatalı satır varsa hiçbir şey yüklenmez; dosya, satır numarası ve ihlal e
 """
 import argparse
 import csv
+import io
 import re
 import sqlite3
 import sys
@@ -58,65 +59,93 @@ def sema_surumu(con: sqlite3.Connection) -> str:
 
 
 def sutun_bilgisi(con: sqlite3.Connection, tablo: str) -> dict:
-    # ad -> (zorunlu mu, varsayılanı var mı)
-    return {r[1]: (bool(r[3]) and not r[5], r[4] is not None)
-            for r in con.execute(f"PRAGMA table_info({tablo})")}
+    """ad -> CSV'de bulunması zorunlu mu. INTEGER PRIMARY KEY verilmezse SQLite numara atar."""
+    satirlar = con.execute(f"PRAGMA table_info({tablo})").fetchall()
+    tek_pk = sum(r[5] > 0 for r in satirlar) == 1
+    return {r[1]: (bool(r[3]) or r[5] > 0) and r[4] is None
+                  and not (tek_pk and r[5] and r[2].upper() == "INTEGER")
+            for r in satirlar}
+
+
+def csv_oku(dosya: Path) -> tuple[list[str], list[tuple[int, list[str]]], str]:
+    """(başlık, [(satır_no, hücreler)], ayırıcı). Hata varsa YuklemeHatasi."""
+    try:
+        # Tamamı okunur (Türkçe karakter dosyanın sonunda olabilir); satır sonları csv modülüne olduğu gibi gider.
+        metin = dosya.read_bytes().decode("utf-8-sig")
+    except UnicodeDecodeError as e:
+        raise YuklemeHatasi(f"{dosya.name} UTF-8 değil (bayt {e.start}). Excel'de 'CSV UTF-8 (virgülle ayrılmış)' "
+                            f"olarak kaydedin ya da pandas ile encoding='utf-8' yazın.")
+    ilk_satir = metin.split("\n", 1)[0]
+    if not ilk_satir.strip():
+        raise YuklemeHatasi(f"{dosya.name} boş ya da ilk satırı (sütun adları) boş.")
+    # Türkçe Excel CSV'yi noktalı virgülle kaydeder; ikisini de kabul et.
+    ayirici = ";" if ilk_satir.count(";") > ilk_satir.count(",") else ","
+    okuyucu = csv.reader(io.StringIO(metin, newline=""), delimiter=ayirici)
+    try:
+        baslik = [s.strip() for s in next(okuyucu)]
+        # line_num: tırnak içinde satır atlayan hücrelerde de doğru satır numarası
+        satirlar = [(okuyucu.line_num, satir) for satir in okuyucu]
+    except csv.Error as e:
+        raise YuklemeHatasi(f"{dosya.name} satır {okuyucu.line_num}: CSV okunamadı ({e})")
+    return baslik, satirlar, ayirici
 
 
 def csv_yukle(con: sqlite3.Connection, klasor: Path) -> None:
     if not klasor.is_dir():
         raise YuklemeHatasi(f"CSV klasörü bulunamadı: {klasor}")
-    hatalar = []
     con.execute("BEGIN")
+    try:
+        hatalar = _csv_tablolari_yukle(con, klasor)
+    except BaseException:
+        con.rollback()
+        raise
+    if hatalar:
+        con.rollback()
+        raise YuklemeHatasi(f"Şema kuralına aykırı satırlar (ilk {EN_FAZLA_HATA}):\n    " + "\n    ".join(hatalar)
+                            + "\n  İlk hatadan başlayın: sonraki FOREIGN KEY hataları çoğunlukla ondan kaynaklanır.")
+    con.commit()
+
+
+def _csv_tablolari_yukle(con: sqlite3.Connection, klasor: Path) -> list[str]:
+    hatalar = []
     for tablo in TABLOLAR:
         dosya, etiket = klasor / f"{tablo}.csv", ""
-        if not dosya.exists() and (REFERANS / f"{tablo}.csv").exists():
-            dosya, etiket = REFERANS / f"{tablo}.csv", " (schema/referans)"
         if not dosya.exists():
-            print(f"  - {tablo}: CSV yok, atlandı")
-            continue
+            # Sabit listeler (branşlar, tatiller): tablo boşsa referans dosyası kullanılır.
+            # --ornek ile birlikte kullanılınca örnek verinin üzerine yazılmaz.
+            bos = con.execute(f"SELECT NOT EXISTS (SELECT 1 FROM {tablo})").fetchone()[0]
+            if bos and (REFERANS / f"{tablo}.csv").exists():
+                dosya, etiket = REFERANS / f"{tablo}.csv", " (schema/referans)"
+            else:
+                print(f"  - {tablo}: CSV yok, atlandı")
+                continue
         bilgi = sutun_bilgisi(con, tablo)
-        try:
-            with dosya.open(encoding="utf-8-sig") as f:
-                ilk_satir = f.readline()
-        except UnicodeDecodeError:
-            raise YuklemeHatasi(f"{dosya.name} UTF-8 değil. Excel'de 'CSV UTF-8 (virgülle ayrılmış)' "
-                                f"olarak kaydedin ya da pandas ile encoding='utf-8' yazın.")
-        # Türkçe Excel CSV'yi noktalı virgülle kaydeder; ikisini de kabul et.
-        ayirici = ";" if ilk_satir.count(";") > ilk_satir.count(",") else ","
-        with dosya.open(encoding="utf-8-sig", newline="") as f:
-            okuyucu = csv.reader(f, delimiter=ayirici)
-            sutunlar = [s.strip() for s in next(okuyucu, [])]
-            bilinmeyen = [s for s in sutunlar if s not in bilgi]
-            eksik = [ad for ad, (zorunlu, varsayilan) in bilgi.items()
-                     if zorunlu and not varsayilan and ad not in sutunlar]
-            if bilinmeyen or eksik:
-                raise YuklemeHatasi(f"{dosya.name}: bilinmeyen sütun {bilinmeyen or '-'}, "
-                                    f"eksik zorunlu sütun {eksik or '-'}")
-            sql = f"INSERT INTO {tablo} ({','.join(sutunlar)}) VALUES ({','.join('?' * len(sutunlar))})"
-            for satir_no, satir in enumerate(okuyucu, start=2):
-                # Windows'ta newline="" verilmeden yazılan CSV'lerde her satır arasında boş satır olur.
-                if not any(h.strip() for h in satir):
-                    continue
-                if len(satir) != len(sutunlar):
-                    hatalar.append(f"{dosya.name} satır {satir_no}: {len(satir)} hücre var, {len(sutunlar)} bekleniyordu")
-                    continue
+        sutunlar, satirlar, ayirici = csv_oku(dosya)
+        tekrar = sorted({s for s in sutunlar if sutunlar.count(s) > 1})
+        bilinmeyen = [s for s in sutunlar if s not in bilgi]
+        eksik = [ad for ad, zorunlu in bilgi.items() if zorunlu and ad not in sutunlar]
+        if tekrar or bilinmeyen or eksik:
+            raise YuklemeHatasi(f"{dosya.name}: tekrarlanan sütun {tekrar or '-'}, bilinmeyen sütun {bilinmeyen or '-'}, "
+                                f"eksik zorunlu sütun {eksik or '-'}")
+        sql = f"INSERT INTO {tablo} ({','.join(sutunlar)}) VALUES ({','.join('?' * len(sutunlar))})"
+        for satir_no, satir in satirlar:
+            # Windows'ta newline="" verilmeden yazılan CSV'lerde her satır arasında boş satır olur.
+            if not any(h.strip() for h in satir):
+                continue
+            if len(satir) != len(sutunlar):
+                hatalar.append(f"{dosya.name} satır {satir_no}: {len(satir)} hücre var, {len(sutunlar)} bekleniyordu")
+            else:
                 degerler = [h if h != "" else None for h in satir]
                 if ayirici == ";":  # Türkçe Excel ondalığı: '4,2' → '4.2' (yoksa metin olarak saklanırdı)
                     degerler = [ONDALIK_VIRGUL.sub(r"\1.\2", h) if h else h for h in degerler]
                 try:
                     con.execute(sql, degerler)
-                except sqlite3.IntegrityError as e:
+                except sqlite3.DatabaseError as e:
                     hatalar.append(f"{dosya.name} satır {satir_no}: {e}")
-                if len(hatalar) >= EN_FAZLA_HATA:
-                    break
-        if len(hatalar) >= EN_FAZLA_HATA:
-            break
+            if len(hatalar) >= EN_FAZLA_HATA:
+                return hatalar
         print(f"  + {tablo}: {con.execute(f'SELECT COUNT(*) FROM {tablo}').fetchone()[0]} satır{etiket}")
-    if hatalar:
-        con.rollback()
-        raise YuklemeHatasi("Şema kuralına aykırı satırlar (ilk %d):\n    " % EN_FAZLA_HATA + "\n    ".join(hatalar))
-    con.commit()
+    return hatalar
 
 
 def disa_aktar(con: sqlite3.Connection, klasor: Path) -> None:

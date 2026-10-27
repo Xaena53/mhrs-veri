@@ -140,26 +140,100 @@ class KurulumTesti(unittest.TestCase):
             sessiz(kurulum.csv_yukle, con, self.csv)
         self.assertEqual(con.execute("SELECT COUNT(*) FROM hastalar").fetchone()[0], 0)
 
+    def test_buyuk_dosyada_sonradan_gelen_utf8_disi_karakter(self):
+        # Okuma tamponundan (8 KB) sonra gelen bozuk bayt eskiden programı çökertiyordu.
+        satirlar = ["ornek_id,metin,niyet"] + [f"{i},Evet geliyorum,ONAY" for i in range(10, 3000)]
+        satirlar.append("5000,Gelemeyeceğim,IPTAL")
+        (self.csv / "yanit_ornekleri.csv").write_bytes(("\n".join(satirlar) + "\n").encode("cp1254"))
+        self.reddedilmeli("yanit_ornekleri.csv UTF-8 değil")
+
+    def test_sayi_sutununa_metin(self):
+        # SQLite tip zorlamaz; '4.2 km' typeof CHECK'i olmadan REAL sütuna metin olarak girerdi.
+        self.degistir("randevular", ",4.2\n", ",4.2 km\n")
+        self.reddedilmeli("randevular.csv satır 2", "typeof(mesafe_km)")
+
+    def test_tam_sayi_sutununa_ondalik(self):
+        self.degistir("doktor_takvimi", ",15,28,1", ",15.5,28,1")
+        self.reddedilmeli("doktor_takvimi.csv satır 2", "typeof(slot_dk)")
+
+    def test_pandas_tam_sayilari_ondalikli_yazsa_da_kabul(self):
+        # pandas boş hücreli tam sayı sütununu '1.0' yazar; INTEGER sütunda 1'e dönüşür.
+        self.degistir("randevular", "\n1,1,2,2,2,1,", "\n1,1.0,2.0,2,2,1.0,")
+        con = self.yukle()
+        self.assertEqual(con.execute("SELECT typeof(hasta_id), typeof(sikayet_id) FROM randevular "
+                                     "WHERE randevu_id = 1").fetchone(), ("integer", "integer"))
+        self.assertTrue(sessiz(kurulum.denetle, con))
+
+    def test_tatil_tarihi_bos_olamaz(self):
+        self.degistir("tatiller", "\n2026-03-19,", "\n,")
+        self.reddedilmeli("NOT NULL constraint failed: tatiller.tarih")
+
+    def test_tekrarlanan_sutun(self):
+        self.degistir("yanit_ornekleri", "ornek_id,metin,niyet", "ornek_id,metin,metin")
+        self.reddedilmeli("tekrarlanan sütun ['metin']")
+
+    def test_bos_dosya(self):
+        (self.csv / "tatiller.csv").write_text("", encoding="utf-8")
+        self.reddedilmeli("tatiller.csv boş")
+
+    def test_eksik_birincil_anahtar_sutunu(self):
+        # INTEGER olmayan birincil anahtar (hava_durumu: tarih + il) CSV'de zorunludur.
+        dosya = self.csv / "hava_durumu.csv"
+        satirlar = [s.split(",", 1)[1] for s in dosya.read_text(encoding="utf-8").splitlines()]
+        dosya.write_text("\n".join(satirlar) + "\n", encoding="utf-8")
+        self.reddedilmeli("eksik zorunlu sütun ['tarih']")
+
+    def test_ornek_veriyle_birlikte_referans_yuklenmez(self):
+        con = sessiz(kurulum.kur, self.gecici / "test.db")
+        self.addCleanup(con.close)
+        con.executescript(kurulum.ORNEK.read_text(encoding="utf-8"))
+        bos = self.gecici / "bos"
+        bos.mkdir()
+        sessiz(kurulum.csv_yukle, con, bos)  # eskiden referans branşlar örnek branşlarla çakışıyordu
+        self.assertEqual(con.execute("SELECT COUNT(*) FROM branslar").fetchone()[0], 4)
+
+    def test_satir_numarasi_cok_satirli_hucreden_sonra_dogru(self):
+        # Tırnak içinde satır atlayan hücre satır sayımını kaydırmamalı.
+        self.degistir("sikayetler", "Sol kolum uyuştu, şiddetli", "Sol kolum uyuştu,\nşiddetli")
+        self.degistir("yanit_ornekleri", "\n3,", "\n3x,")
+        self.reddedilmeli("yanit_ornekleri.csv satır 4")
+
     # --- yüklenen ama denetimde yakalanması gerekenler ---------------------
 
-    def denetimde_hata(self):
+    def denetimde_yalniz(self, beklenen):
+        """Denetim yalnızca `beklenen` kurallarda (ad → aykırı satır sayısı) hata vermeli."""
         con = self.yukle()
+        bulunan = {ad: n for ad, sql in kurulum.DENETIMLER.items() if (n := con.execute(sql).fetchone()[0])}
+        self.assertEqual(bulunan, beklenen)
         self.assertFalse(sessiz(kurulum.denetle, con))
 
     def test_ogle_arasina_randevu(self):
         self.degistir("randevular", "2026-03-04 14:00:00", "2026-03-04 12:15:00")
         self.degistir("bildirimler", "2026-03-03 14:00:00", "2026-03-03 12:15:00")
-        self.denetimde_hata()
+        self.denetimde_yalniz({"Mesai dışı / öğle arası / slot ızgarasına oturmayan saat": 1})
+
+    def test_slot_izgarasina_oturmayan_saat(self):
+        self.degistir("randevular", "2026-03-04 14:00:00", "2026-03-04 14:07:00")
+        self.degistir("bildirimler", "2026-03-03 14:00:00", "2026-03-03 14:07:00")
+        self.denetimde_yalniz({"Mesai dışı / öğle arası / slot ızgarasına oturmayan saat": 1})
 
     def test_cinsiyet_kisiti(self):
-        # Kardiyolojiyi yalnız kadınlara açınca Ahmet'in (E) randevuları kurala aykırı düşer.
+        # Kardiyolojiyi yalnız kadınlara açınca Ahmet'in (E) 3 randevusu kurala aykırı düşer.
         self.degistir("branslar", "Kardiyoloji,15,18,,", "Kardiyoloji,15,18,,K")
-        self.denetimde_hata()
+        self.denetimde_yalniz({"Cinsiyet kısıtına uymayan randevu": 3})
 
     def test_on_sekizinci_dogum_gunu_siniri(self):
-        # Randevu 2026-03-02; 2008-03-03 doğumlu hasta o gün 17 yaşında → yetişkin branşına giremez.
+        # 2008-03-03 doğumlu: 2 Mart'ta 17 yaşında (aykırı), 3 Mart'ta tam 18 (uygun).
         self.degistir("hastalar", "1981-03-12", "2008-03-03")
-        self.denetimde_hata()
+        self.denetimde_yalniz({"Branşın yaş alt sınırının altında hasta": 1})
+
+    def test_yedek_kaydi_olmayan_yedek_randevu(self):
+        self.degistir("randevular", "NORMAL,1,4.2\n", "YEDEK_LISTE,1,4.2\n")
+        self.denetimde_yalniz({"Kaynağı YEDEK_LISTE ama hiçbir yedek kaydına atanmamış randevu": 1})
+
+    def test_hatirlatma_bayragi_bildirimle_uyusmuyor(self):
+        self.degistir("randevular", "YEDEK_LISTE,0,1.1", "YEDEK_LISTE,1,1.1")
+        self.denetimde_yalniz({"hatirlatma_gonderildi bayrağı ile HATIRLATMA bildirimi uyuşmuyor": 1})
 
     def test_kur_sqlite_olmayan_dosyayi_silmez(self):
         hedef = self.gecici / "schema.sql"

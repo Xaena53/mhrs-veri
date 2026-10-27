@@ -9,6 +9,8 @@
 -- Zaman alanları ISO-8601 metin: tarih 'YYYY-MM-DD', zaman 'YYYY-MM-DD HH:MM:SS',
 -- saat 'HH:MM'. Biçim CHECK ile zorlanır: '2026-3-2', '9:00', 30 Şubat reddedilir.
 -- Metin karşılaştırmaları (randevu_zamani >= olusturma_zamani gibi) bu biçime dayanır.
+-- SQLite sütun tipini zorlamaz ('4.2 km' REAL sütuna metin olarak girer); sayısal sütunlarda
+-- typeof() CHECK'i bunu engeller. '15.0' gibi değerler INTEGER sütunda otomatik 15 olur.
 --
 -- Tüm veriler sentetiktir; gerçek kişilerle ilgisi yoktur (KVKK).
 -- Not: SQLite yabancı anahtarları bağlantı başına açar. Kendi kodunuzda bağlanınca
@@ -26,9 +28,10 @@ PRAGMA user_version = 100;
 CREATE TABLE branslar (
     brans_id            INTEGER PRIMARY KEY,
     brans_adi           TEXT    NOT NULL UNIQUE,
-    ortalama_muayene_dk INTEGER NOT NULL DEFAULT 15 CHECK (ortalama_muayene_dk > 0),
-    yas_min             INTEGER CHECK (yas_min IS NULL OR yas_min >= 0),
-    yas_max             INTEGER CHECK (yas_max IS NULL OR yas_max >= 0),
+    ortalama_muayene_dk INTEGER NOT NULL DEFAULT 15
+                        CHECK (typeof(ortalama_muayene_dk) = 'integer' AND ortalama_muayene_dk > 0),
+    yas_min             INTEGER CHECK (yas_min IS NULL OR (typeof(yas_min) = 'integer' AND yas_min >= 0)),
+    yas_max             INTEGER CHECK (yas_max IS NULL OR (typeof(yas_max) = 'integer' AND yas_max >= 0)),
     cinsiyet_kisiti     TEXT    CHECK (cinsiyet_kisiti IN ('K','E')),     -- NULL = herkes
     CHECK (yas_min IS NULL OR yas_max IS NULL OR yas_min <= yas_max)
 );
@@ -39,8 +42,8 @@ CREATE TABLE hastaneler (
     tur         TEXT NOT NULL CHECK (tur IN ('DEVLET','EGITIM_ARASTIRMA','SEHIR','ILCE')),
     il          TEXT NOT NULL,
     ilce        TEXT NOT NULL,
-    enlem       REAL NOT NULL CHECK (enlem  BETWEEN 35 AND 43),          -- Türkiye sınırları
-    boylam      REAL NOT NULL CHECK (boylam BETWEEN 25 AND 45)
+    enlem       REAL NOT NULL CHECK (typeof(enlem)  IN ('real','integer') AND enlem  BETWEEN 35 AND 43),  -- Türkiye
+    boylam      REAL NOT NULL CHECK (typeof(boylam) IN ('real','integer') AND boylam BETWEEN 25 AND 45)
 );
 
 CREATE TABLE doktorlar (
@@ -64,8 +67,8 @@ CREATE TABLE hastalar (
     telefon         TEXT CHECK (telefon IS NULL OR telefon GLOB '0500[0-9][0-9][0-9][0-9][0-9][0-9][0-9]'),
     il              TEXT NOT NULL,
     ilce            TEXT NOT NULL,
-    enlem           REAL CHECK (enlem  IS NULL OR enlem  BETWEEN 35 AND 43),
-    boylam          REAL CHECK (boylam IS NULL OR boylam BETWEEN 25 AND 45),
+    enlem           REAL CHECK (enlem  IS NULL OR (typeof(enlem)  IN ('real','integer') AND enlem  BETWEEN 35 AND 43)),
+    boylam          REAL CHECK (boylam IS NULL OR (typeof(boylam) IN ('real','integer') AND boylam BETWEEN 25 AND 45)),
     kronik_hastalik TEXT,                                               -- virgülle ayrık, ör. 'Diyabet,Hipertansiyon'
     iletisim_kanali TEXT NOT NULL DEFAULT 'SMS'
                     CHECK (iletisim_kanali IN ('WHATSAPP','TELEGRAM','SMS','WEB')),
@@ -81,12 +84,12 @@ CREATE TABLE hava_durumu (
     tarih      TEXT NOT NULL CHECK (date(tarih) IS tarih),
     il         TEXT NOT NULL,
     durum      TEXT NOT NULL CHECK (durum IN ('GUNESLI','BULUTLU','YAGMURLU','KARLI')),
-    sicaklik_c REAL CHECK (sicaklik_c IS NULL OR sicaklik_c BETWEEN -40 AND 50),
+    sicaklik_c REAL CHECK (sicaklik_c IS NULL OR (typeof(sicaklik_c) IN ('real','integer') AND sicaklik_c BETWEEN -40 AND 50)),
     PRIMARY KEY (tarih, il)
 );
 
 CREATE TABLE tatiller (
-    tarih TEXT PRIMARY KEY CHECK (date(tarih) IS tarih),
+    tarih TEXT NOT NULL PRIMARY KEY CHECK (date(tarih) IS tarih),      -- TEXT PK'da NOT NULL şart (SQLite)
     ad    TEXT NOT NULL,
     tur   TEXT NOT NULL CHECK (tur IN ('RESMI','ARIFE','BAYRAM'))
 );
@@ -104,8 +107,8 @@ CREATE TABLE doktor_takvimi (
     bitis_saat       TEXT    NOT NULL DEFAULT '16:00' CHECK (strftime('%H:%M', bitis_saat) IS bitis_saat),
     ogle_baslangic   TEXT    DEFAULT '12:00' CHECK (strftime('%H:%M', ogle_baslangic) IS ogle_baslangic),
     ogle_bitis       TEXT    DEFAULT '13:00' CHECK (strftime('%H:%M', ogle_bitis) IS ogle_bitis),
-    slot_dk          INTEGER NOT NULL DEFAULT 15 CHECK (slot_dk > 0),
-    toplam_slot      INTEGER NOT NULL CHECK (toplam_slot >= 0),
+    slot_dk          INTEGER NOT NULL DEFAULT 15 CHECK (typeof(slot_dk) = 'integer' AND slot_dk > 0),
+    toplam_slot      INTEGER NOT NULL CHECK (typeof(toplam_slot) = 'integer' AND toplam_slot >= 0),
     calisiyor        INTEGER NOT NULL DEFAULT 1 CHECK (calisiyor IN (0,1)),   -- 0 = izin/rapor
     PRIMARY KEY (doktor_id, tarih),
     CHECK (baslangic_saat < bitis_saat),
@@ -160,7 +163,7 @@ CREATE TABLE randevular (
     kaynak                TEXT    NOT NULL DEFAULT 'NORMAL'
                           CHECK (kaynak IN ('NORMAL','YEDEK_LISTE','CHATBOT')),
     hatirlatma_gonderildi INTEGER NOT NULL DEFAULT 0 CHECK (hatirlatma_gonderildi IN (0,1)),
-    mesafe_km             REAL    CHECK (mesafe_km IS NULL OR mesafe_km >= 0),
+    mesafe_km             REAL    CHECK (mesafe_km IS NULL OR (typeof(mesafe_km) IN ('real','integer') AND mesafe_km >= 0)),
     CHECK (randevu_zamani >= olusturma_zamani),
     CHECK ((durum = 'IPTAL') = (iptal_zamani IS NOT NULL)),
     CHECK ((durum = 'IPTAL') = (iptal_kanali IS NOT NULL)),
@@ -182,7 +185,8 @@ CREATE TABLE yedek_liste (
     brans_id          INTEGER NOT NULL REFERENCES branslar(brans_id),
     hastane_id        INTEGER REFERENCES hastaneler(hastane_id),         -- NULL = fark etmez
     sikayet_id        INTEGER REFERENCES sikayetler(sikayet_id),
-    aciliyet_puani    INTEGER NOT NULL DEFAULT 3 CHECK (aciliyet_puani BETWEEN 1 AND 5),
+    aciliyet_puani    INTEGER NOT NULL DEFAULT 3
+                      CHECK (typeof(aciliyet_puani) = 'integer' AND aciliyet_puani BETWEEN 1 AND 5),
     tercih_zaman      TEXT    NOT NULL DEFAULT 'FARK_ETMEZ'
                       CHECK (tercih_zaman IN ('SABAH','OGLEDEN_SONRA','FARK_ETMEZ')),
     kayit_zamani      TEXT    NOT NULL CHECK (datetime(kayit_zamani) IS kayit_zamani),
