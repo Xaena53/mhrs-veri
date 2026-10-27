@@ -57,7 +57,7 @@ Sütun adında yazım hatası varsa (`dogumtarihi` gibi) bunu da söyler. Örnek
 ## Yol Haritası
 
 - [x] Hafta 1 — Repo, şema v0 (12 tablo + 4 görünüm), ER diyagramı, veri sözlüğü
-- [ ] Hafta 1 — Diğer gruplardan sütun listeleri (koordinasyon)
+- [x] Hafta 1 — Şema diğer 5 gruba iletildi, ilk dönüşlerde eksik yok ([notlar](docs/toplanti_notlari.md)); kalan gruplardan dönüş bekleniyor
 - [ ] Hafta 2 — Şema v1 + ER diyagramı, hasta/hastane/doktor verisi
 - [ ] Hafta 3 — Randevu geçmişi + no-show desenleri, 100 satırlık örnek veri
 - [ ] Hafta 4 — Şikayet metinleri, yedek liste, mesajlar
