@@ -11,6 +11,7 @@ import sqlite3
 import subprocess
 import sys
 import tempfile
+import time
 import unittest
 from pathlib import Path
 
@@ -84,6 +85,23 @@ class UreticiTesti(unittest.TestCase):
         oran = self.sayi("SELECT AVG(hedef_gelmedi) FROM v_noshow_ozellikleri")
         self.assertTrue(0.08 < oran < 0.35, oran)
 
+    def test_kucuk_veride_de_doluluk_anlamli(self):
+        ort = self.sayi("SELECT AVG(doluluk_yuzde) FROM v_doluluk WHERE tarih <= (SELECT date(veri_ani) FROM veri_bilgisi)")
+        self.assertGreater(ort, 35)
+
+    def test_klasor_kendi_basina_yeterli(self):
+        for ad in ("branslar", "tatiller"):
+            self.assertTrue((self.gecici / "a" / f"{ad}.csv").exists(), ad)
+
+    def test_kalip_no_egitim_test_ayrimi_icin_dolu(self):
+        self.assertEqual(self.sayi("SELECT COUNT(*) FROM sikayetler WHERE kalip_no IS NULL"), 0)
+        self.assertEqual(self.sayi("SELECT COUNT(*) FROM yanit_ornekleri WHERE kalip_no IS NULL"), 0)
+        # Bir kalıbın tüm cümleleri aynı etiketi taşır.
+        self.assertEqual(self.sayi("""SELECT COUNT(*) FROM (SELECT kalip_no FROM sikayetler GROUP BY kalip_no
+                                     HAVING COUNT(DISTINCT aciliyet) > 1 OR COUNT(DISTINCT COALESCE(brans_id, 0)) > 1)"""), 0)
+        self.assertEqual(self.sayi("""SELECT COUNT(*) FROM (SELECT kalip_no FROM yanit_ornekleri GROUP BY kalip_no
+                                     HAVING COUNT(DISTINCT niyet) > 1)"""), 0)
+
     def test_randevular_mesai_icinde_ve_hafta_ici(self):
         self.assertEqual(self.sayi("SELECT COUNT(*) FROM randevular WHERE strftime('%w', randevu_zamani) IN ('0','6')"), 0)
         self.assertEqual(self.sayi("""SELECT COUNT(*) FROM randevular WHERE strftime('%H', randevu_zamani) < '08'
@@ -138,6 +156,18 @@ class UreticiTesti(unittest.TestCase):
         # no_show_sayisi rastgele değil, randevularla tutarlı.
         self.assertEqual(self.sayi("SELECT SUM(no_show_sayisi) FROM v_chatbot_hastalar"),
                          self.sayi("SELECT COUNT(*) FROM randevular WHERE durum = 'GELMEDI'"))
+
+    def test_gorunumler_buyuk_veride_hizli(self):
+        # v_hasta_profili ilk hâlinde 5000 hastada 100 sn sürüyordu; hasta başına tarama geri gelmesin.
+        # Yavaşlık küçük veride görünmez, o yüzden bu test kendi büyük verisini üretir.
+        sonuc = uret(self.gecici / "buyuk", "--hasta", 3000, "--ay", 12)
+        self.assertEqual(sonuc.returncode, 0, sonuc.stdout + sonuc.stderr)
+        con = yukle(self.gecici / "buyuk", self.gecici / "buyuk.db")
+        self.addCleanup(con.close)
+        for gorunum in ("v_hasta_profili", "v_chatbot_hastalar"):
+            baslangic = time.perf_counter()
+            con.execute(f"SELECT * FROM {gorunum}").fetchall()
+            self.assertLess(time.perf_counter() - baslangic, 3, gorunum)
 
     def test_gecersiz_arguman(self):
         self.assertNotEqual(uret(self.gecici / "d", "--veri-ani", "2026-11-06").returncode, 0)

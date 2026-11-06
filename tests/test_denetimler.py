@@ -271,6 +271,67 @@ class DenetimTesti(unittest.TestCase):
         with self.assertRaises(sqlite3.IntegrityError):  # ikinci overbooking giremez
             self.calistir(ek.format(1).replace("VALUES (2,", "VALUES (3,"))
 
+    def test_chatbot_iptali_teyit_reddetti_olmali(self):
+        self.calistir("UPDATE randevular SET katilim_teyidi = 'BEKLENIYOR' WHERE randevu_id = 2")
+        self.yalniz({"Teyit durumu": 1})
+
+    def test_iptalden_sonra_onay_olmaz(self):
+        self.calistir("UPDATE randevular SET katilim_teyidi = 'ONAYLADI', onay_zamani = '2026-03-02 11:00:00' "
+                      "WHERE randevu_id = 2")
+        self.yalniz({"Teyit durumu": 1})
+
+    def doktor_izinli_gun(self, calisiyor):
+        self.calistir(f"INSERT INTO doktor_takvimi VALUES (2,'2026-03-05','08:00','16:00','12:00','13:00',15,28,{calisiyor})",
+                      "INSERT INTO hava_durumu VALUES ('2026-03-05','Eskişehir','GUNESLI',9)",
+                      """INSERT INTO randevular (hasta_id, doktor_id, brans_id, hastane_id, olusturma_zamani, randevu_zamani,
+                             durum, iptal_zamani, iptal_kanali, iptal_nedeni)
+                         VALUES (2, 2, 2, 2, '2026-02-20 10:00:00', '2026-03-05 09:00:00', 'IPTAL',
+                                 '2026-03-01 08:00:00', 'SISTEM', 'DOKTOR_IZNI')""")
+
+    def test_doktor_izni_gecerli(self):
+        self.doktor_izinli_gun(0)
+        self.yalniz({})
+
+    def test_doktor_izni_ama_doktor_calisiyor(self):
+        self.doktor_izinli_gun(1)
+        self.yalniz({"Doktor izni": 1})
+
+    def test_cifte_randevu_slotta_normal_randevu_olmadan(self):
+        self.calistir("""INSERT INTO randevular (hasta_id, doktor_id, brans_id, hastane_id, olusturma_zamani, randevu_zamani,
+                          durum, cifte_randevu) VALUES (2, 2, 2, 2, '2026-02-20 10:00:00', '2026-03-02 09:15:00', 'GELDI', 1)""")
+        self.yalniz({"Çifte randevu": 1})
+
+    def test_yedek_tercihine_uymayan_atama(self):
+        self.calistir("UPDATE yedek_liste SET tercih_zaman = 'OGLEDEN_SONRA' WHERE kayit_id = 1")
+        self.yalniz({"Yedekten atanan": 1})
+
+    def test_yedek_hastanesinde_brans_doktoru_yok(self):
+        self.calistir("INSERT INTO yedek_liste (hasta_id, brans_id, hastane_id, kayit_zamani) "
+                      "VALUES (2, 1, 2, '2026-03-01 10:00:00')")  # 2. hastanede Dahiliye doktoru yok
+        self.yalniz({"Yedek kaydının seçtiği": 1})
+
+    def test_randevu_sikayeti_baska_bransta(self):
+        self.calistir("UPDATE randevular SET sikayet_id = 1 WHERE randevu_id = 3",
+                      "UPDATE sikayetler SET brans_id = 1 WHERE sikayet_id = 1")
+        self.yalniz({"Şikayet branşı": 4})
+
+    def test_acil_vakaya_randevu_verilmez(self):
+        self.calistir("UPDATE randevular SET sikayet_id = 2 WHERE randevu_id = 3")
+        self.yalniz({"Şikayet branşı": 1})
+
+    def test_telefon_tek_hastaya_ait(self):
+        with self.assertRaises(sqlite3.IntegrityError):
+            self.calistir("UPDATE hastalar SET telefon = '05001234567' WHERE hasta_id = 2")
+
+    def test_hasta_profili_kilavuzdaki_gibi(self):
+        self.calistir("INSERT INTO veri_bilgisi (tek, veri_ani) VALUES (1, '2026-03-10 09:00:00')")
+        self.assertEqual(self.con.execute("""SELECT yas, son_1_yil_randevu, son_1_yil_gelmeme, son_1_yil_iptal, en_sik_brans
+                                             FROM v_hasta_profili WHERE hasta_id = 1""").fetchone(),
+                         (44, 3, 1, 1, "Kardiyoloji"))  # 12 Mart doğumlu: 45'ine henüz girmedi
+        self.calistir("UPDATE veri_bilgisi SET veri_ani = '2028-01-01 09:00:00'")  # bir yıl dışı sayılmaz
+        self.assertEqual(self.con.execute("""SELECT son_1_yil_randevu, son_1_yil_gelmeme, en_sik_brans
+                                             FROM v_hasta_profili WHERE hasta_id = 1""").fetchone(), (0, 0, None))
+
     def test_veri_ani_saatin_yerine_gecer(self):
         # Gelecek tarihli bekleyen randevu, veri anı ondan sonraya alınınca "zamanı geçmiş" olur.
         self.gun_hazirla(GELECEK.isoformat())

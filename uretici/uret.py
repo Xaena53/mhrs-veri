@@ -6,7 +6,7 @@ Kullanım:
     python schema/kurulum.py --csv cikti/csv                # yükle ve denetle
 
 Aynı --tohum, --veri-ani ve Faker sürümü (requirements.txt) her bilgisayarda aynı veriyi üretir. Veri --veri-ani anına göre yazılır:
-öncesi geçmiş (GELDI/GELMEDI), sonrası gelecek (BEKLIYOR). branslar ve tatiller schema/referans'tan gelir.
+öncesi geçmiş (GELDI/GELMEDI), sonrası gelecek (BEKLIYOR). branslar ve tatiller schema/referans'tan kopyalanır.
 
 Gelmeme olasılığına gömülü desenler (3. grubun bulması gereken ilişkiler), bkz. gelmeme_olasiligi():
 geçmiş gelmemeler, kişisel eğilim, yağmur/kar, uzun bekleme, genç yaş, mesafe, tatil yakınlığı,
@@ -268,13 +268,18 @@ class Uretici:
         kapasite = sum(self.slot_sayisi(d.brans_id) for d in self.doktorlar) * hafta
         hedef = self.hasta_sayisi * YIL_RANDEVU * self.ay / 12
         poliklinik_gun = min(5, max(1, round(hedef / 0.72 / kapasite)))
-        self.doluluk = min(0.88, hedef / (kapasite * poliklinik_gun))
+        # Küçük veri setinde doktor sayısı inemez (her branş için biri gerekir); doluluk %3'e düşmesin diye
+        # doktorlar her hafta değil, bazı haftalar poliklinik yapar. En az dönem başına bir gün.
+        gun_orani = min(1, max(hedef / 0.72 / (kapasite * poliklinik_gun), 1 / hafta))
+        self.doluluk = min(0.88, hedef / (kapasite * poliklinik_gun * gun_orani))
         gun = self.bas
         while gun <= self.bit:
             tatil = self.tatiller.get(gun.isoformat())
             if gun.weekday() < 5 and tatil not in ("RESMI", "BAYRAM"):
                 for d in self.doktorlar:
                     if (gun.weekday() - d.gun) % 5 >= poliklinik_gun or (d.son_gun and gun > d.son_gun):
+                        continue
+                    if self.r.random() > gun_orani:
                         continue
                     bitis, ogle = ("13:00", (None, None)) if tatil == "ARIFE" else ("16:00", ("12:00", "13:00"))
                     slot = self.slot_dk[d.brans_id]
@@ -290,10 +295,11 @@ class Uretici:
 
     def sikayetler_uret(self):
         self.sikayetler, self.brans_sikayet, gorulen = [], {}, set()
-        no = itertools.count(1)
+        no, kalip_sayac = itertools.count(1), itertools.count(1)
         for brans, kaliplar in M.SIKAYETLER.items():
             brans_id = self.brans_no[brans]
             for metin, aciliyet, alternatif in kaliplar:
+                kalip = next(kalip_sayac)
                 sureli = not any(k in metin for k in M.SURESIZ_KALIPLAR)
                 baslar = [""] + (M.ZAMAN_IFADELERI if sureli else [])
                 sonlar = [""] + M.KAPANISLAR + (M.SURELI_KAPANISLAR if sureli else [])
@@ -307,9 +313,10 @@ class Uretici:
                             continue
                         gorulen.add(cumle)
                         s = next(no)
-                        self.sikayetler.append([s, cumle, brans_id, self.brans_no.get(alternatif), aciliyet, "SABLON"])
+                        self.sikayetler.append([s, cumle, brans_id, self.brans_no.get(alternatif), aciliyet, "SABLON", kalip])
                         self.brans_sikayet.setdefault(brans_id, []).append((s, aciliyet))
         for metin in M.ACIL_SIKAYETLER:
+            kalip = next(kalip_sayac)
             if any(k in metin for k in M.ACIL_SURESIZ_KALIPLAR):
                 baslar = [""]
             elif any(k in metin for k in M.ACIL_OLAY_KALIPLARI):
@@ -321,14 +328,15 @@ class Uretici:
                     cumle = cumle_kur(bas, metin, son)
                     if cumle not in gorulen:
                         gorulen.add(cumle)
-                        self.sikayetler.append([next(no), cumle, None, None, "ACIL", "SABLON"])
+                        self.sikayetler.append([next(no), cumle, None, None, "ACIL", "SABLON", kalip])
 
     def yanitlar_uret(self):
         no = itertools.count(1)
         # Hasta aynı şeyi farklı yazar: küçük harf, selam, noktalama. Niyet sınıflandırması için çeşitlilik.
-        self.yanit_ornekleri, gorulen = [], set()
+        self.yanit_ornekleri, gorulen, kalip_sayac = [], set(), itertools.count(1)
         for niyet, liste in M.YANITLAR.items():
             for metin in liste:
+                kalip = next(kalip_sayac)
                 kucuk = metin.replace("I", "ı").replace("İ", "i").lower()
                 noktali = metin[-1] in ".?!"
                 for cesit in (metin, kucuk, metin if noktali else f"{metin}.", f"Merhaba, {kucuk}",
@@ -337,7 +345,7 @@ class Uretici:
                               .replace("ö", "o").replace("ç", "c")):
                     if cesit not in gorulen:
                         gorulen.add(cesit)
-                        self.yanit_ornekleri.append([next(no), cesit, niyet])
+                        self.yanit_ornekleri.append([next(no), cesit, niyet, kalip])
 
     def yedek_uret(self):
         self.yedekler, self.yedek_brans, ciftler = [], {}, set()
@@ -393,7 +401,7 @@ class Uretici:
         x += 0.9 * min(bekleme, 45) / 45
         x += 0.45 if 18 <= yas <= 35 else (-0.2 if yas >= 65 else 0)
         x += 0.7 * min(km, 40) / 40
-        yakin = {(gun + dt.timedelta(days=k)).isoformat() for k in (-1, 1)}
+        yakin = {(gun + dt.timedelta(days=k)).isoformat() for k in (-1, 0, 1)}  # v_noshow'daki tatil_yakin ile aynı
         x += 0.45 if yakin & set(self.tatiller) else 0
         x += -0.5 if hatirlatma else 0
         x += {"ONAYLADI": -0.7}.get(teyit, 0.25 if hatirlatma else 0)
@@ -486,6 +494,7 @@ class Uretici:
                    if y.durum == "BEKLIYOR" and y.kayit <= iptal_ani
                    and iptal_ani < y.kayit + dt.timedelta(days=YEDEK_OMUR_GUN)
                    and y.hastane_id in (None, d.hastane_id) and y.hasta is not iptal_eden
+                   and not (y.tercih == "SABAH" and t.hour >= 12) and not (y.tercih == "OGLEDEN_SONRA" and t.hour < 13)
                    and (y.hasta.id, t) not in self.dolu and self.uygun(y.hasta, d.brans_id, t.date())]
         adaylar.sort(key=lambda y: (-y.puan, mesafe_km(y.hasta.enlem, y.hasta.boylam, *konum), y.kayit))
         gonderim = iptal_ani + dt.timedelta(seconds=30)
@@ -594,6 +603,9 @@ class Uretici:
 
         z = lambda v: zaman(v) if v else None  # noqa: E731
         dosya("veri_bilgisi", ["tek", "veri_ani", "tohum"], [[1, zaman(self.veri_ani), self.tohum]])
+        # Klasör kendi başına yeterli olsun: kurulum.py kullanmadan pandas ile okuyan grup branş adlarını da bulsun.
+        for ad, satirlar in (("branslar", self.branslar), ("tatiller", self.csv_oku("tatiller.csv"))):
+            dosya(ad, list(satirlar[0]), [list(s.values()) for s in satirlar])
         dosya("hastaneler", ["hastane_id", "hastane_adi", "tur", "il", "ilce", "enlem", "boylam"], self.hastaneler)
         dosya("doktorlar", ["doktor_id", "ad", "soyad", "unvan", "brans_id", "hastane_id", "aktif"], self.doktor_satirlari)
         dosya("hastalar", ["hasta_id", "ad", "soyad", "cinsiyet", "dogum_tarihi", "telefon", "il", "ilce", "enlem", "boylam",
@@ -603,8 +615,9 @@ class Uretici:
         dosya("hava_durumu", ["tarih", "il", "durum", "sicaklik_c"], self.hava)
         dosya("doktor_takvimi", ["doktor_id", "tarih", "baslangic_saat", "bitis_saat", "ogle_baslangic", "ogle_bitis",
                                  "slot_dk", "toplam_slot", "calisiyor"], self.takvim)
-        dosya("sikayetler", ["sikayet_id", "metin", "brans_id", "alternatif_brans_id", "aciliyet", "kaynak"], self.sikayetler)
-        dosya("yanit_ornekleri", ["ornek_id", "metin", "niyet"], self.yanit_ornekleri)
+        dosya("sikayetler", ["sikayet_id", "metin", "brans_id", "alternatif_brans_id", "aciliyet", "kaynak", "kalip_no"],
+              self.sikayetler)
+        dosya("yanit_ornekleri", ["ornek_id", "metin", "niyet", "kalip_no"], self.yanit_ornekleri)
         dosya("randevular", ["randevu_id", "hasta_id", "doktor_id", "brans_id", "hastane_id", "sikayet_id", "olusturma_zamani",
                              "randevu_zamani", "durum", "iptal_zamani", "iptal_kanali", "kaynak", "hatirlatma_gonderildi",
                              "mesafe_km", "katilim_teyidi", "onay_zamani", "iptal_nedeni", "cifte_randevu"],

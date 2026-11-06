@@ -1,8 +1,8 @@
 -- =====================================================================
 -- MHRS Akıllı Otomasyon — Modül 1: Veri Yönetimi ve Sentetik Veri
--- Veritabanı şeması v1.1  (SQLite 3.28+)
+-- Veritabanı şeması v1.2  (SQLite 3.28+)
 --
--- Sürüm PRAGMA user_version'da tutulur: büyük*100 + küçük (v1.1 = 101, v1.2 = 102).
+-- Sürüm PRAGMA user_version'da tutulur: büyük*100 + küçük (v1.2 = 102, v1.3 = 103).
 -- Kendi kodunuzda "PRAGMA user_version;" ile beklediğiniz sürüme karşı kontrol edebilirsiniz.
 -- Değişiklikler: docs/degisiklikler.md
 --
@@ -18,7 +18,7 @@
 -- =====================================================================
 
 PRAGMA foreign_keys = ON;
-PRAGMA user_version = 101;
+PRAGMA user_version = 102;
 
 -- ---------------------------------------------------------------------
 -- 0) VERİ SETİ BİLGİSİ
@@ -70,7 +70,7 @@ CREATE TABLE doktorlar (
 );
 
 -- Hasta profilleri. TC kimlik no TUTULMAZ; yalnızca hasta_id kullanılır.
--- Telefon: gerçek bir kişiye denk gelmesin diye operatörlere atanmamış 0500 ön ekiyle üretilir.
+-- Telefon sahtedir (0500 ön eki); bu numaralara gerçek mesaj gönderilmez.
 CREATE TABLE hastalar (
     hasta_id        INTEGER PRIMARY KEY,
     ad              TEXT NOT NULL,
@@ -90,6 +90,9 @@ CREATE TABLE hastalar (
     -- Chatbot mesajı telefon numarasına gider; telefonsuz hasta yalnız WEB kanalını kullanabilir.
     CHECK (iletisim_kanali = 'WEB' OR telefon IS NOT NULL)
 );
+
+-- Chatbot hastayı telefonundan tanır; bir numara tek hastaya aittir.
+CREATE UNIQUE INDEX ux_hasta_telefon ON hastalar(telefon) WHERE telefon IS NOT NULL;
 
 -- ---------------------------------------------------------------------
 -- 2) DIŞ ETKENLER (No-Show modeli için)
@@ -147,6 +150,7 @@ CREATE TABLE sikayetler (
                         CHECK (aciliyet IN ('RUTIN','ONCELIKLI','ACIL')),
     kaynak              TEXT NOT NULL DEFAULT 'SABLON'
                         CHECK (kaynak IN ('SABLON','LLM','ELLE')),
+    kalip_no            INTEGER,  -- v1.2: aynı kalıptan türeyen cümleler; eğitim/test ayrımı buna göre yapılmalı
     CHECK (aciliyet = 'ACIL' OR brans_id IS NOT NULL),
     CHECK (alternatif_brans_id IS NULL OR alternatif_brans_id IS NOT brans_id)
 );
@@ -155,7 +159,8 @@ CREATE TABLE sikayetler (
 CREATE TABLE yanit_ornekleri (
     ornek_id INTEGER PRIMARY KEY,
     metin    TEXT NOT NULL CHECK (length(trim(metin)) > 0),
-    niyet    TEXT NOT NULL CHECK (niyet IN ('ONAY','IPTAL','ERTELEME','SORU','BELIRSIZ'))
+    niyet    TEXT NOT NULL CHECK (niyet IN ('ONAY','IPTAL','ERTELEME','SORU','BELIRSIZ')),
+    kalip_no INTEGER   -- v1.2: aynı cümlenin yazım çeşitleri; eğitim/test ayrımı buna göre yapılmalı
 );
 
 -- ---------------------------------------------------------------------
@@ -375,7 +380,8 @@ SELECT
     b.brans_adi,
     s.alternatif_brans_id,
     ab.brans_adi AS alternatif_brans_adi,
-    s.kaynak
+    s.kaynak,
+    s.kalip_no
 FROM sikayetler s
 LEFT JOIN branslar b  ON b.brans_id  = s.brans_id
 LEFT JOIN branslar ab ON ab.brans_id = s.alternatif_brans_id;
@@ -407,8 +413,17 @@ WHERE r.durum = 'BEKLIYOR';
 CREATE VIEW v_hasta_profili AS
 WITH an AS (SELECT COALESCE((SELECT veri_ani FROM veri_bilgisi), datetime('now','localtime')) AS simdi),
 gecmis AS (
-    SELECT r.* FROM randevular r, an
+    SELECT r.hasta_id, r.brans_id, r.durum FROM randevular r, an
     WHERE r.randevu_zamani <= an.simdi AND r.randevu_zamani > datetime(an.simdi, '-1 year')
+),
+sayim AS (
+    SELECT hasta_id, COUNT(*) AS randevu, SUM(durum = 'GELMEDI') AS gelmeme, SUM(durum = 'IPTAL') AS iptal
+    FROM gecmis GROUP BY hasta_id
+),
+brans_sira AS (
+    SELECT hasta_id, brans_id,
+           ROW_NUMBER() OVER (PARTITION BY hasta_id ORDER BY COUNT(*) DESC, brans_id) AS sira
+    FROM gecmis GROUP BY hasta_id, brans_id
 )
 SELECT
     h.hasta_id,
@@ -418,27 +433,32 @@ SELECT
       - (strftime('%m-%d', an.simdi) < strftime('%m-%d', h.dogum_tarihi))       AS yas,
     h.cinsiyet,
     h.kronik_hastalik,
-    (SELECT COUNT(*) FROM gecmis g WHERE g.hasta_id = h.hasta_id)                         AS son_1_yil_randevu,
-    (SELECT COUNT(*) FROM gecmis g WHERE g.hasta_id = h.hasta_id AND g.durum = 'GELMEDI') AS son_1_yil_gelmeme,
-    (SELECT COUNT(*) FROM gecmis g WHERE g.hasta_id = h.hasta_id AND g.durum = 'IPTAL')   AS son_1_yil_iptal,
-    (SELECT b.brans_adi FROM gecmis g JOIN branslar b USING(brans_id)
-     WHERE g.hasta_id = h.hasta_id
-     GROUP BY g.brans_id ORDER BY COUNT(*) DESC, g.brans_id LIMIT 1)                      AS en_sik_brans
-FROM hastalar h, an;
+    COALESCE(s.randevu, 0)                                      AS son_1_yil_randevu,
+    COALESCE(s.gelmeme, 0)                                      AS son_1_yil_gelmeme,
+    COALESCE(s.iptal, 0)                                        AS son_1_yil_iptal,
+    b.brans_adi                                                 AS en_sik_brans
+FROM hastalar h
+CROSS JOIN an
+LEFT JOIN sayim s      ON s.hasta_id = h.hasta_id
+LEFT JOIN brans_sira t ON t.hasta_id = h.hasta_id AND t.sira = 1
+LEFT JOIN branslar b   ON b.brans_id = t.brans_id;
 
 -- 4. Grup (Chatbot): bu grubun istediği biçimde hastalar (ilk 5 sütun), artı mesaj için telefon ve kanal.
 CREATE VIEW v_chatbot_hastalar AS
+WITH an AS (SELECT COALESCE((SELECT veri_ani FROM veri_bilgisi), datetime('now','localtime')) AS simdi),
+gelmeme AS (SELECT hasta_id, COUNT(*) AS n FROM randevular WHERE durum = 'GELMEDI' GROUP BY hasta_id)
 SELECT
     printf('H%03d', h.hasta_id)                                 AS hasta_id,
     h.ad || ' ' || h.soyad                                      AS ad_soyad,
-    p.yas,
+    CAST(strftime('%Y', an.simdi) AS INTEGER) - CAST(strftime('%Y', h.dogum_tarihi) AS INTEGER)
+      - (strftime('%m-%d', an.simdi) < strftime('%m-%d', h.dogum_tarihi))       AS yas,
     CASE h.cinsiyet WHEN 'K' THEN 'Kadın' ELSE 'Erkek' END      AS cinsiyet,
-    (SELECT COUNT(*) FROM randevular r
-     WHERE r.hasta_id = h.hasta_id AND r.durum = 'GELMEDI')     AS no_show_sayisi,
+    COALESCE(g.n, 0)                                            AS no_show_sayisi,
     h.telefon,
     h.iletisim_kanali
 FROM hastalar h
-JOIN v_hasta_profili p USING(hasta_id);
+CROSS JOIN an
+LEFT JOIN gelmeme g ON g.hasta_id = h.hasta_id;
 
 -- 4. Grup (Chatbot): bu grubun istediği sütun adları ve değerleriyle randevular.
 CREATE VIEW v_chatbot_randevular AS

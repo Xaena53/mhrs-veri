@@ -63,7 +63,7 @@ class KurulumTesti(unittest.TestCase):
 
     def test_sema_surumu(self):
         con = self.yukle()
-        self.assertEqual(kurulum.sema_surumu(con), "v1.1")
+        self.assertEqual(kurulum.sema_surumu(con), "v1.2")
 
     def test_csv_gidis_donus_satir_sayilari_ayni(self):
         con = self.yukle()
@@ -101,6 +101,20 @@ class KurulumTesti(unittest.TestCase):
         ref = self.yukle(bos)
         sorgu = "SELECT * FROM branslar WHERE brans_id <= 4 ORDER BY brans_id"
         self.assertEqual(ornek.execute(sorgu).fetchall(), ref.execute(sorgu).fetchall())
+
+    def test_eski_surum_csvleri_yeni_sutunlar_olmadan_yuklenir(self):
+        # v1.0 sözleşmesiyle yazılmış dosyalar: sonradan eklenen isteğe bağlı sütunlar ve veri_bilgisi yok.
+        (self.csv / "veri_bilgisi.csv").unlink()
+        for tablo, atilacak in [("randevular", ["katilim_teyidi", "onay_zamani", "iptal_nedeni", "cifte_randevu"]),
+                                ("sikayetler", ["kalip_no"]), ("yanit_ornekleri", ["kalip_no"])]:
+            dosya = self.csv / f"{tablo}.csv"
+            with dosya.open(encoding="utf-8", newline="") as f:
+                satirlar = list(csv.reader(f))
+            tut = [i for i, s in enumerate(satirlar[0]) if s not in atilacak]
+            with dosya.open("w", encoding="utf-8", newline="") as f:
+                csv.writer(f).writerows([[s[i] for i in tut] for s in satirlar])
+        con = self.yukle()
+        self.assertEqual(con.execute("SELECT DISTINCT katilim_teyidi FROM randevular").fetchall(), [("BEKLENIYOR",)])
 
     def test_turkce_excel_metin_sutunundaki_virgule_dokunulmaz(self):
         # Ondalık virgül düzeltmesi yalnız sayı sütunlarına uygulanmalı: "10,30" bir cevap metnidir.
@@ -226,7 +240,7 @@ class KurulumTesti(unittest.TestCase):
         self.reddedilmeli("NOT NULL constraint failed: tatiller.tarih")
 
     def test_tekrarlanan_sutun(self):
-        self.degistir("yanit_ornekleri", "ornek_id,metin,niyet", "ornek_id,metin,metin")
+        self.degistir("yanit_ornekleri", "ornek_id,metin,niyet,kalip_no", "ornek_id,metin,metin,kalip_no")
         self.reddedilmeli("tekrarlanan sütun ['metin']")
 
     def test_bos_dosya(self):

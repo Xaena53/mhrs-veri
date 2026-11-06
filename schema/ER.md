@@ -1,4 +1,4 @@
-# ER Diyagramı (Şema v1.1)
+# ER Diyagramı (Şema v1.2)
 
 GitHub bu diyagramı otomatik çizer. Tüm sütunlar gösterilir; kurallar ve açıklamalar için
 [veri sözlüğüne](../docs/veri_sozlugu.md) bakın.
@@ -81,6 +81,7 @@ erDiagram
         int alternatif_brans_id FK
         text aciliyet
         text kaynak
+        int kalip_no
     }
     randevular {
         int randevu_id PK
@@ -147,6 +148,7 @@ erDiagram
         int ornek_id PK
         text metin
         text niyet
+        int kalip_no
     }
 ```
 

@@ -36,7 +36,7 @@ python schema/kurulum.py --csv cikti/csv --gorunum-aktar cikti/gorunum   # hazı
 python schema/kurulum.py --csv cikti/ornek_csv   # Faker kurmadan: repodaki küçük örnekle dene
 ```
 
-- Şema: [`schema/schema.sql`](schema/schema.sql) — **v1.1**, 13 tablo, 10 hazır görünüm, biçim ve tutarlılık kuralları
+- Şema: [`schema/schema.sql`](schema/schema.sql) — **v1.2**, 13 tablo, 10 hazır görünüm, biçim ve tutarlılık kuralları
 - ER diyagramı: [`schema/ER.md`](schema/ER.md)
 - Veri sözlüğü: [`docs/veri_sozlugu.md`](docs/veri_sozlugu.md) · Değişiklikler: [`docs/degisiklikler.md`](docs/degisiklikler.md)
 
@@ -48,7 +48,7 @@ python schema/kurulum.py --csv cikti/ornek_csv   # Faker kurmadan: repodaki kü�
 
 Aynı tohum, veri anı ve Faker sürümü aynı veriyi üretir; gruplar aynı veri üzerinde çalışabilir. Gelmeme olasılığına gömülü
 desenler: geçmiş gelmemeler, yağmur/kar, uzun bekleme, genç yaş, mesafe, tatil yakınlığı, hatırlatma ve hastanın onayı
-(`gelmeme_olasiligi()`). Basit bir modelle AUC yaklaşık 0,70 çıkar; yani öğrenilebilir ama ezberlenemez.
+(`gelmeme_olasiligi()`). Basit bir modelle AUC tohuma göre 0,67–0,71 çıkar; yani öğrenilebilir ama ezberlenemez.
 
 ### Sentetik Veri ekibi için CSV sözleşmesi
 
@@ -57,9 +57,8 @@ UTF-8, boş hücre = NULL (Türkçe Excel'in `;` ayırıcısı da kabul edilir).
 varsa hiçbir şeyi yüklemez; dosya adı, satır numarası ve ihlal edilen kuralı gösterir.
 Sütun adında (`dogumtarihi`) ya da dosya adında (`hasta.csv`) yazım hatası varsa bunu da söyler.
 Yüklenen verinin uyması gereken tablolar arası kurallar [veri sözlüğünde](docs/veri_sozlugu.md#üretilen-verinin-uyması-gereken-kurallar) listelidir.
-`branslar.csv` ve `tatiller.csv` üretmenize gerek yok: klasörde yoksa `schema/referans/` altındakiler yüklenir.
-Pandas ile yazarken `df.to_csv(yol, index=False, encoding="utf-8")` yeterli. Örnek biçim için:
-`python schema/kurulum.py --ornek --disa-aktar cikti/ornek_csv`
+`branslar.csv` ve `tatiller.csv` klasörde yoksa `schema/referans/` altındakiler yüklenir.
+Pandas ile yazarken `df.to_csv(yol, index=False, encoding="utf-8")` yeterli. Örnek biçim: [`cikti/ornek_csv/`](cikti/ornek_csv/).
 
 ## Diğer Modüllerin Veri İhtiyaçları
 
@@ -73,12 +72,30 @@ Pandas ile yazarken `df.to_csv(yol, index=False, encoding="utf-8")` yeterli. Ör
 
 ## Yol Haritası
 
-- [x] Hafta 1 — Repo, şema v0 (12 tablo + 4 görünüm), ER diyagramı, veri sözlüğü
-- [x] Hafta 1 — Şema diğer 5 gruba iletildi, ilk dönüşlerde eksik yok ([notlar](docs/toplanti_notlari.md)); kalan gruplardan dönüş bekleniyor
-- [x] Hafta 2 — Şema v1.0 sabitlendi, ER diyagramı tüm sütunlarla, branş/tatil referansları, 3 yeni görünüm, 65 test ([değişiklikler](docs/degisiklikler.md))
-- [x] Hafta 2–5 — Üretici tüm tabloları yazıyor: hasta/hastane/doktor, randevu geçmişi ve no-show desenleri, şikayet metinleri, yedek liste, mesajlar; örnek veri repoda; 90 test ([değişiklikler](docs/degisiklikler.md))
-- [ ] Chatbot grubunun sütun isteklerinin ve 2 saat kuralının teyidi (koordinasyon)
-- [ ] Metinlerin ve desenlerin ekipçe gözden geçirilmesi, diğer grupların geri bildirimi
-- [ ] Sonrası — Geri bildirime göre düzeltmeler, rapor ve sunum
+Tamamlanan: işin yapıldığı ve testlerden geçtiği anlamına gelir. Değişikliklerin ayrıntısı: [`docs/degisiklikler.md`](docs/degisiklikler.md).
+
+**Hafta 1**
+- [x] Repo, klasör yapısı, şema taslağı, ER diyagramı, veri sözlüğü (Veritabanı & Altyapı)
+- [x] Şema diğer 5 gruba iletildi, ilk dönüşler alındı ([notlar](docs/toplanti_notlari.md)) (Koordinasyon)
+- [ ] İnceleyip döneceğini söyleyen grupların cevapları (Koordinasyon)
+
+**Hafta 2**
+- [x] Şema sabitlendi, ER diyagramı tüm sütunlarla, branş ve tatil referansları (Veritabanı & Altyapı)
+- [x] Hasta, hastane ve doktor verisi (Sentetik Veri)
+- [ ] Chatbot grubunun sütun isteklerinin ve 2 saat kuralının teyidi (Koordinasyon)
+
+**Hafta 3**
+- [x] Randevu geçmişi ve no-show desenleri, küçük örnek veri: [`cikti/ornek_csv/`](cikti/ornek_csv/) (Sentetik Veri)
+
+**Hafta 4**
+- [x] Şikayet metinleri, yedek liste, mesajlar (Sentetik Veri)
+
+**Hafta 5**
+- [x] Tam veri seti üretimi (`python uretici/uret.py`), doğrulama, güncel veri sözlüğü (Veritabanı & Altyapı, Sentetik Veri)
+
+**Açık işler**
+- [ ] Üreticinin ve metinlerin Sentetik Veri ekibince gözden geçirilmesi (Ceyda O., Nevra E.)
+- [ ] Diğer grupların veriyi kullanıp geri bildirim vermesi (Koordinasyon)
+- [ ] Geri bildirime göre düzeltmeler, rapor ve sunum (tüm ekip)
 
 > Tüm veriler yapaydır; gerçek kişilerle ilgisi yoktur.

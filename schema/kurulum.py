@@ -176,7 +176,7 @@ def disa_aktar(con: sqlite3.Connection, klasor: Path) -> None:
     for tablo in TABLOLAR:
         cur = con.execute(f"SELECT * FROM {tablo}")
         with (klasor / f"{tablo}.csv").open("w", encoding="utf-8", newline="") as f:
-            w = csv.writer(f)
+            w = csv.writer(f, lineterminator="\n")
             w.writerow([d[0] for d in cur.description])
             w.writerows(cur)
     print(f"CSV'ler yazıldı: {klasor}")
@@ -274,6 +274,8 @@ DENETIMLER = {
         """SELECT COUNT(*) FROM yedek_liste y JOIN randevular r ON r.randevu_id = y.atanan_randevu_id
            WHERE r.kaynak <> 'YEDEK_LISTE' OR r.hasta_id <> y.hasta_id OR r.brans_id <> y.brans_id
               OR r.olusturma_zamani < y.kayit_zamani OR y.guncelleme_zamani < r.olusturma_zamani
+              OR (y.tercih_zaman = 'SABAH' AND strftime('%H', r.randevu_zamani) >= '12')
+              OR (y.tercih_zaman = 'OGLEDEN_SONRA' AND strftime('%H', r.randevu_zamani) < '13')
               OR (y.hastane_id IS NOT NULL AND r.hastane_id <> y.hastane_id)""",
     "Kaynağı YEDEK_LISTE ama hiçbir yedek kaydına atanmamış randevu":
         """SELECT COUNT(*) FROM randevular r
@@ -312,7 +314,30 @@ DENETIMLER = {
         """SELECT COUNT(*) FROM randevular
            WHERE (katilim_teyidi IN ('REDDETTI','SURE_ASIMI') AND durum <> 'IPTAL')
               OR ((katilim_teyidi = 'SURE_ASIMI') <> (iptal_nedeni IS 'ONAY_SURESI_DOLDU'))
-              OR (iptal_nedeni = 'ONAY_SURESI_DOLDU' AND iptal_kanali <> 'SISTEM')""",
+              OR (iptal_nedeni = 'ONAY_SURESI_DOLDU' AND iptal_kanali <> 'SISTEM')
+              OR (iptal_kanali = 'CHATBOT' AND katilim_teyidi <> 'REDDETTI')
+              OR onay_zamani > iptal_zamani""",
+    "Doktor izni nedeniyle iptal ama SISTEM kanalından değil ya da doktor o gün çalışıyor":
+        """SELECT COUNT(*) FROM randevular r
+           WHERE r.iptal_nedeni = 'DOKTOR_IZNI' AND (r.iptal_kanali <> 'SISTEM' OR NOT EXISTS (
+               SELECT 1 FROM doktor_takvimi dt WHERE dt.doktor_id = r.doktor_id
+                 AND dt.tarih = date(r.randevu_zamani) AND dt.calisiyor = 0))""",
+    "Çifte randevu ama o slotta normal randevu hiç yok":
+        """SELECT COUNT(*) FROM randevular r
+           WHERE r.cifte_randevu = 1 AND NOT EXISTS (
+               SELECT 1 FROM randevular n WHERE n.doktor_id = r.doktor_id
+                 AND n.randevu_zamani = r.randevu_zamani AND n.cifte_randevu = 0)""",
+    "Yedek kaydının seçtiği hastanede o branşın doktoru yok":
+        """SELECT COUNT(*) FROM yedek_liste y
+           WHERE y.hastane_id IS NOT NULL AND NOT EXISTS (
+               SELECT 1 FROM doktorlar d WHERE d.hastane_id = y.hastane_id AND d.brans_id = y.brans_id)""",
+    # Triyaj akışı: acil vaka randevuya yönlendirilmez, randevu şikayetin branşında olur.
+    "Şikayet branşı randevu/yedek branşıyla uyuşmuyor ya da acil vakaya randevu verilmiş":
+        """SELECT COUNT(*) FROM (
+             SELECT sikayet_id, brans_id FROM randevular WHERE sikayet_id IS NOT NULL
+             UNION ALL SELECT sikayet_id, brans_id FROM yedek_liste WHERE sikayet_id IS NOT NULL
+           ) k JOIN sikayetler s USING(sikayet_id)
+           WHERE s.aciliyet = 'ACIL' OR (s.brans_id IS NOT k.brans_id AND s.alternatif_brans_id IS NOT k.brans_id)""",
     "Onay süresi dolduğu için iptal edilmiş ama hatırlatma yok ya da hasta cevap vermiş":
         """SELECT COUNT(*) FROM randevular r
            WHERE r.iptal_nedeni = 'ONAY_SURESI_DOLDU' AND (
@@ -340,7 +365,7 @@ def gorunum_aktar(con: sqlite3.Connection, klasor: Path) -> None:
     for (ad,) in con.execute("SELECT name FROM sqlite_master WHERE type = 'view' ORDER BY name").fetchall():
         cur = con.execute(f"SELECT * FROM {ad}")
         with (klasor / f"{ad}.csv").open("w", encoding="utf-8", newline="") as f:
-            w = csv.writer(f)
+            w = csv.writer(f, lineterminator="\n")
             w.writerow([d[0] for d in cur.description])
             w.writerows(cur)
     print(f"Görünüm CSV'leri yazıldı: {klasor}")
@@ -384,7 +409,7 @@ def main() -> int:
             con.executescript(ORNEK.read_text(encoding="utf-8"))
         if a.csv:
             csv_yukle(con, a.csv)
-    except (YuklemeHatasi, sqlite3.IntegrityError) as e:
+    except (YuklemeHatasi, sqlite3.Error) as e:
         if con is not None:
             con.close()
             gecici.unlink(missing_ok=True)

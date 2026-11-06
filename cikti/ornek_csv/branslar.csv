@@ -1,0 +1,17 @@
+brans_id,brans_adi,ortalama_muayene_dk,yas_min,yas_max,cinsiyet_kisiti
+1,Dahiliye,15,18,,
+2,Kardiyoloji,15,18,,
+3,Çocuk Sağlığı ve Hastalıkları,15,0,17,
+4,Kadın Hastalıkları ve Doğum,15,15,,K
+5,Genel Cerrahi,15,18,,
+6,Ortopedi ve Travmatoloji,15,,,
+7,Göz Hastalıkları,10,,,
+8,Kulak Burun Boğaz,10,,,
+9,Dermatoloji,10,,,
+10,Nöroloji,20,18,,
+11,Üroloji,15,,,
+12,Göğüs Hastalıkları,15,18,,
+13,Psikiyatri,20,18,,
+14,Fiziksel Tıp ve Rehabilitasyon,15,,,
+15,Endokrinoloji,15,18,,
+16,Çocuk Cerrahisi,15,0,17,

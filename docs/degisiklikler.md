@@ -10,6 +10,31 @@ Sürüm veritabanında da yazılıdır: `PRAGMA user_version;` → `100` = v1.0,
   değişiklik bu dosyaya "ne değişti, ne yapmanız gerekir" diye yazılır.
 - Diğer gruplardan gelen istekler `docs/toplanti_notlari.md`'ye işlenir, şemaya Veritabanı ekibi (Bedirhan Ç., Eylül Y.) uygular.
 
+## v1.2 — 7 Kasım 2026
+
+Sütun adıyla yazılmış kod ve eski CSV'ler aynen çalışır. Dikkat: `kalip_no` ve v1.1 sütunları tablo sonuna eklendiği için
+`INSERT INTO randevular VALUES (...)` gibi sütun adı vermeyen sorgular sütun sayısı yüzünden hata verir.
+
+**Eklenenler**
+- `sikayetler.kalip_no`, `yanit_ornekleri.kalip_no`: eğitim/test ayrımı için. Satır satır ayırmak başarıyı yapay yükseltir.
+- Denetimler: şikayet branşı uyumu ve acil vakaya randevu, yedek hastanesinde branş doktoru, yedek saat tercihi, doktor izni
+  tutarlılığı, slotu boş çifte randevu, CHATBOT iptalinde teyit, iptalden sonra onay.
+- Otomatik testler 106'ya çıktı.
+- Üretici `branslar.csv` ve `tatiller.csv`'yi de yazar; klasör pandas ile tek başına okunabilir.
+
+**Sıkılaşan kural:** Bir telefon numarası tek hastaya ait olabilir (`ux_hasta_telefon`).
+
+**Düzeltilenler**
+- `v_hasta_profili` 5000 hastada yaklaşık 100 sn, 8000 hastada 230 sn sürüyordu (hasta başına tüm geçmişi tarıyordu).
+  Toplama sorgusuna çevrildi; `v_chatbot_hastalar` da artık ona bağlı değil.
+- Küçük veri setinde doluluk %1–5 çıkıyor, örnek veri Dashboard'u yanıltıyordu. Doktorlar artık veri boyutuna göre her hafta
+  değil bazı haftalar poliklinik yapar.
+- Üretici yedek hastanın sabah/öğleden sonra tercihini yok sayıyordu. Gelmeme olasılığındaki tatil etkisi, tatil gününü
+  `v_noshow_ozellikleri.tatil_yakin`'den farklı sayıyordu.
+- README örnek biçim komutu `cikti/ornek_csv`'nin üzerine yazıyordu; kaldırıldı.
+- "0500 hiçbir operatöre atanmamış" iddiası doğrulanamadığı için belgelerden çıkarıldı; gerçek mesaj gönderilmemesi uyarısı eklendi.
+- CSV çıktılarının satır sonu her sistemde LF; kurulumda her SQLite hatası açık mesajla raporlanır.
+
 ## v1.1 — 6 Kasım 2026
 
 Yalnızca ekleme: v1.0'a göre yazılmış kod ve CSV'ler aynen çalışır. Tek davranış farkı, aynı slota artık bir çifte randevu yazılabilmesi.
@@ -19,7 +44,7 @@ Yalnızca ekleme: v1.0'a göre yazılmış kod ve CSV'ler aynen çalışır. Tek
   Kılavuzun 3. modülü çifte randevuyu açıkça istiyor; v1.0'daki tekil indeks bunu engelliyordu.
 - `veri_bilgisi`: verinin "şu an"ı. Denetimler ve görünümler bunu kullanır, veri seti zamanla eskiyip hataya düşmez.
 - Görünümler: `v_hasta_profili`, `v_chatbot_hastalar`, `v_chatbot_randevular`. Chatbot grubu istediği sütun adlarıyla, ortak veriden okur.
-- `uretici/uret.py`: 12 tablonun hepsini üreten sentetik veri üreticisi. `cikti/ornek_csv/` ve `cikti/ornek_gorunum/`: hazır küçük örnek.
+- `uretici/uret.py`: tüm tabloları üreten sentetik veri üreticisi. `cikti/ornek_csv/` ve `cikti/ornek_gorunum/`: hazır küçük örnek.
 - `kurulum.py --gorunum-aktar KLASOR`; teyit ve onay süresi için 3 yeni denetim.
 - `tests/`: üretici testleri dahil 90 test.
 

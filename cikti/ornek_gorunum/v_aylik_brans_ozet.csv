@@ -1,97 +1,26 @@
 ay,hastane_id,hastane_adi,brans_id,brans_adi,toplam_randevu,geldi,gelmedi,iptal,yedek_listeden_dolan,gelmeme_orani_yuzde
-2026-08,1,Odunpazarı Devlet Hastanesi (sentetik),3,Çocuk Sağlığı ve Hastalıkları,2,1,1,0,0,50.0
-2026-08,1,Odunpazarı Devlet Hastanesi (sentetik),4,Kadın Hastalıkları ve Doğum,2,1,0,1,0,0.0
-2026-08,1,Odunpazarı Devlet Hastanesi (sentetik),5,Genel Cerrahi,4,4,0,0,0,0.0
-2026-08,1,Odunpazarı Devlet Hastanesi (sentetik),6,Ortopedi ve Travmatoloji,7,7,0,0,0,0.0
-2026-08,1,Odunpazarı Devlet Hastanesi (sentetik),7,Göz Hastalıkları,4,4,0,0,0,0.0
-2026-08,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),1,Dahiliye,3,3,0,0,0,0.0
-2026-08,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),2,Kardiyoloji,3,3,0,0,0,0.0
-2026-08,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),3,Çocuk Sağlığı ve Hastalıkları,1,0,1,0,0,100.0
-2026-08,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),4,Kadın Hastalıkları ve Doğum,2,1,0,1,0,0.0
-2026-08,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),6,Ortopedi ve Travmatoloji,3,3,0,0,0,0.0
-2026-08,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),7,Göz Hastalıkları,8,5,1,2,0,16.7
-2026-08,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),8,Kulak Burun Boğaz,7,6,0,1,0,0.0
-2026-08,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),9,Dermatoloji,7,5,2,0,0,28.6
-2026-08,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),10,Nöroloji,3,3,0,0,0,0.0
-2026-08,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),11,Üroloji,5,4,1,0,0,20.0
-2026-08,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),12,Göğüs Hastalıkları,4,4,0,0,0,0.0
-2026-08,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),13,Psikiyatri,5,5,0,0,0,0.0
-2026-08,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),14,Fiziksel Tıp ve Rehabilitasyon,2,1,0,1,0,0.0
-2026-08,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),15,Endokrinoloji,1,0,1,0,0,100.0
-2026-08,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),16,Çocuk Cerrahisi,4,3,0,1,0,0.0
-2026-08,3,Sivrihisar İlçe Hastanesi (sentetik),1,Dahiliye,2,2,0,0,0,0.0
-2026-08,3,Sivrihisar İlçe Hastanesi (sentetik),3,Çocuk Sağlığı ve Hastalıkları,4,4,0,0,0,0.0
-2026-08,3,Sivrihisar İlçe Hastanesi (sentetik),4,Kadın Hastalıkları ve Doğum,5,2,1,2,0,33.3
-2026-09,1,Odunpazarı Devlet Hastanesi (sentetik),1,Dahiliye,7,7,0,0,0,0.0
-2026-09,1,Odunpazarı Devlet Hastanesi (sentetik),3,Çocuk Sağlığı ve Hastalıkları,12,9,2,1,1,18.2
-2026-09,1,Odunpazarı Devlet Hastanesi (sentetik),4,Kadın Hastalıkları ve Doğum,4,4,0,0,0,0.0
-2026-09,1,Odunpazarı Devlet Hastanesi (sentetik),5,Genel Cerrahi,7,6,1,0,0,14.3
-2026-09,1,Odunpazarı Devlet Hastanesi (sentetik),6,Ortopedi ve Travmatoloji,2,1,0,1,0,0.0
-2026-09,1,Odunpazarı Devlet Hastanesi (sentetik),7,Göz Hastalıkları,7,4,1,2,1,20.0
-2026-09,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),1,Dahiliye,1,1,0,0,0,0.0
-2026-09,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),2,Kardiyoloji,1,0,0,1,0,
-2026-09,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),3,Çocuk Sağlığı ve Hastalıkları,2,2,0,0,0,0.0
-2026-09,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),4,Kadın Hastalıkları ve Doğum,6,4,1,1,0,20.0
-2026-09,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),5,Genel Cerrahi,2,2,0,0,0,0.0
-2026-09,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),6,Ortopedi ve Travmatoloji,7,5,0,2,0,0.0
-2026-09,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),7,Göz Hastalıkları,12,8,2,2,1,20.0
-2026-09,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),8,Kulak Burun Boğaz,4,2,2,0,0,50.0
-2026-09,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),9,Dermatoloji,4,4,0,0,0,0.0
-2026-09,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),10,Nöroloji,4,2,1,1,0,33.3
-2026-09,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),11,Üroloji,4,2,0,2,0,0.0
-2026-09,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),12,Göğüs Hastalıkları,2,2,0,0,0,0.0
-2026-09,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),13,Psikiyatri,3,2,0,1,0,0.0
-2026-09,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),14,Fiziksel Tıp ve Rehabilitasyon,4,4,0,0,0,0.0
-2026-09,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),15,Endokrinoloji,5,4,1,0,0,20.0
-2026-09,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),16,Çocuk Cerrahisi,4,1,1,2,0,50.0
-2026-09,3,Sivrihisar İlçe Hastanesi (sentetik),1,Dahiliye,5,5,0,0,0,0.0
-2026-09,3,Sivrihisar İlçe Hastanesi (sentetik),3,Çocuk Sağlığı ve Hastalıkları,2,0,2,0,0,100.0
-2026-09,3,Sivrihisar İlçe Hastanesi (sentetik),4,Kadın Hastalıkları ve Doğum,3,1,0,2,0,0.0
-2026-10,1,Odunpazarı Devlet Hastanesi (sentetik),1,Dahiliye,1,1,0,0,0,0.0
-2026-10,1,Odunpazarı Devlet Hastanesi (sentetik),3,Çocuk Sağlığı ve Hastalıkları,5,5,0,0,0,0.0
-2026-10,1,Odunpazarı Devlet Hastanesi (sentetik),4,Kadın Hastalıkları ve Doğum,5,5,0,0,0,0.0
-2026-10,1,Odunpazarı Devlet Hastanesi (sentetik),5,Genel Cerrahi,7,7,0,0,0,0.0
-2026-10,1,Odunpazarı Devlet Hastanesi (sentetik),6,Ortopedi ve Travmatoloji,7,5,0,2,1,0.0
-2026-10,1,Odunpazarı Devlet Hastanesi (sentetik),7,Göz Hastalıkları,4,1,1,2,0,50.0
-2026-10,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),1,Dahiliye,3,3,0,0,0,0.0
-2026-10,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),2,Kardiyoloji,6,4,0,2,1,0.0
-2026-10,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),3,Çocuk Sağlığı ve Hastalıkları,3,2,0,1,0,0.0
-2026-10,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),4,Kadın Hastalıkları ve Doğum,6,5,0,1,0,0.0
-2026-10,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),5,Genel Cerrahi,3,2,0,1,0,0.0
-2026-10,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),6,Ortopedi ve Travmatoloji,5,4,0,1,0,0.0
-2026-10,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),7,Göz Hastalıkları,11,6,1,4,1,14.3
-2026-10,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),8,Kulak Burun Boğaz,12,9,2,1,0,18.2
-2026-10,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),9,Dermatoloji,9,8,0,1,1,0.0
-2026-10,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),10,Nöroloji,3,3,0,0,0,0.0
-2026-10,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),11,Üroloji,7,4,1,2,2,20.0
-2026-10,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),12,Göğüs Hastalıkları,9,6,0,3,2,0.0
-2026-10,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),13,Psikiyatri,2,2,0,0,0,0.0
-2026-10,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),14,Fiziksel Tıp ve Rehabilitasyon,2,2,0,0,0,0.0
-2026-10,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),15,Endokrinoloji,2,1,1,0,0,50.0
-2026-10,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),16,Çocuk Cerrahisi,3,3,0,0,0,0.0
-2026-10,3,Sivrihisar İlçe Hastanesi (sentetik),1,Dahiliye,9,8,0,1,0,0.0
-2026-10,3,Sivrihisar İlçe Hastanesi (sentetik),3,Çocuk Sağlığı ve Hastalıkları,10,4,2,4,0,33.3
-2026-10,3,Sivrihisar İlçe Hastanesi (sentetik),4,Kadın Hastalıkları ve Doğum,4,3,0,1,0,0.0
-2026-11,1,Odunpazarı Devlet Hastanesi (sentetik),1,Dahiliye,4,2,0,0,0,0.0
-2026-11,1,Odunpazarı Devlet Hastanesi (sentetik),3,Çocuk Sağlığı ve Hastalıkları,2,1,1,0,0,50.0
-2026-11,1,Odunpazarı Devlet Hastanesi (sentetik),4,Kadın Hastalıkları ve Doğum,1,0,0,0,0,
-2026-11,1,Odunpazarı Devlet Hastanesi (sentetik),6,Ortopedi ve Travmatoloji,3,2,0,0,0,0.0
-2026-11,1,Odunpazarı Devlet Hastanesi (sentetik),7,Göz Hastalıkları,4,0,1,0,0,100.0
-2026-11,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),1,Dahiliye,1,0,0,0,0,
-2026-11,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),2,Kardiyoloji,2,1,0,0,0,0.0
-2026-11,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),3,Çocuk Sağlığı ve Hastalıkları,3,1,0,0,0,0.0
-2026-11,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),4,Kadın Hastalıkları ve Doğum,5,3,0,0,0,0.0
-2026-11,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),5,Genel Cerrahi,5,1,0,2,1,0.0
-2026-11,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),7,Göz Hastalıkları,5,1,1,0,0,50.0
-2026-11,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),8,Kulak Burun Boğaz,1,0,0,0,0,
-2026-11,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),9,Dermatoloji,5,3,0,0,0,0.0
-2026-11,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),10,Nöroloji,1,0,0,0,0,
-2026-11,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),11,Üroloji,5,2,0,0,0,0.0
-2026-11,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),12,Göğüs Hastalıkları,3,3,0,0,0,0.0
-2026-11,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),13,Psikiyatri,1,1,0,0,0,0.0
-2026-11,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),14,Fiziksel Tıp ve Rehabilitasyon,5,1,1,0,0,50.0
-2026-11,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),15,Endokrinoloji,1,0,0,0,0,
-2026-11,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),16,Çocuk Cerrahisi,3,2,1,0,0,33.3
-2026-11,3,Sivrihisar İlçe Hastanesi (sentetik),1,Dahiliye,3,3,0,0,0,0.0
-2026-11,3,Sivrihisar İlçe Hastanesi (sentetik),3,Çocuk Sağlığı ve Hastalıkları,1,0,0,1,0,
-2026-11,3,Sivrihisar İlçe Hastanesi (sentetik),4,Kadın Hastalıkları ve Doğum,2,1,0,0,0,0.0
+2026-08,1,Odunpazarı Devlet Hastanesi (sentetik),1,Dahiliye,34,30,1,3,1,3.2
+2026-08,1,Odunpazarı Devlet Hastanesi (sentetik),4,Kadın Hastalıkları ve Doğum,20,15,1,4,0,6.3
+2026-08,1,Odunpazarı Devlet Hastanesi (sentetik),5,Genel Cerrahi,11,9,1,1,0,10.0
+2026-08,1,Odunpazarı Devlet Hastanesi (sentetik),7,Göz Hastalıkları,19,14,1,4,0,6.7
+2026-08,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),9,Dermatoloji,26,21,2,3,2,8.7
+2026-08,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),15,Endokrinoloji,11,5,2,4,0,28.6
+2026-08,3,Sivrihisar İlçe Hastanesi (sentetik),1,Dahiliye,11,8,2,1,0,20.0
+2026-09,1,Odunpazarı Devlet Hastanesi (sentetik),3,Çocuk Sağlığı ve Hastalıkları,15,11,3,1,0,21.4
+2026-09,1,Odunpazarı Devlet Hastanesi (sentetik),5,Genel Cerrahi,18,16,1,1,0,5.9
+2026-09,1,Odunpazarı Devlet Hastanesi (sentetik),7,Göz Hastalıkları,16,10,2,4,0,16.7
+2026-09,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),2,Kardiyoloji,30,17,5,8,0,22.7
+2026-09,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),4,Kadın Hastalıkları ve Doğum,22,17,3,2,0,15.0
+2026-09,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),12,Göğüs Hastalıkları,26,18,7,1,1,28.0
+2026-09,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),15,Endokrinoloji,13,8,3,2,0,27.3
+2026-10,1,Odunpazarı Devlet Hastanesi (sentetik),6,Ortopedi ve Travmatoloji,17,14,2,1,1,12.5
+2026-10,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),3,Çocuk Sağlığı ve Hastalıkları,14,7,3,4,0,30.0
+2026-10,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),9,Dermatoloji,31,19,6,6,1,24.0
+2026-10,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),13,Psikiyatri,11,8,1,2,0,11.1
+2026-10,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),14,Fiziksel Tıp ve Rehabilitasyon,20,11,1,8,1,8.3
+2026-10,3,Sivrihisar İlçe Hastanesi (sentetik),1,Dahiliye,11,9,1,1,0,10.0
+2026-11,1,Odunpazarı Devlet Hastanesi (sentetik),6,Ortopedi ve Travmatoloji,13,0,0,0,0,
+2026-11,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),3,Çocuk Sağlığı ve Hastalıkları,8,0,0,1,0,
+2026-11,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),4,Kadın Hastalıkları ve Doğum,11,0,0,0,0,
+2026-11,2,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),9,Dermatoloji,19,0,0,0,0,
+2026-11,3,Sivrihisar İlçe Hastanesi (sentetik),4,Kadın Hastalıkları ve Doğum,20,13,2,5,0,13.3

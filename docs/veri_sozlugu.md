@@ -1,15 +1,16 @@
-# Veri Sözlüğü (Şema v1.1)
+# Veri Sözlüğü (Şema v1.2)
 
 Kaynak: [`schema/schema.sql`](../schema/schema.sql). Tarih alanları `YYYY-MM-DD`, zaman alanları `YYYY-MM-DD HH:MM:SS` biçimindedir.
 **Tüm veriler sentetiktir.** TC kimlik no tutulmaz, hastalar yalnızca `hasta_id` ile tanınır.
 
 **Biçim kuralları (şema zorlar):** `2026-3-2`, `9:00`, `2026-03-02T09:00:00` ya da 30 Şubat gibi değerler reddedilir.
 Sayı sütunlarına metin (`4.2 km`) girilemez; tam sayı sütunlarına ondalık (`15.5`) girilemez, `15.0` ise 15 sayılır.
-Telefonlar `0500XXXXXXX` biçimindedir; 0500 ön eki GSM operatörlerine atanmış bloklar (50x, 53x, 54x, 55x) arasında kullanılmadığı için gerçek bir kişiye denk gelmez. CSV'yi Excel'de açıp kaydederseniz baştaki 0 silinebilir; şema bu durumda satırı reddeder.
+Telefonlar sahtedir, `0500XXXXXXX` biçimindedir ve her numara tek hastaya aittir. 0500 ön ekinin hiçbir operatöre atanmadığı BTK kaynağından doğrulanmadı; **bu numaralara gerçek SMS veya mesaj göndermeyin**, chatbot denemeleri simülasyonla yapılmalıdır. CSV'yi Excel'de açıp kaydederseniz baştaki 0 silinebilir; şema bu durumda satırı reddeder.
 `kurulum.py` Türkçe Excel'in noktalı virgüllü CSV'sini ve ondalık virgülünü (`4,2`) de okur; dosya UTF-8 olmalıdır.
+Excel çift tıklayınca Türkçe karakterleri bozuk gösterebilir: **Veri > Metinden/CSV'den** ile 65001 (UTF-8) seçerek açın.
 
 **SQLite notu:** Yabancı anahtar kontrolü bağlantı başına açılır. Kendi kodunuzda bağlandıktan sonra `PRAGMA foreign_keys = ON;` çalıştırın.
-Şema sürümü `PRAGMA user_version;` ile okunur (`101` = v1.1). Sürümler arası farklar: [`degisiklikler.md`](degisiklikler.md).
+Şema sürümü `PRAGMA user_version;` ile okunur (`102` = v1.2). Sürümler arası farklar: [`degisiklikler.md`](degisiklikler.md).
 
 **Referans listeler:** Branşlar ([`schema/referans/branslar.csv`](../schema/referans/branslar.csv), 16 branş) ve
 2025–2026 resmî tatilleri ([`schema/referans/tatiller.csv`](../schema/referans/tatiller.csv)) sabittir, üretilmez.
@@ -127,8 +128,11 @@ Sorgularınızda "şimdi" gerektiğinde `(SELECT veri_ani FROM veri_bilgisi)` ku
 | alternatif_brans_id | FK | Belirsiz vakalarda 2. seçenek | NULL |
 | aciliyet | TEXT | `RUTIN`, `ONCELIKLI`, `ACIL` | ONCELIKLI |
 | kaynak | TEXT | `SABLON`, `LLM`, `ELLE` | ELLE |
+| kalip_no | INTEGER | Aynı kalıptan türeyen cümleler aynı numarayı taşır | 12 |
 
 Kural: `aciliyet` ACIL değilse `brans_id` boş olamaz.
+
+**2. grup için önemli:** Cümleler kalıplardan türetilir. Eğitim ve test verisini satır satır rastgele ayırırsanız aynı cümlenin çeşitleri iki tarafa da düşer ve başarı yapay yüksek çıkar. `kalip_no`'ya göre ayırın (`GroupShuffleSplit`). Aynısı 4. grubun `yanit_ornekleri` tablosu için de geçerlidir.
 
 ### `yanit_ornekleri` (4. grup niyet sınıflandırma verisi)
 | Sütun | Tip | Açıklama | Örnek |
@@ -136,6 +140,7 @@ Kural: `aciliyet` ACIL değilse `brans_id` boş olamaz.
 | ornek_id | INTEGER PK | | 1 |
 | metin | TEXT | Hastanın kısa cevabı | Gelemeyeceğim |
 | niyet | TEXT | `ONAY`, `IPTAL`, `ERTELEME`, `SORU`, `BELIRSIZ` | IPTAL |
+| kalip_no | INTEGER | Aynı cümlenin yazım çeşitleri aynı numarayı taşır | 21 |
 
 ## Olay tabloları
 
@@ -201,9 +206,10 @@ Testleri: [`tests/test_denetimler.py`](../tests/test_denetimler.py).
 | Doktor | Randevu, doktorun `doktor_takvimi`nde çalıştığı bir güne, mesai içine, öğle arası dışına ve slot ızgarasına (`baslangic_saat` + k × `slot_dk`) düşer. `toplam_slot` mesaiyle uyuşur. Aktif olmayan doktorun bekleyen randevusu olmaz. Doktor sonradan izne çıkarsa o günün randevuları `iptal_kanali = SISTEM` ile iptal edilir; bunlar geçerlidir |
 | Takvim | Resmî tatil/bayram gününe, arifede 13:00 sonrasına randevu olmaz. Randevu yılları tatil listesinde bulunur (referans: 2025–2026). Her randevu günü için hastanenin ilinde hava kaydı vardır |
 | Zaman | Hasta kaydı bugünden sonra olamaz. Hasta, kayıt tarihinden önce randevu alamaz ya da yedek listeye giremez. Geçmiş randevu BEKLIYOR kalmaz, gelecekteki randevunun GELDI/GELMEDI sonucu olmaz. Oluşturma, iptal, mesaj, yanıt ve yedek kayıt zamanları şu andan sonra olamaz |
-| Yedek liste | Hasta aynı branş için en fazla bir BEKLIYOR kaydına sahiptir (şema zorlar). ATANDI kaydın randevusu aynı hasta ve branştadır, kaynağı `YEDEK_LISTE`dir ve kayıttan sonra oluşturulmuştur; kayıt, randevu oluşturulduktan sonra ATANDI olur. Kaynağı `YEDEK_LISTE` olan her randevunun bir yedek kaydı vardır |
+| Şikayet | Randevu ve yedek kaydının şikayeti aynı branştadır (ya da alternatif branşı odur). ACIL şikayetle randevu verilmez, hasta acil servise yönlendirilir |
+| Yedek liste | Hasta aynı branş için en fazla bir BEKLIYOR kaydına sahiptir (şema zorlar). Seçilen hastanede o branşın doktoru vardır; atanan randevu saati hastanın sabah/öğleden sonra tercihine uyar. ATANDI kaydın randevusu aynı hasta ve branştadır, kaynağı `YEDEK_LISTE`dir ve kayıttan sonra oluşturulmuştur; kayıt, randevu oluşturulduktan sonra ATANDI olur. Kaynağı `YEDEK_LISTE` olan her randevunun bir yedek kaydı vardır |
 | Bildirim | `HATIRLATMA` ve `IPTAL_ONAYI` randevu sahibine gider. Hatırlatma randevu alındıktan sonra, randevudan ve varsa iptalden önce gider. İptal onayı yalnız iptal edilmiş randevuya, iptalden sonra gider. `BOS_RANDEVU_TEKLIFI` iptal edilmiş randevu için, iptalden sonra, iptal eden hasta dışında ve o branşın yedek listesine teklif anından önce girmiş birine gider |
-| Teyit | Hatırlatmaya `ONAY` cevabı verilen randevunun teyidi `ONAYLADI` olur. `REDDETTI` ve `SURE_ASIMI` yalnız iptal edilmiş randevuda bulunur. `SURE_ASIMI` ⇔ `iptal_nedeni = ONAY_SURESI_DOLDU`; bu iptal `SISTEM` kanalındandır, cevapsız bir hatırlatmadan sonra gelir |
+| Teyit | Hatırlatmaya `ONAY` cevabı verilen randevunun teyidi `ONAYLADI` olur. `REDDETTI` ve `SURE_ASIMI` yalnız iptal edilmiş randevuda bulunur. `SURE_ASIMI` ⇔ `iptal_nedeni = ONAY_SURESI_DOLDU`; bu iptal `SISTEM` kanalındandır, cevapsız bir hatırlatmadan sonra gelir. `CHATBOT` kanalıyla iptalde teyit `REDDETTI` olur; iptalden sonra onay olmaz. `DOKTOR_IZNI` iptali `SISTEM` kanalındandır ve doktorun o günkü takviminde `calisiyor = 0` yazar. Çifte randevu, slotunda normal bir randevu varken yazılır |
 | Chatbot | Hatırlatmaya `IPTAL` cevabı verilen randevu iptal edilir. `iptal_kanali = CHATBOT` olan iptalden önce hastanın `IPTAL` ya da `ERTELEME` cevabı vardır |
 
 ## Hazır görünümler
