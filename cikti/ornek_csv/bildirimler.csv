@@ -1,0 +1,370 @@
+bildirim_id,randevu_id,hasta_id,tur,kanal,mesaj_metni,gonderim_zamani,yanit_metni,yanit_niyeti,yanit_zamani
+1,1,275,HATIRLATMA,SMS,Yarın saat 10:45'te Genel Cerrahi randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-06 10:45:00,Evet geleceğim,ONAY,2026-08-06 11:47:38
+2,3,277,HATIRLATMA,WEB,Yarın saat 14:45'te Genel Cerrahi randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-06 14:45:00,Tamam oradayım,ONAY,2026-08-06 16:02:39
+3,4,197,HATIRLATMA,SMS,Yarın saat 13:30'da Çocuk Sağlığı ve Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-06 13:30:00,Kaç dakika önce orada olmalıyım?,SORU,2026-08-06 14:47:53
+4,5,149,HATIRLATMA,SMS,Yarın saat 14:00'te Kulak Burun Boğaz randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-06 14:00:00,,,
+5,6,48,HATIRLATMA,WHATSAPP,Yarın saat 14:30'da Kulak Burun Boğaz randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-06 14:30:00,Yazarım size,BELIRSIZ,2026-08-06 15:51:03
+6,7,185,HATIRLATMA,SMS,Yarın saat 08:20'de Psikiyatri randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-06 08:20:00,Evet hocam,ONAY,2026-08-06 08:42:16
+7,8,266,HATIRLATMA,WHATSAPP,Yarın saat 10:45'te Çocuk Sağlığı ve Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-06 10:45:00,,,
+8,9,281,HATIRLATMA,WHATSAPP,Yarın saat 13:30'da Çocuk Sağlığı ve Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-06 13:30:00,Evet uygun,ONAY,2026-08-06 14:57:41
+9,11,236,HATIRLATMA,SMS,Yarın saat 14:45'te Ortopedi ve Travmatoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-09 14:45:00,,,
+10,13,221,HATIRLATMA,WHATSAPP,Yarın saat 14:30'da Kadın Hastalıkları ve Doğum randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-09 14:30:00,,,
+11,14,208,HATIRLATMA,SMS,Yarın saat 09:40'ta Dermatoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-09 09:40:00,Tamamdır gelirim,ONAY,2026-08-09 10:20:35
+12,16,180,HATIRLATMA,WHATSAPP,Yarın saat 11:30'da Fiziksel Tıp ve Rehabilitasyon randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-09 11:30:00,,,
+13,18,187,HATIRLATMA,WHATSAPP,Yarın saat 09:40'ta Göz Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-10 09:40:00,,,
+14,20,168,HATIRLATMA,WHATSAPP,Yarın saat 08:00'de Endokrinoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-10 08:00:00,Kesinlikle geleceğim,ONAY,2026-08-10 09:08:01
+15,21,36,HATIRLATMA,WHATSAPP,Yarın saat 11:00'de Dahiliye randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-11 11:00:00,Olur,ONAY,2026-08-11 11:52:01
+16,22,23,HATIRLATMA,WHATSAPP,Yarın saat 14:45'te Dahiliye randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-11 14:45:00,Onaylıyorum,ONAY,2026-08-11 15:58:05
+17,23,84,HATIRLATMA,SMS,Yarın saat 14:30'da Ortopedi ve Travmatoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-11 14:30:00,Gelirim,ONAY,2026-08-11 15:25:05
+18,24,209,HATIRLATMA,WHATSAPP,Yarın saat 10:00'da Üroloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-11 10:00:00,İnşallah geleceğim,ONAY,2026-08-11 10:50:06
+19,25,6,HATIRLATMA,WHATSAPP,Yarın saat 13:45'te Üroloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-11 13:45:00,Doktorum kim?,SORU,2026-08-11 15:19:36
+20,26,224,HATIRLATMA,SMS,Yarın saat 08:30'da Çocuk Cerrahisi randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-11 08:30:00,Evet,ONAY,2026-08-11 09:40:37
+21,27,233,HATIRLATMA,WHATSAPP,Yarın saat 14:45'te Çocuk Cerrahisi randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-11 14:45:00,Yetişemem iptal olsun,IPTAL,2026-08-11 15:14:01
+22,27,233,IPTAL_ONAYI,WHATSAPP,Çocuk Cerrahisi randevunuz iptal edildi.,2026-08-11 15:14:06,,,
+23,28,144,HATIRLATMA,SMS,Yarın saat 14:30'da Kadın Hastalıkları ve Doğum randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-12 14:30:00,,,
+24,29,126,HATIRLATMA,SMS,Yarın saat 11:30'da Kardiyoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-12 11:30:00,Randevuma geleceğim,ONAY,2026-08-12 12:55:59
+25,30,68,HATIRLATMA,WEB,Yarın saat 13:45'te Kardiyoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-12 13:45:00,Yanımda ne getirmeliyim?,SORU,2026-08-12 14:13:19
+26,31,74,HATIRLATMA,WHATSAPP,Yarın saat 09:10'da Göz Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-12 09:10:00,Tamam oradayım,ONAY,2026-08-12 10:10:41
+27,32,113,HATIRLATMA,TELEGRAM,Yarın saat 14:20'de Göz Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-12 14:20:00,Evet,ONAY,2026-08-12 16:02:44
+28,33,85,HATIRLATMA,WHATSAPP,Yarın saat 15:40'ta Göz Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-12 15:40:00,Yetişemem iptal olsun,IPTAL,2026-08-12 15:44:49
+29,33,85,IPTAL_ONAYI,WHATSAPP,Göz Hastalıkları randevunuz iptal edildi.,2026-08-12 15:44:54,,,
+30,34,7,HATIRLATMA,SMS,Yarın saat 09:00'da Göğüs Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-12 09:00:00,Evet geleceğim,ONAY,2026-08-12 10:37:41
+31,35,187,HATIRLATMA,WHATSAPP,Yarın saat 13:30'da Göğüs Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-12 13:30:00,"Evet, orada olacağım",ONAY,2026-08-12 14:08:17
+32,37,51,HATIRLATMA,WHATSAPP,Yarın saat 14:50'de Kulak Burun Boğaz randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-13 14:50:00,,,
+33,38,255,HATIRLATMA,WHATSAPP,Yarın saat 09:20'de Psikiyatri randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-13 09:20:00,Sevk gerekiyor mu?,SORU,2026-08-13 09:39:31
+34,39,287,HATIRLATMA,WHATSAPP,Yarın saat 13:20'de Psikiyatri randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-13 13:20:00,Evet,ONAY,2026-08-13 14:15:53
+35,40,187,HATIRLATMA,WHATSAPP,Yarın saat 14:40'ta Psikiyatri randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-13 14:40:00,,,
+36,41,106,HATIRLATMA,SMS,Yarın saat 15:30'da Çocuk Sağlığı ve Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-13 15:30:00,,,
+37,44,62,HATIRLATMA,WHATSAPP,Yarın saat 15:00'te Ortopedi ve Travmatoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-16 15:00:00,Evet teşekkürler,ONAY,2026-08-16 16:24:08
+38,45,236,HATIRLATMA,SMS,Yarın saat 15:40'ta Dermatoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-16 15:40:00,Doktorum kim?,SORU,2026-08-16 17:05:09
+39,46,21,HATIRLATMA,WHATSAPP,Yarın saat 10:30'da Kadın Hastalıkları ve Doğum randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-16 10:30:00,,,
+40,48,284,HATIRLATMA,WHATSAPP,Yarın saat 11:30'da Göz Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-17 11:30:00,Evet uygun,ONAY,2026-08-17 12:33:22
+41,49,208,HATIRLATMA,SMS,Yarın saat 13:00'te Nöroloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-17 13:00:00,,,
+42,50,261,HATIRLATMA,WEB,Yarın saat 15:00'te Nöroloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-17 15:00:00,İnşallah geleceğim,ONAY,2026-08-17 16:34:27
+43,54,100,HATIRLATMA,SMS,Yarın saat 11:45'te Üroloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-18 11:45:00,,,
+44,55,42,HATIRLATMA,TELEGRAM,Yarın saat 14:45'te Üroloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-18 14:45:00,,,
+45,56,252,HATIRLATMA,WHATSAPP,Yarın saat 14:15'te Kardiyoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-19 14:15:00,Geleceğim,ONAY,2026-08-19 14:46:04
+46,57,141,HATIRLATMA,WHATSAPP,Yarın saat 08:10'da Göz Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-19 08:10:00,Evet uygun,ONAY,2026-08-19 10:04:08
+47,58,263,HATIRLATMA,TELEGRAM,Yarın saat 13:20'de Göz Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-19 13:20:00,Kesinlikle geleceğim,ONAY,2026-08-19 14:14:50
+48,59,158,HATIRLATMA,SMS,Yarın saat 10:30'da Göğüs Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-19 10:30:00,Ok geleceğim,ONAY,2026-08-19 10:41:59
+49,60,207,HATIRLATMA,WHATSAPP,Yarın saat 10:00'da Kulak Burun Boğaz randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-20 10:00:00,Hastanelik bir durum kalmadı iptal edin,IPTAL,2026-08-20 11:55:00
+50,60,207,IPTAL_ONAYI,WHATSAPP,Kulak Burun Boğaz randevunuz iptal edildi.,2026-08-20 11:55:05,,,
+51,61,123,HATIRLATMA,WHATSAPP,Yarın saat 14:30'da Kulak Burun Boğaz randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-20 14:30:00,Evet,ONAY,2026-08-20 15:26:56
+52,62,164,HATIRLATMA,WHATSAPP,Yarın saat 10:30'da Ortopedi ve Travmatoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-23 10:30:00,Evet teşekkürler,ONAY,2026-08-23 10:32:21
+53,63,187,HATIRLATMA,WHATSAPP,Yarın saat 10:45'te Ortopedi ve Travmatoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-23 10:45:00,Geliyorum,ONAY,2026-08-23 12:04:14
+54,64,180,HATIRLATMA,WHATSAPP,Yarın saat 11:10'da Dermatoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-23 11:10:00,Olur,ONAY,2026-08-23 11:37:14
+55,65,275,HATIRLATMA,SMS,Yarın saat 11:50'de Dermatoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-23 11:50:00,Evet onaylıyorum,ONAY,2026-08-23 13:25:45
+56,67,289,HATIRLATMA,WHATSAPP,Yarın saat 08:00'de Göz Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-24 08:00:00,,,
+57,68,271,HATIRLATMA,WEB,Yarın saat 09:40'ta Göz Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-24 09:40:00,Olur,ONAY,2026-08-24 10:33:54
+58,69,240,HATIRLATMA,WHATSAPP,Yarın saat 15:00'te Çocuk Sağlığı ve Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-25 15:00:00,Otopark var mı?,SORU,2026-08-25 15:29:04
+59,70,248,HATIRLATMA,TELEGRAM,Yarın saat 15:30'da Ortopedi ve Travmatoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-25 15:30:00,,,
+60,71,256,HATIRLATMA,WHATSAPP,Yarın saat 14:00'te Üroloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-25 14:00:00,,,
+61,72,258,HATIRLATMA,WHATSAPP,Yarın saat 10:30'da Çocuk Cerrahisi randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-25 10:30:00,Evet geleceğim,ONAY,2026-08-25 10:53:27
+62,73,257,HATIRLATMA,WHATSAPP,Yarın saat 14:00'te Çocuk Cerrahisi randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-25 14:00:00,,,
+63,74,8,HATIRLATMA,TELEGRAM,Yarın saat 13:30'da Kadın Hastalıkları ve Doğum randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-26 13:30:00,Daha ileri bir tarihe alın,ERTELEME,2026-08-26 13:38:20
+64,74,8,IPTAL_ONAYI,TELEGRAM,Kadın Hastalıkları ve Doğum randevunuz iptal edildi.,2026-08-26 13:38:25,,,
+65,75,258,HATIRLATMA,WHATSAPP,Yarın saat 08:00'de Göz Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-26 08:00:00,,,
+66,76,219,HATIRLATMA,TELEGRAM,Yarın saat 08:20'de Göz Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-26 08:20:00,Evet onaylıyorum,ONAY,2026-08-26 10:11:23
+67,77,85,HATIRLATMA,WHATSAPP,Yarın saat 14:40'ta Göz Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-26 14:40:00,Onaylıyorum,ONAY,2026-08-26 15:40:04
+68,78,113,HATIRLATMA,TELEGRAM,Yarın saat 13:15'te Göğüs Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-26 13:15:00,İnşallah geleceğim,ONAY,2026-08-26 13:53:58
+69,79,113,HATIRLATMA,TELEGRAM,Yarın saat 14:15'te Dahiliye randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-26 14:15:00,"Evet, orada olacağım",ONAY,2026-08-26 16:06:21
+70,80,86,HATIRLATMA,WHATSAPP,Yarın saat 08:45'te Genel Cerrahi randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-27 08:45:00,Geliyorum,ONAY,2026-08-27 10:11:07
+71,81,223,HATIRLATMA,WHATSAPP,Yarın saat 10:20'de Kulak Burun Boğaz randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-27 10:20:00,Evet uygun,ONAY,2026-08-27 10:31:40
+72,82,84,HATIRLATMA,SMS,Yarın saat 11:10'da Kulak Burun Boğaz randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-27 11:10:00,Evet teşekkürler,ONAY,2026-08-27 12:39:28
+73,84,221,HATIRLATMA,WHATSAPP,Yarın saat 14:30'da Çocuk Sağlığı ve Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-27 14:30:00,Evet uygun,ONAY,2026-08-27 14:32:28
+74,85,226,HATIRLATMA,WHATSAPP,Yarın saat 14:00'te Dermatoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-30 14:00:00,İnşallah geleceğim,ONAY,2026-08-30 14:29:14
+75,86,92,HATIRLATMA,WHATSAPP,Yarın saat 14:30'da Dermatoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-30 14:30:00,,,
+76,88,221,HATIRLATMA,WHATSAPP,Yarın saat 11:00'de Kadın Hastalıkları ve Doğum randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-30 11:00:00,Duruma göre,BELIRSIZ,2026-08-30 11:24:46
+77,89,158,HATIRLATMA,SMS,Yarın saat 08:00'de Dahiliye randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-31 08:00:00,Evet hocam,ONAY,2026-08-31 09:31:25
+78,90,29,HATIRLATMA,WEB,Yarın saat 09:15'te Dahiliye randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-31 09:15:00,,,
+79,91,71,HATIRLATMA,WHATSAPP,Yarın saat 09:30'da Dahiliye randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-31 09:30:00,Tamamdır gelirim,ONAY,2026-08-31 11:21:27
+80,92,86,HATIRLATMA,WHATSAPP,Yarın saat 14:00'te Göz Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-31 14:00:00,Evet uygun,ONAY,2026-08-31 15:44:04
+81,93,67,HATIRLATMA,WHATSAPP,Yarın saat 15:00'te Nöroloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-31 15:00:00,Tamam oradayım,ONAY,2026-08-31 15:07:37
+82,94,166,HATIRLATMA,WHATSAPP,Yarın saat 15:45'te Endokrinoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-08-31 15:45:00,,,
+83,95,223,HATIRLATMA,WHATSAPP,Yarın saat 09:30'da Çocuk Sağlığı ve Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-01 09:30:00,,,
+84,96,154,HATIRLATMA,WHATSAPP,Yarın saat 11:15'te Çocuk Sağlığı ve Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-01 11:15:00,,,
+85,97,204,HATIRLATMA,WHATSAPP,Yarın saat 15:15'te Çocuk Sağlığı ve Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-01 15:15:00,Gelirim,ONAY,2026-09-01 16:05:43
+86,98,245,HATIRLATMA,WEB,Yarın saat 13:30'da Ortopedi ve Travmatoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-01 13:30:00,,,
+87,99,135,HATIRLATMA,WHATSAPP,Yarın saat 08:00'de Üroloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-01 08:00:00,Evet uygun,ONAY,2026-09-01 09:48:02
+88,100,131,HATIRLATMA,WEB,Yarın saat 13:30'da Üroloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-01 13:30:00,Randevuma geleceğim,ONAY,2026-09-01 14:01:40
+89,102,54,HATIRLATMA,WHATSAPP,Yarın saat 11:30'da Kadın Hastalıkları ve Doğum randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-02 11:30:00,,,
+90,103,200,HATIRLATMA,SMS,Yarın saat 11:45'te Kadın Hastalıkları ve Doğum randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-02 11:45:00,Evet hocam,ONAY,2026-09-02 12:32:27
+91,104,280,HATIRLATMA,WHATSAPP,Yarın saat 09:20'de Göz Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-02 09:20:00,Evet teşekkürler,ONAY,2026-09-02 09:52:46
+92,105,89,HATIRLATMA,WEB,Yarın saat 13:20'de Göz Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-02 13:20:00,Gelemeyeceğim,IPTAL,2026-09-02 13:26:03
+93,105,89,IPTAL_ONAYI,WEB,Göz Hastalıkları randevunuz iptal edildi.,2026-09-02 13:26:08,,,
+94,106,241,HATIRLATMA,WHATSAPP,Yarın saat 08:30'da Göğüs Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-02 08:30:00,Evet teşekkürler,ONAY,2026-09-02 09:02:46
+95,107,113,HATIRLATMA,TELEGRAM,Yarın saat 09:00'da Genel Cerrahi randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-03 09:00:00,Ok geleceğim,ONAY,2026-09-03 10:30:35
+96,108,172,HATIRLATMA,TELEGRAM,Yarın saat 13:45'te Genel Cerrahi randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-03 13:45:00,Evet uygun,ONAY,2026-09-03 14:28:41
+97,109,77,HATIRLATMA,SMS,Yarın saat 15:45'te Genel Cerrahi randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-03 15:45:00,,,
+98,110,146,HATIRLATMA,WHATSAPP,Yarın saat 13:00'te Çocuk Sağlığı ve Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-03 13:00:00,"Evet, orada olacağım",ONAY,2026-09-03 13:58:53
+99,111,266,HATIRLATMA,WHATSAPP,Yarın saat 11:10'da Kulak Burun Boğaz randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-03 11:10:00,,,
+100,112,107,HATIRLATMA,WHATSAPP,Yarın saat 08:20'de Psikiyatri randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-03 08:20:00,Evet onaylıyorum,ONAY,2026-09-03 08:39:12
+101,113,288,BOS_RANDEVU_TEKLIFI,WHATSAPP,"04.09.2026 10:00 için Psikiyatri branşında boş randevu oluştu, onaylıyor musunuz?",2026-09-01 02:20:17,O saat olmaz,IPTAL,2026-09-01 02:33:44
+102,113,108,BOS_RANDEVU_TEKLIFI,SMS,"04.09.2026 10:00 için Psikiyatri branşında boş randevu oluştu, onaylıyor musunuz?",2026-09-01 02:20:17,O saat olmaz,IPTAL,2026-09-01 02:23:19
+103,114,67,HATIRLATMA,WHATSAPP,Yarın saat 10:15'te Ortopedi ve Travmatoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-06 10:15:00,Gelmeyeceğim,IPTAL,2026-09-06 10:52:58
+104,114,67,IPTAL_ONAYI,WHATSAPP,Ortopedi ve Travmatoloji randevunuz iptal edildi.,2026-09-06 10:53:03,,,
+105,115,38,HATIRLATMA,WHATSAPP,Yarın saat 15:30'da Ortopedi ve Travmatoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-06 15:30:00,Evet geleceğim,ONAY,2026-09-06 16:04:47
+106,116,46,HATIRLATMA,TELEGRAM,Yarın saat 09:30'da Kadın Hastalıkları ve Doğum randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-06 09:30:00,Sonra haber veririm,BELIRSIZ,2026-09-06 11:03:33
+107,117,287,HATIRLATMA,WHATSAPP,Yarın saat 08:15'te Fiziksel Tıp ve Rehabilitasyon randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-06 08:15:00,Gelirim,ONAY,2026-09-06 09:50:41
+108,118,198,HATIRLATMA,WHATSAPP,Yarın saat 09:30'da Dahiliye randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-07 09:30:00,Onaylıyorum,ONAY,2026-09-07 11:22:56
+109,119,64,HATIRLATMA,WHATSAPP,Yarın saat 09:45'te Dahiliye randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-07 09:45:00,,,
+110,120,118,HATIRLATMA,WEB,Yarın saat 11:45'te Dahiliye randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-07 11:45:00,Onaylıyorum,ONAY,2026-09-07 13:36:36
+111,121,126,HATIRLATMA,SMS,Yarın saat 09:30'da Göz Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-07 09:30:00,İnşallah geleceğim,ONAY,2026-09-07 11:06:16
+112,122,50,HATIRLATMA,TELEGRAM,Yarın saat 14:15'te Genel Cerrahi randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-07 14:15:00,Tamamdır gelirim,ONAY,2026-09-07 15:30:10
+113,123,134,HATIRLATMA,SMS,Yarın saat 09:45'te Endokrinoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-07 09:45:00,Ok geleceğim,ONAY,2026-09-07 11:10:55
+114,124,121,HATIRLATMA,SMS,Yarın saat 15:45'te Çocuk Sağlığı ve Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-08 15:45:00,Duruma göre,BELIRSIZ,2026-09-08 16:49:48
+115,125,77,HATIRLATMA,SMS,Yarın saat 09:15'te Dahiliye randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-08 09:15:00,Evet geleceğim,ONAY,2026-09-08 10:38:57
+116,127,264,HATIRLATMA,SMS,Yarın saat 11:45'te Ortopedi ve Travmatoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-08 11:45:00,"Yarın olmaz, haftaya uygunum",ERTELEME,2026-09-08 11:47:27
+117,127,264,IPTAL_ONAYI,SMS,Ortopedi ve Travmatoloji randevunuz iptal edildi.,2026-09-08 11:47:32,,,
+118,128,21,HATIRLATMA,WHATSAPP,Yarın saat 11:30'da Çocuk Cerrahisi randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-08 11:30:00,,,
+119,129,228,HATIRLATMA,WHATSAPP,Yarın saat 15:45'te Kadın Hastalıkları ve Doğum randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-09 15:45:00,Onaylıyorum,ONAY,2026-09-09 17:35:53
+120,130,164,HATIRLATMA,WHATSAPP,Yarın saat 10:10'da Göz Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-09 10:10:00,Vazgeçtim,IPTAL,2026-09-09 11:49:34
+121,130,164,IPTAL_ONAYI,WHATSAPP,Göz Hastalıkları randevunuz iptal edildi.,2026-09-09 11:49:39,,,
+122,130,153,BOS_RANDEVU_TEKLIFI,WHATSAPP,"10.09.2026 10:10 için Göz Hastalıkları branşında boş randevu oluştu, onaylıyor musunuz?",2026-09-09 11:50:04,Evet hocam,ONAY,2026-09-09 11:58:05
+123,132,232,HATIRLATMA,SMS,Yarın saat 10:50'de Göz Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-09 10:50:00,,,
+124,133,280,HATIRLATMA,WHATSAPP,Yarın saat 15:15'te Göğüs Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-09 15:15:00,Onaylıyorum,ONAY,2026-09-09 16:11:20
+125,136,242,HATIRLATMA,WHATSAPP,Yarın saat 08:15'te Genel Cerrahi randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-10 08:15:00,Kesinlikle geleceğim,ONAY,2026-09-10 09:25:44
+126,137,48,HATIRLATMA,WHATSAPP,Yarın saat 09:15'te Çocuk Sağlığı ve Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-10 09:15:00,,,
+127,138,223,HATIRLATMA,WHATSAPP,Yarın saat 09:40'ta Kulak Burun Boğaz randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-10 09:40:00,Evet hocam,ONAY,2026-09-10 10:34:22
+128,139,50,HATIRLATMA,TELEGRAM,Yarın saat 14:30'da Kulak Burun Boğaz randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-10 14:30:00,,,
+129,140,174,HATIRLATMA,WEB,Yarın saat 14:40'ta Psikiyatri randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-10 14:40:00,Tamamdır gelirim,ONAY,2026-09-10 15:54:39
+130,141,233,HATIRLATMA,WHATSAPP,Yarın saat 09:15'te Çocuk Sağlığı ve Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-10 09:15:00,,,
+131,142,101,HATIRLATMA,WHATSAPP,Yarın saat 11:30'da Kadın Hastalıkları ve Doğum randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-13 11:30:00,,,
+132,143,74,HATIRLATMA,WHATSAPP,Yarın saat 11:45'te Kadın Hastalıkları ve Doğum randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-13 11:45:00,Öğleden sonraya alabilir miyiz?,ERTELEME,2026-09-13 12:14:56
+133,143,74,IPTAL_ONAYI,WHATSAPP,Kadın Hastalıkları ve Doğum randevunuz iptal edildi.,2026-09-13 12:15:01,,,
+134,144,107,HATIRLATMA,WHATSAPP,Yarın saat 08:10'da Dermatoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-13 08:10:00,Evet hocam,ONAY,2026-09-13 08:47:45
+135,146,131,HATIRLATMA,WEB,Yarın saat 09:00'da Kadın Hastalıkları ve Doğum randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-13 09:00:00,Hayır gelemem,IPTAL,2026-09-13 10:52:07
+136,146,131,IPTAL_ONAYI,WEB,Kadın Hastalıkları ve Doğum randevunuz iptal edildi.,2026-09-13 10:52:12,,,
+137,147,50,HATIRLATMA,TELEGRAM,Yarın saat 10:30'da Kadın Hastalıkları ve Doğum randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-13 10:30:00,İnşallah geleceğim,ONAY,2026-09-13 10:33:58
+138,148,50,HATIRLATMA,TELEGRAM,Yarın saat 10:45'te Endokrinoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-14 10:45:00,"Evet, orada olacağım",ONAY,2026-09-14 12:09:14
+139,150,204,HATIRLATMA,WHATSAPP,Yarın saat 10:45'te Çocuk Sağlığı ve Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-15 10:45:00,,,
+140,151,197,HATIRLATMA,SMS,Yarın saat 11:30'da Çocuk Sağlığı ve Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-15 11:30:00,Daha ileri bir tarihe alın,ERTELEME,2026-09-15 12:21:56
+141,151,197,IPTAL_ONAYI,SMS,Çocuk Sağlığı ve Hastalıkları randevunuz iptal edildi.,2026-09-15 12:22:01,,,
+142,151,244,BOS_RANDEVU_TEKLIFI,WHATSAPP,"16.09.2026 11:30 için Çocuk Sağlığı ve Hastalıkları branşında boş randevu oluştu, onaylıyor musunuz?",2026-09-15 12:22:26,Evet hocam,ONAY,2026-09-15 12:43:07
+143,153,269,HATIRLATMA,SMS,Yarın saat 13:45'te Çocuk Sağlığı ve Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-15 13:45:00,Gelirim,ONAY,2026-09-15 14:05:02
+144,155,13,HATIRLATMA,SMS,Yarın saat 13:30'da Ortopedi ve Travmatoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-15 13:30:00,Tamam,ONAY,2026-09-15 14:02:02
+145,156,32,HATIRLATMA,SMS,Yarın saat 15:00'te Ortopedi ve Travmatoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-15 15:00:00,"Evet, orada olacağım",ONAY,2026-09-15 15:12:11
+146,157,131,HATIRLATMA,WEB,Yarın saat 10:45'te Üroloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-15 10:45:00,Gelmeyeceğim,IPTAL,2026-09-15 11:31:14
+147,157,131,IPTAL_ONAYI,WEB,Üroloji randevunuz iptal edildi.,2026-09-15 11:31:19,,,
+148,158,24,HATIRLATMA,SMS,Yarın saat 09:30'da Çocuk Cerrahisi randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-15 09:30:00,,,
+149,159,238,HATIRLATMA,WHATSAPP,Yarın saat 09:20'de Göz Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-16 09:20:00,Evet teşekkürler,ONAY,2026-09-16 09:56:10
+150,160,160,HATIRLATMA,WHATSAPP,Yarın saat 11:40'ta Göz Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-16 11:40:00,Geleceğim,ONAY,2026-09-16 12:35:43
+151,162,270,HATIRLATMA,WHATSAPP,Yarın saat 15:00'te Dahiliye randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-16 15:00:00,,,
+152,163,60,HATIRLATMA,SMS,Yarın saat 10:00'da Genel Cerrahi randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-17 10:00:00,Evet teşekkürler,ONAY,2026-09-17 10:27:03
+153,164,126,HATIRLATMA,SMS,Yarın saat 15:15'te Genel Cerrahi randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-17 15:15:00,Onaylıyorum,ONAY,2026-09-17 16:00:14
+154,165,106,HATIRLATMA,SMS,Yarın saat 11:15'te Çocuk Sağlığı ve Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-17 11:15:00,Evet geleceğim,ONAY,2026-09-17 12:08:40
+155,166,275,HATIRLATMA,SMS,Yarın saat 10:00'da Kadın Hastalıkları ve Doğum randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-20 10:00:00,Tamamdır gelirim,ONAY,2026-09-20 10:27:05
+156,167,160,HATIRLATMA,WHATSAPP,Yarın saat 08:50'de Dermatoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-20 08:50:00,Olur,ONAY,2026-09-20 09:43:27
+157,168,269,HATIRLATMA,SMS,Yarın saat 10:10'da Dermatoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-20 10:10:00,,,
+158,170,206,HATIRLATMA,WHATSAPP,Yarın saat 15:45'te Dahiliye randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-21 15:45:00,Evet uygun,ONAY,2026-09-21 17:27:00
+159,171,137,HATIRLATMA,WHATSAPP,Yarın saat 10:50'de Göz Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-21 10:50:00,Şehir dışındayım gelemem,IPTAL,2026-09-21 10:52:43
+160,171,137,IPTAL_ONAYI,WHATSAPP,Göz Hastalıkları randevunuz iptal edildi.,2026-09-21 10:52:48,,,
+161,172,233,BOS_RANDEVU_TEKLIFI,WHATSAPP,"22.09.2026 15:40 için Göz Hastalıkları branşında boş randevu oluştu, onaylıyor musunuz?",2026-09-19 20:08:16,Uygun değilim,IPTAL,2026-09-19 20:32:42
+162,172,208,BOS_RANDEVU_TEKLIFI,SMS,"22.09.2026 15:40 için Göz Hastalıkları branşında boş randevu oluştu, onaylıyor musunuz?",2026-09-19 20:08:16,Geleceğim,ONAY,2026-09-19 20:21:44
+163,173,208,HATIRLATMA,SMS,Yarın saat 15:40'ta Göz Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-21 15:40:00,,,
+164,175,22,HATIRLATMA,TELEGRAM,Yarın saat 14:45'te Endokrinoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-21 14:45:00,Geleceğim,ONAY,2026-09-21 16:37:06
+165,177,254,BOS_RANDEVU_TEKLIFI,WHATSAPP,"23.09.2026 14:15 için Üroloji branşında boş randevu oluştu, onaylıyor musunuz?",2026-09-22 12:29:45,Uygun değilim,IPTAL,2026-09-22 12:39:23
+166,177,143,BOS_RANDEVU_TEKLIFI,WEB,"23.09.2026 14:15 için Üroloji branşında boş randevu oluştu, onaylıyor musunuz?",2026-09-22 12:29:45,,,
+167,179,194,HATIRLATMA,WHATSAPP,Yarın saat 10:45'te Kardiyoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-23 10:45:00,İptal etmek istiyorum,IPTAL,2026-09-23 11:25:07
+168,179,194,IPTAL_ONAYI,WHATSAPP,Kardiyoloji randevunuz iptal edildi.,2026-09-23 11:25:12,,,
+169,179,141,BOS_RANDEVU_TEKLIFI,WHATSAPP,"24.09.2026 10:45 için Kardiyoloji branşında boş randevu oluştu, onaylıyor musunuz?",2026-09-23 11:25:37,O saat olmaz,IPTAL,2026-09-23 11:38:54
+170,180,12,HATIRLATMA,TELEGRAM,Yarın saat 09:40'ta Göz Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-23 09:40:00,,,
+171,181,259,HATIRLATMA,WHATSAPP,Yarın saat 10:50'de Göz Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-23 10:50:00,Onaylıyorum,ONAY,2026-09-23 12:07:53
+172,183,59,HATIRLATMA,WHATSAPP,Yarın saat 15:00'te Göz Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-23 15:00:00,,,
+173,184,32,HATIRLATMA,SMS,Yarın saat 15:20'de Göz Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-23 15:20:00,,,
+174,185,45,HATIRLATMA,WHATSAPP,Yarın saat 13:45'te Dahiliye randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-23 13:45:00,,,
+175,186,174,HATIRLATMA,WEB,Yarın saat 13:15'te Genel Cerrahi randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-24 13:15:00,,,
+176,187,192,HATIRLATMA,SMS,Yarın saat 08:20'de Kulak Burun Boğaz randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-24 08:20:00,Gelirim,ONAY,2026-09-24 08:40:43
+177,188,148,HATIRLATMA,SMS,Yarın saat 11:00'de Kadın Hastalıkları ve Doğum randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-27 11:00:00,Randevuma geleceğim,ONAY,2026-09-27 12:15:37
+178,189,135,HATIRLATMA,WHATSAPP,Yarın saat 15:45'te Kadın Hastalıkları ve Doğum randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-27 15:45:00,Tamamdır gelirim,ONAY,2026-09-27 17:26:58
+179,190,39,HATIRLATMA,SMS,Yarın saat 15:30'da Dermatoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-27 15:30:00,Evet onaylıyorum,ONAY,2026-09-27 17:09:49
+180,191,112,HATIRLATMA,WHATSAPP,Yarın saat 11:15'te Fiziksel Tıp ve Rehabilitasyon randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-27 11:15:00,Geleceğim,ONAY,2026-09-27 12:09:53
+181,193,198,HATIRLATMA,WHATSAPP,Yarın saat 08:30'da Göz Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-28 08:30:00,,,
+182,194,55,HATIRLATMA,WHATSAPP,Yarın saat 14:30'da Göz Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-28 14:30:00,"Evet, orada olacağım",ONAY,2026-09-28 14:40:40
+183,196,127,HATIRLATMA,SMS,Yarın saat 11:00'de Nöroloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-28 11:00:00,Ertelemek istiyorum,ERTELEME,2026-09-28 11:42:55
+184,196,127,IPTAL_ONAYI,SMS,Nöroloji randevunuz iptal edildi.,2026-09-28 11:43:00,,,
+185,197,84,HATIRLATMA,SMS,Yarın saat 14:20'de Nöroloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-28 14:20:00,Randevuma geleceğim,ONAY,2026-09-28 15:24:04
+186,198,37,HATIRLATMA,WEB,Yarın saat 09:00'da Endokrinoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-28 09:00:00,İnşallah geleceğim,ONAY,2026-09-28 10:12:16
+187,199,224,HATIRLATMA,SMS,Yarın saat 09:15'te Çocuk Sağlığı ve Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-29 09:15:00,,,
+188,200,258,HATIRLATMA,WHATSAPP,Yarın saat 11:15'te Çocuk Sağlığı ve Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-29 11:15:00,,,
+189,201,74,HATIRLATMA,WHATSAPP,Yarın saat 13:15'te Ortopedi ve Travmatoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-29 13:15:00,Hayır,IPTAL,2026-09-29 14:44:34
+190,201,74,IPTAL_ONAYI,WHATSAPP,Ortopedi ve Travmatoloji randevunuz iptal edildi.,2026-09-29 14:44:39,,,
+191,201,122,BOS_RANDEVU_TEKLIFI,SMS,"30.09.2026 13:15 için Ortopedi ve Travmatoloji branşında boş randevu oluştu, onaylıyor musunuz?",2026-09-29 14:45:04,Hayır teşekkürler,IPTAL,2026-09-29 14:50:22
+192,201,149,BOS_RANDEVU_TEKLIFI,SMS,"30.09.2026 13:15 için Ortopedi ve Travmatoloji branşında boş randevu oluştu, onaylıyor musunuz?",2026-09-29 14:45:04,,,
+193,201,133,BOS_RANDEVU_TEKLIFI,TELEGRAM,"30.09.2026 13:15 için Ortopedi ve Travmatoloji branşında boş randevu oluştu, onaylıyor musunuz?",2026-09-29 14:45:04,,,
+194,202,254,HATIRLATMA,WHATSAPP,Yarın saat 08:30'da Çocuk Cerrahisi randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-29 08:30:00,Hangi binaya gideceğim?,SORU,2026-09-29 08:59:25
+195,203,287,HATIRLATMA,WHATSAPP,Yarın saat 08:30'da Kardiyoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-30 08:30:00,,,
+196,204,181,HATIRLATMA,WHATSAPP,Yarın saat 13:45'te Kardiyoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-30 13:45:00,Tamam,ONAY,2026-09-30 15:30:01
+197,206,200,HATIRLATMA,SMS,Yarın saat 08:45'te Göğüs Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-30 08:45:00,,,
+198,206,38,BOS_RANDEVU_TEKLIFI,WHATSAPP,"01.10.2026 08:45 için Göğüs Hastalıkları branşında boş randevu oluştu, onaylıyor musunuz?",2026-09-30 15:33:54,Randevuma geleceğim,ONAY,2026-09-30 15:42:20
+199,208,88,HATIRLATMA,WHATSAPP,Yarın saat 13:30'da Göğüs Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-30 13:30:00,,,
+200,209,120,HATIRLATMA,WEB,Yarın saat 10:30'da Dahiliye randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-30 10:30:00,,,
+201,210,214,HATIRLATMA,WHATSAPP,Yarın saat 15:00'te Dahiliye randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-09-30 15:00:00,,,
+202,211,194,HATIRLATMA,WHATSAPP,Yarın saat 11:15'te Genel Cerrahi randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-01 11:15:00,Evet,ONAY,2026-10-01 11:28:49
+203,212,274,HATIRLATMA,WHATSAPP,Yarın saat 14:00'te Genel Cerrahi randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-01 14:00:00,Randevuma geleceğim,ONAY,2026-10-01 15:52:59
+204,214,131,HATIRLATMA,WEB,Yarın saat 14:00'te Psikiyatri randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-01 14:00:00,Evet teşekkürler,ONAY,2026-10-01 15:21:15
+205,215,254,HATIRLATMA,WHATSAPP,Yarın saat 14:00'te Ortopedi ve Travmatoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-04 14:00:00,Yetişemem iptal olsun,IPTAL,2026-10-04 15:25:09
+206,215,254,IPTAL_ONAYI,WHATSAPP,Ortopedi ve Travmatoloji randevunuz iptal edildi.,2026-10-04 15:25:14,,,
+207,215,122,BOS_RANDEVU_TEKLIFI,SMS,"05.10.2026 14:00 için Ortopedi ve Travmatoloji branşında boş randevu oluştu, onaylıyor musunuz?",2026-10-04 15:25:39,,,
+208,215,149,BOS_RANDEVU_TEKLIFI,SMS,"05.10.2026 14:00 için Ortopedi ve Travmatoloji branşında boş randevu oluştu, onaylıyor musunuz?",2026-10-04 15:25:39,Randevuma geleceğim,ONAY,2026-10-04 15:34:13
+209,217,290,HATIRLATMA,SMS,Yarın saat 08:30'da Kadın Hastalıkları ve Doğum randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-04 08:30:00,,,
+210,218,124,HATIRLATMA,WHATSAPP,Yarın saat 09:30'da Kadın Hastalıkları ve Doğum randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-04 09:30:00,Evet teşekkürler,ONAY,2026-10-04 10:11:01
+211,219,277,HATIRLATMA,WEB,Yarın saat 08:30'da Dermatoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-04 08:30:00,Kesinlikle geleceğim,ONAY,2026-10-04 10:17:54
+212,220,77,HATIRLATMA,SMS,Yarın saat 11:20'de Dermatoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-04 11:20:00,,,
+213,221,163,HATIRLATMA,TELEGRAM,Yarın saat 11:15'te Kadın Hastalıkları ve Doğum randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-04 11:15:00,İnşallah geleceğim,ONAY,2026-10-04 13:08:36
+214,222,101,HATIRLATMA,WHATSAPP,Yarın saat 10:00'da Genel Cerrahi randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-05 10:00:00,Onaylıyorum,ONAY,2026-10-05 11:08:26
+215,223,205,HATIRLATMA,SMS,Yarın saat 09:30'da Endokrinoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-05 09:30:00,,,
+216,224,79,HATIRLATMA,WEB,Yarın saat 10:30'da Çocuk Sağlığı ve Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-06 10:30:00,,,
+217,225,48,HATIRLATMA,WHATSAPP,Yarın saat 15:00'te Çocuk Sağlığı ve Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-06 15:00:00,Tamam oradayım,ONAY,2026-10-06 15:10:02
+218,226,41,HATIRLATMA,TELEGRAM,Yarın saat 09:45'te Dahiliye randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-06 09:45:00,Tamam,ONAY,2026-10-06 10:55:10
+219,227,126,HATIRLATMA,SMS,Yarın saat 11:45'te Dahiliye randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-06 11:45:00,Onaylıyorum,ONAY,2026-10-06 12:09:22
+220,228,289,HATIRLATMA,WHATSAPP,Yarın saat 09:00'da Ortopedi ve Travmatoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-06 09:00:00,,,
+221,229,77,HATIRLATMA,SMS,Yarın saat 13:30'da Ortopedi ve Travmatoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-06 13:30:00,Hangi binaya gideceğim?,SORU,2026-10-06 14:27:53
+222,230,83,HATIRLATMA,WHATSAPP,Yarın saat 14:45'te Ortopedi ve Travmatoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-06 14:45:00,Gelirim,ONAY,2026-10-06 14:46:39
+223,231,204,HATIRLATMA,WHATSAPP,Yarın saat 14:15'te Çocuk Cerrahisi randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-06 14:15:00,Evet uygun,ONAY,2026-10-06 15:29:54
+224,232,226,HATIRLATMA,WHATSAPP,Yarın saat 08:15'te Kadın Hastalıkları ve Doğum randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-07 08:15:00,Geliyorum,ONAY,2026-10-07 09:29:28
+225,233,141,BOS_RANDEVU_TEKLIFI,WHATSAPP,"08.10.2026 11:15 için Kardiyoloji branşında boş randevu oluştu, onaylıyor musunuz?",2026-10-03 16:49:30,Tamamdır gelirim,ONAY,2026-10-03 16:53:13
+226,234,141,HATIRLATMA,WHATSAPP,Yarın saat 11:15'te Kardiyoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-07 11:15:00,Evet teşekkürler,ONAY,2026-10-07 13:07:23
+227,235,289,HATIRLATMA,WHATSAPP,Yarın saat 11:30'da Kardiyoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-07 11:30:00,Tamam,ONAY,2026-10-07 13:01:47
+228,237,89,HATIRLATMA,WEB,Yarın saat 09:20'de Göz Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-07 09:20:00,,,
+229,238,6,HATIRLATMA,WHATSAPP,Yarın saat 15:30'da Göz Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-07 15:30:00,Başka saat var mı?,ERTELEME,2026-10-07 15:31:07
+230,238,6,IPTAL_ONAYI,WHATSAPP,Göz Hastalıkları randevunuz iptal edildi.,2026-10-07 15:31:12,,,
+231,239,165,HATIRLATMA,WHATSAPP,Yarın saat 08:30'da Göğüs Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-07 08:30:00,Evet uygun,ONAY,2026-10-07 09:33:01
+232,240,171,HATIRLATMA,SMS,Yarın saat 11:30'da Göğüs Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-07 11:30:00,Ok geleceğim,ONAY,2026-10-07 11:43:47
+233,241,99,HATIRLATMA,WHATSAPP,Yarın saat 09:00'da Dahiliye randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-07 09:00:00,,,
+234,241,3,BOS_RANDEVU_TEKLIFI,SMS,"08.10.2026 09:00 için Dahiliye branşında boş randevu oluştu, onaylıyor musunuz?",2026-10-07 11:00:30,,,
+235,241,203,BOS_RANDEVU_TEKLIFI,SMS,"08.10.2026 09:00 için Dahiliye branşında boş randevu oluştu, onaylıyor musunuz?",2026-10-07 11:00:30,,,
+236,242,288,HATIRLATMA,WHATSAPP,Yarın saat 11:00'de Dahiliye randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-07 11:00:00,Evet hocam,ONAY,2026-10-07 12:48:28
+237,243,88,HATIRLATMA,WHATSAPP,Yarın saat 13:30'da Dahiliye randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-07 13:30:00,Kim bu?,BELIRSIZ,2026-10-07 13:40:08
+238,245,121,HATIRLATMA,SMS,Yarın saat 15:45'te Çocuk Sağlığı ve Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-08 15:45:00,Randevuma geleceğim,ONAY,2026-10-08 15:56:07
+239,246,278,HATIRLATMA,WHATSAPP,Yarın saat 09:40'ta Kulak Burun Boğaz randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-08 09:40:00,Evet teşekkürler,ONAY,2026-10-08 10:09:16
+240,247,123,HATIRLATMA,WHATSAPP,Yarın saat 13:10'da Kulak Burun Boğaz randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-08 13:10:00,Geleceğim,ONAY,2026-10-08 14:25:49
+241,248,195,HATIRLATMA,WHATSAPP,Yarın saat 13:30'da Kulak Burun Boğaz randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-08 13:30:00,,,
+242,249,124,HATIRLATMA,WHATSAPP,Yarın saat 13:50'de Kulak Burun Boğaz randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-08 13:50:00,,,
+243,251,49,HATIRLATMA,WEB,Yarın saat 11:30'da Çocuk Sağlığı ve Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-08 11:30:00,,,
+244,253,218,HATIRLATMA,SMS,Yarın saat 09:30'da Ortopedi ve Travmatoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-11 09:30:00,,,
+245,254,229,HATIRLATMA,WHATSAPP,Yarın saat 14:00'te Ortopedi ve Travmatoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-11 14:00:00,Tamamdır gelirim,ONAY,2026-10-11 15:42:52
+246,255,101,HATIRLATMA,WHATSAPP,Yarın saat 13:15'te Kadın Hastalıkları ve Doğum randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-11 13:15:00,Geleceğim,ONAY,2026-10-11 14:05:57
+247,256,5,HATIRLATMA,SMS,Yarın saat 08:20'de Dermatoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-11 08:20:00,Kesinlikle geleceğim,ONAY,2026-10-11 08:37:21
+248,257,246,BOS_RANDEVU_TEKLIFI,SMS,"12.10.2026 13:20 için Dermatoloji branşında boş randevu oluştu, onaylıyor musunuz?",2026-10-09 00:37:02,Evet hocam,ONAY,2026-10-09 00:54:36
+249,258,246,HATIRLATMA,SMS,Yarın saat 13:20'de Dermatoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-11 13:20:00,Kim bu?,BELIRSIZ,2026-10-11 14:33:14
+250,259,57,HATIRLATMA,SMS,Yarın saat 14:30'da Dermatoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-11 14:30:00,Kesinlikle geleceğim,ONAY,2026-10-11 14:54:15
+251,260,273,HATIRLATMA,TELEGRAM,Yarın saat 09:15'te Kadın Hastalıkları ve Doğum randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-11 09:15:00,Evet,ONAY,2026-10-11 09:50:48
+252,261,174,HATIRLATMA,WEB,Yarın saat 15:30'da Dahiliye randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-12 15:30:00,Onaylıyorum,ONAY,2026-10-12 16:07:00
+253,262,68,HATIRLATMA,WEB,Yarın saat 14:00'te Göz Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-12 14:00:00,,,
+254,263,200,HATIRLATMA,SMS,Yarın saat 13:30'da Genel Cerrahi randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-12 13:30:00,,,
+255,264,87,HATIRLATMA,SMS,Yarın saat 08:40'ta Nöroloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-12 08:40:00,Olur,ONAY,2026-10-12 09:03:34
+256,265,227,HATIRLATMA,WEB,Yarın saat 09:00'da Nöroloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-12 09:00:00,Evet geleceğim,ONAY,2026-10-12 09:45:31
+257,266,158,HATIRLATMA,SMS,Yarın saat 15:00'te Nöroloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-12 15:00:00,,,
+258,267,64,HATIRLATMA,WHATSAPP,Yarın saat 10:45'te Endokrinoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-12 10:45:00,Randevuma geleceğim,ONAY,2026-10-12 11:39:40
+259,268,204,HATIRLATMA,WHATSAPP,Yarın saat 08:30'da Çocuk Sağlığı ve Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-13 08:30:00,,,
+260,269,122,HATIRLATMA,SMS,Yarın saat 10:15'te Ortopedi ve Travmatoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-13 10:15:00,Evet uygun,ONAY,2026-10-13 12:02:56
+261,270,35,HATIRLATMA,WHATSAPP,Yarın saat 11:15'te Ortopedi ve Travmatoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-13 11:15:00,Maalesef gelemiyorum,IPTAL,2026-10-13 11:50:03
+262,270,35,IPTAL_ONAYI,WHATSAPP,Ortopedi ve Travmatoloji randevunuz iptal edildi.,2026-10-13 11:50:08,,,
+263,270,122,BOS_RANDEVU_TEKLIFI,SMS,"14.10.2026 11:15 için Ortopedi ve Travmatoloji branşında boş randevu oluştu, onaylıyor musunuz?",2026-10-13 11:50:33,Uygun değilim,IPTAL,2026-10-13 11:54:08
+264,270,133,BOS_RANDEVU_TEKLIFI,TELEGRAM,"14.10.2026 11:15 için Ortopedi ve Travmatoloji branşında boş randevu oluştu, onaylıyor musunuz?",2026-10-13 11:50:33,Uygun değilim,IPTAL,2026-10-13 11:59:26
+265,271,24,HATIRLATMA,SMS,Yarın saat 09:00'da Üroloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-13 09:00:00,,,
+266,273,170,HATIRLATMA,WHATSAPP,Yarın saat 11:45'te Üroloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-13 11:45:00,Emin değilim,BELIRSIZ,2026-10-13 12:13:44
+267,274,24,HATIRLATMA,SMS,Yarın saat 14:30'da Çocuk Cerrahisi randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-13 14:30:00,Gelirim,ONAY,2026-10-13 16:16:00
+268,275,107,HATIRLATMA,WHATSAPP,Yarın saat 14:00'te Kadın Hastalıkları ve Doğum randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-14 14:00:00,Evet,ONAY,2026-10-14 15:21:13
+269,276,222,HATIRLATMA,WHATSAPP,Yarın saat 14:15'te Kadın Hastalıkları ve Doğum randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-14 14:15:00,Randevuma geleceğim,ONAY,2026-10-14 14:45:59
+270,277,124,HATIRLATMA,WHATSAPP,Yarın saat 10:20'de Göz Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-14 10:20:00,,,
+271,278,149,HATIRLATMA,SMS,Yarın saat 10:30'da Göz Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-14 10:30:00,Evet uygun,ONAY,2026-10-14 10:58:41
+272,279,197,HATIRLATMA,SMS,Yarın saat 13:40'ta Göz Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-14 13:40:00,,,
+273,280,127,HATIRLATMA,SMS,Yarın saat 13:15'te Göğüs Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-14 13:15:00,Emin değilim,BELIRSIZ,2026-10-14 14:46:26
+274,281,92,HATIRLATMA,WHATSAPP,Yarın saat 15:00'te Göğüs Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-14 15:00:00,Gelemeyeceğim,IPTAL,2026-10-14 15:26:35
+275,281,92,IPTAL_ONAYI,WHATSAPP,Göğüs Hastalıkları randevunuz iptal edildi.,2026-10-14 15:26:40,,,
+276,281,20,BOS_RANDEVU_TEKLIFI,SMS,"15.10.2026 15:00 için Göğüs Hastalıkları branşında boş randevu oluştu, onaylıyor musunuz?",2026-10-14 15:27:05,Gelirim,ONAY,2026-10-14 15:48:18
+277,283,196,HATIRLATMA,WHATSAPP,Yarın saat 10:15'te Dahiliye randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-14 10:15:00,,,
+278,284,252,HATIRLATMA,WHATSAPP,Yarın saat 13:15'te Dahiliye randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-14 13:15:00,Ok geleceğim,ONAY,2026-10-14 13:19:54
+279,285,273,HATIRLATMA,TELEGRAM,Yarın saat 13:30'da Dahiliye randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-14 13:30:00,,,
+280,286,58,HATIRLATMA,WHATSAPP,Yarın saat 14:30'da Dahiliye randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-14 14:30:00,Tamam,ONAY,2026-10-14 15:51:32
+281,287,208,HATIRLATMA,SMS,Yarın saat 14:45'te Genel Cerrahi randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-15 14:45:00,,,
+282,288,269,HATIRLATMA,SMS,Yarın saat 09:15'te Çocuk Sağlığı ve Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-15 09:15:00,Tamam oradayım,ONAY,2026-10-15 10:59:59
+283,289,57,HATIRLATMA,SMS,Yarın saat 11:00'de Çocuk Sağlığı ve Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-15 11:00:00,Vazgeçtim,IPTAL,2026-10-15 12:08:42
+284,289,57,IPTAL_ONAYI,SMS,Çocuk Sağlığı ve Hastalıkları randevunuz iptal edildi.,2026-10-15 12:08:47,,,
+285,290,134,HATIRLATMA,SMS,Yarın saat 10:00'da Kulak Burun Boğaz randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-15 10:00:00,,,
+286,291,39,HATIRLATMA,SMS,Yarın saat 13:30'da Kulak Burun Boğaz randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-15 13:30:00,Ok geleceğim,ONAY,2026-10-15 13:57:59
+287,293,297,HATIRLATMA,WHATSAPP,Yarın saat 13:45'te Çocuk Sağlığı ve Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-15 13:45:00,Ertelemek istiyorum,ERTELEME,2026-10-15 14:41:30
+288,293,297,IPTAL_ONAYI,WHATSAPP,Çocuk Sağlığı ve Hastalıkları randevunuz iptal edildi.,2026-10-15 14:41:35,,,
+289,295,148,HATIRLATMA,SMS,Yarın saat 08:15'te Kadın Hastalıkları ve Doğum randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-18 08:15:00,Geleceğim,ONAY,2026-10-18 10:01:48
+290,296,226,HATIRLATMA,WHATSAPP,Yarın saat 13:00'te Kadın Hastalıkları ve Doğum randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-18 13:00:00,Randevuma geleceğim,ONAY,2026-10-18 14:54:41
+291,297,135,HATIRLATMA,WHATSAPP,Yarın saat 14:45'te Kadın Hastalıkları ve Doğum randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-18 14:45:00,Vazgeçtim,IPTAL,2026-10-18 14:48:10
+292,297,135,IPTAL_ONAYI,WHATSAPP,Kadın Hastalıkları ve Doğum randevunuz iptal edildi.,2026-10-18 14:48:15,,,
+293,298,132,HATIRLATMA,WHATSAPP,Yarın saat 10:10'da Dermatoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-18 10:10:00,"Evet, orada olacağım",ONAY,2026-10-18 11:32:37
+294,299,263,HATIRLATMA,TELEGRAM,Yarın saat 11:40'ta Dermatoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-18 11:40:00,Tamam,ONAY,2026-10-18 13:13:26
+295,300,299,HATIRLATMA,WHATSAPP,Yarın saat 08:30'da Fiziksel Tıp ve Rehabilitasyon randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-18 08:30:00,,,
+296,301,141,HATIRLATMA,WHATSAPP,Yarın saat 13:00'te Kadın Hastalıkları ve Doğum randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-18 13:00:00,İnşallah geleceğim,ONAY,2026-10-18 13:01:45
+297,302,85,HATIRLATMA,WHATSAPP,Yarın saat 13:15'te Kadın Hastalıkları ve Doğum randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-18 13:15:00,,,
+298,303,3,HATIRLATMA,SMS,Yarın saat 11:10'da Göz Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-19 11:10:00,,,
+299,305,192,HATIRLATMA,SMS,Yarın saat 13:45'te Genel Cerrahi randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-19 13:45:00,,,
+300,306,224,HATIRLATMA,SMS,Yarın saat 09:15'te Çocuk Sağlığı ve Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-20 09:15:00,,,
+301,307,121,HATIRLATMA,SMS,Yarın saat 10:45'te Çocuk Sağlığı ve Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-20 10:45:00,Kesinlikle geleceğim,ONAY,2026-10-20 10:50:23
+302,308,203,HATIRLATMA,SMS,Yarın saat 10:30'da Üroloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-20 10:30:00,Yetişemem iptal olsun,IPTAL,2026-10-20 11:12:11
+303,308,203,IPTAL_ONAYI,SMS,Üroloji randevunuz iptal edildi.,2026-10-20 11:12:16,,,
+304,308,241,BOS_RANDEVU_TEKLIFI,WHATSAPP,"21.10.2026 10:30 için Üroloji branşında boş randevu oluştu, onaylıyor musunuz?",2026-10-20 11:12:41,Geliyorum,ONAY,2026-10-20 11:34:55
+305,310,112,HATIRLATMA,WHATSAPP,Yarın saat 08:30'da Kadın Hastalıkları ve Doğum randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-21 08:30:00,Evet hocam,ONAY,2026-10-21 09:15:25
+306,311,229,HATIRLATMA,WHATSAPP,Yarın saat 14:45'te Kadın Hastalıkları ve Doğum randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-21 14:45:00,,,
+307,312,177,HATIRLATMA,SMS,Yarın saat 10:30'da Kardiyoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-21 10:30:00,Randevuyu ileri atın,ERTELEME,2026-10-21 11:52:05
+308,312,177,IPTAL_ONAYI,SMS,Kardiyoloji randevunuz iptal edildi.,2026-10-21 11:52:10,,,
+309,313,100,HATIRLATMA,SMS,Yarın saat 08:20'de Göz Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-21 08:20:00,Evet,ONAY,2026-10-21 09:19:40
+310,314,60,HATIRLATMA,SMS,Yarın saat 10:40'ta Göz Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-21 10:40:00,Evet hocam,ONAY,2026-10-21 12:03:54
+311,315,152,HATIRLATMA,SMS,Yarın saat 13:10'da Göz Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-21 13:10:00,Vazgeçtim,IPTAL,2026-10-21 13:32:23
+312,315,152,IPTAL_ONAYI,SMS,Göz Hastalıkları randevunuz iptal edildi.,2026-10-21 13:32:28,,,
+313,315,185,BOS_RANDEVU_TEKLIFI,SMS,"22.10.2026 13:10 için Göz Hastalıkları branşında boş randevu oluştu, onaylıyor musunuz?",2026-10-21 13:32:53,Tamam oradayım,ONAY,2026-10-21 13:40:53
+314,317,51,HATIRLATMA,WHATSAPP,Yarın saat 11:45'te Göğüs Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-21 11:45:00,Olur,ONAY,2026-10-21 12:09:02
+315,319,242,HATIRLATMA,WHATSAPP,Yarın saat 09:45'te Genel Cerrahi randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-22 09:45:00,,,
+316,320,39,HATIRLATMA,SMS,Yarın saat 11:45'te Genel Cerrahi randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-22 11:45:00,,,
+317,321,169,HATIRLATMA,SMS,Yarın saat 14:30'da Çocuk Sağlığı ve Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-22 14:30:00,Evet uygun,ONAY,2026-10-22 15:56:58
+318,322,4,HATIRLATMA,WHATSAPP,Yarın saat 08:30'da Ortopedi ve Travmatoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-25 08:30:00,Olur,ONAY,2026-10-25 08:44:10
+319,323,300,HATIRLATMA,WHATSAPP,Yarın saat 11:15'te Ortopedi ve Travmatoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-25 11:15:00,Evet hocam,ONAY,2026-10-25 12:42:17
+320,324,52,HATIRLATMA,WHATSAPP,Yarın saat 08:10'da Dermatoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-25 08:10:00,,,
+321,325,140,HATIRLATMA,WEB,Yarın saat 08:00'de Fiziksel Tıp ve Rehabilitasyon randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-25 08:00:00,Evet teşekkürler,ONAY,2026-10-25 09:06:30
+322,326,252,HATIRLATMA,WHATSAPP,Yarın saat 09:10'da Göz Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-26 09:10:00,,,
+323,327,261,HATIRLATMA,WEB,Yarın saat 11:00'de Dahiliye randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-27 11:00:00,,,
+324,328,198,HATIRLATMA,WHATSAPP,Yarın saat 08:45'te Üroloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-27 08:45:00,,,
+325,328,39,BOS_RANDEVU_TEKLIFI,SMS,"28.10.2026 08:45 için Üroloji branşında boş randevu oluştu, onaylıyor musunuz?",2026-10-27 10:45:30,Hayır teşekkürler,IPTAL,2026-10-27 10:54:25
+326,328,266,BOS_RANDEVU_TEKLIFI,WHATSAPP,"28.10.2026 08:45 için Üroloji branşında boş randevu oluştu, onaylıyor musunuz?",2026-10-27 10:45:30,Olur,ONAY,2026-10-27 10:48:46
+327,330,221,HATIRLATMA,WHATSAPP,Yarın saat 09:00'da Çocuk Cerrahisi randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-27 09:00:00,İnşallah geleceğim,ONAY,2026-10-27 10:12:58
+328,331,189,HATIRLATMA,WHATSAPP,Yarın saat 13:30'da Kulak Burun Boğaz randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-29 13:30:00,,,
+329,332,35,HATIRLATMA,WHATSAPP,Yarın saat 14:20'de Kulak Burun Boğaz randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-29 14:20:00,Onaylıyorum,ONAY,2026-10-29 14:40:33
+330,333,116,HATIRLATMA,SMS,Yarın saat 15:30'da Kulak Burun Boğaz randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-29 15:30:00,,,
+331,334,180,HATIRLATMA,WHATSAPP,Yarın saat 09:20'de Psikiyatri randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-29 09:20:00,Evet,ONAY,2026-10-29 09:39:52
+332,337,294,HATIRLATMA,WHATSAPP,Yarın saat 09:30'da Çocuk Sağlığı ve Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-29 09:30:00,Evet,ONAY,2026-10-29 10:44:27
+333,338,257,HATIRLATMA,WHATSAPP,Yarın saat 09:45'te Çocuk Sağlığı ve Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-29 09:45:00,,,
+334,339,197,HATIRLATMA,SMS,Yarın saat 11:00'de Çocuk Sağlığı ve Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-10-29 11:00:00,,,
+335,340,195,BOS_RANDEVU_TEKLIFI,WHATSAPP,"30.10.2026 15:00 için Çocuk Sağlığı ve Hastalıkları branşında boş randevu oluştu, onaylıyor musunuz?",2026-10-22 06:09:52,,,
+336,342,86,HATIRLATMA,WHATSAPP,Yarın saat 11:30'da Ortopedi ve Travmatoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-11-01 11:30:00,Kesinlikle geleceğim,ONAY,2026-11-01 11:55:17
+337,343,68,HATIRLATMA,WEB,Yarın saat 10:00'da Kadın Hastalıkları ve Doğum randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-11-01 10:00:00,Kesinlikle geleceğim,ONAY,2026-11-01 10:20:22
+338,344,227,HATIRLATMA,WEB,Yarın saat 13:30'da Kadın Hastalıkları ve Doğum randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-11-01 13:30:00,Tamamdır gelirim,ONAY,2026-11-01 13:52:05
+339,345,130,HATIRLATMA,SMS,Yarın saat 13:45'te Kadın Hastalıkları ve Doğum randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-11-01 13:45:00,Evet,ONAY,2026-11-01 15:39:33
+340,346,206,HATIRLATMA,WHATSAPP,Yarın saat 10:30'da Dermatoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-11-01 10:30:00,Evet hocam,ONAY,2026-11-01 11:40:51
+341,347,134,HATIRLATMA,SMS,Yarın saat 10:50'de Dermatoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-11-01 10:50:00,Randevuma geleceğim,ONAY,2026-11-01 11:43:14
+342,349,141,HATIRLATMA,WHATSAPP,Yarın saat 09:45'te Fiziksel Tıp ve Rehabilitasyon randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-11-01 09:45:00,Geliyorum,ONAY,2026-11-01 10:04:30
+343,350,7,HATIRLATMA,SMS,Yarın saat 13:15'te Fiziksel Tıp ve Rehabilitasyon randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-11-01 13:15:00,,,
+344,351,161,HATIRLATMA,SMS,Yarın saat 11:15'te Kadın Hastalıkları ve Doğum randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-11-01 11:15:00,Olur,ONAY,2026-11-01 13:05:57
+345,353,51,HATIRLATMA,WHATSAPP,Yarın saat 14:45'te Dahiliye randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-11-02 14:45:00,,,
+346,354,60,HATIRLATMA,SMS,Yarın saat 13:00'te Göz Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-11-02 13:00:00,Tamamdır gelirim,ONAY,2026-11-02 13:19:33
+347,355,103,HATIRLATMA,WHATSAPP,Yarın saat 09:45'te Genel Cerrahi randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-11-02 09:45:00,,,
+348,355,292,BOS_RANDEVU_TEKLIFI,SMS,"03.11.2026 09:45 için Genel Cerrahi branşında boş randevu oluştu, onaylıyor musunuz?",2026-11-03 04:18:51,"Evet, orada olacağım",ONAY,2026-11-03 04:21:07
+349,357,37,HATIRLATMA,WEB,Yarın saat 11:45'te Genel Cerrahi randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-11-02 11:45:00,Gelmeyeceğim,IPTAL,2026-11-02 11:52:19
+350,357,37,IPTAL_ONAYI,WEB,Genel Cerrahi randevunuz iptal edildi.,2026-11-02 11:52:24,,,
+351,358,296,HATIRLATMA,WHATSAPP,Yarın saat 08:15'te Çocuk Sağlığı ve Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-11-03 08:15:00,,,
+352,359,237,HATIRLATMA,SMS,Yarın saat 15:00'te Çocuk Sağlığı ve Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-11-03 15:00:00,Tahlil sonuçlarımı getireyim mi?,SORU,2026-11-03 15:35:29
+353,360,183,HATIRLATMA,WHATSAPP,Yarın saat 11:45'te Üroloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-11-03 11:45:00,,,
+354,361,6,HATIRLATMA,WHATSAPP,Yarın saat 14:45'te Üroloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-11-03 14:45:00,Evet geleceğim,ONAY,2026-11-03 15:30:33
+355,362,13,HATIRLATMA,SMS,Yarın saat 08:00'de Çocuk Cerrahisi randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-11-03 08:00:00,,,
+356,363,55,HATIRLATMA,WHATSAPP,Yarın saat 13:45'te Çocuk Cerrahisi randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-11-03 13:45:00,İnşallah geleceğim,ONAY,2026-11-03 14:39:18
+357,364,258,HATIRLATMA,WHATSAPP,Yarın saat 15:45'te Çocuk Cerrahisi randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-11-03 15:45:00,Evet uygun,ONAY,2026-11-03 15:57:24
+358,365,225,HATIRLATMA,WHATSAPP,Yarın saat 15:00'te Kardiyoloji randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-11-04 15:00:00,Gelirim,ONAY,2026-11-04 16:03:19
+359,366,182,HATIRLATMA,WHATSAPP,Yarın saat 09:20'de Göz Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-11-04 09:20:00,Tamamdır gelirim,ONAY,2026-11-04 10:02:46
+360,367,213,HATIRLATMA,WHATSAPP,Yarın saat 14:10'da Göz Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-11-04 14:10:00,Ok geleceğim,ONAY,2026-11-04 15:45:01
+361,368,94,HATIRLATMA,SMS,Yarın saat 08:15'te Göğüs Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-11-04 08:15:00,Evet onaylıyorum,ONAY,2026-11-04 09:38:01
+362,370,250,HATIRLATMA,WHATSAPP,Yarın saat 14:30'da Göğüs Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-11-04 14:30:00,,,
+363,371,32,HATIRLATMA,SMS,Yarın saat 08:00'de Dahiliye randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-11-04 08:00:00,Evet,ONAY,2026-11-04 09:43:38
+364,372,288,HATIRLATMA,WHATSAPP,Yarın saat 11:00'de Dahiliye randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-11-04 11:00:00,Evet uygun,ONAY,2026-11-04 12:50:33
+365,374,218,HATIRLATMA,SMS,Yarın saat 08:45'te Çocuk Sağlığı ve Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-11-05 08:45:00,,,
+366,375,49,HATIRLATMA,WEB,Yarın saat 11:00'de Çocuk Sağlığı ve Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-11-05 11:00:00,,,
+367,376,11,HATIRLATMA,WHATSAPP,Yarın saat 15:15'te Çocuk Sağlığı ve Hastalıkları randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-11-05 15:15:00,Evet,ONAY,2026-11-05 16:02:33
+368,377,298,HATIRLATMA,SMS,Yarın saat 11:10'da Kulak Burun Boğaz randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-11-05 11:10:00,,,
+369,378,210,HATIRLATMA,SMS,Yarın saat 08:40'ta Psikiyatri randevunuz var. Gelecek misiniz? (Evet / İptal Et),2026-11-05 08:40:00,,,

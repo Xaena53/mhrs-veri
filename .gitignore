@@ -2,6 +2,7 @@
 cikti/*
 !cikti/.gitkeep
 !cikti/ornek_csv/
+!cikti/ornek_gorunum/
 *.db
 *.sqlite
 *.db.yeni

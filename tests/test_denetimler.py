@@ -156,7 +156,7 @@ class DenetimTesti(unittest.TestCase):
         self.yalniz({"IPTAL cevabı": 1})
 
     def test_chatbot_iptali_cevaba_dayanmali(self):
-        self.calistir("UPDATE bildirimler SET yanit_niyeti = 'ONAY' WHERE bildirim_id = 2")
+        self.calistir("UPDATE bildirimler SET yanit_niyeti = 'BELIRSIZ' WHERE bildirim_id = 2")
         self.yalniz({"CHATBOT ile": 1})
 
     def test_chatbot_iptali_erteleme_cevabiyla_da_olur(self):
@@ -185,7 +185,7 @@ class DenetimTesti(unittest.TestCase):
 
     def test_web_iptali_chatbot_cevabi_gerektirmez(self):
         self.calistir("UPDATE randevular SET iptal_kanali = 'WEB' WHERE randevu_id = 2",
-                      "UPDATE bildirimler SET yanit_niyeti = 'ONAY' WHERE bildirim_id = 2")
+                      "UPDATE bildirimler SET yanit_niyeti = 'BELIRSIZ' WHERE bildirim_id = 2")
         self.yalniz({})
 
     def test_yanitsiz_hatirlatma_ve_gelmeme_gecerli(self):
@@ -217,6 +217,72 @@ class DenetimTesti(unittest.TestCase):
         with self.assertRaises(sqlite3.IntegrityError):
             self.calistir("UPDATE hastalar SET telefon = NULL WHERE hasta_id = 1")
         self.calistir("UPDATE hastalar SET telefon = NULL, iletisim_kanali = 'WEB' WHERE hasta_id = 1")
+
+    # --- v1.1: teyit, overbooking, veri anı --------------------------------------
+
+    def test_onay_cevabi_teyide_yansimali(self):
+        self.calistir("UPDATE randevular SET katilim_teyidi = 'BEKLENIYOR', onay_zamani = NULL WHERE randevu_id = 4")
+        self.yalniz({"ONAY cevabı": 1})
+
+    def test_onay_zamani_ve_teyit_birlikte(self):
+        with self.assertRaises(sqlite3.IntegrityError):
+            self.calistir("UPDATE randevular SET onay_zamani = NULL WHERE randevu_id = 4")
+        with self.assertRaises(sqlite3.IntegrityError):  # randevudan sonra onay olmaz
+            self.calistir("UPDATE randevular SET onay_zamani = '2026-03-05 10:00:00' WHERE randevu_id = 4")
+
+    def test_iptal_nedeni_yalniz_iptalde(self):
+        with self.assertRaises(sqlite3.IntegrityError):
+            self.calistir("UPDATE randevular SET iptal_nedeni = 'HASTA_ISTEGI' WHERE randevu_id = 4")
+
+    def test_reddetti_ama_iptal_edilmemis(self):
+        self.calistir("UPDATE randevular SET katilim_teyidi = 'REDDETTI', onay_zamani = NULL WHERE randevu_id = 1")
+        self.yalniz({"Teyit durumu": 1})
+
+    def sure_asimi_randevusu(self):
+        """Randevu 1'i cevapsız hatırlatması olan, onay süresi dolduğu için iptal edilmiş hale getirir."""
+        self.calistir("""UPDATE randevular SET durum = 'IPTAL', iptal_zamani = '2026-03-01 11:00:00', iptal_kanali = 'SISTEM',
+                          iptal_nedeni = 'ONAY_SURESI_DOLDU', katilim_teyidi = 'SURE_ASIMI' WHERE randevu_id = 1""")
+
+    def test_onay_suresi_dolan_iptal_gecerli(self):
+        self.sure_asimi_randevusu()
+        self.yalniz({})
+
+    def test_onay_suresi_doldu_ama_hasta_cevap_vermis(self):
+        self.sure_asimi_randevusu()
+        self.calistir("UPDATE bildirimler SET yanit_metni = 'Belki', yanit_niyeti = 'BELIRSIZ', "
+                      "yanit_zamani = '2026-03-01 09:30:00' WHERE bildirim_id = 1")
+        self.yalniz({"Onay süresi dolduğu": 1})
+
+    def test_onay_suresi_doldu_kanali_sistem_olmali(self):
+        self.sure_asimi_randevusu()
+        self.calistir("UPDATE randevular SET iptal_kanali = 'WEB' WHERE randevu_id = 1")
+        self.yalniz({"Teyit durumu": 1})
+
+    def test_cifte_randevu_yalniz_bir_tane(self):
+        ek = """INSERT INTO randevular (hasta_id, doktor_id, brans_id, hastane_id, olusturma_zamani, randevu_zamani,
+                  durum, cifte_randevu) VALUES (2, 2, 2, 2, '2026-02-20 10:00:00', '2026-03-02 09:00:00', 'GELDI', {})"""
+        with self.assertRaises(sqlite3.IntegrityError):  # normal randevu dolu slota ikinci normal giremez
+            self.calistir(ek.format(0))
+        self.calistir(ek.format(1))                      # overbooking girer
+        self.yalniz({})
+        self.calistir("""INSERT INTO hastalar (hasta_id, ad, soyad, cinsiyet, dogum_tarihi, telefon, il, ilce, iletisim_kanali,
+                          kayit_tarihi) VALUES (3, 'Ece', 'Er', 'K', '1990-01-01', '05001112233', 'Eskişehir', 'Tepebaşı',
+                          'SMS', '2020-01-01')""")
+        with self.assertRaises(sqlite3.IntegrityError):  # ikinci overbooking giremez
+            self.calistir(ek.format(1).replace("VALUES (2,", "VALUES (3,"))
+
+    def test_veri_ani_saatin_yerine_gecer(self):
+        # Gelecek tarihli bekleyen randevu, veri anı ondan sonraya alınınca "zamanı geçmiş" olur.
+        self.gun_hazirla(GELECEK.isoformat())
+        self.randevu(f"{GELECEK} 09:00:00", durum="BEKLIYOR", olusturma="2026-10-01 10:00:00")
+        self.yalniz({})
+        self.calistir(f"INSERT INTO veri_bilgisi (tek, veri_ani) VALUES (1, '{GELECEK + dt.timedelta(days=1)} 09:00:00')")
+        self.yalniz({"Zamanı geçmiş": 1})
+
+    def test_veri_ani_tek_satir(self):
+        self.calistir("INSERT INTO veri_bilgisi (tek, veri_ani) VALUES (1, '2026-03-05 09:00:00')")
+        with self.assertRaises(sqlite3.IntegrityError):
+            self.calistir("INSERT INTO veri_bilgisi (veri_ani) VALUES ('2026-03-06 09:00:00')")
 
     def test_chatbot_iptali_cevaptan_once_olamaz(self):
         self.calistir("UPDATE randevular SET iptal_zamani = '2026-03-02 10:04:00' WHERE randevu_id = 2")

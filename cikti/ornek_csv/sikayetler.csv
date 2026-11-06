@@ -1,0 +1,2185 @@
+sikayet_id,metin,brans_id,alternatif_brans_id,aciliyet,kaynak
+1,Sürekli halsizim ve çabuk yoruluyorum,1,,RUTIN,SABLON
+2,Sürekli halsizim ve çabuk yoruluyorum. Randevu almak istiyorum.,1,,RUTIN,SABLON
+3,Sürekli halsizim ve çabuk yoruluyorum. Ne yapmalıyım?,1,,RUTIN,SABLON
+4,Sürekli halsizim ve çabuk yoruluyorum. Doktora görünmek istiyorum.,1,,RUTIN,SABLON
+5,Sürekli halsizim ve çabuk yoruluyorum. Çok rahatsız ediyor.,1,,RUTIN,SABLON
+6,Sürekli halsizim ve çabuk yoruluyorum. Artık dayanamıyorum.,1,,RUTIN,SABLON
+7,Son günlerde sürekli halsizim ve çabuk yoruluyorum,1,,RUTIN,SABLON
+8,Son günlerde sürekli halsizim ve çabuk yoruluyorum. Hangi bölüme gitmeliyim?,1,,RUTIN,SABLON
+9,Son günlerde sürekli halsizim ve çabuk yoruluyorum. Randevu almak istiyorum.,1,,RUTIN,SABLON
+10,Son günlerde sürekli halsizim ve çabuk yoruluyorum. Çok rahatsız ediyor.,1,,RUTIN,SABLON
+11,Son günlerde sürekli halsizim ve çabuk yoruluyorum. Artık dayanamıyorum.,1,,RUTIN,SABLON
+12,Bir haftadır sürekli halsizim ve çabuk yoruluyorum,1,,RUTIN,SABLON
+13,Bir haftadır sürekli halsizim ve çabuk yoruluyorum. Doktora görünmek istiyorum.,1,,RUTIN,SABLON
+14,Bir haftadır sürekli halsizim ve çabuk yoruluyorum. Artık dayanamıyorum.,1,,RUTIN,SABLON
+15,Uzun zamandır sürekli halsizim ve çabuk yoruluyorum,1,,RUTIN,SABLON
+16,Uzun zamandır sürekli halsizim ve çabuk yoruluyorum. Hangi bölüme gitmeliyim?,1,,RUTIN,SABLON
+17,Uzun zamandır sürekli halsizim ve çabuk yoruluyorum. Ne yapmalıyım?,1,,RUTIN,SABLON
+18,Uzun zamandır sürekli halsizim ve çabuk yoruluyorum. Doktora görünmek istiyorum.,1,,RUTIN,SABLON
+19,Uzun zamandır sürekli halsizim ve çabuk yoruluyorum. Artık dayanamıyorum.,1,,RUTIN,SABLON
+20,Dünden beri sürekli halsizim ve çabuk yoruluyorum,1,,RUTIN,SABLON
+21,Dünden beri sürekli halsizim ve çabuk yoruluyorum. Hangi bölüme gitmeliyim?,1,,RUTIN,SABLON
+22,Dünden beri sürekli halsizim ve çabuk yoruluyorum. Ne yapmalıyım?,1,,RUTIN,SABLON
+23,Dünden beri sürekli halsizim ve çabuk yoruluyorum. Doktora görünmek istiyorum.,1,,RUTIN,SABLON
+24,Dünden beri sürekli halsizim ve çabuk yoruluyorum. Çok rahatsız ediyor.,1,,RUTIN,SABLON
+25,Dünden beri sürekli halsizim ve çabuk yoruluyorum. Artık dayanamıyorum.,1,,RUTIN,SABLON
+26,Son zamanlarda sürekli halsizim ve çabuk yoruluyorum. Hangi bölüme gitmeliyim?,1,,RUTIN,SABLON
+27,Son zamanlarda sürekli halsizim ve çabuk yoruluyorum. Ne yapmalıyım?,1,,RUTIN,SABLON
+28,Son zamanlarda sürekli halsizim ve çabuk yoruluyorum. Doktora görünmek istiyorum.,1,,RUTIN,SABLON
+29,Son zamanlarda sürekli halsizim ve çabuk yoruluyorum. Artık dayanamıyorum.,1,,RUTIN,SABLON
+30,Birkaç gündür sürekli halsizim ve çabuk yoruluyorum,1,,RUTIN,SABLON
+31,Birkaç gündür sürekli halsizim ve çabuk yoruluyorum. Hangi bölüme gitmeliyim?,1,,RUTIN,SABLON
+32,Birkaç gündür sürekli halsizim ve çabuk yoruluyorum. Ne yapmalıyım?,1,,RUTIN,SABLON
+33,Birkaç gündür sürekli halsizim ve çabuk yoruluyorum. Çok rahatsız ediyor.,1,,RUTIN,SABLON
+34,Birkaç gündür sürekli halsizim ve çabuk yoruluyorum. Artık dayanamıyorum.,1,,RUTIN,SABLON
+35,Aylardır sürekli halsizim ve çabuk yoruluyorum. Randevu almak istiyorum.,1,,RUTIN,SABLON
+36,Aylardır sürekli halsizim ve çabuk yoruluyorum. Doktora görünmek istiyorum.,1,,RUTIN,SABLON
+37,Aylardır sürekli halsizim ve çabuk yoruluyorum. Çok rahatsız ediyor.,1,,RUTIN,SABLON
+38,"Midem yanıyor, yemeklerden sonra şişkinlik oluyor",1,,RUTIN,SABLON
+39,"Midem yanıyor, yemeklerden sonra şişkinlik oluyor. Randevu almak istiyorum.",1,,RUTIN,SABLON
+40,"Midem yanıyor, yemeklerden sonra şişkinlik oluyor. Doktora görünmek istiyorum.",1,,RUTIN,SABLON
+41,"Midem yanıyor, yemeklerden sonra şişkinlik oluyor. Artık dayanamıyorum.",1,,RUTIN,SABLON
+42,"Son günlerde midem yanıyor, yemeklerden sonra şişkinlik oluyor",1,,RUTIN,SABLON
+43,"Son günlerde midem yanıyor, yemeklerden sonra şişkinlik oluyor. Hangi bölüme gitmeliyim?",1,,RUTIN,SABLON
+44,"Son günlerde midem yanıyor, yemeklerden sonra şişkinlik oluyor. Randevu almak istiyorum.",1,,RUTIN,SABLON
+45,"Son günlerde midem yanıyor, yemeklerden sonra şişkinlik oluyor. Ne yapmalıyım?",1,,RUTIN,SABLON
+46,"Bir haftadır midem yanıyor, yemeklerden sonra şişkinlik oluyor",1,,RUTIN,SABLON
+47,"Bir haftadır midem yanıyor, yemeklerden sonra şişkinlik oluyor. Randevu almak istiyorum.",1,,RUTIN,SABLON
+48,"Bir haftadır midem yanıyor, yemeklerden sonra şişkinlik oluyor. Ne yapmalıyım?",1,,RUTIN,SABLON
+49,"Bir haftadır midem yanıyor, yemeklerden sonra şişkinlik oluyor. Doktora görünmek istiyorum.",1,,RUTIN,SABLON
+50,"Bir haftadır midem yanıyor, yemeklerden sonra şişkinlik oluyor. Çok rahatsız ediyor.",1,,RUTIN,SABLON
+51,"Bir haftadır midem yanıyor, yemeklerden sonra şişkinlik oluyor. Artık dayanamıyorum.",1,,RUTIN,SABLON
+52,"Uzun zamandır midem yanıyor, yemeklerden sonra şişkinlik oluyor. Hangi bölüme gitmeliyim?",1,,RUTIN,SABLON
+53,"Uzun zamandır midem yanıyor, yemeklerden sonra şişkinlik oluyor. Randevu almak istiyorum.",1,,RUTIN,SABLON
+54,"Uzun zamandır midem yanıyor, yemeklerden sonra şişkinlik oluyor. Ne yapmalıyım?",1,,RUTIN,SABLON
+55,"Uzun zamandır midem yanıyor, yemeklerden sonra şişkinlik oluyor. Artık dayanamıyorum.",1,,RUTIN,SABLON
+56,"Dünden beri midem yanıyor, yemeklerden sonra şişkinlik oluyor",1,,RUTIN,SABLON
+57,"Dünden beri midem yanıyor, yemeklerden sonra şişkinlik oluyor. Randevu almak istiyorum.",1,,RUTIN,SABLON
+58,"Dünden beri midem yanıyor, yemeklerden sonra şişkinlik oluyor. Ne yapmalıyım?",1,,RUTIN,SABLON
+59,"Dünden beri midem yanıyor, yemeklerden sonra şişkinlik oluyor. Artık dayanamıyorum.",1,,RUTIN,SABLON
+60,"Son zamanlarda midem yanıyor, yemeklerden sonra şişkinlik oluyor",1,,RUTIN,SABLON
+61,"Son zamanlarda midem yanıyor, yemeklerden sonra şişkinlik oluyor. Hangi bölüme gitmeliyim?",1,,RUTIN,SABLON
+62,"Son zamanlarda midem yanıyor, yemeklerden sonra şişkinlik oluyor. Randevu almak istiyorum.",1,,RUTIN,SABLON
+63,"Son zamanlarda midem yanıyor, yemeklerden sonra şişkinlik oluyor. Çok rahatsız ediyor.",1,,RUTIN,SABLON
+64,"Birkaç gündür midem yanıyor, yemeklerden sonra şişkinlik oluyor",1,,RUTIN,SABLON
+65,"Birkaç gündür midem yanıyor, yemeklerden sonra şişkinlik oluyor. Hangi bölüme gitmeliyim?",1,,RUTIN,SABLON
+66,"Birkaç gündür midem yanıyor, yemeklerden sonra şişkinlik oluyor. Randevu almak istiyorum.",1,,RUTIN,SABLON
+67,"Birkaç gündür midem yanıyor, yemeklerden sonra şişkinlik oluyor. Ne yapmalıyım?",1,,RUTIN,SABLON
+68,"Birkaç gündür midem yanıyor, yemeklerden sonra şişkinlik oluyor. Doktora görünmek istiyorum.",1,,RUTIN,SABLON
+69,"Birkaç gündür midem yanıyor, yemeklerden sonra şişkinlik oluyor. Çok rahatsız ediyor.",1,,RUTIN,SABLON
+70,"Aylardır midem yanıyor, yemeklerden sonra şişkinlik oluyor",1,,RUTIN,SABLON
+71,"Aylardır midem yanıyor, yemeklerden sonra şişkinlik oluyor. Randevu almak istiyorum.",1,,RUTIN,SABLON
+72,"Aylardır midem yanıyor, yemeklerden sonra şişkinlik oluyor. Ne yapmalıyım?",1,,RUTIN,SABLON
+73,"Aylardır midem yanıyor, yemeklerden sonra şişkinlik oluyor. Doktora görünmek istiyorum.",1,,RUTIN,SABLON
+74,Sık sık ateşim çıkıyor ve iştahım kesildi,1,,ONCELIKLI,SABLON
+75,Sık sık ateşim çıkıyor ve iştahım kesildi. Hangi bölüme gitmeliyim?,1,,ONCELIKLI,SABLON
+76,Son günlerde sık sık ateşim çıkıyor ve iştahım kesildi. Hangi bölüme gitmeliyim?,1,,ONCELIKLI,SABLON
+77,Son günlerde sık sık ateşim çıkıyor ve iştahım kesildi. Ne yapmalıyım?,1,,ONCELIKLI,SABLON
+78,Son günlerde sık sık ateşim çıkıyor ve iştahım kesildi. Doktora görünmek istiyorum.,1,,ONCELIKLI,SABLON
+79,Son günlerde sık sık ateşim çıkıyor ve iştahım kesildi. Çok rahatsız ediyor.,1,,ONCELIKLI,SABLON
+80,Son günlerde sık sık ateşim çıkıyor ve iştahım kesildi. Artık dayanamıyorum.,1,,ONCELIKLI,SABLON
+81,Bir haftadır sık sık ateşim çıkıyor ve iştahım kesildi. Hangi bölüme gitmeliyim?,1,,ONCELIKLI,SABLON
+82,Bir haftadır sık sık ateşim çıkıyor ve iştahım kesildi. Randevu almak istiyorum.,1,,ONCELIKLI,SABLON
+83,Bir haftadır sık sık ateşim çıkıyor ve iştahım kesildi. Doktora görünmek istiyorum.,1,,ONCELIKLI,SABLON
+84,Bir haftadır sık sık ateşim çıkıyor ve iştahım kesildi. Artık dayanamıyorum.,1,,ONCELIKLI,SABLON
+85,Uzun zamandır sık sık ateşim çıkıyor ve iştahım kesildi,1,,ONCELIKLI,SABLON
+86,Uzun zamandır sık sık ateşim çıkıyor ve iştahım kesildi. Randevu almak istiyorum.,1,,ONCELIKLI,SABLON
+87,Uzun zamandır sık sık ateşim çıkıyor ve iştahım kesildi. Ne yapmalıyım?,1,,ONCELIKLI,SABLON
+88,Uzun zamandır sık sık ateşim çıkıyor ve iştahım kesildi. Artık dayanamıyorum.,1,,ONCELIKLI,SABLON
+89,Dünden beri sık sık ateşim çıkıyor ve iştahım kesildi,1,,ONCELIKLI,SABLON
+90,Dünden beri sık sık ateşim çıkıyor ve iştahım kesildi. Randevu almak istiyorum.,1,,ONCELIKLI,SABLON
+91,Dünden beri sık sık ateşim çıkıyor ve iştahım kesildi. Doktora görünmek istiyorum.,1,,ONCELIKLI,SABLON
+92,Dünden beri sık sık ateşim çıkıyor ve iştahım kesildi. Çok rahatsız ediyor.,1,,ONCELIKLI,SABLON
+93,Dünden beri sık sık ateşim çıkıyor ve iştahım kesildi. Artık dayanamıyorum.,1,,ONCELIKLI,SABLON
+94,Son zamanlarda sık sık ateşim çıkıyor ve iştahım kesildi,1,,ONCELIKLI,SABLON
+95,Son zamanlarda sık sık ateşim çıkıyor ve iştahım kesildi. Hangi bölüme gitmeliyim?,1,,ONCELIKLI,SABLON
+96,Son zamanlarda sık sık ateşim çıkıyor ve iştahım kesildi. Randevu almak istiyorum.,1,,ONCELIKLI,SABLON
+97,Son zamanlarda sık sık ateşim çıkıyor ve iştahım kesildi. Doktora görünmek istiyorum.,1,,ONCELIKLI,SABLON
+98,Son zamanlarda sık sık ateşim çıkıyor ve iştahım kesildi. Çok rahatsız ediyor.,1,,ONCELIKLI,SABLON
+99,Birkaç gündür sık sık ateşim çıkıyor ve iştahım kesildi,1,,ONCELIKLI,SABLON
+100,Birkaç gündür sık sık ateşim çıkıyor ve iştahım kesildi. Hangi bölüme gitmeliyim?,1,,ONCELIKLI,SABLON
+101,Birkaç gündür sık sık ateşim çıkıyor ve iştahım kesildi. Randevu almak istiyorum.,1,,ONCELIKLI,SABLON
+102,Birkaç gündür sık sık ateşim çıkıyor ve iştahım kesildi. Ne yapmalıyım?,1,,ONCELIKLI,SABLON
+103,Birkaç gündür sık sık ateşim çıkıyor ve iştahım kesildi. Doktora görünmek istiyorum.,1,,ONCELIKLI,SABLON
+104,Birkaç gündür sık sık ateşim çıkıyor ve iştahım kesildi. Artık dayanamıyorum.,1,,ONCELIKLI,SABLON
+105,Aylardır sık sık ateşim çıkıyor ve iştahım kesildi,1,,ONCELIKLI,SABLON
+106,Aylardır sık sık ateşim çıkıyor ve iştahım kesildi. Randevu almak istiyorum.,1,,ONCELIKLI,SABLON
+107,Aylardır sık sık ateşim çıkıyor ve iştahım kesildi. Ne yapmalıyım?,1,,ONCELIKLI,SABLON
+108,Aylardır sık sık ateşim çıkıyor ve iştahım kesildi. Çok rahatsız ediyor.,1,,ONCELIKLI,SABLON
+109,Aylardır sık sık ateşim çıkıyor ve iştahım kesildi. Artık dayanamıyorum.,1,,ONCELIKLI,SABLON
+110,Kilo veriyorum ama nedenini bilmiyorum,1,15,ONCELIKLI,SABLON
+111,Kilo veriyorum ama nedenini bilmiyorum. Hangi bölüme gitmeliyim?,1,15,ONCELIKLI,SABLON
+112,Kilo veriyorum ama nedenini bilmiyorum. Çok rahatsız ediyor.,1,15,ONCELIKLI,SABLON
+113,Kilo veriyorum ama nedenini bilmiyorum. Artık dayanamıyorum.,1,15,ONCELIKLI,SABLON
+114,Son günlerde kilo veriyorum ama nedenini bilmiyorum. Randevu almak istiyorum.,1,15,ONCELIKLI,SABLON
+115,Son günlerde kilo veriyorum ama nedenini bilmiyorum. Çok rahatsız ediyor.,1,15,ONCELIKLI,SABLON
+116,Bir haftadır kilo veriyorum ama nedenini bilmiyorum,1,15,ONCELIKLI,SABLON
+117,Bir haftadır kilo veriyorum ama nedenini bilmiyorum. Çok rahatsız ediyor.,1,15,ONCELIKLI,SABLON
+118,Uzun zamandır kilo veriyorum ama nedenini bilmiyorum,1,15,ONCELIKLI,SABLON
+119,Uzun zamandır kilo veriyorum ama nedenini bilmiyorum. Randevu almak istiyorum.,1,15,ONCELIKLI,SABLON
+120,Uzun zamandır kilo veriyorum ama nedenini bilmiyorum. Çok rahatsız ediyor.,1,15,ONCELIKLI,SABLON
+121,Uzun zamandır kilo veriyorum ama nedenini bilmiyorum. Artık dayanamıyorum.,1,15,ONCELIKLI,SABLON
+122,Dünden beri kilo veriyorum ama nedenini bilmiyorum,1,15,ONCELIKLI,SABLON
+123,Dünden beri kilo veriyorum ama nedenini bilmiyorum. Randevu almak istiyorum.,1,15,ONCELIKLI,SABLON
+124,Dünden beri kilo veriyorum ama nedenini bilmiyorum. Ne yapmalıyım?,1,15,ONCELIKLI,SABLON
+125,Dünden beri kilo veriyorum ama nedenini bilmiyorum. Doktora görünmek istiyorum.,1,15,ONCELIKLI,SABLON
+126,Dünden beri kilo veriyorum ama nedenini bilmiyorum. Çok rahatsız ediyor.,1,15,ONCELIKLI,SABLON
+127,Dünden beri kilo veriyorum ama nedenini bilmiyorum. Artık dayanamıyorum.,1,15,ONCELIKLI,SABLON
+128,Son zamanlarda kilo veriyorum ama nedenini bilmiyorum,1,15,ONCELIKLI,SABLON
+129,Son zamanlarda kilo veriyorum ama nedenini bilmiyorum. Randevu almak istiyorum.,1,15,ONCELIKLI,SABLON
+130,Son zamanlarda kilo veriyorum ama nedenini bilmiyorum. Ne yapmalıyım?,1,15,ONCELIKLI,SABLON
+131,Son zamanlarda kilo veriyorum ama nedenini bilmiyorum. Doktora görünmek istiyorum.,1,15,ONCELIKLI,SABLON
+132,Son zamanlarda kilo veriyorum ama nedenini bilmiyorum. Çok rahatsız ediyor.,1,15,ONCELIKLI,SABLON
+133,Birkaç gündür kilo veriyorum ama nedenini bilmiyorum. Randevu almak istiyorum.,1,15,ONCELIKLI,SABLON
+134,Birkaç gündür kilo veriyorum ama nedenini bilmiyorum. Ne yapmalıyım?,1,15,ONCELIKLI,SABLON
+135,Birkaç gündür kilo veriyorum ama nedenini bilmiyorum. Çok rahatsız ediyor.,1,15,ONCELIKLI,SABLON
+136,Aylardır kilo veriyorum ama nedenini bilmiyorum. Ne yapmalıyım?,1,15,ONCELIKLI,SABLON
+137,Aylardır kilo veriyorum ama nedenini bilmiyorum. Doktora görünmek istiyorum.,1,15,ONCELIKLI,SABLON
+138,"Tansiyonum dengesiz, ilaçlarımı kontrol ettirmek istiyorum",1,2,RUTIN,SABLON
+139,"Tansiyonum dengesiz, ilaçlarımı kontrol ettirmek istiyorum. Hangi bölüme gitmeliyim?",1,2,RUTIN,SABLON
+140,"Tansiyonum dengesiz, ilaçlarımı kontrol ettirmek istiyorum. Ne yapmalıyım?",1,2,RUTIN,SABLON
+141,"Karnımın üst tarafı ağrıyor, bulantım var",1,5,RUTIN,SABLON
+142,"Karnımın üst tarafı ağrıyor, bulantım var. Randevu almak istiyorum.",1,5,RUTIN,SABLON
+143,"Karnımın üst tarafı ağrıyor, bulantım var. Ne yapmalıyım?",1,5,RUTIN,SABLON
+144,"Son günlerde karnımın üst tarafı ağrıyor, bulantım var. Hangi bölüme gitmeliyim?",1,5,RUTIN,SABLON
+145,"Son günlerde karnımın üst tarafı ağrıyor, bulantım var. Randevu almak istiyorum.",1,5,RUTIN,SABLON
+146,"Son günlerde karnımın üst tarafı ağrıyor, bulantım var. Ne yapmalıyım?",1,5,RUTIN,SABLON
+147,"Son günlerde karnımın üst tarafı ağrıyor, bulantım var. Doktora görünmek istiyorum.",1,5,RUTIN,SABLON
+148,"Son günlerde karnımın üst tarafı ağrıyor, bulantım var. Artık dayanamıyorum.",1,5,RUTIN,SABLON
+149,"Bir haftadır karnımın üst tarafı ağrıyor, bulantım var",1,5,RUTIN,SABLON
+150,"Bir haftadır karnımın üst tarafı ağrıyor, bulantım var. Hangi bölüme gitmeliyim?",1,5,RUTIN,SABLON
+151,"Bir haftadır karnımın üst tarafı ağrıyor, bulantım var. Randevu almak istiyorum.",1,5,RUTIN,SABLON
+152,"Bir haftadır karnımın üst tarafı ağrıyor, bulantım var. Çok rahatsız ediyor.",1,5,RUTIN,SABLON
+153,"Uzun zamandır karnımın üst tarafı ağrıyor, bulantım var. Randevu almak istiyorum.",1,5,RUTIN,SABLON
+154,"Uzun zamandır karnımın üst tarafı ağrıyor, bulantım var. Artık dayanamıyorum.",1,5,RUTIN,SABLON
+155,"Dünden beri karnımın üst tarafı ağrıyor, bulantım var",1,5,RUTIN,SABLON
+156,"Dünden beri karnımın üst tarafı ağrıyor, bulantım var. Hangi bölüme gitmeliyim?",1,5,RUTIN,SABLON
+157,"Dünden beri karnımın üst tarafı ağrıyor, bulantım var. Randevu almak istiyorum.",1,5,RUTIN,SABLON
+158,"Dünden beri karnımın üst tarafı ağrıyor, bulantım var. Ne yapmalıyım?",1,5,RUTIN,SABLON
+159,"Dünden beri karnımın üst tarafı ağrıyor, bulantım var. Doktora görünmek istiyorum.",1,5,RUTIN,SABLON
+160,"Dünden beri karnımın üst tarafı ağrıyor, bulantım var. Artık dayanamıyorum.",1,5,RUTIN,SABLON
+161,"Son zamanlarda karnımın üst tarafı ağrıyor, bulantım var. Randevu almak istiyorum.",1,5,RUTIN,SABLON
+162,"Son zamanlarda karnımın üst tarafı ağrıyor, bulantım var. Ne yapmalıyım?",1,5,RUTIN,SABLON
+163,"Son zamanlarda karnımın üst tarafı ağrıyor, bulantım var. Doktora görünmek istiyorum.",1,5,RUTIN,SABLON
+164,"Son zamanlarda karnımın üst tarafı ağrıyor, bulantım var. Artık dayanamıyorum.",1,5,RUTIN,SABLON
+165,"Birkaç gündür karnımın üst tarafı ağrıyor, bulantım var",1,5,RUTIN,SABLON
+166,"Birkaç gündür karnımın üst tarafı ağrıyor, bulantım var. Doktora görünmek istiyorum.",1,5,RUTIN,SABLON
+167,"Birkaç gündür karnımın üst tarafı ağrıyor, bulantım var. Çok rahatsız ediyor.",1,5,RUTIN,SABLON
+168,"Birkaç gündür karnımın üst tarafı ağrıyor, bulantım var. Artık dayanamıyorum.",1,5,RUTIN,SABLON
+169,"Aylardır karnımın üst tarafı ağrıyor, bulantım var",1,5,RUTIN,SABLON
+170,"Aylardır karnımın üst tarafı ağrıyor, bulantım var. Hangi bölüme gitmeliyim?",1,5,RUTIN,SABLON
+171,"Aylardır karnımın üst tarafı ağrıyor, bulantım var. Randevu almak istiyorum.",1,5,RUTIN,SABLON
+172,"Aylardır karnımın üst tarafı ağrıyor, bulantım var. Ne yapmalıyım?",1,5,RUTIN,SABLON
+173,"Aylardır karnımın üst tarafı ağrıyor, bulantım var. Çok rahatsız ediyor.",1,5,RUTIN,SABLON
+174,"Aylardır karnımın üst tarafı ağrıyor, bulantım var. Artık dayanamıyorum.",1,5,RUTIN,SABLON
+175,"Kan tahlili yaptırmak istiyorum, kansızlığım olabilir",1,,RUTIN,SABLON
+176,"Gözlerimde kararma var, merdiven çıkarken göğsüm sıkışıyor",2,,ONCELIKLI,SABLON
+177,"Gözlerimde kararma var, merdiven çıkarken göğsüm sıkışıyor. Randevu almak istiyorum.",2,,ONCELIKLI,SABLON
+178,"Gözlerimde kararma var, merdiven çıkarken göğsüm sıkışıyor. Ne yapmalıyım?",2,,ONCELIKLI,SABLON
+179,"Gözlerimde kararma var, merdiven çıkarken göğsüm sıkışıyor. Çok rahatsız ediyor.",2,,ONCELIKLI,SABLON
+180,"Gözlerimde kararma var, merdiven çıkarken göğsüm sıkışıyor. Artık dayanamıyorum.",2,,ONCELIKLI,SABLON
+181,"Son günlerde gözlerimde kararma var, merdiven çıkarken göğsüm sıkışıyor",2,,ONCELIKLI,SABLON
+182,"Son günlerde gözlerimde kararma var, merdiven çıkarken göğsüm sıkışıyor. Doktora görünmek istiyorum.",2,,ONCELIKLI,SABLON
+183,"Son günlerde gözlerimde kararma var, merdiven çıkarken göğsüm sıkışıyor. Çok rahatsız ediyor.",2,,ONCELIKLI,SABLON
+184,"Son günlerde gözlerimde kararma var, merdiven çıkarken göğsüm sıkışıyor. Artık dayanamıyorum.",2,,ONCELIKLI,SABLON
+185,"Bir haftadır gözlerimde kararma var, merdiven çıkarken göğsüm sıkışıyor",2,,ONCELIKLI,SABLON
+186,"Bir haftadır gözlerimde kararma var, merdiven çıkarken göğsüm sıkışıyor. Randevu almak istiyorum.",2,,ONCELIKLI,SABLON
+187,"Bir haftadır gözlerimde kararma var, merdiven çıkarken göğsüm sıkışıyor. Ne yapmalıyım?",2,,ONCELIKLI,SABLON
+188,"Bir haftadır gözlerimde kararma var, merdiven çıkarken göğsüm sıkışıyor. Doktora görünmek istiyorum.",2,,ONCELIKLI,SABLON
+189,"Bir haftadır gözlerimde kararma var, merdiven çıkarken göğsüm sıkışıyor. Çok rahatsız ediyor.",2,,ONCELIKLI,SABLON
+190,"Bir haftadır gözlerimde kararma var, merdiven çıkarken göğsüm sıkışıyor. Artık dayanamıyorum.",2,,ONCELIKLI,SABLON
+191,"Uzun zamandır gözlerimde kararma var, merdiven çıkarken göğsüm sıkışıyor",2,,ONCELIKLI,SABLON
+192,"Uzun zamandır gözlerimde kararma var, merdiven çıkarken göğsüm sıkışıyor. Hangi bölüme gitmeliyim?",2,,ONCELIKLI,SABLON
+193,"Uzun zamandır gözlerimde kararma var, merdiven çıkarken göğsüm sıkışıyor. Randevu almak istiyorum.",2,,ONCELIKLI,SABLON
+194,"Uzun zamandır gözlerimde kararma var, merdiven çıkarken göğsüm sıkışıyor. Ne yapmalıyım?",2,,ONCELIKLI,SABLON
+195,"Uzun zamandır gözlerimde kararma var, merdiven çıkarken göğsüm sıkışıyor. Doktora görünmek istiyorum.",2,,ONCELIKLI,SABLON
+196,"Uzun zamandır gözlerimde kararma var, merdiven çıkarken göğsüm sıkışıyor. Çok rahatsız ediyor.",2,,ONCELIKLI,SABLON
+197,"Dünden beri gözlerimde kararma var, merdiven çıkarken göğsüm sıkışıyor. Hangi bölüme gitmeliyim?",2,,ONCELIKLI,SABLON
+198,"Dünden beri gözlerimde kararma var, merdiven çıkarken göğsüm sıkışıyor. Randevu almak istiyorum.",2,,ONCELIKLI,SABLON
+199,"Dünden beri gözlerimde kararma var, merdiven çıkarken göğsüm sıkışıyor. Ne yapmalıyım?",2,,ONCELIKLI,SABLON
+200,"Dünden beri gözlerimde kararma var, merdiven çıkarken göğsüm sıkışıyor. Doktora görünmek istiyorum.",2,,ONCELIKLI,SABLON
+201,"Dünden beri gözlerimde kararma var, merdiven çıkarken göğsüm sıkışıyor. Çok rahatsız ediyor.",2,,ONCELIKLI,SABLON
+202,"Son zamanlarda gözlerimde kararma var, merdiven çıkarken göğsüm sıkışıyor",2,,ONCELIKLI,SABLON
+203,"Son zamanlarda gözlerimde kararma var, merdiven çıkarken göğsüm sıkışıyor. Ne yapmalıyım?",2,,ONCELIKLI,SABLON
+204,"Son zamanlarda gözlerimde kararma var, merdiven çıkarken göğsüm sıkışıyor. Doktora görünmek istiyorum.",2,,ONCELIKLI,SABLON
+205,"Son zamanlarda gözlerimde kararma var, merdiven çıkarken göğsüm sıkışıyor. Artık dayanamıyorum.",2,,ONCELIKLI,SABLON
+206,"Birkaç gündür gözlerimde kararma var, merdiven çıkarken göğsüm sıkışıyor",2,,ONCELIKLI,SABLON
+207,"Birkaç gündür gözlerimde kararma var, merdiven çıkarken göğsüm sıkışıyor. Hangi bölüme gitmeliyim?",2,,ONCELIKLI,SABLON
+208,"Birkaç gündür gözlerimde kararma var, merdiven çıkarken göğsüm sıkışıyor. Randevu almak istiyorum.",2,,ONCELIKLI,SABLON
+209,"Birkaç gündür gözlerimde kararma var, merdiven çıkarken göğsüm sıkışıyor. Ne yapmalıyım?",2,,ONCELIKLI,SABLON
+210,"Birkaç gündür gözlerimde kararma var, merdiven çıkarken göğsüm sıkışıyor. Doktora görünmek istiyorum.",2,,ONCELIKLI,SABLON
+211,"Aylardır gözlerimde kararma var, merdiven çıkarken göğsüm sıkışıyor",2,,ONCELIKLI,SABLON
+212,"Aylardır gözlerimde kararma var, merdiven çıkarken göğsüm sıkışıyor. Hangi bölüme gitmeliyim?",2,,ONCELIKLI,SABLON
+213,"Aylardır gözlerimde kararma var, merdiven çıkarken göğsüm sıkışıyor. Randevu almak istiyorum.",2,,ONCELIKLI,SABLON
+214,"Aylardır gözlerimde kararma var, merdiven çıkarken göğsüm sıkışıyor. Ne yapmalıyım?",2,,ONCELIKLI,SABLON
+215,"Aylardır gözlerimde kararma var, merdiven çıkarken göğsüm sıkışıyor. Çok rahatsız ediyor.",2,,ONCELIKLI,SABLON
+216,"Aylardır gözlerimde kararma var, merdiven çıkarken göğsüm sıkışıyor. Artık dayanamıyorum.",2,,ONCELIKLI,SABLON
+217,"Çarpıntım oluyor, kalbim çok hızlı atıyor",2,,ONCELIKLI,SABLON
+218,"Çarpıntım oluyor, kalbim çok hızlı atıyor. Hangi bölüme gitmeliyim?",2,,ONCELIKLI,SABLON
+219,"Çarpıntım oluyor, kalbim çok hızlı atıyor. Randevu almak istiyorum.",2,,ONCELIKLI,SABLON
+220,"Çarpıntım oluyor, kalbim çok hızlı atıyor. Ne yapmalıyım?",2,,ONCELIKLI,SABLON
+221,"Çarpıntım oluyor, kalbim çok hızlı atıyor. Doktora görünmek istiyorum.",2,,ONCELIKLI,SABLON
+222,"Çarpıntım oluyor, kalbim çok hızlı atıyor. Çok rahatsız ediyor.",2,,ONCELIKLI,SABLON
+223,"Çarpıntım oluyor, kalbim çok hızlı atıyor. Artık dayanamıyorum.",2,,ONCELIKLI,SABLON
+224,"Son günlerde çarpıntım oluyor, kalbim çok hızlı atıyor",2,,ONCELIKLI,SABLON
+225,"Son günlerde çarpıntım oluyor, kalbim çok hızlı atıyor. Hangi bölüme gitmeliyim?",2,,ONCELIKLI,SABLON
+226,"Son günlerde çarpıntım oluyor, kalbim çok hızlı atıyor. Randevu almak istiyorum.",2,,ONCELIKLI,SABLON
+227,"Son günlerde çarpıntım oluyor, kalbim çok hızlı atıyor. Doktora görünmek istiyorum.",2,,ONCELIKLI,SABLON
+228,"Son günlerde çarpıntım oluyor, kalbim çok hızlı atıyor. Çok rahatsız ediyor.",2,,ONCELIKLI,SABLON
+229,"Bir haftadır çarpıntım oluyor, kalbim çok hızlı atıyor. Hangi bölüme gitmeliyim?",2,,ONCELIKLI,SABLON
+230,"Bir haftadır çarpıntım oluyor, kalbim çok hızlı atıyor. Randevu almak istiyorum.",2,,ONCELIKLI,SABLON
+231,"Bir haftadır çarpıntım oluyor, kalbim çok hızlı atıyor. Doktora görünmek istiyorum.",2,,ONCELIKLI,SABLON
+232,"Uzun zamandır çarpıntım oluyor, kalbim çok hızlı atıyor",2,,ONCELIKLI,SABLON
+233,"Uzun zamandır çarpıntım oluyor, kalbim çok hızlı atıyor. Randevu almak istiyorum.",2,,ONCELIKLI,SABLON
+234,"Uzun zamandır çarpıntım oluyor, kalbim çok hızlı atıyor. Ne yapmalıyım?",2,,ONCELIKLI,SABLON
+235,"Uzun zamandır çarpıntım oluyor, kalbim çok hızlı atıyor. Doktora görünmek istiyorum.",2,,ONCELIKLI,SABLON
+236,"Uzun zamandır çarpıntım oluyor, kalbim çok hızlı atıyor. Çok rahatsız ediyor.",2,,ONCELIKLI,SABLON
+237,"Dünden beri çarpıntım oluyor, kalbim çok hızlı atıyor. Ne yapmalıyım?",2,,ONCELIKLI,SABLON
+238,"Dünden beri çarpıntım oluyor, kalbim çok hızlı atıyor. Doktora görünmek istiyorum.",2,,ONCELIKLI,SABLON
+239,"Dünden beri çarpıntım oluyor, kalbim çok hızlı atıyor. Çok rahatsız ediyor.",2,,ONCELIKLI,SABLON
+240,"Dünden beri çarpıntım oluyor, kalbim çok hızlı atıyor. Artık dayanamıyorum.",2,,ONCELIKLI,SABLON
+241,"Son zamanlarda çarpıntım oluyor, kalbim çok hızlı atıyor",2,,ONCELIKLI,SABLON
+242,"Son zamanlarda çarpıntım oluyor, kalbim çok hızlı atıyor. Hangi bölüme gitmeliyim?",2,,ONCELIKLI,SABLON
+243,"Son zamanlarda çarpıntım oluyor, kalbim çok hızlı atıyor. Randevu almak istiyorum.",2,,ONCELIKLI,SABLON
+244,"Son zamanlarda çarpıntım oluyor, kalbim çok hızlı atıyor. Ne yapmalıyım?",2,,ONCELIKLI,SABLON
+245,"Son zamanlarda çarpıntım oluyor, kalbim çok hızlı atıyor. Çok rahatsız ediyor.",2,,ONCELIKLI,SABLON
+246,"Son zamanlarda çarpıntım oluyor, kalbim çok hızlı atıyor. Artık dayanamıyorum.",2,,ONCELIKLI,SABLON
+247,"Birkaç gündür çarpıntım oluyor, kalbim çok hızlı atıyor. Hangi bölüme gitmeliyim?",2,,ONCELIKLI,SABLON
+248,"Birkaç gündür çarpıntım oluyor, kalbim çok hızlı atıyor. Randevu almak istiyorum.",2,,ONCELIKLI,SABLON
+249,"Birkaç gündür çarpıntım oluyor, kalbim çok hızlı atıyor. Ne yapmalıyım?",2,,ONCELIKLI,SABLON
+250,"Birkaç gündür çarpıntım oluyor, kalbim çok hızlı atıyor. Doktora görünmek istiyorum.",2,,ONCELIKLI,SABLON
+251,"Birkaç gündür çarpıntım oluyor, kalbim çok hızlı atıyor. Artık dayanamıyorum.",2,,ONCELIKLI,SABLON
+252,"Aylardır çarpıntım oluyor, kalbim çok hızlı atıyor. Randevu almak istiyorum.",2,,ONCELIKLI,SABLON
+253,"Aylardır çarpıntım oluyor, kalbim çok hızlı atıyor. Ne yapmalıyım?",2,,ONCELIKLI,SABLON
+254,"Aylardır çarpıntım oluyor, kalbim çok hızlı atıyor. Doktora görünmek istiyorum.",2,,ONCELIKLI,SABLON
+255,Yürürken çabuk nefesim kesiliyor ve bacaklarım şişiyor,2,12,ONCELIKLI,SABLON
+256,Yürürken çabuk nefesim kesiliyor ve bacaklarım şişiyor. Randevu almak istiyorum.,2,12,ONCELIKLI,SABLON
+257,Son günlerde yürürken çabuk nefesim kesiliyor ve bacaklarım şişiyor. Randevu almak istiyorum.,2,12,ONCELIKLI,SABLON
+258,Son günlerde yürürken çabuk nefesim kesiliyor ve bacaklarım şişiyor. Ne yapmalıyım?,2,12,ONCELIKLI,SABLON
+259,Son günlerde yürürken çabuk nefesim kesiliyor ve bacaklarım şişiyor. Doktora görünmek istiyorum.,2,12,ONCELIKLI,SABLON
+260,Son günlerde yürürken çabuk nefesim kesiliyor ve bacaklarım şişiyor. Çok rahatsız ediyor.,2,12,ONCELIKLI,SABLON
+261,Bir haftadır yürürken çabuk nefesim kesiliyor ve bacaklarım şişiyor. Randevu almak istiyorum.,2,12,ONCELIKLI,SABLON
+262,Uzun zamandır yürürken çabuk nefesim kesiliyor ve bacaklarım şişiyor,2,12,ONCELIKLI,SABLON
+263,Uzun zamandır yürürken çabuk nefesim kesiliyor ve bacaklarım şişiyor. Hangi bölüme gitmeliyim?,2,12,ONCELIKLI,SABLON
+264,Uzun zamandır yürürken çabuk nefesim kesiliyor ve bacaklarım şişiyor. Randevu almak istiyorum.,2,12,ONCELIKLI,SABLON
+265,Uzun zamandır yürürken çabuk nefesim kesiliyor ve bacaklarım şişiyor. Doktora görünmek istiyorum.,2,12,ONCELIKLI,SABLON
+266,Uzun zamandır yürürken çabuk nefesim kesiliyor ve bacaklarım şişiyor. Çok rahatsız ediyor.,2,12,ONCELIKLI,SABLON
+267,Uzun zamandır yürürken çabuk nefesim kesiliyor ve bacaklarım şişiyor. Artık dayanamıyorum.,2,12,ONCELIKLI,SABLON
+268,Dünden beri yürürken çabuk nefesim kesiliyor ve bacaklarım şişiyor,2,12,ONCELIKLI,SABLON
+269,Dünden beri yürürken çabuk nefesim kesiliyor ve bacaklarım şişiyor. Randevu almak istiyorum.,2,12,ONCELIKLI,SABLON
+270,Dünden beri yürürken çabuk nefesim kesiliyor ve bacaklarım şişiyor. Ne yapmalıyım?,2,12,ONCELIKLI,SABLON
+271,Dünden beri yürürken çabuk nefesim kesiliyor ve bacaklarım şişiyor. Çok rahatsız ediyor.,2,12,ONCELIKLI,SABLON
+272,Son zamanlarda yürürken çabuk nefesim kesiliyor ve bacaklarım şişiyor,2,12,ONCELIKLI,SABLON
+273,Son zamanlarda yürürken çabuk nefesim kesiliyor ve bacaklarım şişiyor. Hangi bölüme gitmeliyim?,2,12,ONCELIKLI,SABLON
+274,Son zamanlarda yürürken çabuk nefesim kesiliyor ve bacaklarım şişiyor. Randevu almak istiyorum.,2,12,ONCELIKLI,SABLON
+275,Son zamanlarda yürürken çabuk nefesim kesiliyor ve bacaklarım şişiyor. Doktora görünmek istiyorum.,2,12,ONCELIKLI,SABLON
+276,Son zamanlarda yürürken çabuk nefesim kesiliyor ve bacaklarım şişiyor. Çok rahatsız ediyor.,2,12,ONCELIKLI,SABLON
+277,Birkaç gündür yürürken çabuk nefesim kesiliyor ve bacaklarım şişiyor,2,12,ONCELIKLI,SABLON
+278,Birkaç gündür yürürken çabuk nefesim kesiliyor ve bacaklarım şişiyor. Ne yapmalıyım?,2,12,ONCELIKLI,SABLON
+279,Birkaç gündür yürürken çabuk nefesim kesiliyor ve bacaklarım şişiyor. Çok rahatsız ediyor.,2,12,ONCELIKLI,SABLON
+280,Birkaç gündür yürürken çabuk nefesim kesiliyor ve bacaklarım şişiyor. Artık dayanamıyorum.,2,12,ONCELIKLI,SABLON
+281,Aylardır yürürken çabuk nefesim kesiliyor ve bacaklarım şişiyor,2,12,ONCELIKLI,SABLON
+282,Aylardır yürürken çabuk nefesim kesiliyor ve bacaklarım şişiyor. Çok rahatsız ediyor.,2,12,ONCELIKLI,SABLON
+283,"Tansiyonum yükseliyor, ensem ağrıyor",2,1,RUTIN,SABLON
+284,"Tansiyonum yükseliyor, ensem ağrıyor. Randevu almak istiyorum.",2,1,RUTIN,SABLON
+285,"Tansiyonum yükseliyor, ensem ağrıyor. Ne yapmalıyım?",2,1,RUTIN,SABLON
+286,"Tansiyonum yükseliyor, ensem ağrıyor. Doktora görünmek istiyorum.",2,1,RUTIN,SABLON
+287,"Tansiyonum yükseliyor, ensem ağrıyor. Çok rahatsız ediyor.",2,1,RUTIN,SABLON
+288,"Son günlerde tansiyonum yükseliyor, ensem ağrıyor",2,1,RUTIN,SABLON
+289,"Son günlerde tansiyonum yükseliyor, ensem ağrıyor. Randevu almak istiyorum.",2,1,RUTIN,SABLON
+290,"Son günlerde tansiyonum yükseliyor, ensem ağrıyor. Ne yapmalıyım?",2,1,RUTIN,SABLON
+291,"Son günlerde tansiyonum yükseliyor, ensem ağrıyor. Doktora görünmek istiyorum.",2,1,RUTIN,SABLON
+292,"Son günlerde tansiyonum yükseliyor, ensem ağrıyor. Çok rahatsız ediyor.",2,1,RUTIN,SABLON
+293,"Bir haftadır tansiyonum yükseliyor, ensem ağrıyor",2,1,RUTIN,SABLON
+294,"Bir haftadır tansiyonum yükseliyor, ensem ağrıyor. Artık dayanamıyorum.",2,1,RUTIN,SABLON
+295,"Uzun zamandır tansiyonum yükseliyor, ensem ağrıyor",2,1,RUTIN,SABLON
+296,"Uzun zamandır tansiyonum yükseliyor, ensem ağrıyor. Hangi bölüme gitmeliyim?",2,1,RUTIN,SABLON
+297,"Uzun zamandır tansiyonum yükseliyor, ensem ağrıyor. Randevu almak istiyorum.",2,1,RUTIN,SABLON
+298,"Uzun zamandır tansiyonum yükseliyor, ensem ağrıyor. Ne yapmalıyım?",2,1,RUTIN,SABLON
+299,"Uzun zamandır tansiyonum yükseliyor, ensem ağrıyor. Çok rahatsız ediyor.",2,1,RUTIN,SABLON
+300,"Uzun zamandır tansiyonum yükseliyor, ensem ağrıyor. Artık dayanamıyorum.",2,1,RUTIN,SABLON
+301,"Dünden beri tansiyonum yükseliyor, ensem ağrıyor. Hangi bölüme gitmeliyim?",2,1,RUTIN,SABLON
+302,"Dünden beri tansiyonum yükseliyor, ensem ağrıyor. Randevu almak istiyorum.",2,1,RUTIN,SABLON
+303,"Dünden beri tansiyonum yükseliyor, ensem ağrıyor. Ne yapmalıyım?",2,1,RUTIN,SABLON
+304,"Dünden beri tansiyonum yükseliyor, ensem ağrıyor. Doktora görünmek istiyorum.",2,1,RUTIN,SABLON
+305,"Dünden beri tansiyonum yükseliyor, ensem ağrıyor. Çok rahatsız ediyor.",2,1,RUTIN,SABLON
+306,"Son zamanlarda tansiyonum yükseliyor, ensem ağrıyor",2,1,RUTIN,SABLON
+307,"Son zamanlarda tansiyonum yükseliyor, ensem ağrıyor. Hangi bölüme gitmeliyim?",2,1,RUTIN,SABLON
+308,"Son zamanlarda tansiyonum yükseliyor, ensem ağrıyor. Randevu almak istiyorum.",2,1,RUTIN,SABLON
+309,"Son zamanlarda tansiyonum yükseliyor, ensem ağrıyor. Ne yapmalıyım?",2,1,RUTIN,SABLON
+310,"Son zamanlarda tansiyonum yükseliyor, ensem ağrıyor. Artık dayanamıyorum.",2,1,RUTIN,SABLON
+311,"Birkaç gündür tansiyonum yükseliyor, ensem ağrıyor. Randevu almak istiyorum.",2,1,RUTIN,SABLON
+312,"Birkaç gündür tansiyonum yükseliyor, ensem ağrıyor. Çok rahatsız ediyor.",2,1,RUTIN,SABLON
+313,"Birkaç gündür tansiyonum yükseliyor, ensem ağrıyor. Artık dayanamıyorum.",2,1,RUTIN,SABLON
+314,"Aylardır tansiyonum yükseliyor, ensem ağrıyor. Doktora görünmek istiyorum.",2,1,RUTIN,SABLON
+315,"Aylardır tansiyonum yükseliyor, ensem ağrıyor. Çok rahatsız ediyor.",2,1,RUTIN,SABLON
+316,"Aylardır tansiyonum yükseliyor, ensem ağrıyor. Artık dayanamıyorum.",2,1,RUTIN,SABLON
+317,Eforla gelen hafif göğüs baskısı hissediyorum,2,,ONCELIKLI,SABLON
+318,Eforla gelen hafif göğüs baskısı hissediyorum. Hangi bölüme gitmeliyim?,2,,ONCELIKLI,SABLON
+319,Eforla gelen hafif göğüs baskısı hissediyorum. Çok rahatsız ediyor.,2,,ONCELIKLI,SABLON
+320,Son günlerde eforla gelen hafif göğüs baskısı hissediyorum. Hangi bölüme gitmeliyim?,2,,ONCELIKLI,SABLON
+321,Son günlerde eforla gelen hafif göğüs baskısı hissediyorum. Ne yapmalıyım?,2,,ONCELIKLI,SABLON
+322,Son günlerde eforla gelen hafif göğüs baskısı hissediyorum. Doktora görünmek istiyorum.,2,,ONCELIKLI,SABLON
+323,Son günlerde eforla gelen hafif göğüs baskısı hissediyorum. Çok rahatsız ediyor.,2,,ONCELIKLI,SABLON
+324,Bir haftadır eforla gelen hafif göğüs baskısı hissediyorum. Randevu almak istiyorum.,2,,ONCELIKLI,SABLON
+325,Bir haftadır eforla gelen hafif göğüs baskısı hissediyorum. Ne yapmalıyım?,2,,ONCELIKLI,SABLON
+326,Bir haftadır eforla gelen hafif göğüs baskısı hissediyorum. Çok rahatsız ediyor.,2,,ONCELIKLI,SABLON
+327,Uzun zamandır eforla gelen hafif göğüs baskısı hissediyorum. Hangi bölüme gitmeliyim?,2,,ONCELIKLI,SABLON
+328,Uzun zamandır eforla gelen hafif göğüs baskısı hissediyorum. Randevu almak istiyorum.,2,,ONCELIKLI,SABLON
+329,Uzun zamandır eforla gelen hafif göğüs baskısı hissediyorum. Doktora görünmek istiyorum.,2,,ONCELIKLI,SABLON
+330,Uzun zamandır eforla gelen hafif göğüs baskısı hissediyorum. Çok rahatsız ediyor.,2,,ONCELIKLI,SABLON
+331,Uzun zamandır eforla gelen hafif göğüs baskısı hissediyorum. Artık dayanamıyorum.,2,,ONCELIKLI,SABLON
+332,Dünden beri eforla gelen hafif göğüs baskısı hissediyorum,2,,ONCELIKLI,SABLON
+333,Dünden beri eforla gelen hafif göğüs baskısı hissediyorum. Hangi bölüme gitmeliyim?,2,,ONCELIKLI,SABLON
+334,Dünden beri eforla gelen hafif göğüs baskısı hissediyorum. Ne yapmalıyım?,2,,ONCELIKLI,SABLON
+335,Dünden beri eforla gelen hafif göğüs baskısı hissediyorum. Doktora görünmek istiyorum.,2,,ONCELIKLI,SABLON
+336,Son zamanlarda eforla gelen hafif göğüs baskısı hissediyorum. Hangi bölüme gitmeliyim?,2,,ONCELIKLI,SABLON
+337,Son zamanlarda eforla gelen hafif göğüs baskısı hissediyorum. Randevu almak istiyorum.,2,,ONCELIKLI,SABLON
+338,Son zamanlarda eforla gelen hafif göğüs baskısı hissediyorum. Doktora görünmek istiyorum.,2,,ONCELIKLI,SABLON
+339,Son zamanlarda eforla gelen hafif göğüs baskısı hissediyorum. Çok rahatsız ediyor.,2,,ONCELIKLI,SABLON
+340,Son zamanlarda eforla gelen hafif göğüs baskısı hissediyorum. Artık dayanamıyorum.,2,,ONCELIKLI,SABLON
+341,Birkaç gündür eforla gelen hafif göğüs baskısı hissediyorum,2,,ONCELIKLI,SABLON
+342,Birkaç gündür eforla gelen hafif göğüs baskısı hissediyorum. Hangi bölüme gitmeliyim?,2,,ONCELIKLI,SABLON
+343,Birkaç gündür eforla gelen hafif göğüs baskısı hissediyorum. Randevu almak istiyorum.,2,,ONCELIKLI,SABLON
+344,Birkaç gündür eforla gelen hafif göğüs baskısı hissediyorum. Artık dayanamıyorum.,2,,ONCELIKLI,SABLON
+345,Aylardır eforla gelen hafif göğüs baskısı hissediyorum,2,,ONCELIKLI,SABLON
+346,Aylardır eforla gelen hafif göğüs baskısı hissediyorum. Hangi bölüme gitmeliyim?,2,,ONCELIKLI,SABLON
+347,Aylardır eforla gelen hafif göğüs baskısı hissediyorum. Ne yapmalıyım?,2,,ONCELIKLI,SABLON
+348,Aylardır eforla gelen hafif göğüs baskısı hissediyorum. Çok rahatsız ediyor.,2,,ONCELIKLI,SABLON
+349,Aylardır eforla gelen hafif göğüs baskısı hissediyorum. Artık dayanamıyorum.,2,,ONCELIKLI,SABLON
+350,Kalp ilacımı kontrol ettirmem gerekiyor,2,,RUTIN,SABLON
+351,Kalp ilacımı kontrol ettirmem gerekiyor. Hangi bölüme gitmeliyim?,2,,RUTIN,SABLON
+352,Kalp ilacımı kontrol ettirmem gerekiyor. Randevu almak istiyorum.,2,,RUTIN,SABLON
+353,Kalp ilacımı kontrol ettirmem gerekiyor. Ne yapmalıyım?,2,,RUTIN,SABLON
+354,Kalp ilacımı kontrol ettirmem gerekiyor. Doktora görünmek istiyorum.,2,,RUTIN,SABLON
+355,Çocuğumun ateşi düşmüyor ve öksürüyor,3,,ONCELIKLI,SABLON
+356,Çocuğumun ateşi düşmüyor ve öksürüyor. Hangi bölüme gitmeliyim?,3,,ONCELIKLI,SABLON
+357,Çocuğumun ateşi düşmüyor ve öksürüyor. Randevu almak istiyorum.,3,,ONCELIKLI,SABLON
+358,Çocuğumun ateşi düşmüyor ve öksürüyor. Ne yapmalıyım?,3,,ONCELIKLI,SABLON
+359,Çocuğumun ateşi düşmüyor ve öksürüyor. Çok rahatsız ediyor.,3,,ONCELIKLI,SABLON
+360,Çocuğumun ateşi düşmüyor ve öksürüyor. Artık dayanamıyorum.,3,,ONCELIKLI,SABLON
+361,Son günlerde çocuğumun ateşi düşmüyor ve öksürüyor,3,,ONCELIKLI,SABLON
+362,Son günlerde çocuğumun ateşi düşmüyor ve öksürüyor. Hangi bölüme gitmeliyim?,3,,ONCELIKLI,SABLON
+363,Son günlerde çocuğumun ateşi düşmüyor ve öksürüyor. Ne yapmalıyım?,3,,ONCELIKLI,SABLON
+364,Son günlerde çocuğumun ateşi düşmüyor ve öksürüyor. Doktora görünmek istiyorum.,3,,ONCELIKLI,SABLON
+365,Son günlerde çocuğumun ateşi düşmüyor ve öksürüyor. Çok rahatsız ediyor.,3,,ONCELIKLI,SABLON
+366,Son günlerde çocuğumun ateşi düşmüyor ve öksürüyor. Artık dayanamıyorum.,3,,ONCELIKLI,SABLON
+367,Bir haftadır çocuğumun ateşi düşmüyor ve öksürüyor. Hangi bölüme gitmeliyim?,3,,ONCELIKLI,SABLON
+368,Bir haftadır çocuğumun ateşi düşmüyor ve öksürüyor. Doktora görünmek istiyorum.,3,,ONCELIKLI,SABLON
+369,Bir haftadır çocuğumun ateşi düşmüyor ve öksürüyor. Artık dayanamıyorum.,3,,ONCELIKLI,SABLON
+370,Uzun zamandır çocuğumun ateşi düşmüyor ve öksürüyor,3,,ONCELIKLI,SABLON
+371,Uzun zamandır çocuğumun ateşi düşmüyor ve öksürüyor. Hangi bölüme gitmeliyim?,3,,ONCELIKLI,SABLON
+372,Uzun zamandır çocuğumun ateşi düşmüyor ve öksürüyor. Randevu almak istiyorum.,3,,ONCELIKLI,SABLON
+373,Uzun zamandır çocuğumun ateşi düşmüyor ve öksürüyor. Artık dayanamıyorum.,3,,ONCELIKLI,SABLON
+374,Dünden beri çocuğumun ateşi düşmüyor ve öksürüyor,3,,ONCELIKLI,SABLON
+375,Dünden beri çocuğumun ateşi düşmüyor ve öksürüyor. Hangi bölüme gitmeliyim?,3,,ONCELIKLI,SABLON
+376,Dünden beri çocuğumun ateşi düşmüyor ve öksürüyor. Doktora görünmek istiyorum.,3,,ONCELIKLI,SABLON
+377,Dünden beri çocuğumun ateşi düşmüyor ve öksürüyor. Artık dayanamıyorum.,3,,ONCELIKLI,SABLON
+378,Son zamanlarda çocuğumun ateşi düşmüyor ve öksürüyor,3,,ONCELIKLI,SABLON
+379,Son zamanlarda çocuğumun ateşi düşmüyor ve öksürüyor. Hangi bölüme gitmeliyim?,3,,ONCELIKLI,SABLON
+380,Son zamanlarda çocuğumun ateşi düşmüyor ve öksürüyor. Randevu almak istiyorum.,3,,ONCELIKLI,SABLON
+381,Son zamanlarda çocuğumun ateşi düşmüyor ve öksürüyor. Çok rahatsız ediyor.,3,,ONCELIKLI,SABLON
+382,Son zamanlarda çocuğumun ateşi düşmüyor ve öksürüyor. Artık dayanamıyorum.,3,,ONCELIKLI,SABLON
+383,Birkaç gündür çocuğumun ateşi düşmüyor ve öksürüyor. Hangi bölüme gitmeliyim?,3,,ONCELIKLI,SABLON
+384,Birkaç gündür çocuğumun ateşi düşmüyor ve öksürüyor. Ne yapmalıyım?,3,,ONCELIKLI,SABLON
+385,Birkaç gündür çocuğumun ateşi düşmüyor ve öksürüyor. Doktora görünmek istiyorum.,3,,ONCELIKLI,SABLON
+386,Birkaç gündür çocuğumun ateşi düşmüyor ve öksürüyor. Çok rahatsız ediyor.,3,,ONCELIKLI,SABLON
+387,Birkaç gündür çocuğumun ateşi düşmüyor ve öksürüyor. Artık dayanamıyorum.,3,,ONCELIKLI,SABLON
+388,Aylardır çocuğumun ateşi düşmüyor ve öksürüyor. Hangi bölüme gitmeliyim?,3,,ONCELIKLI,SABLON
+389,Aylardır çocuğumun ateşi düşmüyor ve öksürüyor. Randevu almak istiyorum.,3,,ONCELIKLI,SABLON
+390,Aylardır çocuğumun ateşi düşmüyor ve öksürüyor. Çok rahatsız ediyor.,3,,ONCELIKLI,SABLON
+391,Aylardır çocuğumun ateşi düşmüyor ve öksürüyor. Artık dayanamıyorum.,3,,ONCELIKLI,SABLON
+392,Bebeğimin aşı takvimi için kontrole gelmek istiyorum,3,,RUTIN,SABLON
+393,Bebeğimin aşı takvimi için kontrole gelmek istiyorum. Hangi bölüme gitmeliyim?,3,,RUTIN,SABLON
+394,Bebeğimin aşı takvimi için kontrole gelmek istiyorum. Ne yapmalıyım?,3,,RUTIN,SABLON
+395,"Oğlum iştahsız, kilo almıyor",3,,RUTIN,SABLON
+396,"Oğlum iştahsız, kilo almıyor. Hangi bölüme gitmeliyim?",3,,RUTIN,SABLON
+397,"Oğlum iştahsız, kilo almıyor. Randevu almak istiyorum.",3,,RUTIN,SABLON
+398,"Oğlum iştahsız, kilo almıyor. Ne yapmalıyım?",3,,RUTIN,SABLON
+399,"Oğlum iştahsız, kilo almıyor. Doktora görünmek istiyorum.",3,,RUTIN,SABLON
+400,"Oğlum iştahsız, kilo almıyor. Artık dayanamıyorum.",3,,RUTIN,SABLON
+401,"Son günlerde oğlum iştahsız, kilo almıyor",3,,RUTIN,SABLON
+402,"Son günlerde oğlum iştahsız, kilo almıyor. Artık dayanamıyorum.",3,,RUTIN,SABLON
+403,"Bir haftadır oğlum iştahsız, kilo almıyor",3,,RUTIN,SABLON
+404,"Bir haftadır oğlum iştahsız, kilo almıyor. Hangi bölüme gitmeliyim?",3,,RUTIN,SABLON
+405,"Bir haftadır oğlum iştahsız, kilo almıyor. Doktora görünmek istiyorum.",3,,RUTIN,SABLON
+406,"Bir haftadır oğlum iştahsız, kilo almıyor. Artık dayanamıyorum.",3,,RUTIN,SABLON
+407,"Uzun zamandır oğlum iştahsız, kilo almıyor",3,,RUTIN,SABLON
+408,"Uzun zamandır oğlum iştahsız, kilo almıyor. Hangi bölüme gitmeliyim?",3,,RUTIN,SABLON
+409,"Uzun zamandır oğlum iştahsız, kilo almıyor. Randevu almak istiyorum.",3,,RUTIN,SABLON
+410,"Uzun zamandır oğlum iştahsız, kilo almıyor. Ne yapmalıyım?",3,,RUTIN,SABLON
+411,"Uzun zamandır oğlum iştahsız, kilo almıyor. Doktora görünmek istiyorum.",3,,RUTIN,SABLON
+412,"Uzun zamandır oğlum iştahsız, kilo almıyor. Çok rahatsız ediyor.",3,,RUTIN,SABLON
+413,"Dünden beri oğlum iştahsız, kilo almıyor",3,,RUTIN,SABLON
+414,"Dünden beri oğlum iştahsız, kilo almıyor. Hangi bölüme gitmeliyim?",3,,RUTIN,SABLON
+415,"Dünden beri oğlum iştahsız, kilo almıyor. Randevu almak istiyorum.",3,,RUTIN,SABLON
+416,"Dünden beri oğlum iştahsız, kilo almıyor. Doktora görünmek istiyorum.",3,,RUTIN,SABLON
+417,"Dünden beri oğlum iştahsız, kilo almıyor. Artık dayanamıyorum.",3,,RUTIN,SABLON
+418,"Son zamanlarda oğlum iştahsız, kilo almıyor",3,,RUTIN,SABLON
+419,"Son zamanlarda oğlum iştahsız, kilo almıyor. Hangi bölüme gitmeliyim?",3,,RUTIN,SABLON
+420,"Son zamanlarda oğlum iştahsız, kilo almıyor. Ne yapmalıyım?",3,,RUTIN,SABLON
+421,"Son zamanlarda oğlum iştahsız, kilo almıyor. Artık dayanamıyorum.",3,,RUTIN,SABLON
+422,"Birkaç gündür oğlum iştahsız, kilo almıyor",3,,RUTIN,SABLON
+423,"Birkaç gündür oğlum iştahsız, kilo almıyor. Hangi bölüme gitmeliyim?",3,,RUTIN,SABLON
+424,"Birkaç gündür oğlum iştahsız, kilo almıyor. Ne yapmalıyım?",3,,RUTIN,SABLON
+425,"Birkaç gündür oğlum iştahsız, kilo almıyor. Çok rahatsız ediyor.",3,,RUTIN,SABLON
+426,"Aylardır oğlum iştahsız, kilo almıyor. Hangi bölüme gitmeliyim?",3,,RUTIN,SABLON
+427,"Aylardır oğlum iştahsız, kilo almıyor. Randevu almak istiyorum.",3,,RUTIN,SABLON
+428,"Aylardır oğlum iştahsız, kilo almıyor. Ne yapmalıyım?",3,,RUTIN,SABLON
+429,"Aylardır oğlum iştahsız, kilo almıyor. Doktora görünmek istiyorum.",3,,RUTIN,SABLON
+430,"Aylardır oğlum iştahsız, kilo almıyor. Çok rahatsız ediyor.",3,,RUTIN,SABLON
+431,"Aylardır oğlum iştahsız, kilo almıyor. Artık dayanamıyorum.",3,,RUTIN,SABLON
+432,Kızımın karnı ağrıyor ve kusuyor,3,,ONCELIKLI,SABLON
+433,Kızımın karnı ağrıyor ve kusuyor. Hangi bölüme gitmeliyim?,3,,ONCELIKLI,SABLON
+434,Kızımın karnı ağrıyor ve kusuyor. Randevu almak istiyorum.,3,,ONCELIKLI,SABLON
+435,Kızımın karnı ağrıyor ve kusuyor. Doktora görünmek istiyorum.,3,,ONCELIKLI,SABLON
+436,Kızımın karnı ağrıyor ve kusuyor. Çok rahatsız ediyor.,3,,ONCELIKLI,SABLON
+437,Son günlerde kızımın karnı ağrıyor ve kusuyor,3,,ONCELIKLI,SABLON
+438,Son günlerde kızımın karnı ağrıyor ve kusuyor. Hangi bölüme gitmeliyim?,3,,ONCELIKLI,SABLON
+439,Son günlerde kızımın karnı ağrıyor ve kusuyor. Randevu almak istiyorum.,3,,ONCELIKLI,SABLON
+440,Son günlerde kızımın karnı ağrıyor ve kusuyor. Doktora görünmek istiyorum.,3,,ONCELIKLI,SABLON
+441,Son günlerde kızımın karnı ağrıyor ve kusuyor. Çok rahatsız ediyor.,3,,ONCELIKLI,SABLON
+442,Son günlerde kızımın karnı ağrıyor ve kusuyor. Artık dayanamıyorum.,3,,ONCELIKLI,SABLON
+443,Bir haftadır kızımın karnı ağrıyor ve kusuyor,3,,ONCELIKLI,SABLON
+444,Bir haftadır kızımın karnı ağrıyor ve kusuyor. Doktora görünmek istiyorum.,3,,ONCELIKLI,SABLON
+445,Bir haftadır kızımın karnı ağrıyor ve kusuyor. Artık dayanamıyorum.,3,,ONCELIKLI,SABLON
+446,Uzun zamandır kızımın karnı ağrıyor ve kusuyor. Hangi bölüme gitmeliyim?,3,,ONCELIKLI,SABLON
+447,Uzun zamandır kızımın karnı ağrıyor ve kusuyor. Ne yapmalıyım?,3,,ONCELIKLI,SABLON
+448,Uzun zamandır kızımın karnı ağrıyor ve kusuyor. Çok rahatsız ediyor.,3,,ONCELIKLI,SABLON
+449,Uzun zamandır kızımın karnı ağrıyor ve kusuyor. Artık dayanamıyorum.,3,,ONCELIKLI,SABLON
+450,Dünden beri kızımın karnı ağrıyor ve kusuyor,3,,ONCELIKLI,SABLON
+451,Dünden beri kızımın karnı ağrıyor ve kusuyor. Hangi bölüme gitmeliyim?,3,,ONCELIKLI,SABLON
+452,Dünden beri kızımın karnı ağrıyor ve kusuyor. Randevu almak istiyorum.,3,,ONCELIKLI,SABLON
+453,Dünden beri kızımın karnı ağrıyor ve kusuyor. Doktora görünmek istiyorum.,3,,ONCELIKLI,SABLON
+454,Dünden beri kızımın karnı ağrıyor ve kusuyor. Çok rahatsız ediyor.,3,,ONCELIKLI,SABLON
+455,Son zamanlarda kızımın karnı ağrıyor ve kusuyor,3,,ONCELIKLI,SABLON
+456,Son zamanlarda kızımın karnı ağrıyor ve kusuyor. Hangi bölüme gitmeliyim?,3,,ONCELIKLI,SABLON
+457,Son zamanlarda kızımın karnı ağrıyor ve kusuyor. Randevu almak istiyorum.,3,,ONCELIKLI,SABLON
+458,Son zamanlarda kızımın karnı ağrıyor ve kusuyor. Ne yapmalıyım?,3,,ONCELIKLI,SABLON
+459,Son zamanlarda kızımın karnı ağrıyor ve kusuyor. Çok rahatsız ediyor.,3,,ONCELIKLI,SABLON
+460,Birkaç gündür kızımın karnı ağrıyor ve kusuyor,3,,ONCELIKLI,SABLON
+461,Birkaç gündür kızımın karnı ağrıyor ve kusuyor. Randevu almak istiyorum.,3,,ONCELIKLI,SABLON
+462,Birkaç gündür kızımın karnı ağrıyor ve kusuyor. Ne yapmalıyım?,3,,ONCELIKLI,SABLON
+463,Birkaç gündür kızımın karnı ağrıyor ve kusuyor. Çok rahatsız ediyor.,3,,ONCELIKLI,SABLON
+464,Aylardır kızımın karnı ağrıyor ve kusuyor. Ne yapmalıyım?,3,,ONCELIKLI,SABLON
+465,Aylardır kızımın karnı ağrıyor ve kusuyor. Artık dayanamıyorum.,3,,ONCELIKLI,SABLON
+466,"Çocuğumun boğazı şiş, yutkunamıyor",3,8,ONCELIKLI,SABLON
+467,"Çocuğumun boğazı şiş, yutkunamıyor. Ne yapmalıyım?",3,8,ONCELIKLI,SABLON
+468,"Çocuğumun boğazı şiş, yutkunamıyor. Çok rahatsız ediyor.",3,8,ONCELIKLI,SABLON
+469,"Çocuğumun boğazı şiş, yutkunamıyor. Artık dayanamıyorum.",3,8,ONCELIKLI,SABLON
+470,"Son günlerde çocuğumun boğazı şiş, yutkunamıyor",3,8,ONCELIKLI,SABLON
+471,"Son günlerde çocuğumun boğazı şiş, yutkunamıyor. Randevu almak istiyorum.",3,8,ONCELIKLI,SABLON
+472,"Son günlerde çocuğumun boğazı şiş, yutkunamıyor. Ne yapmalıyım?",3,8,ONCELIKLI,SABLON
+473,"Son günlerde çocuğumun boğazı şiş, yutkunamıyor. Doktora görünmek istiyorum.",3,8,ONCELIKLI,SABLON
+474,"Son günlerde çocuğumun boğazı şiş, yutkunamıyor. Çok rahatsız ediyor.",3,8,ONCELIKLI,SABLON
+475,"Son günlerde çocuğumun boğazı şiş, yutkunamıyor. Artık dayanamıyorum.",3,8,ONCELIKLI,SABLON
+476,"Bir haftadır çocuğumun boğazı şiş, yutkunamıyor. Randevu almak istiyorum.",3,8,ONCELIKLI,SABLON
+477,"Bir haftadır çocuğumun boğazı şiş, yutkunamıyor. Ne yapmalıyım?",3,8,ONCELIKLI,SABLON
+478,"Uzun zamandır çocuğumun boğazı şiş, yutkunamıyor. Randevu almak istiyorum.",3,8,ONCELIKLI,SABLON
+479,"Uzun zamandır çocuğumun boğazı şiş, yutkunamıyor. Ne yapmalıyım?",3,8,ONCELIKLI,SABLON
+480,"Uzun zamandır çocuğumun boğazı şiş, yutkunamıyor. Doktora görünmek istiyorum.",3,8,ONCELIKLI,SABLON
+481,"Uzun zamandır çocuğumun boğazı şiş, yutkunamıyor. Çok rahatsız ediyor.",3,8,ONCELIKLI,SABLON
+482,"Uzun zamandır çocuğumun boğazı şiş, yutkunamıyor. Artık dayanamıyorum.",3,8,ONCELIKLI,SABLON
+483,"Dünden beri çocuğumun boğazı şiş, yutkunamıyor",3,8,ONCELIKLI,SABLON
+484,"Dünden beri çocuğumun boğazı şiş, yutkunamıyor. Hangi bölüme gitmeliyim?",3,8,ONCELIKLI,SABLON
+485,"Dünden beri çocuğumun boğazı şiş, yutkunamıyor. Ne yapmalıyım?",3,8,ONCELIKLI,SABLON
+486,"Dünden beri çocuğumun boğazı şiş, yutkunamıyor. Doktora görünmek istiyorum.",3,8,ONCELIKLI,SABLON
+487,"Dünden beri çocuğumun boğazı şiş, yutkunamıyor. Çok rahatsız ediyor.",3,8,ONCELIKLI,SABLON
+488,"Dünden beri çocuğumun boğazı şiş, yutkunamıyor. Artık dayanamıyorum.",3,8,ONCELIKLI,SABLON
+489,"Son zamanlarda çocuğumun boğazı şiş, yutkunamıyor. Hangi bölüme gitmeliyim?",3,8,ONCELIKLI,SABLON
+490,"Son zamanlarda çocuğumun boğazı şiş, yutkunamıyor. Randevu almak istiyorum.",3,8,ONCELIKLI,SABLON
+491,"Birkaç gündür çocuğumun boğazı şiş, yutkunamıyor. Hangi bölüme gitmeliyim?",3,8,ONCELIKLI,SABLON
+492,"Birkaç gündür çocuğumun boğazı şiş, yutkunamıyor. Ne yapmalıyım?",3,8,ONCELIKLI,SABLON
+493,"Birkaç gündür çocuğumun boğazı şiş, yutkunamıyor. Doktora görünmek istiyorum.",3,8,ONCELIKLI,SABLON
+494,"Birkaç gündür çocuğumun boğazı şiş, yutkunamıyor. Çok rahatsız ediyor.",3,8,ONCELIKLI,SABLON
+495,"Aylardır çocuğumun boğazı şiş, yutkunamıyor",3,8,ONCELIKLI,SABLON
+496,"Aylardır çocuğumun boğazı şiş, yutkunamıyor. Ne yapmalıyım?",3,8,ONCELIKLI,SABLON
+497,"Aylardır çocuğumun boğazı şiş, yutkunamıyor. Doktora görünmek istiyorum.",3,8,ONCELIKLI,SABLON
+498,"Aylardır çocuğumun boğazı şiş, yutkunamıyor. Çok rahatsız ediyor.",3,8,ONCELIKLI,SABLON
+499,"Aylardır çocuğumun boğazı şiş, yutkunamıyor. Artık dayanamıyorum.",3,8,ONCELIKLI,SABLON
+500,Bebeğimde pişik ve döküntü var,3,9,RUTIN,SABLON
+501,Bebeğimde pişik ve döküntü var. Hangi bölüme gitmeliyim?,3,9,RUTIN,SABLON
+502,Bebeğimde pişik ve döküntü var. Ne yapmalıyım?,3,9,RUTIN,SABLON
+503,Bebeğimde pişik ve döküntü var. Doktora görünmek istiyorum.,3,9,RUTIN,SABLON
+504,Bebeğimde pişik ve döküntü var. Çok rahatsız ediyor.,3,9,RUTIN,SABLON
+505,Bebeğimde pişik ve döküntü var. Artık dayanamıyorum.,3,9,RUTIN,SABLON
+506,Son günlerde bebeğimde pişik ve döküntü var. Randevu almak istiyorum.,3,9,RUTIN,SABLON
+507,Son günlerde bebeğimde pişik ve döküntü var. Ne yapmalıyım?,3,9,RUTIN,SABLON
+508,Son günlerde bebeğimde pişik ve döküntü var. Çok rahatsız ediyor.,3,9,RUTIN,SABLON
+509,Bir haftadır bebeğimde pişik ve döküntü var,3,9,RUTIN,SABLON
+510,Bir haftadır bebeğimde pişik ve döküntü var. Ne yapmalıyım?,3,9,RUTIN,SABLON
+511,Bir haftadır bebeğimde pişik ve döküntü var. Doktora görünmek istiyorum.,3,9,RUTIN,SABLON
+512,Bir haftadır bebeğimde pişik ve döküntü var. Artık dayanamıyorum.,3,9,RUTIN,SABLON
+513,Uzun zamandır bebeğimde pişik ve döküntü var. Randevu almak istiyorum.,3,9,RUTIN,SABLON
+514,Uzun zamandır bebeğimde pişik ve döküntü var. Doktora görünmek istiyorum.,3,9,RUTIN,SABLON
+515,Dünden beri bebeğimde pişik ve döküntü var,3,9,RUTIN,SABLON
+516,Dünden beri bebeğimde pişik ve döküntü var. Hangi bölüme gitmeliyim?,3,9,RUTIN,SABLON
+517,Dünden beri bebeğimde pişik ve döküntü var. Ne yapmalıyım?,3,9,RUTIN,SABLON
+518,Dünden beri bebeğimde pişik ve döküntü var. Çok rahatsız ediyor.,3,9,RUTIN,SABLON
+519,Dünden beri bebeğimde pişik ve döküntü var. Artık dayanamıyorum.,3,9,RUTIN,SABLON
+520,Son zamanlarda bebeğimde pişik ve döküntü var,3,9,RUTIN,SABLON
+521,Son zamanlarda bebeğimde pişik ve döküntü var. Hangi bölüme gitmeliyim?,3,9,RUTIN,SABLON
+522,Son zamanlarda bebeğimde pişik ve döküntü var. Ne yapmalıyım?,3,9,RUTIN,SABLON
+523,Son zamanlarda bebeğimde pişik ve döküntü var. Doktora görünmek istiyorum.,3,9,RUTIN,SABLON
+524,Birkaç gündür bebeğimde pişik ve döküntü var. Hangi bölüme gitmeliyim?,3,9,RUTIN,SABLON
+525,Aylardır bebeğimde pişik ve döküntü var. Hangi bölüme gitmeliyim?,3,9,RUTIN,SABLON
+526,Aylardır bebeğimde pişik ve döküntü var. Randevu almak istiyorum.,3,9,RUTIN,SABLON
+527,Aylardır bebeğimde pişik ve döküntü var. Ne yapmalıyım?,3,9,RUTIN,SABLON
+528,Aylardır bebeğimde pişik ve döküntü var. Artık dayanamıyorum.,3,9,RUTIN,SABLON
+529,Adetlerim düzensiz ve çok ağrılı geçiyor,4,,RUTIN,SABLON
+530,Adetlerim düzensiz ve çok ağrılı geçiyor. Hangi bölüme gitmeliyim?,4,,RUTIN,SABLON
+531,Adetlerim düzensiz ve çok ağrılı geçiyor. Randevu almak istiyorum.,4,,RUTIN,SABLON
+532,Adetlerim düzensiz ve çok ağrılı geçiyor. Ne yapmalıyım?,4,,RUTIN,SABLON
+533,Adetlerim düzensiz ve çok ağrılı geçiyor. Doktora görünmek istiyorum.,4,,RUTIN,SABLON
+534,Son günlerde adetlerim düzensiz ve çok ağrılı geçiyor,4,,RUTIN,SABLON
+535,Son günlerde adetlerim düzensiz ve çok ağrılı geçiyor. Hangi bölüme gitmeliyim?,4,,RUTIN,SABLON
+536,Son günlerde adetlerim düzensiz ve çok ağrılı geçiyor. Ne yapmalıyım?,4,,RUTIN,SABLON
+537,Son günlerde adetlerim düzensiz ve çok ağrılı geçiyor. Doktora görünmek istiyorum.,4,,RUTIN,SABLON
+538,Son günlerde adetlerim düzensiz ve çok ağrılı geçiyor. Çok rahatsız ediyor.,4,,RUTIN,SABLON
+539,Bir haftadır adetlerim düzensiz ve çok ağrılı geçiyor. Hangi bölüme gitmeliyim?,4,,RUTIN,SABLON
+540,Bir haftadır adetlerim düzensiz ve çok ağrılı geçiyor. Randevu almak istiyorum.,4,,RUTIN,SABLON
+541,Bir haftadır adetlerim düzensiz ve çok ağrılı geçiyor. Ne yapmalıyım?,4,,RUTIN,SABLON
+542,Bir haftadır adetlerim düzensiz ve çok ağrılı geçiyor. Doktora görünmek istiyorum.,4,,RUTIN,SABLON
+543,Bir haftadır adetlerim düzensiz ve çok ağrılı geçiyor. Çok rahatsız ediyor.,4,,RUTIN,SABLON
+544,Bir haftadır adetlerim düzensiz ve çok ağrılı geçiyor. Artık dayanamıyorum.,4,,RUTIN,SABLON
+545,Uzun zamandır adetlerim düzensiz ve çok ağrılı geçiyor. Hangi bölüme gitmeliyim?,4,,RUTIN,SABLON
+546,Uzun zamandır adetlerim düzensiz ve çok ağrılı geçiyor. Randevu almak istiyorum.,4,,RUTIN,SABLON
+547,Uzun zamandır adetlerim düzensiz ve çok ağrılı geçiyor. Ne yapmalıyım?,4,,RUTIN,SABLON
+548,Uzun zamandır adetlerim düzensiz ve çok ağrılı geçiyor. Çok rahatsız ediyor.,4,,RUTIN,SABLON
+549,Uzun zamandır adetlerim düzensiz ve çok ağrılı geçiyor. Artık dayanamıyorum.,4,,RUTIN,SABLON
+550,Dünden beri adetlerim düzensiz ve çok ağrılı geçiyor,4,,RUTIN,SABLON
+551,Dünden beri adetlerim düzensiz ve çok ağrılı geçiyor. Hangi bölüme gitmeliyim?,4,,RUTIN,SABLON
+552,Dünden beri adetlerim düzensiz ve çok ağrılı geçiyor. Doktora görünmek istiyorum.,4,,RUTIN,SABLON
+553,Dünden beri adetlerim düzensiz ve çok ağrılı geçiyor. Çok rahatsız ediyor.,4,,RUTIN,SABLON
+554,Dünden beri adetlerim düzensiz ve çok ağrılı geçiyor. Artık dayanamıyorum.,4,,RUTIN,SABLON
+555,Son zamanlarda adetlerim düzensiz ve çok ağrılı geçiyor. Doktora görünmek istiyorum.,4,,RUTIN,SABLON
+556,Son zamanlarda adetlerim düzensiz ve çok ağrılı geçiyor. Çok rahatsız ediyor.,4,,RUTIN,SABLON
+557,Son zamanlarda adetlerim düzensiz ve çok ağrılı geçiyor. Artık dayanamıyorum.,4,,RUTIN,SABLON
+558,Birkaç gündür adetlerim düzensiz ve çok ağrılı geçiyor,4,,RUTIN,SABLON
+559,Birkaç gündür adetlerim düzensiz ve çok ağrılı geçiyor. Hangi bölüme gitmeliyim?,4,,RUTIN,SABLON
+560,Birkaç gündür adetlerim düzensiz ve çok ağrılı geçiyor. Randevu almak istiyorum.,4,,RUTIN,SABLON
+561,Birkaç gündür adetlerim düzensiz ve çok ağrılı geçiyor. Çok rahatsız ediyor.,4,,RUTIN,SABLON
+562,Aylardır adetlerim düzensiz ve çok ağrılı geçiyor. Hangi bölüme gitmeliyim?,4,,RUTIN,SABLON
+563,Aylardır adetlerim düzensiz ve çok ağrılı geçiyor. Randevu almak istiyorum.,4,,RUTIN,SABLON
+564,Aylardır adetlerim düzensiz ve çok ağrılı geçiyor. Ne yapmalıyım?,4,,RUTIN,SABLON
+565,Aylardır adetlerim düzensiz ve çok ağrılı geçiyor. Çok rahatsız ediyor.,4,,RUTIN,SABLON
+566,Aylardır adetlerim düzensiz ve çok ağrılı geçiyor. Artık dayanamıyorum.,4,,RUTIN,SABLON
+567,"Hamileyim, rutin kontrol için gelmek istiyorum",4,,RUTIN,SABLON
+568,"Hamileyim, rutin kontrol için gelmek istiyorum. Hangi bölüme gitmeliyim?",4,,RUTIN,SABLON
+569,"Hamileyim, rutin kontrol için gelmek istiyorum. Ne yapmalıyım?",4,,RUTIN,SABLON
+570,Kasıklarımda ağrı ve akıntı var,4,,ONCELIKLI,SABLON
+571,Kasıklarımda ağrı ve akıntı var. Çok rahatsız ediyor.,4,,ONCELIKLI,SABLON
+572,Son günlerde kasıklarımda ağrı ve akıntı var. Hangi bölüme gitmeliyim?,4,,ONCELIKLI,SABLON
+573,Son günlerde kasıklarımda ağrı ve akıntı var. Randevu almak istiyorum.,4,,ONCELIKLI,SABLON
+574,Son günlerde kasıklarımda ağrı ve akıntı var. Çok rahatsız ediyor.,4,,ONCELIKLI,SABLON
+575,Son günlerde kasıklarımda ağrı ve akıntı var. Artık dayanamıyorum.,4,,ONCELIKLI,SABLON
+576,Bir haftadır kasıklarımda ağrı ve akıntı var. Hangi bölüme gitmeliyim?,4,,ONCELIKLI,SABLON
+577,Bir haftadır kasıklarımda ağrı ve akıntı var. Randevu almak istiyorum.,4,,ONCELIKLI,SABLON
+578,Bir haftadır kasıklarımda ağrı ve akıntı var. Doktora görünmek istiyorum.,4,,ONCELIKLI,SABLON
+579,Bir haftadır kasıklarımda ağrı ve akıntı var. Çok rahatsız ediyor.,4,,ONCELIKLI,SABLON
+580,Bir haftadır kasıklarımda ağrı ve akıntı var. Artık dayanamıyorum.,4,,ONCELIKLI,SABLON
+581,Uzun zamandır kasıklarımda ağrı ve akıntı var,4,,ONCELIKLI,SABLON
+582,Uzun zamandır kasıklarımda ağrı ve akıntı var. Hangi bölüme gitmeliyim?,4,,ONCELIKLI,SABLON
+583,Uzun zamandır kasıklarımda ağrı ve akıntı var. Doktora görünmek istiyorum.,4,,ONCELIKLI,SABLON
+584,Uzun zamandır kasıklarımda ağrı ve akıntı var. Çok rahatsız ediyor.,4,,ONCELIKLI,SABLON
+585,Uzun zamandır kasıklarımda ağrı ve akıntı var. Artık dayanamıyorum.,4,,ONCELIKLI,SABLON
+586,Dünden beri kasıklarımda ağrı ve akıntı var. Hangi bölüme gitmeliyim?,4,,ONCELIKLI,SABLON
+587,Dünden beri kasıklarımda ağrı ve akıntı var. Randevu almak istiyorum.,4,,ONCELIKLI,SABLON
+588,Dünden beri kasıklarımda ağrı ve akıntı var. Doktora görünmek istiyorum.,4,,ONCELIKLI,SABLON
+589,Dünden beri kasıklarımda ağrı ve akıntı var. Artık dayanamıyorum.,4,,ONCELIKLI,SABLON
+590,Son zamanlarda kasıklarımda ağrı ve akıntı var. Hangi bölüme gitmeliyim?,4,,ONCELIKLI,SABLON
+591,Son zamanlarda kasıklarımda ağrı ve akıntı var. Randevu almak istiyorum.,4,,ONCELIKLI,SABLON
+592,Son zamanlarda kasıklarımda ağrı ve akıntı var. Ne yapmalıyım?,4,,ONCELIKLI,SABLON
+593,Son zamanlarda kasıklarımda ağrı ve akıntı var. Doktora görünmek istiyorum.,4,,ONCELIKLI,SABLON
+594,Son zamanlarda kasıklarımda ağrı ve akıntı var. Çok rahatsız ediyor.,4,,ONCELIKLI,SABLON
+595,Birkaç gündür kasıklarımda ağrı ve akıntı var. Ne yapmalıyım?,4,,ONCELIKLI,SABLON
+596,Aylardır kasıklarımda ağrı ve akıntı var. Hangi bölüme gitmeliyim?,4,,ONCELIKLI,SABLON
+597,Aylardır kasıklarımda ağrı ve akıntı var. Randevu almak istiyorum.,4,,ONCELIKLI,SABLON
+598,"Gebelik testim pozitif çıktı, muayene olmak istiyorum",4,,RUTIN,SABLON
+599,Yıllık smear testimi yaptırmak istiyorum,4,,RUTIN,SABLON
+600,Adet dönemi dışında kanamam oldu,4,,ONCELIKLI,SABLON
+601,Adet dönemi dışında kanamam oldu. Hangi bölüme gitmeliyim?,4,,ONCELIKLI,SABLON
+602,Adet dönemi dışında kanamam oldu. Randevu almak istiyorum.,4,,ONCELIKLI,SABLON
+603,Adet dönemi dışında kanamam oldu. Ne yapmalıyım?,4,,ONCELIKLI,SABLON
+604,Adet dönemi dışında kanamam oldu. Doktora görünmek istiyorum.,4,,ONCELIKLI,SABLON
+605,"Kasığımda şişlik var, öksürünce büyüyor",5,,RUTIN,SABLON
+606,"Kasığımda şişlik var, öksürünce büyüyor. Hangi bölüme gitmeliyim?",5,,RUTIN,SABLON
+607,"Kasığımda şişlik var, öksürünce büyüyor. Randevu almak istiyorum.",5,,RUTIN,SABLON
+608,"Kasığımda şişlik var, öksürünce büyüyor. Ne yapmalıyım?",5,,RUTIN,SABLON
+609,"Son günlerde kasığımda şişlik var, öksürünce büyüyor",5,,RUTIN,SABLON
+610,"Son günlerde kasığımda şişlik var, öksürünce büyüyor. Randevu almak istiyorum.",5,,RUTIN,SABLON
+611,"Son günlerde kasığımda şişlik var, öksürünce büyüyor. Ne yapmalıyım?",5,,RUTIN,SABLON
+612,"Son günlerde kasığımda şişlik var, öksürünce büyüyor. Çok rahatsız ediyor.",5,,RUTIN,SABLON
+613,"Son günlerde kasığımda şişlik var, öksürünce büyüyor. Artık dayanamıyorum.",5,,RUTIN,SABLON
+614,"Bir haftadır kasığımda şişlik var, öksürünce büyüyor. Randevu almak istiyorum.",5,,RUTIN,SABLON
+615,"Bir haftadır kasığımda şişlik var, öksürünce büyüyor. Doktora görünmek istiyorum.",5,,RUTIN,SABLON
+616,"Bir haftadır kasığımda şişlik var, öksürünce büyüyor. Çok rahatsız ediyor.",5,,RUTIN,SABLON
+617,"Bir haftadır kasığımda şişlik var, öksürünce büyüyor. Artık dayanamıyorum.",5,,RUTIN,SABLON
+618,"Uzun zamandır kasığımda şişlik var, öksürünce büyüyor",5,,RUTIN,SABLON
+619,"Uzun zamandır kasığımda şişlik var, öksürünce büyüyor. Randevu almak istiyorum.",5,,RUTIN,SABLON
+620,"Uzun zamandır kasığımda şişlik var, öksürünce büyüyor. Doktora görünmek istiyorum.",5,,RUTIN,SABLON
+621,"Uzun zamandır kasığımda şişlik var, öksürünce büyüyor. Artık dayanamıyorum.",5,,RUTIN,SABLON
+622,"Dünden beri kasığımda şişlik var, öksürünce büyüyor. Hangi bölüme gitmeliyim?",5,,RUTIN,SABLON
+623,"Dünden beri kasığımda şişlik var, öksürünce büyüyor. Randevu almak istiyorum.",5,,RUTIN,SABLON
+624,"Dünden beri kasığımda şişlik var, öksürünce büyüyor. Artık dayanamıyorum.",5,,RUTIN,SABLON
+625,"Son zamanlarda kasığımda şişlik var, öksürünce büyüyor. Randevu almak istiyorum.",5,,RUTIN,SABLON
+626,"Son zamanlarda kasığımda şişlik var, öksürünce büyüyor. Çok rahatsız ediyor.",5,,RUTIN,SABLON
+627,"Son zamanlarda kasığımda şişlik var, öksürünce büyüyor. Artık dayanamıyorum.",5,,RUTIN,SABLON
+628,"Birkaç gündür kasığımda şişlik var, öksürünce büyüyor",5,,RUTIN,SABLON
+629,"Birkaç gündür kasığımda şişlik var, öksürünce büyüyor. Hangi bölüme gitmeliyim?",5,,RUTIN,SABLON
+630,"Birkaç gündür kasığımda şişlik var, öksürünce büyüyor. Ne yapmalıyım?",5,,RUTIN,SABLON
+631,"Birkaç gündür kasığımda şişlik var, öksürünce büyüyor. Doktora görünmek istiyorum.",5,,RUTIN,SABLON
+632,"Birkaç gündür kasığımda şişlik var, öksürünce büyüyor. Çok rahatsız ediyor.",5,,RUTIN,SABLON
+633,"Aylardır kasığımda şişlik var, öksürünce büyüyor",5,,RUTIN,SABLON
+634,"Aylardır kasığımda şişlik var, öksürünce büyüyor. Hangi bölüme gitmeliyim?",5,,RUTIN,SABLON
+635,Makattan kanamam oluyor,5,,ONCELIKLI,SABLON
+636,Makattan kanamam oluyor. Hangi bölüme gitmeliyim?,5,,ONCELIKLI,SABLON
+637,Makattan kanamam oluyor. Artık dayanamıyorum.,5,,ONCELIKLI,SABLON
+638,Son günlerde makattan kanamam oluyor,5,,ONCELIKLI,SABLON
+639,Son günlerde makattan kanamam oluyor. Doktora görünmek istiyorum.,5,,ONCELIKLI,SABLON
+640,Son günlerde makattan kanamam oluyor. Çok rahatsız ediyor.,5,,ONCELIKLI,SABLON
+641,Bir haftadır makattan kanamam oluyor. Ne yapmalıyım?,5,,ONCELIKLI,SABLON
+642,Bir haftadır makattan kanamam oluyor. Doktora görünmek istiyorum.,5,,ONCELIKLI,SABLON
+643,Uzun zamandır makattan kanamam oluyor. Randevu almak istiyorum.,5,,ONCELIKLI,SABLON
+644,Uzun zamandır makattan kanamam oluyor. Ne yapmalıyım?,5,,ONCELIKLI,SABLON
+645,Uzun zamandır makattan kanamam oluyor. Doktora görünmek istiyorum.,5,,ONCELIKLI,SABLON
+646,Dünden beri makattan kanamam oluyor,5,,ONCELIKLI,SABLON
+647,Dünden beri makattan kanamam oluyor. Hangi bölüme gitmeliyim?,5,,ONCELIKLI,SABLON
+648,Dünden beri makattan kanamam oluyor. Randevu almak istiyorum.,5,,ONCELIKLI,SABLON
+649,Dünden beri makattan kanamam oluyor. Ne yapmalıyım?,5,,ONCELIKLI,SABLON
+650,Dünden beri makattan kanamam oluyor. Doktora görünmek istiyorum.,5,,ONCELIKLI,SABLON
+651,Dünden beri makattan kanamam oluyor. Çok rahatsız ediyor.,5,,ONCELIKLI,SABLON
+652,Son zamanlarda makattan kanamam oluyor,5,,ONCELIKLI,SABLON
+653,Son zamanlarda makattan kanamam oluyor. Randevu almak istiyorum.,5,,ONCELIKLI,SABLON
+654,Son zamanlarda makattan kanamam oluyor. Ne yapmalıyım?,5,,ONCELIKLI,SABLON
+655,Son zamanlarda makattan kanamam oluyor. Çok rahatsız ediyor.,5,,ONCELIKLI,SABLON
+656,Son zamanlarda makattan kanamam oluyor. Artık dayanamıyorum.,5,,ONCELIKLI,SABLON
+657,Birkaç gündür makattan kanamam oluyor,5,,ONCELIKLI,SABLON
+658,Birkaç gündür makattan kanamam oluyor. Ne yapmalıyım?,5,,ONCELIKLI,SABLON
+659,Birkaç gündür makattan kanamam oluyor. Doktora görünmek istiyorum.,5,,ONCELIKLI,SABLON
+660,Birkaç gündür makattan kanamam oluyor. Çok rahatsız ediyor.,5,,ONCELIKLI,SABLON
+661,Aylardır makattan kanamam oluyor. Hangi bölüme gitmeliyim?,5,,ONCELIKLI,SABLON
+662,Aylardır makattan kanamam oluyor. Randevu almak istiyorum.,5,,ONCELIKLI,SABLON
+663,Aylardır makattan kanamam oluyor. Ne yapmalıyım?,5,,ONCELIKLI,SABLON
+664,Aylardır makattan kanamam oluyor. Doktora görünmek istiyorum.,5,,ONCELIKLI,SABLON
+665,Aylardır makattan kanamam oluyor. Çok rahatsız ediyor.,5,,ONCELIKLI,SABLON
+666,"Safra kesesinde taş çıktı, ameliyat için görüşmek istiyorum",5,1,RUTIN,SABLON
+667,"Safra kesesinde taş çıktı, ameliyat için görüşmek istiyorum. Hangi bölüme gitmeliyim?",5,1,RUTIN,SABLON
+668,Göbeğimin çevresinde ele gelen bir şişlik var,5,,RUTIN,SABLON
+669,Göbeğimin çevresinde ele gelen bir şişlik var. Doktora görünmek istiyorum.,5,,RUTIN,SABLON
+670,Göbeğimin çevresinde ele gelen bir şişlik var. Çok rahatsız ediyor.,5,,RUTIN,SABLON
+671,Son günlerde göbeğimin çevresinde ele gelen bir şişlik var. Hangi bölüme gitmeliyim?,5,,RUTIN,SABLON
+672,Son günlerde göbeğimin çevresinde ele gelen bir şişlik var. Randevu almak istiyorum.,5,,RUTIN,SABLON
+673,Son günlerde göbeğimin çevresinde ele gelen bir şişlik var. Ne yapmalıyım?,5,,RUTIN,SABLON
+674,Son günlerde göbeğimin çevresinde ele gelen bir şişlik var. Çok rahatsız ediyor.,5,,RUTIN,SABLON
+675,Son günlerde göbeğimin çevresinde ele gelen bir şişlik var. Artık dayanamıyorum.,5,,RUTIN,SABLON
+676,Bir haftadır göbeğimin çevresinde ele gelen bir şişlik var,5,,RUTIN,SABLON
+677,Bir haftadır göbeğimin çevresinde ele gelen bir şişlik var. Randevu almak istiyorum.,5,,RUTIN,SABLON
+678,Bir haftadır göbeğimin çevresinde ele gelen bir şişlik var. Ne yapmalıyım?,5,,RUTIN,SABLON
+679,Bir haftadır göbeğimin çevresinde ele gelen bir şişlik var. Doktora görünmek istiyorum.,5,,RUTIN,SABLON
+680,Bir haftadır göbeğimin çevresinde ele gelen bir şişlik var. Çok rahatsız ediyor.,5,,RUTIN,SABLON
+681,Bir haftadır göbeğimin çevresinde ele gelen bir şişlik var. Artık dayanamıyorum.,5,,RUTIN,SABLON
+682,Uzun zamandır göbeğimin çevresinde ele gelen bir şişlik var,5,,RUTIN,SABLON
+683,Uzun zamandır göbeğimin çevresinde ele gelen bir şişlik var. Hangi bölüme gitmeliyim?,5,,RUTIN,SABLON
+684,Uzun zamandır göbeğimin çevresinde ele gelen bir şişlik var. Randevu almak istiyorum.,5,,RUTIN,SABLON
+685,Uzun zamandır göbeğimin çevresinde ele gelen bir şişlik var. Ne yapmalıyım?,5,,RUTIN,SABLON
+686,Uzun zamandır göbeğimin çevresinde ele gelen bir şişlik var. Çok rahatsız ediyor.,5,,RUTIN,SABLON
+687,Uzun zamandır göbeğimin çevresinde ele gelen bir şişlik var. Artık dayanamıyorum.,5,,RUTIN,SABLON
+688,Dünden beri göbeğimin çevresinde ele gelen bir şişlik var. Randevu almak istiyorum.,5,,RUTIN,SABLON
+689,Son zamanlarda göbeğimin çevresinde ele gelen bir şişlik var. Hangi bölüme gitmeliyim?,5,,RUTIN,SABLON
+690,Son zamanlarda göbeğimin çevresinde ele gelen bir şişlik var. Randevu almak istiyorum.,5,,RUTIN,SABLON
+691,Son zamanlarda göbeğimin çevresinde ele gelen bir şişlik var. Ne yapmalıyım?,5,,RUTIN,SABLON
+692,Son zamanlarda göbeğimin çevresinde ele gelen bir şişlik var. Doktora görünmek istiyorum.,5,,RUTIN,SABLON
+693,Son zamanlarda göbeğimin çevresinde ele gelen bir şişlik var. Çok rahatsız ediyor.,5,,RUTIN,SABLON
+694,Birkaç gündür göbeğimin çevresinde ele gelen bir şişlik var,5,,RUTIN,SABLON
+695,Birkaç gündür göbeğimin çevresinde ele gelen bir şişlik var. Hangi bölüme gitmeliyim?,5,,RUTIN,SABLON
+696,Birkaç gündür göbeğimin çevresinde ele gelen bir şişlik var. Ne yapmalıyım?,5,,RUTIN,SABLON
+697,Birkaç gündür göbeğimin çevresinde ele gelen bir şişlik var. Doktora görünmek istiyorum.,5,,RUTIN,SABLON
+698,Birkaç gündür göbeğimin çevresinde ele gelen bir şişlik var. Çok rahatsız ediyor.,5,,RUTIN,SABLON
+699,Birkaç gündür göbeğimin çevresinde ele gelen bir şişlik var. Artık dayanamıyorum.,5,,RUTIN,SABLON
+700,Aylardır göbeğimin çevresinde ele gelen bir şişlik var. Hangi bölüme gitmeliyim?,5,,RUTIN,SABLON
+701,Aylardır göbeğimin çevresinde ele gelen bir şişlik var. Ne yapmalıyım?,5,,RUTIN,SABLON
+702,Aylardır göbeğimin çevresinde ele gelen bir şişlik var. Doktora görünmek istiyorum.,5,,RUTIN,SABLON
+703,Aylardır göbeğimin çevresinde ele gelen bir şişlik var. Çok rahatsız ediyor.,5,,RUTIN,SABLON
+704,Aylardır göbeğimin çevresinde ele gelen bir şişlik var. Artık dayanamıyorum.,5,,RUTIN,SABLON
+705,Memede ele gelen bir kitle fark ettim,5,,ONCELIKLI,SABLON
+706,Memede ele gelen bir kitle fark ettim. Hangi bölüme gitmeliyim?,5,,ONCELIKLI,SABLON
+707,Memede ele gelen bir kitle fark ettim. Randevu almak istiyorum.,5,,ONCELIKLI,SABLON
+708,Memede ele gelen bir kitle fark ettim. Ne yapmalıyım?,5,,ONCELIKLI,SABLON
+709,Memede ele gelen bir kitle fark ettim. Doktora görünmek istiyorum.,5,,ONCELIKLI,SABLON
+710,"Dizim ağrıyor, merdiven inerken zorlanıyorum",6,14,RUTIN,SABLON
+711,"Dizim ağrıyor, merdiven inerken zorlanıyorum. Hangi bölüme gitmeliyim?",6,14,RUTIN,SABLON
+712,"Dizim ağrıyor, merdiven inerken zorlanıyorum. Randevu almak istiyorum.",6,14,RUTIN,SABLON
+713,"Dizim ağrıyor, merdiven inerken zorlanıyorum. Doktora görünmek istiyorum.",6,14,RUTIN,SABLON
+714,"Dizim ağrıyor, merdiven inerken zorlanıyorum. Artık dayanamıyorum.",6,14,RUTIN,SABLON
+715,"Son günlerde dizim ağrıyor, merdiven inerken zorlanıyorum",6,14,RUTIN,SABLON
+716,"Son günlerde dizim ağrıyor, merdiven inerken zorlanıyorum. Hangi bölüme gitmeliyim?",6,14,RUTIN,SABLON
+717,"Son günlerde dizim ağrıyor, merdiven inerken zorlanıyorum. Ne yapmalıyım?",6,14,RUTIN,SABLON
+718,"Son günlerde dizim ağrıyor, merdiven inerken zorlanıyorum. Doktora görünmek istiyorum.",6,14,RUTIN,SABLON
+719,"Son günlerde dizim ağrıyor, merdiven inerken zorlanıyorum. Çok rahatsız ediyor.",6,14,RUTIN,SABLON
+720,"Son günlerde dizim ağrıyor, merdiven inerken zorlanıyorum. Artık dayanamıyorum.",6,14,RUTIN,SABLON
+721,"Bir haftadır dizim ağrıyor, merdiven inerken zorlanıyorum",6,14,RUTIN,SABLON
+722,"Bir haftadır dizim ağrıyor, merdiven inerken zorlanıyorum. Hangi bölüme gitmeliyim?",6,14,RUTIN,SABLON
+723,"Bir haftadır dizim ağrıyor, merdiven inerken zorlanıyorum. Randevu almak istiyorum.",6,14,RUTIN,SABLON
+724,"Bir haftadır dizim ağrıyor, merdiven inerken zorlanıyorum. Ne yapmalıyım?",6,14,RUTIN,SABLON
+725,"Bir haftadır dizim ağrıyor, merdiven inerken zorlanıyorum. Doktora görünmek istiyorum.",6,14,RUTIN,SABLON
+726,"Uzun zamandır dizim ağrıyor, merdiven inerken zorlanıyorum",6,14,RUTIN,SABLON
+727,"Uzun zamandır dizim ağrıyor, merdiven inerken zorlanıyorum. Hangi bölüme gitmeliyim?",6,14,RUTIN,SABLON
+728,"Uzun zamandır dizim ağrıyor, merdiven inerken zorlanıyorum. Çok rahatsız ediyor.",6,14,RUTIN,SABLON
+729,"Dünden beri dizim ağrıyor, merdiven inerken zorlanıyorum",6,14,RUTIN,SABLON
+730,"Dünden beri dizim ağrıyor, merdiven inerken zorlanıyorum. Ne yapmalıyım?",6,14,RUTIN,SABLON
+731,"Dünden beri dizim ağrıyor, merdiven inerken zorlanıyorum. Çok rahatsız ediyor.",6,14,RUTIN,SABLON
+732,"Dünden beri dizim ağrıyor, merdiven inerken zorlanıyorum. Artık dayanamıyorum.",6,14,RUTIN,SABLON
+733,"Son zamanlarda dizim ağrıyor, merdiven inerken zorlanıyorum. Hangi bölüme gitmeliyim?",6,14,RUTIN,SABLON
+734,"Son zamanlarda dizim ağrıyor, merdiven inerken zorlanıyorum. Randevu almak istiyorum.",6,14,RUTIN,SABLON
+735,"Son zamanlarda dizim ağrıyor, merdiven inerken zorlanıyorum. Ne yapmalıyım?",6,14,RUTIN,SABLON
+736,"Son zamanlarda dizim ağrıyor, merdiven inerken zorlanıyorum. Doktora görünmek istiyorum.",6,14,RUTIN,SABLON
+737,"Son zamanlarda dizim ağrıyor, merdiven inerken zorlanıyorum. Çok rahatsız ediyor.",6,14,RUTIN,SABLON
+738,"Birkaç gündür dizim ağrıyor, merdiven inerken zorlanıyorum. Hangi bölüme gitmeliyim?",6,14,RUTIN,SABLON
+739,"Birkaç gündür dizim ağrıyor, merdiven inerken zorlanıyorum. Doktora görünmek istiyorum.",6,14,RUTIN,SABLON
+740,"Birkaç gündür dizim ağrıyor, merdiven inerken zorlanıyorum. Artık dayanamıyorum.",6,14,RUTIN,SABLON
+741,"Aylardır dizim ağrıyor, merdiven inerken zorlanıyorum. Randevu almak istiyorum.",6,14,RUTIN,SABLON
+742,"Aylardır dizim ağrıyor, merdiven inerken zorlanıyorum. Doktora görünmek istiyorum.",6,14,RUTIN,SABLON
+743,"Aylardır dizim ağrıyor, merdiven inerken zorlanıyorum. Çok rahatsız ediyor.",6,14,RUTIN,SABLON
+744,"Ayak bileğimi burktum, basarken ağrıyor",6,,ONCELIKLI,SABLON
+745,"Ayak bileğimi burktum, basarken ağrıyor. Hangi bölüme gitmeliyim?",6,,ONCELIKLI,SABLON
+746,"Ayak bileğimi burktum, basarken ağrıyor. Ne yapmalıyım?",6,,ONCELIKLI,SABLON
+747,"Ayak bileğimi burktum, basarken ağrıyor. Doktora görünmek istiyorum.",6,,ONCELIKLI,SABLON
+748,"Omzum ağrıyor, kolumu kaldıramıyorum",6,14,RUTIN,SABLON
+749,"Omzum ağrıyor, kolumu kaldıramıyorum. Ne yapmalıyım?",6,14,RUTIN,SABLON
+750,"Omzum ağrıyor, kolumu kaldıramıyorum. Doktora görünmek istiyorum.",6,14,RUTIN,SABLON
+751,"Omzum ağrıyor, kolumu kaldıramıyorum. Çok rahatsız ediyor.",6,14,RUTIN,SABLON
+752,"Omzum ağrıyor, kolumu kaldıramıyorum. Artık dayanamıyorum.",6,14,RUTIN,SABLON
+753,"Son günlerde omzum ağrıyor, kolumu kaldıramıyorum",6,14,RUTIN,SABLON
+754,"Son günlerde omzum ağrıyor, kolumu kaldıramıyorum. Hangi bölüme gitmeliyim?",6,14,RUTIN,SABLON
+755,"Son günlerde omzum ağrıyor, kolumu kaldıramıyorum. Ne yapmalıyım?",6,14,RUTIN,SABLON
+756,"Son günlerde omzum ağrıyor, kolumu kaldıramıyorum. Doktora görünmek istiyorum.",6,14,RUTIN,SABLON
+757,"Son günlerde omzum ağrıyor, kolumu kaldıramıyorum. Çok rahatsız ediyor.",6,14,RUTIN,SABLON
+758,"Son günlerde omzum ağrıyor, kolumu kaldıramıyorum. Artık dayanamıyorum.",6,14,RUTIN,SABLON
+759,"Bir haftadır omzum ağrıyor, kolumu kaldıramıyorum",6,14,RUTIN,SABLON
+760,"Bir haftadır omzum ağrıyor, kolumu kaldıramıyorum. Hangi bölüme gitmeliyim?",6,14,RUTIN,SABLON
+761,"Bir haftadır omzum ağrıyor, kolumu kaldıramıyorum. Ne yapmalıyım?",6,14,RUTIN,SABLON
+762,"Bir haftadır omzum ağrıyor, kolumu kaldıramıyorum. Doktora görünmek istiyorum.",6,14,RUTIN,SABLON
+763,"Bir haftadır omzum ağrıyor, kolumu kaldıramıyorum. Çok rahatsız ediyor.",6,14,RUTIN,SABLON
+764,"Uzun zamandır omzum ağrıyor, kolumu kaldıramıyorum",6,14,RUTIN,SABLON
+765,"Uzun zamandır omzum ağrıyor, kolumu kaldıramıyorum. Ne yapmalıyım?",6,14,RUTIN,SABLON
+766,"Uzun zamandır omzum ağrıyor, kolumu kaldıramıyorum. Çok rahatsız ediyor.",6,14,RUTIN,SABLON
+767,"Dünden beri omzum ağrıyor, kolumu kaldıramıyorum",6,14,RUTIN,SABLON
+768,"Dünden beri omzum ağrıyor, kolumu kaldıramıyorum. Hangi bölüme gitmeliyim?",6,14,RUTIN,SABLON
+769,"Dünden beri omzum ağrıyor, kolumu kaldıramıyorum. Randevu almak istiyorum.",6,14,RUTIN,SABLON
+770,"Dünden beri omzum ağrıyor, kolumu kaldıramıyorum. Doktora görünmek istiyorum.",6,14,RUTIN,SABLON
+771,"Son zamanlarda omzum ağrıyor, kolumu kaldıramıyorum",6,14,RUTIN,SABLON
+772,"Son zamanlarda omzum ağrıyor, kolumu kaldıramıyorum. Hangi bölüme gitmeliyim?",6,14,RUTIN,SABLON
+773,"Son zamanlarda omzum ağrıyor, kolumu kaldıramıyorum. Randevu almak istiyorum.",6,14,RUTIN,SABLON
+774,"Son zamanlarda omzum ağrıyor, kolumu kaldıramıyorum. Ne yapmalıyım?",6,14,RUTIN,SABLON
+775,"Son zamanlarda omzum ağrıyor, kolumu kaldıramıyorum. Doktora görünmek istiyorum.",6,14,RUTIN,SABLON
+776,"Son zamanlarda omzum ağrıyor, kolumu kaldıramıyorum. Çok rahatsız ediyor.",6,14,RUTIN,SABLON
+777,"Birkaç gündür omzum ağrıyor, kolumu kaldıramıyorum",6,14,RUTIN,SABLON
+778,"Birkaç gündür omzum ağrıyor, kolumu kaldıramıyorum. Hangi bölüme gitmeliyim?",6,14,RUTIN,SABLON
+779,"Birkaç gündür omzum ağrıyor, kolumu kaldıramıyorum. Randevu almak istiyorum.",6,14,RUTIN,SABLON
+780,"Birkaç gündür omzum ağrıyor, kolumu kaldıramıyorum. Ne yapmalıyım?",6,14,RUTIN,SABLON
+781,"Birkaç gündür omzum ağrıyor, kolumu kaldıramıyorum. Doktora görünmek istiyorum.",6,14,RUTIN,SABLON
+782,"Aylardır omzum ağrıyor, kolumu kaldıramıyorum",6,14,RUTIN,SABLON
+783,"Aylardır omzum ağrıyor, kolumu kaldıramıyorum. Hangi bölüme gitmeliyim?",6,14,RUTIN,SABLON
+784,"Aylardır omzum ağrıyor, kolumu kaldıramıyorum. Randevu almak istiyorum.",6,14,RUTIN,SABLON
+785,"Aylardır omzum ağrıyor, kolumu kaldıramıyorum. Ne yapmalıyım?",6,14,RUTIN,SABLON
+786,"Aylardır omzum ağrıyor, kolumu kaldıramıyorum. Artık dayanamıyorum.",6,14,RUTIN,SABLON
+787,Topuğumda sabah kalkınca batma oluyor,6,,RUTIN,SABLON
+788,Topuğumda sabah kalkınca batma oluyor. Hangi bölüme gitmeliyim?,6,,RUTIN,SABLON
+789,Topuğumda sabah kalkınca batma oluyor. Randevu almak istiyorum.,6,,RUTIN,SABLON
+790,Topuğumda sabah kalkınca batma oluyor. Doktora görünmek istiyorum.,6,,RUTIN,SABLON
+791,Topuğumda sabah kalkınca batma oluyor. Artık dayanamıyorum.,6,,RUTIN,SABLON
+792,Son günlerde topuğumda sabah kalkınca batma oluyor,6,,RUTIN,SABLON
+793,Son günlerde topuğumda sabah kalkınca batma oluyor. Hangi bölüme gitmeliyim?,6,,RUTIN,SABLON
+794,Son günlerde topuğumda sabah kalkınca batma oluyor. Randevu almak istiyorum.,6,,RUTIN,SABLON
+795,Son günlerde topuğumda sabah kalkınca batma oluyor. Çok rahatsız ediyor.,6,,RUTIN,SABLON
+796,Son günlerde topuğumda sabah kalkınca batma oluyor. Artık dayanamıyorum.,6,,RUTIN,SABLON
+797,Bir haftadır topuğumda sabah kalkınca batma oluyor. Doktora görünmek istiyorum.,6,,RUTIN,SABLON
+798,Bir haftadır topuğumda sabah kalkınca batma oluyor. Çok rahatsız ediyor.,6,,RUTIN,SABLON
+799,Uzun zamandır topuğumda sabah kalkınca batma oluyor,6,,RUTIN,SABLON
+800,Uzun zamandır topuğumda sabah kalkınca batma oluyor. Hangi bölüme gitmeliyim?,6,,RUTIN,SABLON
+801,Uzun zamandır topuğumda sabah kalkınca batma oluyor. Çok rahatsız ediyor.,6,,RUTIN,SABLON
+802,Dünden beri topuğumda sabah kalkınca batma oluyor,6,,RUTIN,SABLON
+803,Dünden beri topuğumda sabah kalkınca batma oluyor. Hangi bölüme gitmeliyim?,6,,RUTIN,SABLON
+804,Dünden beri topuğumda sabah kalkınca batma oluyor. Randevu almak istiyorum.,6,,RUTIN,SABLON
+805,Dünden beri topuğumda sabah kalkınca batma oluyor. Ne yapmalıyım?,6,,RUTIN,SABLON
+806,Dünden beri topuğumda sabah kalkınca batma oluyor. Doktora görünmek istiyorum.,6,,RUTIN,SABLON
+807,Son zamanlarda topuğumda sabah kalkınca batma oluyor. Ne yapmalıyım?,6,,RUTIN,SABLON
+808,Son zamanlarda topuğumda sabah kalkınca batma oluyor. Doktora görünmek istiyorum.,6,,RUTIN,SABLON
+809,Birkaç gündür topuğumda sabah kalkınca batma oluyor. Doktora görünmek istiyorum.,6,,RUTIN,SABLON
+810,Birkaç gündür topuğumda sabah kalkınca batma oluyor. Artık dayanamıyorum.,6,,RUTIN,SABLON
+811,Aylardır topuğumda sabah kalkınca batma oluyor,6,,RUTIN,SABLON
+812,Aylardır topuğumda sabah kalkınca batma oluyor. Randevu almak istiyorum.,6,,RUTIN,SABLON
+813,Aylardır topuğumda sabah kalkınca batma oluyor. Doktora görünmek istiyorum.,6,,RUTIN,SABLON
+814,Düştükten sonra bileğim şişti,6,,ONCELIKLI,SABLON
+815,Düştükten sonra bileğim şişti. Hangi bölüme gitmeliyim?,6,,ONCELIKLI,SABLON
+816,Düştükten sonra bileğim şişti. Randevu almak istiyorum.,6,,ONCELIKLI,SABLON
+817,Düştükten sonra bileğim şişti. Ne yapmalıyım?,6,,ONCELIKLI,SABLON
+818,Düştükten sonra bileğim şişti. Doktora görünmek istiyorum.,6,,ONCELIKLI,SABLON
+819,Belimden bacağıma vuran ağrı var,6,10,RUTIN,SABLON
+820,Belimden bacağıma vuran ağrı var. Randevu almak istiyorum.,6,10,RUTIN,SABLON
+821,Belimden bacağıma vuran ağrı var. Ne yapmalıyım?,6,10,RUTIN,SABLON
+822,Belimden bacağıma vuran ağrı var. Doktora görünmek istiyorum.,6,10,RUTIN,SABLON
+823,Son günlerde belimden bacağıma vuran ağrı var,6,10,RUTIN,SABLON
+824,Son günlerde belimden bacağıma vuran ağrı var. Ne yapmalıyım?,6,10,RUTIN,SABLON
+825,Son günlerde belimden bacağıma vuran ağrı var. Doktora görünmek istiyorum.,6,10,RUTIN,SABLON
+826,Son günlerde belimden bacağıma vuran ağrı var. Artık dayanamıyorum.,6,10,RUTIN,SABLON
+827,Bir haftadır belimden bacağıma vuran ağrı var. Hangi bölüme gitmeliyim?,6,10,RUTIN,SABLON
+828,Bir haftadır belimden bacağıma vuran ağrı var. Çok rahatsız ediyor.,6,10,RUTIN,SABLON
+829,Bir haftadır belimden bacağıma vuran ağrı var. Artık dayanamıyorum.,6,10,RUTIN,SABLON
+830,Uzun zamandır belimden bacağıma vuran ağrı var,6,10,RUTIN,SABLON
+831,Uzun zamandır belimden bacağıma vuran ağrı var. Hangi bölüme gitmeliyim?,6,10,RUTIN,SABLON
+832,Uzun zamandır belimden bacağıma vuran ağrı var. Artık dayanamıyorum.,6,10,RUTIN,SABLON
+833,Dünden beri belimden bacağıma vuran ağrı var. Ne yapmalıyım?,6,10,RUTIN,SABLON
+834,Dünden beri belimden bacağıma vuran ağrı var. Artık dayanamıyorum.,6,10,RUTIN,SABLON
+835,Son zamanlarda belimden bacağıma vuran ağrı var,6,10,RUTIN,SABLON
+836,Son zamanlarda belimden bacağıma vuran ağrı var. Ne yapmalıyım?,6,10,RUTIN,SABLON
+837,Son zamanlarda belimden bacağıma vuran ağrı var. Artık dayanamıyorum.,6,10,RUTIN,SABLON
+838,Birkaç gündür belimden bacağıma vuran ağrı var,6,10,RUTIN,SABLON
+839,Birkaç gündür belimden bacağıma vuran ağrı var. Hangi bölüme gitmeliyim?,6,10,RUTIN,SABLON
+840,Birkaç gündür belimden bacağıma vuran ağrı var. Randevu almak istiyorum.,6,10,RUTIN,SABLON
+841,Birkaç gündür belimden bacağıma vuran ağrı var. Ne yapmalıyım?,6,10,RUTIN,SABLON
+842,Aylardır belimden bacağıma vuran ağrı var,6,10,RUTIN,SABLON
+843,Aylardır belimden bacağıma vuran ağrı var. Hangi bölüme gitmeliyim?,6,10,RUTIN,SABLON
+844,Aylardır belimden bacağıma vuran ağrı var. Ne yapmalıyım?,6,10,RUTIN,SABLON
+845,"Gözlerim kızarıyor, yanma ve batma var",7,,RUTIN,SABLON
+846,"Gözlerim kızarıyor, yanma ve batma var. Randevu almak istiyorum.",7,,RUTIN,SABLON
+847,"Gözlerim kızarıyor, yanma ve batma var. Doktora görünmek istiyorum.",7,,RUTIN,SABLON
+848,"Son günlerde gözlerim kızarıyor, yanma ve batma var. Ne yapmalıyım?",7,,RUTIN,SABLON
+849,"Son günlerde gözlerim kızarıyor, yanma ve batma var. Doktora görünmek istiyorum.",7,,RUTIN,SABLON
+850,"Bir haftadır gözlerim kızarıyor, yanma ve batma var. Hangi bölüme gitmeliyim?",7,,RUTIN,SABLON
+851,"Bir haftadır gözlerim kızarıyor, yanma ve batma var. Ne yapmalıyım?",7,,RUTIN,SABLON
+852,"Bir haftadır gözlerim kızarıyor, yanma ve batma var. Doktora görünmek istiyorum.",7,,RUTIN,SABLON
+853,"Bir haftadır gözlerim kızarıyor, yanma ve batma var. Çok rahatsız ediyor.",7,,RUTIN,SABLON
+854,"Bir haftadır gözlerim kızarıyor, yanma ve batma var. Artık dayanamıyorum.",7,,RUTIN,SABLON
+855,"Uzun zamandır gözlerim kızarıyor, yanma ve batma var",7,,RUTIN,SABLON
+856,"Uzun zamandır gözlerim kızarıyor, yanma ve batma var. Hangi bölüme gitmeliyim?",7,,RUTIN,SABLON
+857,"Uzun zamandır gözlerim kızarıyor, yanma ve batma var. Ne yapmalıyım?",7,,RUTIN,SABLON
+858,"Uzun zamandır gözlerim kızarıyor, yanma ve batma var. Çok rahatsız ediyor.",7,,RUTIN,SABLON
+859,"Uzun zamandır gözlerim kızarıyor, yanma ve batma var. Artık dayanamıyorum.",7,,RUTIN,SABLON
+860,"Dünden beri gözlerim kızarıyor, yanma ve batma var",7,,RUTIN,SABLON
+861,"Dünden beri gözlerim kızarıyor, yanma ve batma var. Hangi bölüme gitmeliyim?",7,,RUTIN,SABLON
+862,"Dünden beri gözlerim kızarıyor, yanma ve batma var. Çok rahatsız ediyor.",7,,RUTIN,SABLON
+863,"Son zamanlarda gözlerim kızarıyor, yanma ve batma var. Randevu almak istiyorum.",7,,RUTIN,SABLON
+864,"Son zamanlarda gözlerim kızarıyor, yanma ve batma var. Ne yapmalıyım?",7,,RUTIN,SABLON
+865,"Son zamanlarda gözlerim kızarıyor, yanma ve batma var. Doktora görünmek istiyorum.",7,,RUTIN,SABLON
+866,"Son zamanlarda gözlerim kızarıyor, yanma ve batma var. Artık dayanamıyorum.",7,,RUTIN,SABLON
+867,"Birkaç gündür gözlerim kızarıyor, yanma ve batma var",7,,RUTIN,SABLON
+868,"Birkaç gündür gözlerim kızarıyor, yanma ve batma var. Hangi bölüme gitmeliyim?",7,,RUTIN,SABLON
+869,"Birkaç gündür gözlerim kızarıyor, yanma ve batma var. Çok rahatsız ediyor.",7,,RUTIN,SABLON
+870,"Birkaç gündür gözlerim kızarıyor, yanma ve batma var. Artık dayanamıyorum.",7,,RUTIN,SABLON
+871,"Aylardır gözlerim kızarıyor, yanma ve batma var. Ne yapmalıyım?",7,,RUTIN,SABLON
+872,"Aylardır gözlerim kızarıyor, yanma ve batma var. Doktora görünmek istiyorum.",7,,RUTIN,SABLON
+873,"Aylardır gözlerim kızarıyor, yanma ve batma var. Çok rahatsız ediyor.",7,,RUTIN,SABLON
+874,"Aylardır gözlerim kızarıyor, yanma ve batma var. Artık dayanamıyorum.",7,,RUTIN,SABLON
+875,"Uzağı net göremiyorum, gözlük numaram değişti galiba",7,,RUTIN,SABLON
+876,"Uzağı net göremiyorum, gözlük numaram değişti galiba. Hangi bölüme gitmeliyim?",7,,RUTIN,SABLON
+877,"Uzağı net göremiyorum, gözlük numaram değişti galiba. Randevu almak istiyorum.",7,,RUTIN,SABLON
+878,"Uzağı net göremiyorum, gözlük numaram değişti galiba. Ne yapmalıyım?",7,,RUTIN,SABLON
+879,"Uzağı net göremiyorum, gözlük numaram değişti galiba. Doktora görünmek istiyorum.",7,,RUTIN,SABLON
+880,Gözümün önünde siyah noktalar uçuşuyor,7,,ONCELIKLI,SABLON
+881,Gözümün önünde siyah noktalar uçuşuyor. Ne yapmalıyım?,7,,ONCELIKLI,SABLON
+882,Son günlerde gözümün önünde siyah noktalar uçuşuyor,7,,ONCELIKLI,SABLON
+883,Son günlerde gözümün önünde siyah noktalar uçuşuyor. Randevu almak istiyorum.,7,,ONCELIKLI,SABLON
+884,Son günlerde gözümün önünde siyah noktalar uçuşuyor. Doktora görünmek istiyorum.,7,,ONCELIKLI,SABLON
+885,Son günlerde gözümün önünde siyah noktalar uçuşuyor. Çok rahatsız ediyor.,7,,ONCELIKLI,SABLON
+886,Son günlerde gözümün önünde siyah noktalar uçuşuyor. Artık dayanamıyorum.,7,,ONCELIKLI,SABLON
+887,Bir haftadır gözümün önünde siyah noktalar uçuşuyor,7,,ONCELIKLI,SABLON
+888,Bir haftadır gözümün önünde siyah noktalar uçuşuyor. Randevu almak istiyorum.,7,,ONCELIKLI,SABLON
+889,Bir haftadır gözümün önünde siyah noktalar uçuşuyor. Doktora görünmek istiyorum.,7,,ONCELIKLI,SABLON
+890,Uzun zamandır gözümün önünde siyah noktalar uçuşuyor. Hangi bölüme gitmeliyim?,7,,ONCELIKLI,SABLON
+891,Uzun zamandır gözümün önünde siyah noktalar uçuşuyor. Randevu almak istiyorum.,7,,ONCELIKLI,SABLON
+892,Uzun zamandır gözümün önünde siyah noktalar uçuşuyor. Ne yapmalıyım?,7,,ONCELIKLI,SABLON
+893,Uzun zamandır gözümün önünde siyah noktalar uçuşuyor. Çok rahatsız ediyor.,7,,ONCELIKLI,SABLON
+894,Dünden beri gözümün önünde siyah noktalar uçuşuyor. Hangi bölüme gitmeliyim?,7,,ONCELIKLI,SABLON
+895,Dünden beri gözümün önünde siyah noktalar uçuşuyor. Randevu almak istiyorum.,7,,ONCELIKLI,SABLON
+896,Dünden beri gözümün önünde siyah noktalar uçuşuyor. Ne yapmalıyım?,7,,ONCELIKLI,SABLON
+897,Dünden beri gözümün önünde siyah noktalar uçuşuyor. Doktora görünmek istiyorum.,7,,ONCELIKLI,SABLON
+898,Dünden beri gözümün önünde siyah noktalar uçuşuyor. Çok rahatsız ediyor.,7,,ONCELIKLI,SABLON
+899,Son zamanlarda gözümün önünde siyah noktalar uçuşuyor,7,,ONCELIKLI,SABLON
+900,Son zamanlarda gözümün önünde siyah noktalar uçuşuyor. Ne yapmalıyım?,7,,ONCELIKLI,SABLON
+901,Son zamanlarda gözümün önünde siyah noktalar uçuşuyor. Doktora görünmek istiyorum.,7,,ONCELIKLI,SABLON
+902,Son zamanlarda gözümün önünde siyah noktalar uçuşuyor. Çok rahatsız ediyor.,7,,ONCELIKLI,SABLON
+903,Son zamanlarda gözümün önünde siyah noktalar uçuşuyor. Artık dayanamıyorum.,7,,ONCELIKLI,SABLON
+904,Birkaç gündür gözümün önünde siyah noktalar uçuşuyor. Hangi bölüme gitmeliyim?,7,,ONCELIKLI,SABLON
+905,Birkaç gündür gözümün önünde siyah noktalar uçuşuyor. Randevu almak istiyorum.,7,,ONCELIKLI,SABLON
+906,Birkaç gündür gözümün önünde siyah noktalar uçuşuyor. Ne yapmalıyım?,7,,ONCELIKLI,SABLON
+907,Birkaç gündür gözümün önünde siyah noktalar uçuşuyor. Doktora görünmek istiyorum.,7,,ONCELIKLI,SABLON
+908,Birkaç gündür gözümün önünde siyah noktalar uçuşuyor. Çok rahatsız ediyor.,7,,ONCELIKLI,SABLON
+909,Birkaç gündür gözümün önünde siyah noktalar uçuşuyor. Artık dayanamıyorum.,7,,ONCELIKLI,SABLON
+910,Aylardır gözümün önünde siyah noktalar uçuşuyor. Hangi bölüme gitmeliyim?,7,,ONCELIKLI,SABLON
+911,Aylardır gözümün önünde siyah noktalar uçuşuyor. Randevu almak istiyorum.,7,,ONCELIKLI,SABLON
+912,Aylardır gözümün önünde siyah noktalar uçuşuyor. Ne yapmalıyım?,7,,ONCELIKLI,SABLON
+913,Aylardır gözümün önünde siyah noktalar uçuşuyor. Doktora görünmek istiyorum.,7,,ONCELIKLI,SABLON
+914,Aylardır gözümün önünde siyah noktalar uçuşuyor. Çok rahatsız ediyor.,7,,ONCELIKLI,SABLON
+915,Gözlerim çok sulanıyor,7,,RUTIN,SABLON
+916,Gözlerim çok sulanıyor. Hangi bölüme gitmeliyim?,7,,RUTIN,SABLON
+917,Gözlerim çok sulanıyor. Ne yapmalıyım?,7,,RUTIN,SABLON
+918,Gözlerim çok sulanıyor. Çok rahatsız ediyor.,7,,RUTIN,SABLON
+919,Gözlerim çok sulanıyor. Artık dayanamıyorum.,7,,RUTIN,SABLON
+920,Son günlerde gözlerim çok sulanıyor. Hangi bölüme gitmeliyim?,7,,RUTIN,SABLON
+921,Son günlerde gözlerim çok sulanıyor. Randevu almak istiyorum.,7,,RUTIN,SABLON
+922,Son günlerde gözlerim çok sulanıyor. Ne yapmalıyım?,7,,RUTIN,SABLON
+923,Son günlerde gözlerim çok sulanıyor. Artık dayanamıyorum.,7,,RUTIN,SABLON
+924,Bir haftadır gözlerim çok sulanıyor,7,,RUTIN,SABLON
+925,Bir haftadır gözlerim çok sulanıyor. Hangi bölüme gitmeliyim?,7,,RUTIN,SABLON
+926,Bir haftadır gözlerim çok sulanıyor. Randevu almak istiyorum.,7,,RUTIN,SABLON
+927,Bir haftadır gözlerim çok sulanıyor. Doktora görünmek istiyorum.,7,,RUTIN,SABLON
+928,Uzun zamandır gözlerim çok sulanıyor,7,,RUTIN,SABLON
+929,Uzun zamandır gözlerim çok sulanıyor. Hangi bölüme gitmeliyim?,7,,RUTIN,SABLON
+930,Uzun zamandır gözlerim çok sulanıyor. Randevu almak istiyorum.,7,,RUTIN,SABLON
+931,Uzun zamandır gözlerim çok sulanıyor. Ne yapmalıyım?,7,,RUTIN,SABLON
+932,Uzun zamandır gözlerim çok sulanıyor. Doktora görünmek istiyorum.,7,,RUTIN,SABLON
+933,Dünden beri gözlerim çok sulanıyor,7,,RUTIN,SABLON
+934,Dünden beri gözlerim çok sulanıyor. Doktora görünmek istiyorum.,7,,RUTIN,SABLON
+935,Dünden beri gözlerim çok sulanıyor. Çok rahatsız ediyor.,7,,RUTIN,SABLON
+936,Dünden beri gözlerim çok sulanıyor. Artık dayanamıyorum.,7,,RUTIN,SABLON
+937,Son zamanlarda gözlerim çok sulanıyor. Ne yapmalıyım?,7,,RUTIN,SABLON
+938,Son zamanlarda gözlerim çok sulanıyor. Doktora görünmek istiyorum.,7,,RUTIN,SABLON
+939,Son zamanlarda gözlerim çok sulanıyor. Artık dayanamıyorum.,7,,RUTIN,SABLON
+940,Birkaç gündür gözlerim çok sulanıyor,7,,RUTIN,SABLON
+941,Birkaç gündür gözlerim çok sulanıyor. Hangi bölüme gitmeliyim?,7,,RUTIN,SABLON
+942,Birkaç gündür gözlerim çok sulanıyor. Randevu almak istiyorum.,7,,RUTIN,SABLON
+943,Birkaç gündür gözlerim çok sulanıyor. Ne yapmalıyım?,7,,RUTIN,SABLON
+944,Birkaç gündür gözlerim çok sulanıyor. Doktora görünmek istiyorum.,7,,RUTIN,SABLON
+945,Aylardır gözlerim çok sulanıyor,7,,RUTIN,SABLON
+946,Aylardır gözlerim çok sulanıyor. Randevu almak istiyorum.,7,,RUTIN,SABLON
+947,Aylardır gözlerim çok sulanıyor. Ne yapmalıyım?,7,,RUTIN,SABLON
+948,Aylardır gözlerim çok sulanıyor. Doktora görünmek istiyorum.,7,,RUTIN,SABLON
+949,Aylardır gözlerim çok sulanıyor. Çok rahatsız ediyor.,7,,RUTIN,SABLON
+950,Aylardır gözlerim çok sulanıyor. Artık dayanamıyorum.,7,,RUTIN,SABLON
+951,Göz tansiyonu kontrolü yaptırmak istiyorum,7,,RUTIN,SABLON
+952,Göz tansiyonu kontrolü yaptırmak istiyorum. Ne yapmalıyım?,7,,RUTIN,SABLON
+953,Kulağım ağrıyor ve uğulduyor,8,,RUTIN,SABLON
+954,Kulağım ağrıyor ve uğulduyor. Hangi bölüme gitmeliyim?,8,,RUTIN,SABLON
+955,Kulağım ağrıyor ve uğulduyor. Randevu almak istiyorum.,8,,RUTIN,SABLON
+956,Kulağım ağrıyor ve uğulduyor. Ne yapmalıyım?,8,,RUTIN,SABLON
+957,Kulağım ağrıyor ve uğulduyor. Doktora görünmek istiyorum.,8,,RUTIN,SABLON
+958,Kulağım ağrıyor ve uğulduyor. Artık dayanamıyorum.,8,,RUTIN,SABLON
+959,Son günlerde kulağım ağrıyor ve uğulduyor. Randevu almak istiyorum.,8,,RUTIN,SABLON
+960,Son günlerde kulağım ağrıyor ve uğulduyor. Ne yapmalıyım?,8,,RUTIN,SABLON
+961,Son günlerde kulağım ağrıyor ve uğulduyor. Doktora görünmek istiyorum.,8,,RUTIN,SABLON
+962,Son günlerde kulağım ağrıyor ve uğulduyor. Çok rahatsız ediyor.,8,,RUTIN,SABLON
+963,Son günlerde kulağım ağrıyor ve uğulduyor. Artık dayanamıyorum.,8,,RUTIN,SABLON
+964,Bir haftadır kulağım ağrıyor ve uğulduyor,8,,RUTIN,SABLON
+965,Bir haftadır kulağım ağrıyor ve uğulduyor. Hangi bölüme gitmeliyim?,8,,RUTIN,SABLON
+966,Bir haftadır kulağım ağrıyor ve uğulduyor. Doktora görünmek istiyorum.,8,,RUTIN,SABLON
+967,Bir haftadır kulağım ağrıyor ve uğulduyor. Artık dayanamıyorum.,8,,RUTIN,SABLON
+968,Uzun zamandır kulağım ağrıyor ve uğulduyor. Hangi bölüme gitmeliyim?,8,,RUTIN,SABLON
+969,Uzun zamandır kulağım ağrıyor ve uğulduyor. Randevu almak istiyorum.,8,,RUTIN,SABLON
+970,Uzun zamandır kulağım ağrıyor ve uğulduyor. Ne yapmalıyım?,8,,RUTIN,SABLON
+971,Uzun zamandır kulağım ağrıyor ve uğulduyor. Çok rahatsız ediyor.,8,,RUTIN,SABLON
+972,Uzun zamandır kulağım ağrıyor ve uğulduyor. Artık dayanamıyorum.,8,,RUTIN,SABLON
+973,Dünden beri kulağım ağrıyor ve uğulduyor. Ne yapmalıyım?,8,,RUTIN,SABLON
+974,Dünden beri kulağım ağrıyor ve uğulduyor. Çok rahatsız ediyor.,8,,RUTIN,SABLON
+975,Dünden beri kulağım ağrıyor ve uğulduyor. Artık dayanamıyorum.,8,,RUTIN,SABLON
+976,Son zamanlarda kulağım ağrıyor ve uğulduyor,8,,RUTIN,SABLON
+977,Son zamanlarda kulağım ağrıyor ve uğulduyor. Randevu almak istiyorum.,8,,RUTIN,SABLON
+978,Son zamanlarda kulağım ağrıyor ve uğulduyor. Ne yapmalıyım?,8,,RUTIN,SABLON
+979,Son zamanlarda kulağım ağrıyor ve uğulduyor. Doktora görünmek istiyorum.,8,,RUTIN,SABLON
+980,Son zamanlarda kulağım ağrıyor ve uğulduyor. Çok rahatsız ediyor.,8,,RUTIN,SABLON
+981,Son zamanlarda kulağım ağrıyor ve uğulduyor. Artık dayanamıyorum.,8,,RUTIN,SABLON
+982,Birkaç gündür kulağım ağrıyor ve uğulduyor. Doktora görünmek istiyorum.,8,,RUTIN,SABLON
+983,Birkaç gündür kulağım ağrıyor ve uğulduyor. Çok rahatsız ediyor.,8,,RUTIN,SABLON
+984,Aylardır kulağım ağrıyor ve uğulduyor. Hangi bölüme gitmeliyim?,8,,RUTIN,SABLON
+985,Aylardır kulağım ağrıyor ve uğulduyor. Randevu almak istiyorum.,8,,RUTIN,SABLON
+986,Aylardır kulağım ağrıyor ve uğulduyor. Ne yapmalıyım?,8,,RUTIN,SABLON
+987,Aylardır kulağım ağrıyor ve uğulduyor. Çok rahatsız ediyor.,8,,RUTIN,SABLON
+988,Aylardır kulağım ağrıyor ve uğulduyor. Artık dayanamıyorum.,8,,RUTIN,SABLON
+989,"Boğazım yanıyor, yutkunurken ağrıyor",8,,RUTIN,SABLON
+990,"Boğazım yanıyor, yutkunurken ağrıyor. Randevu almak istiyorum.",8,,RUTIN,SABLON
+991,"Boğazım yanıyor, yutkunurken ağrıyor. Ne yapmalıyım?",8,,RUTIN,SABLON
+992,"Son günlerde boğazım yanıyor, yutkunurken ağrıyor",8,,RUTIN,SABLON
+993,"Son günlerde boğazım yanıyor, yutkunurken ağrıyor. Randevu almak istiyorum.",8,,RUTIN,SABLON
+994,"Son günlerde boğazım yanıyor, yutkunurken ağrıyor. Ne yapmalıyım?",8,,RUTIN,SABLON
+995,"Son günlerde boğazım yanıyor, yutkunurken ağrıyor. Doktora görünmek istiyorum.",8,,RUTIN,SABLON
+996,"Son günlerde boğazım yanıyor, yutkunurken ağrıyor. Çok rahatsız ediyor.",8,,RUTIN,SABLON
+997,"Son günlerde boğazım yanıyor, yutkunurken ağrıyor. Artık dayanamıyorum.",8,,RUTIN,SABLON
+998,"Bir haftadır boğazım yanıyor, yutkunurken ağrıyor",8,,RUTIN,SABLON
+999,"Bir haftadır boğazım yanıyor, yutkunurken ağrıyor. Randevu almak istiyorum.",8,,RUTIN,SABLON
+1000,"Bir haftadır boğazım yanıyor, yutkunurken ağrıyor. Ne yapmalıyım?",8,,RUTIN,SABLON
+1001,"Bir haftadır boğazım yanıyor, yutkunurken ağrıyor. Çok rahatsız ediyor.",8,,RUTIN,SABLON
+1002,"Bir haftadır boğazım yanıyor, yutkunurken ağrıyor. Artık dayanamıyorum.",8,,RUTIN,SABLON
+1003,"Uzun zamandır boğazım yanıyor, yutkunurken ağrıyor",8,,RUTIN,SABLON
+1004,"Uzun zamandır boğazım yanıyor, yutkunurken ağrıyor. Hangi bölüme gitmeliyim?",8,,RUTIN,SABLON
+1005,"Uzun zamandır boğazım yanıyor, yutkunurken ağrıyor. Randevu almak istiyorum.",8,,RUTIN,SABLON
+1006,"Uzun zamandır boğazım yanıyor, yutkunurken ağrıyor. Ne yapmalıyım?",8,,RUTIN,SABLON
+1007,"Uzun zamandır boğazım yanıyor, yutkunurken ağrıyor. Doktora görünmek istiyorum.",8,,RUTIN,SABLON
+1008,"Uzun zamandır boğazım yanıyor, yutkunurken ağrıyor. Çok rahatsız ediyor.",8,,RUTIN,SABLON
+1009,"Uzun zamandır boğazım yanıyor, yutkunurken ağrıyor. Artık dayanamıyorum.",8,,RUTIN,SABLON
+1010,"Dünden beri boğazım yanıyor, yutkunurken ağrıyor",8,,RUTIN,SABLON
+1011,"Dünden beri boğazım yanıyor, yutkunurken ağrıyor. Hangi bölüme gitmeliyim?",8,,RUTIN,SABLON
+1012,"Dünden beri boğazım yanıyor, yutkunurken ağrıyor. Randevu almak istiyorum.",8,,RUTIN,SABLON
+1013,"Dünden beri boğazım yanıyor, yutkunurken ağrıyor. Ne yapmalıyım?",8,,RUTIN,SABLON
+1014,"Dünden beri boğazım yanıyor, yutkunurken ağrıyor. Doktora görünmek istiyorum.",8,,RUTIN,SABLON
+1015,"Dünden beri boğazım yanıyor, yutkunurken ağrıyor. Çok rahatsız ediyor.",8,,RUTIN,SABLON
+1016,"Son zamanlarda boğazım yanıyor, yutkunurken ağrıyor",8,,RUTIN,SABLON
+1017,"Son zamanlarda boğazım yanıyor, yutkunurken ağrıyor. Hangi bölüme gitmeliyim?",8,,RUTIN,SABLON
+1018,"Son zamanlarda boğazım yanıyor, yutkunurken ağrıyor. Randevu almak istiyorum.",8,,RUTIN,SABLON
+1019,"Son zamanlarda boğazım yanıyor, yutkunurken ağrıyor. Ne yapmalıyım?",8,,RUTIN,SABLON
+1020,"Son zamanlarda boğazım yanıyor, yutkunurken ağrıyor. Doktora görünmek istiyorum.",8,,RUTIN,SABLON
+1021,"Son zamanlarda boğazım yanıyor, yutkunurken ağrıyor. Çok rahatsız ediyor.",8,,RUTIN,SABLON
+1022,"Son zamanlarda boğazım yanıyor, yutkunurken ağrıyor. Artık dayanamıyorum.",8,,RUTIN,SABLON
+1023,"Birkaç gündür boğazım yanıyor, yutkunurken ağrıyor",8,,RUTIN,SABLON
+1024,"Birkaç gündür boğazım yanıyor, yutkunurken ağrıyor. Hangi bölüme gitmeliyim?",8,,RUTIN,SABLON
+1025,"Birkaç gündür boğazım yanıyor, yutkunurken ağrıyor. Randevu almak istiyorum.",8,,RUTIN,SABLON
+1026,"Birkaç gündür boğazım yanıyor, yutkunurken ağrıyor. Doktora görünmek istiyorum.",8,,RUTIN,SABLON
+1027,"Aylardır boğazım yanıyor, yutkunurken ağrıyor. Hangi bölüme gitmeliyim?",8,,RUTIN,SABLON
+1028,"Aylardır boğazım yanıyor, yutkunurken ağrıyor. Ne yapmalıyım?",8,,RUTIN,SABLON
+1029,"Aylardır boğazım yanıyor, yutkunurken ağrıyor. Artık dayanamıyorum.",8,,RUTIN,SABLON
+1030,"Burnum sürekli tıkalı, nefes alamıyorum",8,,RUTIN,SABLON
+1031,"Burnum sürekli tıkalı, nefes alamıyorum. Hangi bölüme gitmeliyim?",8,,RUTIN,SABLON
+1032,"Burnum sürekli tıkalı, nefes alamıyorum. Ne yapmalıyım?",8,,RUTIN,SABLON
+1033,"Burnum sürekli tıkalı, nefes alamıyorum. Doktora görünmek istiyorum.",8,,RUTIN,SABLON
+1034,"Son günlerde burnum sürekli tıkalı, nefes alamıyorum. Randevu almak istiyorum.",8,,RUTIN,SABLON
+1035,"Bir haftadır burnum sürekli tıkalı, nefes alamıyorum",8,,RUTIN,SABLON
+1036,"Bir haftadır burnum sürekli tıkalı, nefes alamıyorum. Randevu almak istiyorum.",8,,RUTIN,SABLON
+1037,"Bir haftadır burnum sürekli tıkalı, nefes alamıyorum. Ne yapmalıyım?",8,,RUTIN,SABLON
+1038,"Bir haftadır burnum sürekli tıkalı, nefes alamıyorum. Doktora görünmek istiyorum.",8,,RUTIN,SABLON
+1039,"Bir haftadır burnum sürekli tıkalı, nefes alamıyorum. Çok rahatsız ediyor.",8,,RUTIN,SABLON
+1040,"Bir haftadır burnum sürekli tıkalı, nefes alamıyorum. Artık dayanamıyorum.",8,,RUTIN,SABLON
+1041,"Uzun zamandır burnum sürekli tıkalı, nefes alamıyorum. Hangi bölüme gitmeliyim?",8,,RUTIN,SABLON
+1042,"Uzun zamandır burnum sürekli tıkalı, nefes alamıyorum. Randevu almak istiyorum.",8,,RUTIN,SABLON
+1043,"Uzun zamandır burnum sürekli tıkalı, nefes alamıyorum. Doktora görünmek istiyorum.",8,,RUTIN,SABLON
+1044,"Uzun zamandır burnum sürekli tıkalı, nefes alamıyorum. Artık dayanamıyorum.",8,,RUTIN,SABLON
+1045,"Dünden beri burnum sürekli tıkalı, nefes alamıyorum",8,,RUTIN,SABLON
+1046,"Dünden beri burnum sürekli tıkalı, nefes alamıyorum. Randevu almak istiyorum.",8,,RUTIN,SABLON
+1047,"Dünden beri burnum sürekli tıkalı, nefes alamıyorum. Ne yapmalıyım?",8,,RUTIN,SABLON
+1048,"Dünden beri burnum sürekli tıkalı, nefes alamıyorum. Çok rahatsız ediyor.",8,,RUTIN,SABLON
+1049,"Son zamanlarda burnum sürekli tıkalı, nefes alamıyorum",8,,RUTIN,SABLON
+1050,"Son zamanlarda burnum sürekli tıkalı, nefes alamıyorum. Randevu almak istiyorum.",8,,RUTIN,SABLON
+1051,"Son zamanlarda burnum sürekli tıkalı, nefes alamıyorum. Ne yapmalıyım?",8,,RUTIN,SABLON
+1052,"Son zamanlarda burnum sürekli tıkalı, nefes alamıyorum. Doktora görünmek istiyorum.",8,,RUTIN,SABLON
+1053,"Birkaç gündür burnum sürekli tıkalı, nefes alamıyorum. Hangi bölüme gitmeliyim?",8,,RUTIN,SABLON
+1054,"Birkaç gündür burnum sürekli tıkalı, nefes alamıyorum. Randevu almak istiyorum.",8,,RUTIN,SABLON
+1055,"Birkaç gündür burnum sürekli tıkalı, nefes alamıyorum. Ne yapmalıyım?",8,,RUTIN,SABLON
+1056,"Birkaç gündür burnum sürekli tıkalı, nefes alamıyorum. Doktora görünmek istiyorum.",8,,RUTIN,SABLON
+1057,"Birkaç gündür burnum sürekli tıkalı, nefes alamıyorum. Çok rahatsız ediyor.",8,,RUTIN,SABLON
+1058,"Aylardır burnum sürekli tıkalı, nefes alamıyorum. Hangi bölüme gitmeliyim?",8,,RUTIN,SABLON
+1059,"Aylardır burnum sürekli tıkalı, nefes alamıyorum. Doktora görünmek istiyorum.",8,,RUTIN,SABLON
+1060,"Aylardır burnum sürekli tıkalı, nefes alamıyorum. Çok rahatsız ediyor.",8,,RUTIN,SABLON
+1061,"Aylardır burnum sürekli tıkalı, nefes alamıyorum. Artık dayanamıyorum.",8,,RUTIN,SABLON
+1062,Sesim günlerdir kısık,8,,RUTIN,SABLON
+1063,Sesim günlerdir kısık. Randevu almak istiyorum.,8,,RUTIN,SABLON
+1064,Sesim günlerdir kısık. Ne yapmalıyım?,8,,RUTIN,SABLON
+1065,Sesim günlerdir kısık. Doktora görünmek istiyorum.,8,,RUTIN,SABLON
+1066,Sesim günlerdir kısık. Çok rahatsız ediyor.,8,,RUTIN,SABLON
+1067,Son günlerde sesim günlerdir kısık. Hangi bölüme gitmeliyim?,8,,RUTIN,SABLON
+1068,Son günlerde sesim günlerdir kısık. Randevu almak istiyorum.,8,,RUTIN,SABLON
+1069,Son günlerde sesim günlerdir kısık. Doktora görünmek istiyorum.,8,,RUTIN,SABLON
+1070,Bir haftadır sesim günlerdir kısık,8,,RUTIN,SABLON
+1071,Bir haftadır sesim günlerdir kısık. Hangi bölüme gitmeliyim?,8,,RUTIN,SABLON
+1072,Bir haftadır sesim günlerdir kısık. Ne yapmalıyım?,8,,RUTIN,SABLON
+1073,Bir haftadır sesim günlerdir kısık. Doktora görünmek istiyorum.,8,,RUTIN,SABLON
+1074,Bir haftadır sesim günlerdir kısık. Çok rahatsız ediyor.,8,,RUTIN,SABLON
+1075,Bir haftadır sesim günlerdir kısık. Artık dayanamıyorum.,8,,RUTIN,SABLON
+1076,Uzun zamandır sesim günlerdir kısık,8,,RUTIN,SABLON
+1077,Uzun zamandır sesim günlerdir kısık. Hangi bölüme gitmeliyim?,8,,RUTIN,SABLON
+1078,Uzun zamandır sesim günlerdir kısık. Randevu almak istiyorum.,8,,RUTIN,SABLON
+1079,Uzun zamandır sesim günlerdir kısık. Ne yapmalıyım?,8,,RUTIN,SABLON
+1080,Uzun zamandır sesim günlerdir kısık. Çok rahatsız ediyor.,8,,RUTIN,SABLON
+1081,Dünden beri sesim günlerdir kısık,8,,RUTIN,SABLON
+1082,Dünden beri sesim günlerdir kısık. Hangi bölüme gitmeliyim?,8,,RUTIN,SABLON
+1083,Dünden beri sesim günlerdir kısık. Ne yapmalıyım?,8,,RUTIN,SABLON
+1084,Dünden beri sesim günlerdir kısık. Çok rahatsız ediyor.,8,,RUTIN,SABLON
+1085,Son zamanlarda sesim günlerdir kısık,8,,RUTIN,SABLON
+1086,Son zamanlarda sesim günlerdir kısık. Ne yapmalıyım?,8,,RUTIN,SABLON
+1087,Son zamanlarda sesim günlerdir kısık. Doktora görünmek istiyorum.,8,,RUTIN,SABLON
+1088,Son zamanlarda sesim günlerdir kısık. Çok rahatsız ediyor.,8,,RUTIN,SABLON
+1089,Son zamanlarda sesim günlerdir kısık. Artık dayanamıyorum.,8,,RUTIN,SABLON
+1090,Birkaç gündür sesim günlerdir kısık. Hangi bölüme gitmeliyim?,8,,RUTIN,SABLON
+1091,Birkaç gündür sesim günlerdir kısık. Randevu almak istiyorum.,8,,RUTIN,SABLON
+1092,Birkaç gündür sesim günlerdir kısık. Doktora görünmek istiyorum.,8,,RUTIN,SABLON
+1093,Aylardır sesim günlerdir kısık,8,,RUTIN,SABLON
+1094,Aylardır sesim günlerdir kısık. Hangi bölüme gitmeliyim?,8,,RUTIN,SABLON
+1095,Aylardır sesim günlerdir kısık. Randevu almak istiyorum.,8,,RUTIN,SABLON
+1096,Aylardır sesim günlerdir kısık. Ne yapmalıyım?,8,,RUTIN,SABLON
+1097,Aylardır sesim günlerdir kısık. Doktora görünmek istiyorum.,8,,RUTIN,SABLON
+1098,Aylardır sesim günlerdir kısık. Çok rahatsız ediyor.,8,,RUTIN,SABLON
+1099,Aylardır sesim günlerdir kısık. Artık dayanamıyorum.,8,,RUTIN,SABLON
+1100,"Kulağımdan akıntı geliyor, az duyuyorum",8,,ONCELIKLI,SABLON
+1101,"Kulağımdan akıntı geliyor, az duyuyorum. Ne yapmalıyım?",8,,ONCELIKLI,SABLON
+1102,"Kulağımdan akıntı geliyor, az duyuyorum. Artık dayanamıyorum.",8,,ONCELIKLI,SABLON
+1103,"Son günlerde kulağımdan akıntı geliyor, az duyuyorum. Randevu almak istiyorum.",8,,ONCELIKLI,SABLON
+1104,"Son günlerde kulağımdan akıntı geliyor, az duyuyorum. Ne yapmalıyım?",8,,ONCELIKLI,SABLON
+1105,"Son günlerde kulağımdan akıntı geliyor, az duyuyorum. Çok rahatsız ediyor.",8,,ONCELIKLI,SABLON
+1106,"Son günlerde kulağımdan akıntı geliyor, az duyuyorum. Artık dayanamıyorum.",8,,ONCELIKLI,SABLON
+1107,"Bir haftadır kulağımdan akıntı geliyor, az duyuyorum. Randevu almak istiyorum.",8,,ONCELIKLI,SABLON
+1108,"Bir haftadır kulağımdan akıntı geliyor, az duyuyorum. Doktora görünmek istiyorum.",8,,ONCELIKLI,SABLON
+1109,"Bir haftadır kulağımdan akıntı geliyor, az duyuyorum. Artık dayanamıyorum.",8,,ONCELIKLI,SABLON
+1110,"Uzun zamandır kulağımdan akıntı geliyor, az duyuyorum. Hangi bölüme gitmeliyim?",8,,ONCELIKLI,SABLON
+1111,"Uzun zamandır kulağımdan akıntı geliyor, az duyuyorum. Ne yapmalıyım?",8,,ONCELIKLI,SABLON
+1112,"Dünden beri kulağımdan akıntı geliyor, az duyuyorum",8,,ONCELIKLI,SABLON
+1113,"Dünden beri kulağımdan akıntı geliyor, az duyuyorum. Randevu almak istiyorum.",8,,ONCELIKLI,SABLON
+1114,"Dünden beri kulağımdan akıntı geliyor, az duyuyorum. Ne yapmalıyım?",8,,ONCELIKLI,SABLON
+1115,"Dünden beri kulağımdan akıntı geliyor, az duyuyorum. Çok rahatsız ediyor.",8,,ONCELIKLI,SABLON
+1116,"Son zamanlarda kulağımdan akıntı geliyor, az duyuyorum",8,,ONCELIKLI,SABLON
+1117,"Son zamanlarda kulağımdan akıntı geliyor, az duyuyorum. Hangi bölüme gitmeliyim?",8,,ONCELIKLI,SABLON
+1118,"Son zamanlarda kulağımdan akıntı geliyor, az duyuyorum. Randevu almak istiyorum.",8,,ONCELIKLI,SABLON
+1119,"Son zamanlarda kulağımdan akıntı geliyor, az duyuyorum. Ne yapmalıyım?",8,,ONCELIKLI,SABLON
+1120,"Son zamanlarda kulağımdan akıntı geliyor, az duyuyorum. Doktora görünmek istiyorum.",8,,ONCELIKLI,SABLON
+1121,"Birkaç gündür kulağımdan akıntı geliyor, az duyuyorum",8,,ONCELIKLI,SABLON
+1122,"Birkaç gündür kulağımdan akıntı geliyor, az duyuyorum. Hangi bölüme gitmeliyim?",8,,ONCELIKLI,SABLON
+1123,"Birkaç gündür kulağımdan akıntı geliyor, az duyuyorum. Randevu almak istiyorum.",8,,ONCELIKLI,SABLON
+1124,"Birkaç gündür kulağımdan akıntı geliyor, az duyuyorum. Ne yapmalıyım?",8,,ONCELIKLI,SABLON
+1125,"Birkaç gündür kulağımdan akıntı geliyor, az duyuyorum. Doktora görünmek istiyorum.",8,,ONCELIKLI,SABLON
+1126,"Birkaç gündür kulağımdan akıntı geliyor, az duyuyorum. Çok rahatsız ediyor.",8,,ONCELIKLI,SABLON
+1127,"Aylardır kulağımdan akıntı geliyor, az duyuyorum",8,,ONCELIKLI,SABLON
+1128,"Aylardır kulağımdan akıntı geliyor, az duyuyorum. Randevu almak istiyorum.",8,,ONCELIKLI,SABLON
+1129,"Aylardır kulağımdan akıntı geliyor, az duyuyorum. Ne yapmalıyım?",8,,ONCELIKLI,SABLON
+1130,"Aylardır kulağımdan akıntı geliyor, az duyuyorum. Doktora görünmek istiyorum.",8,,ONCELIKLI,SABLON
+1131,Baş dönmesi ve kulak çınlaması var,8,10,RUTIN,SABLON
+1132,Baş dönmesi ve kulak çınlaması var. Hangi bölüme gitmeliyim?,8,10,RUTIN,SABLON
+1133,Baş dönmesi ve kulak çınlaması var. Randevu almak istiyorum.,8,10,RUTIN,SABLON
+1134,Baş dönmesi ve kulak çınlaması var. Ne yapmalıyım?,8,10,RUTIN,SABLON
+1135,Baş dönmesi ve kulak çınlaması var. Doktora görünmek istiyorum.,8,10,RUTIN,SABLON
+1136,Son günlerde baş dönmesi ve kulak çınlaması var,8,10,RUTIN,SABLON
+1137,Son günlerde baş dönmesi ve kulak çınlaması var. Hangi bölüme gitmeliyim?,8,10,RUTIN,SABLON
+1138,Son günlerde baş dönmesi ve kulak çınlaması var. Ne yapmalıyım?,8,10,RUTIN,SABLON
+1139,Son günlerde baş dönmesi ve kulak çınlaması var. Çok rahatsız ediyor.,8,10,RUTIN,SABLON
+1140,Son günlerde baş dönmesi ve kulak çınlaması var. Artık dayanamıyorum.,8,10,RUTIN,SABLON
+1141,Bir haftadır baş dönmesi ve kulak çınlaması var,8,10,RUTIN,SABLON
+1142,Bir haftadır baş dönmesi ve kulak çınlaması var. Hangi bölüme gitmeliyim?,8,10,RUTIN,SABLON
+1143,Bir haftadır baş dönmesi ve kulak çınlaması var. Doktora görünmek istiyorum.,8,10,RUTIN,SABLON
+1144,Bir haftadır baş dönmesi ve kulak çınlaması var. Çok rahatsız ediyor.,8,10,RUTIN,SABLON
+1145,Bir haftadır baş dönmesi ve kulak çınlaması var. Artık dayanamıyorum.,8,10,RUTIN,SABLON
+1146,Uzun zamandır baş dönmesi ve kulak çınlaması var. Hangi bölüme gitmeliyim?,8,10,RUTIN,SABLON
+1147,Uzun zamandır baş dönmesi ve kulak çınlaması var. Doktora görünmek istiyorum.,8,10,RUTIN,SABLON
+1148,Uzun zamandır baş dönmesi ve kulak çınlaması var. Artık dayanamıyorum.,8,10,RUTIN,SABLON
+1149,Dünden beri baş dönmesi ve kulak çınlaması var,8,10,RUTIN,SABLON
+1150,Dünden beri baş dönmesi ve kulak çınlaması var. Hangi bölüme gitmeliyim?,8,10,RUTIN,SABLON
+1151,Dünden beri baş dönmesi ve kulak çınlaması var. Randevu almak istiyorum.,8,10,RUTIN,SABLON
+1152,Dünden beri baş dönmesi ve kulak çınlaması var. Ne yapmalıyım?,8,10,RUTIN,SABLON
+1153,Dünden beri baş dönmesi ve kulak çınlaması var. Doktora görünmek istiyorum.,8,10,RUTIN,SABLON
+1154,Dünden beri baş dönmesi ve kulak çınlaması var. Artık dayanamıyorum.,8,10,RUTIN,SABLON
+1155,Son zamanlarda baş dönmesi ve kulak çınlaması var,8,10,RUTIN,SABLON
+1156,Son zamanlarda baş dönmesi ve kulak çınlaması var. Hangi bölüme gitmeliyim?,8,10,RUTIN,SABLON
+1157,Son zamanlarda baş dönmesi ve kulak çınlaması var. Randevu almak istiyorum.,8,10,RUTIN,SABLON
+1158,Son zamanlarda baş dönmesi ve kulak çınlaması var. Çok rahatsız ediyor.,8,10,RUTIN,SABLON
+1159,Birkaç gündür baş dönmesi ve kulak çınlaması var,8,10,RUTIN,SABLON
+1160,Birkaç gündür baş dönmesi ve kulak çınlaması var. Doktora görünmek istiyorum.,8,10,RUTIN,SABLON
+1161,Birkaç gündür baş dönmesi ve kulak çınlaması var. Çok rahatsız ediyor.,8,10,RUTIN,SABLON
+1162,Aylardır baş dönmesi ve kulak çınlaması var,8,10,RUTIN,SABLON
+1163,Aylardır baş dönmesi ve kulak çınlaması var. Doktora görünmek istiyorum.,8,10,RUTIN,SABLON
+1164,Aylardır baş dönmesi ve kulak çınlaması var. Çok rahatsız ediyor.,8,10,RUTIN,SABLON
+1165,Aylardır baş dönmesi ve kulak çınlaması var. Artık dayanamıyorum.,8,10,RUTIN,SABLON
+1166,Cildimde kaşıntılı kızarıklıklar çıktı,9,,RUTIN,SABLON
+1167,Cildimde kaşıntılı kızarıklıklar çıktı. Hangi bölüme gitmeliyim?,9,,RUTIN,SABLON
+1168,Cildimde kaşıntılı kızarıklıklar çıktı. Randevu almak istiyorum.,9,,RUTIN,SABLON
+1169,Cildimde kaşıntılı kızarıklıklar çıktı. Ne yapmalıyım?,9,,RUTIN,SABLON
+1170,Yüzümde sivilceler geçmiyor,9,,RUTIN,SABLON
+1171,Yüzümde sivilceler geçmiyor. Hangi bölüme gitmeliyim?,9,,RUTIN,SABLON
+1172,Yüzümde sivilceler geçmiyor. Randevu almak istiyorum.,9,,RUTIN,SABLON
+1173,Yüzümde sivilceler geçmiyor. Ne yapmalıyım?,9,,RUTIN,SABLON
+1174,Yüzümde sivilceler geçmiyor. Çok rahatsız ediyor.,9,,RUTIN,SABLON
+1175,Son günlerde yüzümde sivilceler geçmiyor,9,,RUTIN,SABLON
+1176,Son günlerde yüzümde sivilceler geçmiyor. Randevu almak istiyorum.,9,,RUTIN,SABLON
+1177,Son günlerde yüzümde sivilceler geçmiyor. Doktora görünmek istiyorum.,9,,RUTIN,SABLON
+1178,Bir haftadır yüzümde sivilceler geçmiyor. Randevu almak istiyorum.,9,,RUTIN,SABLON
+1179,Bir haftadır yüzümde sivilceler geçmiyor. Ne yapmalıyım?,9,,RUTIN,SABLON
+1180,Bir haftadır yüzümde sivilceler geçmiyor. Doktora görünmek istiyorum.,9,,RUTIN,SABLON
+1181,Bir haftadır yüzümde sivilceler geçmiyor. Çok rahatsız ediyor.,9,,RUTIN,SABLON
+1182,Uzun zamandır yüzümde sivilceler geçmiyor,9,,RUTIN,SABLON
+1183,Uzun zamandır yüzümde sivilceler geçmiyor. Ne yapmalıyım?,9,,RUTIN,SABLON
+1184,Uzun zamandır yüzümde sivilceler geçmiyor. Doktora görünmek istiyorum.,9,,RUTIN,SABLON
+1185,Dünden beri yüzümde sivilceler geçmiyor. Randevu almak istiyorum.,9,,RUTIN,SABLON
+1186,Dünden beri yüzümde sivilceler geçmiyor. Ne yapmalıyım?,9,,RUTIN,SABLON
+1187,Dünden beri yüzümde sivilceler geçmiyor. Çok rahatsız ediyor.,9,,RUTIN,SABLON
+1188,Dünden beri yüzümde sivilceler geçmiyor. Artık dayanamıyorum.,9,,RUTIN,SABLON
+1189,Son zamanlarda yüzümde sivilceler geçmiyor. Hangi bölüme gitmeliyim?,9,,RUTIN,SABLON
+1190,Son zamanlarda yüzümde sivilceler geçmiyor. Ne yapmalıyım?,9,,RUTIN,SABLON
+1191,Son zamanlarda yüzümde sivilceler geçmiyor. Doktora görünmek istiyorum.,9,,RUTIN,SABLON
+1192,Son zamanlarda yüzümde sivilceler geçmiyor. Artık dayanamıyorum.,9,,RUTIN,SABLON
+1193,Birkaç gündür yüzümde sivilceler geçmiyor,9,,RUTIN,SABLON
+1194,Birkaç gündür yüzümde sivilceler geçmiyor. Hangi bölüme gitmeliyim?,9,,RUTIN,SABLON
+1195,Birkaç gündür yüzümde sivilceler geçmiyor. Randevu almak istiyorum.,9,,RUTIN,SABLON
+1196,Birkaç gündür yüzümde sivilceler geçmiyor. Ne yapmalıyım?,9,,RUTIN,SABLON
+1197,Birkaç gündür yüzümde sivilceler geçmiyor. Doktora görünmek istiyorum.,9,,RUTIN,SABLON
+1198,Birkaç gündür yüzümde sivilceler geçmiyor. Çok rahatsız ediyor.,9,,RUTIN,SABLON
+1199,Birkaç gündür yüzümde sivilceler geçmiyor. Artık dayanamıyorum.,9,,RUTIN,SABLON
+1200,Aylardır yüzümde sivilceler geçmiyor,9,,RUTIN,SABLON
+1201,Aylardır yüzümde sivilceler geçmiyor. Randevu almak istiyorum.,9,,RUTIN,SABLON
+1202,Aylardır yüzümde sivilceler geçmiyor. Çok rahatsız ediyor.,9,,RUTIN,SABLON
+1203,Saçlarım aşırı dökülüyor,9,,RUTIN,SABLON
+1204,Saçlarım aşırı dökülüyor. Hangi bölüme gitmeliyim?,9,,RUTIN,SABLON
+1205,Saçlarım aşırı dökülüyor. Randevu almak istiyorum.,9,,RUTIN,SABLON
+1206,Saçlarım aşırı dökülüyor. Doktora görünmek istiyorum.,9,,RUTIN,SABLON
+1207,Saçlarım aşırı dökülüyor. Artık dayanamıyorum.,9,,RUTIN,SABLON
+1208,Son günlerde saçlarım aşırı dökülüyor. Randevu almak istiyorum.,9,,RUTIN,SABLON
+1209,Son günlerde saçlarım aşırı dökülüyor. Doktora görünmek istiyorum.,9,,RUTIN,SABLON
+1210,Son günlerde saçlarım aşırı dökülüyor. Çok rahatsız ediyor.,9,,RUTIN,SABLON
+1211,Son günlerde saçlarım aşırı dökülüyor. Artık dayanamıyorum.,9,,RUTIN,SABLON
+1212,Bir haftadır saçlarım aşırı dökülüyor. Doktora görünmek istiyorum.,9,,RUTIN,SABLON
+1213,Bir haftadır saçlarım aşırı dökülüyor. Artık dayanamıyorum.,9,,RUTIN,SABLON
+1214,Uzun zamandır saçlarım aşırı dökülüyor,9,,RUTIN,SABLON
+1215,Uzun zamandır saçlarım aşırı dökülüyor. Randevu almak istiyorum.,9,,RUTIN,SABLON
+1216,Uzun zamandır saçlarım aşırı dökülüyor. Ne yapmalıyım?,9,,RUTIN,SABLON
+1217,Uzun zamandır saçlarım aşırı dökülüyor. Çok rahatsız ediyor.,9,,RUTIN,SABLON
+1218,Dünden beri saçlarım aşırı dökülüyor. Hangi bölüme gitmeliyim?,9,,RUTIN,SABLON
+1219,Dünden beri saçlarım aşırı dökülüyor. Randevu almak istiyorum.,9,,RUTIN,SABLON
+1220,Dünden beri saçlarım aşırı dökülüyor. Ne yapmalıyım?,9,,RUTIN,SABLON
+1221,Dünden beri saçlarım aşırı dökülüyor. Çok rahatsız ediyor.,9,,RUTIN,SABLON
+1222,Dünden beri saçlarım aşırı dökülüyor. Artık dayanamıyorum.,9,,RUTIN,SABLON
+1223,Son zamanlarda saçlarım aşırı dökülüyor,9,,RUTIN,SABLON
+1224,Son zamanlarda saçlarım aşırı dökülüyor. Hangi bölüme gitmeliyim?,9,,RUTIN,SABLON
+1225,Son zamanlarda saçlarım aşırı dökülüyor. Randevu almak istiyorum.,9,,RUTIN,SABLON
+1226,Son zamanlarda saçlarım aşırı dökülüyor. Ne yapmalıyım?,9,,RUTIN,SABLON
+1227,Son zamanlarda saçlarım aşırı dökülüyor. Doktora görünmek istiyorum.,9,,RUTIN,SABLON
+1228,Son zamanlarda saçlarım aşırı dökülüyor. Artık dayanamıyorum.,9,,RUTIN,SABLON
+1229,Birkaç gündür saçlarım aşırı dökülüyor,9,,RUTIN,SABLON
+1230,Birkaç gündür saçlarım aşırı dökülüyor. Randevu almak istiyorum.,9,,RUTIN,SABLON
+1231,Birkaç gündür saçlarım aşırı dökülüyor. Doktora görünmek istiyorum.,9,,RUTIN,SABLON
+1232,Birkaç gündür saçlarım aşırı dökülüyor. Artık dayanamıyorum.,9,,RUTIN,SABLON
+1233,Aylardır saçlarım aşırı dökülüyor,9,,RUTIN,SABLON
+1234,Aylardır saçlarım aşırı dökülüyor. Hangi bölüme gitmeliyim?,9,,RUTIN,SABLON
+1235,Aylardır saçlarım aşırı dökülüyor. Randevu almak istiyorum.,9,,RUTIN,SABLON
+1236,Aylardır saçlarım aşırı dökülüyor. Doktora görünmek istiyorum.,9,,RUTIN,SABLON
+1237,Aylardır saçlarım aşırı dökülüyor. Çok rahatsız ediyor.,9,,RUTIN,SABLON
+1238,Vücudumdaki bir ben büyüdü ve renk değiştirdi,9,,ONCELIKLI,SABLON
+1239,Vücudumdaki bir ben büyüdü ve renk değiştirdi. Hangi bölüme gitmeliyim?,9,,ONCELIKLI,SABLON
+1240,Vücudumdaki bir ben büyüdü ve renk değiştirdi. Ne yapmalıyım?,9,,ONCELIKLI,SABLON
+1241,Vücudumdaki bir ben büyüdü ve renk değiştirdi. Doktora görünmek istiyorum.,9,,ONCELIKLI,SABLON
+1242,Tırnaklarımda mantar oldu,9,,RUTIN,SABLON
+1243,Tırnaklarımda mantar oldu. Randevu almak istiyorum.,9,,RUTIN,SABLON
+1244,Tırnaklarımda mantar oldu. Ne yapmalıyım?,9,,RUTIN,SABLON
+1245,Tırnaklarımda mantar oldu. Doktora görünmek istiyorum.,9,,RUTIN,SABLON
+1246,"Şiddetli baş ağrılarım var, bulantı da yapıyor",10,,ONCELIKLI,SABLON
+1247,"Şiddetli baş ağrılarım var, bulantı da yapıyor. Hangi bölüme gitmeliyim?",10,,ONCELIKLI,SABLON
+1248,"Şiddetli baş ağrılarım var, bulantı da yapıyor. Randevu almak istiyorum.",10,,ONCELIKLI,SABLON
+1249,"Şiddetli baş ağrılarım var, bulantı da yapıyor. Ne yapmalıyım?",10,,ONCELIKLI,SABLON
+1250,"Şiddetli baş ağrılarım var, bulantı da yapıyor. Doktora görünmek istiyorum.",10,,ONCELIKLI,SABLON
+1251,"Şiddetli baş ağrılarım var, bulantı da yapıyor. Çok rahatsız ediyor.",10,,ONCELIKLI,SABLON
+1252,"Şiddetli baş ağrılarım var, bulantı da yapıyor. Artık dayanamıyorum.",10,,ONCELIKLI,SABLON
+1253,"Son günlerde şiddetli baş ağrılarım var, bulantı da yapıyor",10,,ONCELIKLI,SABLON
+1254,"Son günlerde şiddetli baş ağrılarım var, bulantı da yapıyor. Randevu almak istiyorum.",10,,ONCELIKLI,SABLON
+1255,"Son günlerde şiddetli baş ağrılarım var, bulantı da yapıyor. Doktora görünmek istiyorum.",10,,ONCELIKLI,SABLON
+1256,"Bir haftadır şiddetli baş ağrılarım var, bulantı da yapıyor",10,,ONCELIKLI,SABLON
+1257,"Bir haftadır şiddetli baş ağrılarım var, bulantı da yapıyor. Hangi bölüme gitmeliyim?",10,,ONCELIKLI,SABLON
+1258,"Bir haftadır şiddetli baş ağrılarım var, bulantı da yapıyor. Randevu almak istiyorum.",10,,ONCELIKLI,SABLON
+1259,"Bir haftadır şiddetli baş ağrılarım var, bulantı da yapıyor. Ne yapmalıyım?",10,,ONCELIKLI,SABLON
+1260,"Bir haftadır şiddetli baş ağrılarım var, bulantı da yapıyor. Çok rahatsız ediyor.",10,,ONCELIKLI,SABLON
+1261,"Bir haftadır şiddetli baş ağrılarım var, bulantı da yapıyor. Artık dayanamıyorum.",10,,ONCELIKLI,SABLON
+1262,"Uzun zamandır şiddetli baş ağrılarım var, bulantı da yapıyor. Hangi bölüme gitmeliyim?",10,,ONCELIKLI,SABLON
+1263,"Uzun zamandır şiddetli baş ağrılarım var, bulantı da yapıyor. Doktora görünmek istiyorum.",10,,ONCELIKLI,SABLON
+1264,"Uzun zamandır şiddetli baş ağrılarım var, bulantı da yapıyor. Artık dayanamıyorum.",10,,ONCELIKLI,SABLON
+1265,"Dünden beri şiddetli baş ağrılarım var, bulantı da yapıyor. Doktora görünmek istiyorum.",10,,ONCELIKLI,SABLON
+1266,"Son zamanlarda şiddetli baş ağrılarım var, bulantı da yapıyor",10,,ONCELIKLI,SABLON
+1267,"Son zamanlarda şiddetli baş ağrılarım var, bulantı da yapıyor. Hangi bölüme gitmeliyim?",10,,ONCELIKLI,SABLON
+1268,"Son zamanlarda şiddetli baş ağrılarım var, bulantı da yapıyor. Randevu almak istiyorum.",10,,ONCELIKLI,SABLON
+1269,"Son zamanlarda şiddetli baş ağrılarım var, bulantı da yapıyor. Ne yapmalıyım?",10,,ONCELIKLI,SABLON
+1270,"Son zamanlarda şiddetli baş ağrılarım var, bulantı da yapıyor. Doktora görünmek istiyorum.",10,,ONCELIKLI,SABLON
+1271,"Son zamanlarda şiddetli baş ağrılarım var, bulantı da yapıyor. Çok rahatsız ediyor.",10,,ONCELIKLI,SABLON
+1272,"Birkaç gündür şiddetli baş ağrılarım var, bulantı da yapıyor",10,,ONCELIKLI,SABLON
+1273,"Birkaç gündür şiddetli baş ağrılarım var, bulantı da yapıyor. Randevu almak istiyorum.",10,,ONCELIKLI,SABLON
+1274,"Birkaç gündür şiddetli baş ağrılarım var, bulantı da yapıyor. Doktora görünmek istiyorum.",10,,ONCELIKLI,SABLON
+1275,"Aylardır şiddetli baş ağrılarım var, bulantı da yapıyor",10,,ONCELIKLI,SABLON
+1276,"Aylardır şiddetli baş ağrılarım var, bulantı da yapıyor. Hangi bölüme gitmeliyim?",10,,ONCELIKLI,SABLON
+1277,"Aylardır şiddetli baş ağrılarım var, bulantı da yapıyor. Randevu almak istiyorum.",10,,ONCELIKLI,SABLON
+1278,"Aylardır şiddetli baş ağrılarım var, bulantı da yapıyor. Doktora görünmek istiyorum.",10,,ONCELIKLI,SABLON
+1279,"Aylardır şiddetli baş ağrılarım var, bulantı da yapıyor. Çok rahatsız ediyor.",10,,ONCELIKLI,SABLON
+1280,"Aylardır şiddetli baş ağrılarım var, bulantı da yapıyor. Artık dayanamıyorum.",10,,ONCELIKLI,SABLON
+1281,Ellerimde titreme başladı,10,,RUTIN,SABLON
+1282,Ellerimde titreme başladı. Randevu almak istiyorum.,10,,RUTIN,SABLON
+1283,Unutkanlığım arttı,10,13,RUTIN,SABLON
+1284,Unutkanlığım arttı. Hangi bölüme gitmeliyim?,10,13,RUTIN,SABLON
+1285,Unutkanlığım arttı. Doktora görünmek istiyorum.,10,13,RUTIN,SABLON
+1286,Unutkanlığım arttı. Çok rahatsız ediyor.,10,13,RUTIN,SABLON
+1287,Son günlerde unutkanlığım arttı,10,13,RUTIN,SABLON
+1288,Son günlerde unutkanlığım arttı. Hangi bölüme gitmeliyim?,10,13,RUTIN,SABLON
+1289,Son günlerde unutkanlığım arttı. Ne yapmalıyım?,10,13,RUTIN,SABLON
+1290,Bir haftadır unutkanlığım arttı. Hangi bölüme gitmeliyim?,10,13,RUTIN,SABLON
+1291,Bir haftadır unutkanlığım arttı. Randevu almak istiyorum.,10,13,RUTIN,SABLON
+1292,Bir haftadır unutkanlığım arttı. Çok rahatsız ediyor.,10,13,RUTIN,SABLON
+1293,Bir haftadır unutkanlığım arttı. Artık dayanamıyorum.,10,13,RUTIN,SABLON
+1294,Uzun zamandır unutkanlığım arttı. Randevu almak istiyorum.,10,13,RUTIN,SABLON
+1295,Uzun zamandır unutkanlığım arttı. Ne yapmalıyım?,10,13,RUTIN,SABLON
+1296,Uzun zamandır unutkanlığım arttı. Doktora görünmek istiyorum.,10,13,RUTIN,SABLON
+1297,Uzun zamandır unutkanlığım arttı. Çok rahatsız ediyor.,10,13,RUTIN,SABLON
+1298,Dünden beri unutkanlığım arttı,10,13,RUTIN,SABLON
+1299,Dünden beri unutkanlığım arttı. Hangi bölüme gitmeliyim?,10,13,RUTIN,SABLON
+1300,Dünden beri unutkanlığım arttı. Randevu almak istiyorum.,10,13,RUTIN,SABLON
+1301,Dünden beri unutkanlığım arttı. Ne yapmalıyım?,10,13,RUTIN,SABLON
+1302,Dünden beri unutkanlığım arttı. Doktora görünmek istiyorum.,10,13,RUTIN,SABLON
+1303,Dünden beri unutkanlığım arttı. Çok rahatsız ediyor.,10,13,RUTIN,SABLON
+1304,Dünden beri unutkanlığım arttı. Artık dayanamıyorum.,10,13,RUTIN,SABLON
+1305,Son zamanlarda unutkanlığım arttı,10,13,RUTIN,SABLON
+1306,Son zamanlarda unutkanlığım arttı. Hangi bölüme gitmeliyim?,10,13,RUTIN,SABLON
+1307,Son zamanlarda unutkanlığım arttı. Randevu almak istiyorum.,10,13,RUTIN,SABLON
+1308,Son zamanlarda unutkanlığım arttı. Ne yapmalıyım?,10,13,RUTIN,SABLON
+1309,Son zamanlarda unutkanlığım arttı. Doktora görünmek istiyorum.,10,13,RUTIN,SABLON
+1310,Son zamanlarda unutkanlığım arttı. Çok rahatsız ediyor.,10,13,RUTIN,SABLON
+1311,Birkaç gündür unutkanlığım arttı. Hangi bölüme gitmeliyim?,10,13,RUTIN,SABLON
+1312,Birkaç gündür unutkanlığım arttı. Doktora görünmek istiyorum.,10,13,RUTIN,SABLON
+1313,Birkaç gündür unutkanlığım arttı. Artık dayanamıyorum.,10,13,RUTIN,SABLON
+1314,Aylardır unutkanlığım arttı. Hangi bölüme gitmeliyim?,10,13,RUTIN,SABLON
+1315,Aylardır unutkanlığım arttı. Randevu almak istiyorum.,10,13,RUTIN,SABLON
+1316,Aylardır unutkanlığım arttı. Ne yapmalıyım?,10,13,RUTIN,SABLON
+1317,Aylardır unutkanlığım arttı. Doktora görünmek istiyorum.,10,13,RUTIN,SABLON
+1318,Aylardır unutkanlığım arttı. Çok rahatsız ediyor.,10,13,RUTIN,SABLON
+1319,Aylardır unutkanlığım arttı. Artık dayanamıyorum.,10,13,RUTIN,SABLON
+1320,Elimde ve parmaklarımda karıncalanma oluyor,10,14,RUTIN,SABLON
+1321,Elimde ve parmaklarımda karıncalanma oluyor. Hangi bölüme gitmeliyim?,10,14,RUTIN,SABLON
+1322,Elimde ve parmaklarımda karıncalanma oluyor. Ne yapmalıyım?,10,14,RUTIN,SABLON
+1323,Elimde ve parmaklarımda karıncalanma oluyor. Doktora görünmek istiyorum.,10,14,RUTIN,SABLON
+1324,Son günlerde elimde ve parmaklarımda karıncalanma oluyor. Hangi bölüme gitmeliyim?,10,14,RUTIN,SABLON
+1325,Son günlerde elimde ve parmaklarımda karıncalanma oluyor. Randevu almak istiyorum.,10,14,RUTIN,SABLON
+1326,Son günlerde elimde ve parmaklarımda karıncalanma oluyor. Doktora görünmek istiyorum.,10,14,RUTIN,SABLON
+1327,Son günlerde elimde ve parmaklarımda karıncalanma oluyor. Çok rahatsız ediyor.,10,14,RUTIN,SABLON
+1328,Bir haftadır elimde ve parmaklarımda karıncalanma oluyor,10,14,RUTIN,SABLON
+1329,Bir haftadır elimde ve parmaklarımda karıncalanma oluyor. Hangi bölüme gitmeliyim?,10,14,RUTIN,SABLON
+1330,Bir haftadır elimde ve parmaklarımda karıncalanma oluyor. Doktora görünmek istiyorum.,10,14,RUTIN,SABLON
+1331,Bir haftadır elimde ve parmaklarımda karıncalanma oluyor. Artık dayanamıyorum.,10,14,RUTIN,SABLON
+1332,Uzun zamandır elimde ve parmaklarımda karıncalanma oluyor,10,14,RUTIN,SABLON
+1333,Uzun zamandır elimde ve parmaklarımda karıncalanma oluyor. Hangi bölüme gitmeliyim?,10,14,RUTIN,SABLON
+1334,Uzun zamandır elimde ve parmaklarımda karıncalanma oluyor. Randevu almak istiyorum.,10,14,RUTIN,SABLON
+1335,Uzun zamandır elimde ve parmaklarımda karıncalanma oluyor. Ne yapmalıyım?,10,14,RUTIN,SABLON
+1336,Dünden beri elimde ve parmaklarımda karıncalanma oluyor. Hangi bölüme gitmeliyim?,10,14,RUTIN,SABLON
+1337,Dünden beri elimde ve parmaklarımda karıncalanma oluyor. Ne yapmalıyım?,10,14,RUTIN,SABLON
+1338,Dünden beri elimde ve parmaklarımda karıncalanma oluyor. Artık dayanamıyorum.,10,14,RUTIN,SABLON
+1339,Son zamanlarda elimde ve parmaklarımda karıncalanma oluyor,10,14,RUTIN,SABLON
+1340,Son zamanlarda elimde ve parmaklarımda karıncalanma oluyor. Hangi bölüme gitmeliyim?,10,14,RUTIN,SABLON
+1341,Son zamanlarda elimde ve parmaklarımda karıncalanma oluyor. Doktora görünmek istiyorum.,10,14,RUTIN,SABLON
+1342,Son zamanlarda elimde ve parmaklarımda karıncalanma oluyor. Çok rahatsız ediyor.,10,14,RUTIN,SABLON
+1343,Birkaç gündür elimde ve parmaklarımda karıncalanma oluyor. Hangi bölüme gitmeliyim?,10,14,RUTIN,SABLON
+1344,Birkaç gündür elimde ve parmaklarımda karıncalanma oluyor. Ne yapmalıyım?,10,14,RUTIN,SABLON
+1345,Birkaç gündür elimde ve parmaklarımda karıncalanma oluyor. Artık dayanamıyorum.,10,14,RUTIN,SABLON
+1346,Aylardır elimde ve parmaklarımda karıncalanma oluyor. Çok rahatsız ediyor.,10,14,RUTIN,SABLON
+1347,Aylardır elimde ve parmaklarımda karıncalanma oluyor. Artık dayanamıyorum.,10,14,RUTIN,SABLON
+1348,Migren ataklarım sıklaştı,10,,RUTIN,SABLON
+1349,Migren ataklarım sıklaştı. Ne yapmalıyım?,10,,RUTIN,SABLON
+1350,Zaman zaman baş dönmesi ve denge kaybı yaşıyorum,10,8,ONCELIKLI,SABLON
+1351,Zaman zaman baş dönmesi ve denge kaybı yaşıyorum. Randevu almak istiyorum.,10,8,ONCELIKLI,SABLON
+1352,Zaman zaman baş dönmesi ve denge kaybı yaşıyorum. Çok rahatsız ediyor.,10,8,ONCELIKLI,SABLON
+1353,Zaman zaman baş dönmesi ve denge kaybı yaşıyorum. Artık dayanamıyorum.,10,8,ONCELIKLI,SABLON
+1354,Son günlerde zaman zaman baş dönmesi ve denge kaybı yaşıyorum. Artık dayanamıyorum.,10,8,ONCELIKLI,SABLON
+1355,Bir haftadır zaman zaman baş dönmesi ve denge kaybı yaşıyorum,10,8,ONCELIKLI,SABLON
+1356,Bir haftadır zaman zaman baş dönmesi ve denge kaybı yaşıyorum. Hangi bölüme gitmeliyim?,10,8,ONCELIKLI,SABLON
+1357,Bir haftadır zaman zaman baş dönmesi ve denge kaybı yaşıyorum. Çok rahatsız ediyor.,10,8,ONCELIKLI,SABLON
+1358,Uzun zamandır zaman zaman baş dönmesi ve denge kaybı yaşıyorum. Hangi bölüme gitmeliyim?,10,8,ONCELIKLI,SABLON
+1359,Uzun zamandır zaman zaman baş dönmesi ve denge kaybı yaşıyorum. Randevu almak istiyorum.,10,8,ONCELIKLI,SABLON
+1360,Uzun zamandır zaman zaman baş dönmesi ve denge kaybı yaşıyorum. Ne yapmalıyım?,10,8,ONCELIKLI,SABLON
+1361,Uzun zamandır zaman zaman baş dönmesi ve denge kaybı yaşıyorum. Doktora görünmek istiyorum.,10,8,ONCELIKLI,SABLON
+1362,Dünden beri zaman zaman baş dönmesi ve denge kaybı yaşıyorum,10,8,ONCELIKLI,SABLON
+1363,Dünden beri zaman zaman baş dönmesi ve denge kaybı yaşıyorum. Randevu almak istiyorum.,10,8,ONCELIKLI,SABLON
+1364,Dünden beri zaman zaman baş dönmesi ve denge kaybı yaşıyorum. Doktora görünmek istiyorum.,10,8,ONCELIKLI,SABLON
+1365,Dünden beri zaman zaman baş dönmesi ve denge kaybı yaşıyorum. Çok rahatsız ediyor.,10,8,ONCELIKLI,SABLON
+1366,Dünden beri zaman zaman baş dönmesi ve denge kaybı yaşıyorum. Artık dayanamıyorum.,10,8,ONCELIKLI,SABLON
+1367,Birkaç gündür zaman zaman baş dönmesi ve denge kaybı yaşıyorum,10,8,ONCELIKLI,SABLON
+1368,Birkaç gündür zaman zaman baş dönmesi ve denge kaybı yaşıyorum. Randevu almak istiyorum.,10,8,ONCELIKLI,SABLON
+1369,Birkaç gündür zaman zaman baş dönmesi ve denge kaybı yaşıyorum. Ne yapmalıyım?,10,8,ONCELIKLI,SABLON
+1370,Birkaç gündür zaman zaman baş dönmesi ve denge kaybı yaşıyorum. Doktora görünmek istiyorum.,10,8,ONCELIKLI,SABLON
+1371,Birkaç gündür zaman zaman baş dönmesi ve denge kaybı yaşıyorum. Artık dayanamıyorum.,10,8,ONCELIKLI,SABLON
+1372,Aylardır zaman zaman baş dönmesi ve denge kaybı yaşıyorum,10,8,ONCELIKLI,SABLON
+1373,İdrar yaparken yanma oluyor,11,,RUTIN,SABLON
+1374,İdrar yaparken yanma oluyor. Hangi bölüme gitmeliyim?,11,,RUTIN,SABLON
+1375,İdrar yaparken yanma oluyor. Randevu almak istiyorum.,11,,RUTIN,SABLON
+1376,İdrar yaparken yanma oluyor. Ne yapmalıyım?,11,,RUTIN,SABLON
+1377,İdrar yaparken yanma oluyor. Doktora görünmek istiyorum.,11,,RUTIN,SABLON
+1378,İdrar yaparken yanma oluyor. Çok rahatsız ediyor.,11,,RUTIN,SABLON
+1379,İdrar yaparken yanma oluyor. Artık dayanamıyorum.,11,,RUTIN,SABLON
+1380,Son günlerde idrar yaparken yanma oluyor,11,,RUTIN,SABLON
+1381,Son günlerde idrar yaparken yanma oluyor. Hangi bölüme gitmeliyim?,11,,RUTIN,SABLON
+1382,Son günlerde idrar yaparken yanma oluyor. Ne yapmalıyım?,11,,RUTIN,SABLON
+1383,Son günlerde idrar yaparken yanma oluyor. Doktora görünmek istiyorum.,11,,RUTIN,SABLON
+1384,Son günlerde idrar yaparken yanma oluyor. Çok rahatsız ediyor.,11,,RUTIN,SABLON
+1385,Son günlerde idrar yaparken yanma oluyor. Artık dayanamıyorum.,11,,RUTIN,SABLON
+1386,Bir haftadır idrar yaparken yanma oluyor. Hangi bölüme gitmeliyim?,11,,RUTIN,SABLON
+1387,Bir haftadır idrar yaparken yanma oluyor. Randevu almak istiyorum.,11,,RUTIN,SABLON
+1388,Bir haftadır idrar yaparken yanma oluyor. Ne yapmalıyım?,11,,RUTIN,SABLON
+1389,Bir haftadır idrar yaparken yanma oluyor. Doktora görünmek istiyorum.,11,,RUTIN,SABLON
+1390,Bir haftadır idrar yaparken yanma oluyor. Çok rahatsız ediyor.,11,,RUTIN,SABLON
+1391,Uzun zamandır idrar yaparken yanma oluyor. Randevu almak istiyorum.,11,,RUTIN,SABLON
+1392,Uzun zamandır idrar yaparken yanma oluyor. Doktora görünmek istiyorum.,11,,RUTIN,SABLON
+1393,Uzun zamandır idrar yaparken yanma oluyor. Çok rahatsız ediyor.,11,,RUTIN,SABLON
+1394,Uzun zamandır idrar yaparken yanma oluyor. Artık dayanamıyorum.,11,,RUTIN,SABLON
+1395,Dünden beri idrar yaparken yanma oluyor. Hangi bölüme gitmeliyim?,11,,RUTIN,SABLON
+1396,Dünden beri idrar yaparken yanma oluyor. Ne yapmalıyım?,11,,RUTIN,SABLON
+1397,Dünden beri idrar yaparken yanma oluyor. Doktora görünmek istiyorum.,11,,RUTIN,SABLON
+1398,Dünden beri idrar yaparken yanma oluyor. Artık dayanamıyorum.,11,,RUTIN,SABLON
+1399,Son zamanlarda idrar yaparken yanma oluyor,11,,RUTIN,SABLON
+1400,Son zamanlarda idrar yaparken yanma oluyor. Doktora görünmek istiyorum.,11,,RUTIN,SABLON
+1401,Son zamanlarda idrar yaparken yanma oluyor. Çok rahatsız ediyor.,11,,RUTIN,SABLON
+1402,Son zamanlarda idrar yaparken yanma oluyor. Artık dayanamıyorum.,11,,RUTIN,SABLON
+1403,Birkaç gündür idrar yaparken yanma oluyor. Hangi bölüme gitmeliyim?,11,,RUTIN,SABLON
+1404,Birkaç gündür idrar yaparken yanma oluyor. Ne yapmalıyım?,11,,RUTIN,SABLON
+1405,Birkaç gündür idrar yaparken yanma oluyor. Çok rahatsız ediyor.,11,,RUTIN,SABLON
+1406,Birkaç gündür idrar yaparken yanma oluyor. Artık dayanamıyorum.,11,,RUTIN,SABLON
+1407,Aylardır idrar yaparken yanma oluyor. Hangi bölüme gitmeliyim?,11,,RUTIN,SABLON
+1408,Aylardır idrar yaparken yanma oluyor. Ne yapmalıyım?,11,,RUTIN,SABLON
+1409,"Böğrümde ağrı var, böbrek taşım olabilir",11,,ONCELIKLI,SABLON
+1410,"Böğrümde ağrı var, böbrek taşım olabilir. Hangi bölüme gitmeliyim?",11,,ONCELIKLI,SABLON
+1411,"Son günlerde böğrümde ağrı var, böbrek taşım olabilir",11,,ONCELIKLI,SABLON
+1412,"Son günlerde böğrümde ağrı var, böbrek taşım olabilir. Ne yapmalıyım?",11,,ONCELIKLI,SABLON
+1413,"Son günlerde böğrümde ağrı var, böbrek taşım olabilir. Doktora görünmek istiyorum.",11,,ONCELIKLI,SABLON
+1414,"Son günlerde böğrümde ağrı var, böbrek taşım olabilir. Çok rahatsız ediyor.",11,,ONCELIKLI,SABLON
+1415,"Son günlerde böğrümde ağrı var, böbrek taşım olabilir. Artık dayanamıyorum.",11,,ONCELIKLI,SABLON
+1416,"Bir haftadır böğrümde ağrı var, böbrek taşım olabilir",11,,ONCELIKLI,SABLON
+1417,"Bir haftadır böğrümde ağrı var, böbrek taşım olabilir. Hangi bölüme gitmeliyim?",11,,ONCELIKLI,SABLON
+1418,"Bir haftadır böğrümde ağrı var, böbrek taşım olabilir. Randevu almak istiyorum.",11,,ONCELIKLI,SABLON
+1419,"Bir haftadır böğrümde ağrı var, böbrek taşım olabilir. Ne yapmalıyım?",11,,ONCELIKLI,SABLON
+1420,"Bir haftadır böğrümde ağrı var, böbrek taşım olabilir. Çok rahatsız ediyor.",11,,ONCELIKLI,SABLON
+1421,"Uzun zamandır böğrümde ağrı var, böbrek taşım olabilir. Hangi bölüme gitmeliyim?",11,,ONCELIKLI,SABLON
+1422,"Uzun zamandır böğrümde ağrı var, böbrek taşım olabilir. Randevu almak istiyorum.",11,,ONCELIKLI,SABLON
+1423,"Uzun zamandır böğrümde ağrı var, böbrek taşım olabilir. Ne yapmalıyım?",11,,ONCELIKLI,SABLON
+1424,"Uzun zamandır böğrümde ağrı var, böbrek taşım olabilir. Artık dayanamıyorum.",11,,ONCELIKLI,SABLON
+1425,"Dünden beri böğrümde ağrı var, böbrek taşım olabilir. Hangi bölüme gitmeliyim?",11,,ONCELIKLI,SABLON
+1426,"Dünden beri böğrümde ağrı var, böbrek taşım olabilir. Ne yapmalıyım?",11,,ONCELIKLI,SABLON
+1427,"Dünden beri böğrümde ağrı var, böbrek taşım olabilir. Doktora görünmek istiyorum.",11,,ONCELIKLI,SABLON
+1428,"Dünden beri böğrümde ağrı var, böbrek taşım olabilir. Çok rahatsız ediyor.",11,,ONCELIKLI,SABLON
+1429,"Son zamanlarda böğrümde ağrı var, böbrek taşım olabilir",11,,ONCELIKLI,SABLON
+1430,"Son zamanlarda böğrümde ağrı var, böbrek taşım olabilir. Randevu almak istiyorum.",11,,ONCELIKLI,SABLON
+1431,"Son zamanlarda böğrümde ağrı var, böbrek taşım olabilir. Doktora görünmek istiyorum.",11,,ONCELIKLI,SABLON
+1432,"Son zamanlarda böğrümde ağrı var, böbrek taşım olabilir. Artık dayanamıyorum.",11,,ONCELIKLI,SABLON
+1433,"Birkaç gündür böğrümde ağrı var, böbrek taşım olabilir. Randevu almak istiyorum.",11,,ONCELIKLI,SABLON
+1434,"Birkaç gündür böğrümde ağrı var, böbrek taşım olabilir. Çok rahatsız ediyor.",11,,ONCELIKLI,SABLON
+1435,"Birkaç gündür böğrümde ağrı var, böbrek taşım olabilir. Artık dayanamıyorum.",11,,ONCELIKLI,SABLON
+1436,"Aylardır böğrümde ağrı var, böbrek taşım olabilir",11,,ONCELIKLI,SABLON
+1437,"Aylardır böğrümde ağrı var, böbrek taşım olabilir. Hangi bölüme gitmeliyim?",11,,ONCELIKLI,SABLON
+1438,"Aylardır böğrümde ağrı var, böbrek taşım olabilir. Ne yapmalıyım?",11,,ONCELIKLI,SABLON
+1439,"Aylardır böğrümde ağrı var, böbrek taşım olabilir. Doktora görünmek istiyorum.",11,,ONCELIKLI,SABLON
+1440,"Aylardır böğrümde ağrı var, böbrek taşım olabilir. Çok rahatsız ediyor.",11,,ONCELIKLI,SABLON
+1441,"Aylardır böğrümde ağrı var, böbrek taşım olabilir. Artık dayanamıyorum.",11,,ONCELIKLI,SABLON
+1442,Geceleri çok sık tuvalete kalkıyorum,11,,RUTIN,SABLON
+1443,Geceleri çok sık tuvalete kalkıyorum. Hangi bölüme gitmeliyim?,11,,RUTIN,SABLON
+1444,Geceleri çok sık tuvalete kalkıyorum. Ne yapmalıyım?,11,,RUTIN,SABLON
+1445,Geceleri çok sık tuvalete kalkıyorum. Doktora görünmek istiyorum.,11,,RUTIN,SABLON
+1446,Geceleri çok sık tuvalete kalkıyorum. Çok rahatsız ediyor.,11,,RUTIN,SABLON
+1447,Geceleri çok sık tuvalete kalkıyorum. Artık dayanamıyorum.,11,,RUTIN,SABLON
+1448,Son günlerde geceleri çok sık tuvalete kalkıyorum,11,,RUTIN,SABLON
+1449,Son günlerde geceleri çok sık tuvalete kalkıyorum. Hangi bölüme gitmeliyim?,11,,RUTIN,SABLON
+1450,Son günlerde geceleri çok sık tuvalete kalkıyorum. Artık dayanamıyorum.,11,,RUTIN,SABLON
+1451,Bir haftadır geceleri çok sık tuvalete kalkıyorum,11,,RUTIN,SABLON
+1452,Bir haftadır geceleri çok sık tuvalete kalkıyorum. Randevu almak istiyorum.,11,,RUTIN,SABLON
+1453,Bir haftadır geceleri çok sık tuvalete kalkıyorum. Doktora görünmek istiyorum.,11,,RUTIN,SABLON
+1454,Bir haftadır geceleri çok sık tuvalete kalkıyorum. Çok rahatsız ediyor.,11,,RUTIN,SABLON
+1455,Bir haftadır geceleri çok sık tuvalete kalkıyorum. Artık dayanamıyorum.,11,,RUTIN,SABLON
+1456,Uzun zamandır geceleri çok sık tuvalete kalkıyorum,11,,RUTIN,SABLON
+1457,Uzun zamandır geceleri çok sık tuvalete kalkıyorum. Ne yapmalıyım?,11,,RUTIN,SABLON
+1458,Uzun zamandır geceleri çok sık tuvalete kalkıyorum. Doktora görünmek istiyorum.,11,,RUTIN,SABLON
+1459,Uzun zamandır geceleri çok sık tuvalete kalkıyorum. Artık dayanamıyorum.,11,,RUTIN,SABLON
+1460,Dünden beri geceleri çok sık tuvalete kalkıyorum. Hangi bölüme gitmeliyim?,11,,RUTIN,SABLON
+1461,Dünden beri geceleri çok sık tuvalete kalkıyorum. Randevu almak istiyorum.,11,,RUTIN,SABLON
+1462,Dünden beri geceleri çok sık tuvalete kalkıyorum. Ne yapmalıyım?,11,,RUTIN,SABLON
+1463,Dünden beri geceleri çok sık tuvalete kalkıyorum. Artık dayanamıyorum.,11,,RUTIN,SABLON
+1464,Son zamanlarda geceleri çok sık tuvalete kalkıyorum,11,,RUTIN,SABLON
+1465,Son zamanlarda geceleri çok sık tuvalete kalkıyorum. Hangi bölüme gitmeliyim?,11,,RUTIN,SABLON
+1466,Son zamanlarda geceleri çok sık tuvalete kalkıyorum. Doktora görünmek istiyorum.,11,,RUTIN,SABLON
+1467,Son zamanlarda geceleri çok sık tuvalete kalkıyorum. Çok rahatsız ediyor.,11,,RUTIN,SABLON
+1468,Birkaç gündür geceleri çok sık tuvalete kalkıyorum,11,,RUTIN,SABLON
+1469,Birkaç gündür geceleri çok sık tuvalete kalkıyorum. Ne yapmalıyım?,11,,RUTIN,SABLON
+1470,Birkaç gündür geceleri çok sık tuvalete kalkıyorum. Doktora görünmek istiyorum.,11,,RUTIN,SABLON
+1471,Birkaç gündür geceleri çok sık tuvalete kalkıyorum. Artık dayanamıyorum.,11,,RUTIN,SABLON
+1472,Aylardır geceleri çok sık tuvalete kalkıyorum. Ne yapmalıyım?,11,,RUTIN,SABLON
+1473,Aylardır geceleri çok sık tuvalete kalkıyorum. Çok rahatsız ediyor.,11,,RUTIN,SABLON
+1474,İdrarımda kan gördüm,11,,ONCELIKLI,SABLON
+1475,İdrarımda kan gördüm. Randevu almak istiyorum.,11,,ONCELIKLI,SABLON
+1476,İdrarımda kan gördüm. Ne yapmalıyım?,11,,ONCELIKLI,SABLON
+1477,İdrarımda kan gördüm. Doktora görünmek istiyorum.,11,,ONCELIKLI,SABLON
+1478,İdrarımı tutmakta zorlanıyorum,11,4,RUTIN,SABLON
+1479,İdrarımı tutmakta zorlanıyorum. Hangi bölüme gitmeliyim?,11,4,RUTIN,SABLON
+1480,İdrarımı tutmakta zorlanıyorum. Randevu almak istiyorum.,11,4,RUTIN,SABLON
+1481,İdrarımı tutmakta zorlanıyorum. Doktora görünmek istiyorum.,11,4,RUTIN,SABLON
+1482,İdrarımı tutmakta zorlanıyorum. Çok rahatsız ediyor.,11,4,RUTIN,SABLON
+1483,Son günlerde idrarımı tutmakta zorlanıyorum,11,4,RUTIN,SABLON
+1484,Son günlerde idrarımı tutmakta zorlanıyorum. Hangi bölüme gitmeliyim?,11,4,RUTIN,SABLON
+1485,Son günlerde idrarımı tutmakta zorlanıyorum. Randevu almak istiyorum.,11,4,RUTIN,SABLON
+1486,Son günlerde idrarımı tutmakta zorlanıyorum. Doktora görünmek istiyorum.,11,4,RUTIN,SABLON
+1487,Bir haftadır idrarımı tutmakta zorlanıyorum,11,4,RUTIN,SABLON
+1488,Bir haftadır idrarımı tutmakta zorlanıyorum. Hangi bölüme gitmeliyim?,11,4,RUTIN,SABLON
+1489,Bir haftadır idrarımı tutmakta zorlanıyorum. Doktora görünmek istiyorum.,11,4,RUTIN,SABLON
+1490,Bir haftadır idrarımı tutmakta zorlanıyorum. Çok rahatsız ediyor.,11,4,RUTIN,SABLON
+1491,Bir haftadır idrarımı tutmakta zorlanıyorum. Artık dayanamıyorum.,11,4,RUTIN,SABLON
+1492,Uzun zamandır idrarımı tutmakta zorlanıyorum,11,4,RUTIN,SABLON
+1493,Uzun zamandır idrarımı tutmakta zorlanıyorum. Hangi bölüme gitmeliyim?,11,4,RUTIN,SABLON
+1494,Uzun zamandır idrarımı tutmakta zorlanıyorum. Çok rahatsız ediyor.,11,4,RUTIN,SABLON
+1495,Dünden beri idrarımı tutmakta zorlanıyorum. Hangi bölüme gitmeliyim?,11,4,RUTIN,SABLON
+1496,Dünden beri idrarımı tutmakta zorlanıyorum. Randevu almak istiyorum.,11,4,RUTIN,SABLON
+1497,Dünden beri idrarımı tutmakta zorlanıyorum. Ne yapmalıyım?,11,4,RUTIN,SABLON
+1498,Dünden beri idrarımı tutmakta zorlanıyorum. Çok rahatsız ediyor.,11,4,RUTIN,SABLON
+1499,Dünden beri idrarımı tutmakta zorlanıyorum. Artık dayanamıyorum.,11,4,RUTIN,SABLON
+1500,Son zamanlarda idrarımı tutmakta zorlanıyorum,11,4,RUTIN,SABLON
+1501,Son zamanlarda idrarımı tutmakta zorlanıyorum. Hangi bölüme gitmeliyim?,11,4,RUTIN,SABLON
+1502,Son zamanlarda idrarımı tutmakta zorlanıyorum. Randevu almak istiyorum.,11,4,RUTIN,SABLON
+1503,Son zamanlarda idrarımı tutmakta zorlanıyorum. Doktora görünmek istiyorum.,11,4,RUTIN,SABLON
+1504,Son zamanlarda idrarımı tutmakta zorlanıyorum. Çok rahatsız ediyor.,11,4,RUTIN,SABLON
+1505,Son zamanlarda idrarımı tutmakta zorlanıyorum. Artık dayanamıyorum.,11,4,RUTIN,SABLON
+1506,Birkaç gündür idrarımı tutmakta zorlanıyorum. Hangi bölüme gitmeliyim?,11,4,RUTIN,SABLON
+1507,Birkaç gündür idrarımı tutmakta zorlanıyorum. Randevu almak istiyorum.,11,4,RUTIN,SABLON
+1508,Birkaç gündür idrarımı tutmakta zorlanıyorum. Artık dayanamıyorum.,11,4,RUTIN,SABLON
+1509,Aylardır idrarımı tutmakta zorlanıyorum,11,4,RUTIN,SABLON
+1510,Aylardır idrarımı tutmakta zorlanıyorum. Randevu almak istiyorum.,11,4,RUTIN,SABLON
+1511,Aylardır idrarımı tutmakta zorlanıyorum. Artık dayanamıyorum.,11,4,RUTIN,SABLON
+1512,Haftalardır geçmeyen öksürüğüm var,12,,ONCELIKLI,SABLON
+1513,Haftalardır geçmeyen öksürüğüm var. Randevu almak istiyorum.,12,,ONCELIKLI,SABLON
+1514,Haftalardır geçmeyen öksürüğüm var. Ne yapmalıyım?,12,,ONCELIKLI,SABLON
+1515,Haftalardır geçmeyen öksürüğüm var. Çok rahatsız ediyor.,12,,ONCELIKLI,SABLON
+1516,Son günlerde haftalardır geçmeyen öksürüğüm var,12,,ONCELIKLI,SABLON
+1517,Son günlerde haftalardır geçmeyen öksürüğüm var. Randevu almak istiyorum.,12,,ONCELIKLI,SABLON
+1518,Son günlerde haftalardır geçmeyen öksürüğüm var. Ne yapmalıyım?,12,,ONCELIKLI,SABLON
+1519,Son günlerde haftalardır geçmeyen öksürüğüm var. Doktora görünmek istiyorum.,12,,ONCELIKLI,SABLON
+1520,Son günlerde haftalardır geçmeyen öksürüğüm var. Artık dayanamıyorum.,12,,ONCELIKLI,SABLON
+1521,Bir haftadır haftalardır geçmeyen öksürüğüm var,12,,ONCELIKLI,SABLON
+1522,Bir haftadır haftalardır geçmeyen öksürüğüm var. Hangi bölüme gitmeliyim?,12,,ONCELIKLI,SABLON
+1523,Bir haftadır haftalardır geçmeyen öksürüğüm var. Doktora görünmek istiyorum.,12,,ONCELIKLI,SABLON
+1524,Bir haftadır haftalardır geçmeyen öksürüğüm var. Artık dayanamıyorum.,12,,ONCELIKLI,SABLON
+1525,Uzun zamandır haftalardır geçmeyen öksürüğüm var,12,,ONCELIKLI,SABLON
+1526,Uzun zamandır haftalardır geçmeyen öksürüğüm var. Randevu almak istiyorum.,12,,ONCELIKLI,SABLON
+1527,Uzun zamandır haftalardır geçmeyen öksürüğüm var. Çok rahatsız ediyor.,12,,ONCELIKLI,SABLON
+1528,Uzun zamandır haftalardır geçmeyen öksürüğüm var. Artık dayanamıyorum.,12,,ONCELIKLI,SABLON
+1529,Dünden beri haftalardır geçmeyen öksürüğüm var. Hangi bölüme gitmeliyim?,12,,ONCELIKLI,SABLON
+1530,Dünden beri haftalardır geçmeyen öksürüğüm var. Ne yapmalıyım?,12,,ONCELIKLI,SABLON
+1531,Dünden beri haftalardır geçmeyen öksürüğüm var. Doktora görünmek istiyorum.,12,,ONCELIKLI,SABLON
+1532,Dünden beri haftalardır geçmeyen öksürüğüm var. Çok rahatsız ediyor.,12,,ONCELIKLI,SABLON
+1533,Dünden beri haftalardır geçmeyen öksürüğüm var. Artık dayanamıyorum.,12,,ONCELIKLI,SABLON
+1534,Son zamanlarda haftalardır geçmeyen öksürüğüm var,12,,ONCELIKLI,SABLON
+1535,Son zamanlarda haftalardır geçmeyen öksürüğüm var. Hangi bölüme gitmeliyim?,12,,ONCELIKLI,SABLON
+1536,Son zamanlarda haftalardır geçmeyen öksürüğüm var. Randevu almak istiyorum.,12,,ONCELIKLI,SABLON
+1537,Son zamanlarda haftalardır geçmeyen öksürüğüm var. Ne yapmalıyım?,12,,ONCELIKLI,SABLON
+1538,Son zamanlarda haftalardır geçmeyen öksürüğüm var. Çok rahatsız ediyor.,12,,ONCELIKLI,SABLON
+1539,Birkaç gündür haftalardır geçmeyen öksürüğüm var. Randevu almak istiyorum.,12,,ONCELIKLI,SABLON
+1540,Birkaç gündür haftalardır geçmeyen öksürüğüm var. Doktora görünmek istiyorum.,12,,ONCELIKLI,SABLON
+1541,Birkaç gündür haftalardır geçmeyen öksürüğüm var. Çok rahatsız ediyor.,12,,ONCELIKLI,SABLON
+1542,Birkaç gündür haftalardır geçmeyen öksürüğüm var. Artık dayanamıyorum.,12,,ONCELIKLI,SABLON
+1543,Aylardır haftalardır geçmeyen öksürüğüm var. Ne yapmalıyım?,12,,ONCELIKLI,SABLON
+1544,Aylardır haftalardır geçmeyen öksürüğüm var. Doktora görünmek istiyorum.,12,,ONCELIKLI,SABLON
+1545,Aylardır haftalardır geçmeyen öksürüğüm var. Çok rahatsız ediyor.,12,,ONCELIKLI,SABLON
+1546,"Nefes darlığım var, hırıltılı soluyorum",12,2,ONCELIKLI,SABLON
+1547,"Nefes darlığım var, hırıltılı soluyorum. Randevu almak istiyorum.",12,2,ONCELIKLI,SABLON
+1548,"Nefes darlığım var, hırıltılı soluyorum. Çok rahatsız ediyor.",12,2,ONCELIKLI,SABLON
+1549,"Nefes darlığım var, hırıltılı soluyorum. Artık dayanamıyorum.",12,2,ONCELIKLI,SABLON
+1550,"Son günlerde nefes darlığım var, hırıltılı soluyorum",12,2,ONCELIKLI,SABLON
+1551,"Son günlerde nefes darlığım var, hırıltılı soluyorum. Hangi bölüme gitmeliyim?",12,2,ONCELIKLI,SABLON
+1552,"Son günlerde nefes darlığım var, hırıltılı soluyorum. Randevu almak istiyorum.",12,2,ONCELIKLI,SABLON
+1553,"Son günlerde nefes darlığım var, hırıltılı soluyorum. Ne yapmalıyım?",12,2,ONCELIKLI,SABLON
+1554,"Son günlerde nefes darlığım var, hırıltılı soluyorum. Çok rahatsız ediyor.",12,2,ONCELIKLI,SABLON
+1555,"Bir haftadır nefes darlığım var, hırıltılı soluyorum. Hangi bölüme gitmeliyim?",12,2,ONCELIKLI,SABLON
+1556,"Bir haftadır nefes darlığım var, hırıltılı soluyorum. Ne yapmalıyım?",12,2,ONCELIKLI,SABLON
+1557,"Bir haftadır nefes darlığım var, hırıltılı soluyorum. Doktora görünmek istiyorum.",12,2,ONCELIKLI,SABLON
+1558,"Uzun zamandır nefes darlığım var, hırıltılı soluyorum. Hangi bölüme gitmeliyim?",12,2,ONCELIKLI,SABLON
+1559,"Uzun zamandır nefes darlığım var, hırıltılı soluyorum. Randevu almak istiyorum.",12,2,ONCELIKLI,SABLON
+1560,"Uzun zamandır nefes darlığım var, hırıltılı soluyorum. Ne yapmalıyım?",12,2,ONCELIKLI,SABLON
+1561,"Uzun zamandır nefes darlığım var, hırıltılı soluyorum. Doktora görünmek istiyorum.",12,2,ONCELIKLI,SABLON
+1562,"Uzun zamandır nefes darlığım var, hırıltılı soluyorum. Çok rahatsız ediyor.",12,2,ONCELIKLI,SABLON
+1563,"Uzun zamandır nefes darlığım var, hırıltılı soluyorum. Artık dayanamıyorum.",12,2,ONCELIKLI,SABLON
+1564,"Dünden beri nefes darlığım var, hırıltılı soluyorum. Randevu almak istiyorum.",12,2,ONCELIKLI,SABLON
+1565,"Dünden beri nefes darlığım var, hırıltılı soluyorum. Artık dayanamıyorum.",12,2,ONCELIKLI,SABLON
+1566,"Son zamanlarda nefes darlığım var, hırıltılı soluyorum",12,2,ONCELIKLI,SABLON
+1567,"Son zamanlarda nefes darlığım var, hırıltılı soluyorum. Ne yapmalıyım?",12,2,ONCELIKLI,SABLON
+1568,"Son zamanlarda nefes darlığım var, hırıltılı soluyorum. Doktora görünmek istiyorum.",12,2,ONCELIKLI,SABLON
+1569,"Son zamanlarda nefes darlığım var, hırıltılı soluyorum. Çok rahatsız ediyor.",12,2,ONCELIKLI,SABLON
+1570,"Son zamanlarda nefes darlığım var, hırıltılı soluyorum. Artık dayanamıyorum.",12,2,ONCELIKLI,SABLON
+1571,"Birkaç gündür nefes darlığım var, hırıltılı soluyorum. Hangi bölüme gitmeliyim?",12,2,ONCELIKLI,SABLON
+1572,"Birkaç gündür nefes darlığım var, hırıltılı soluyorum. Randevu almak istiyorum.",12,2,ONCELIKLI,SABLON
+1573,"Birkaç gündür nefes darlığım var, hırıltılı soluyorum. Ne yapmalıyım?",12,2,ONCELIKLI,SABLON
+1574,"Birkaç gündür nefes darlığım var, hırıltılı soluyorum. Doktora görünmek istiyorum.",12,2,ONCELIKLI,SABLON
+1575,"Aylardır nefes darlığım var, hırıltılı soluyorum. Doktora görünmek istiyorum.",12,2,ONCELIKLI,SABLON
+1576,"Aylardır nefes darlığım var, hırıltılı soluyorum. Çok rahatsız ediyor.",12,2,ONCELIKLI,SABLON
+1577,"Aylardır nefes darlığım var, hırıltılı soluyorum. Artık dayanamıyorum.",12,2,ONCELIKLI,SABLON
+1578,Astım ilaçlarımı kontrol ettirmek istiyorum,12,,RUTIN,SABLON
+1579,"Uykuda horluyorum, nefesim duruyormuş",12,8,RUTIN,SABLON
+1580,"Uykuda horluyorum, nefesim duruyormuş. Randevu almak istiyorum.",12,8,RUTIN,SABLON
+1581,"Uykuda horluyorum, nefesim duruyormuş. Ne yapmalıyım?",12,8,RUTIN,SABLON
+1582,"Uykuda horluyorum, nefesim duruyormuş. Doktora görünmek istiyorum.",12,8,RUTIN,SABLON
+1583,"Uykuda horluyorum, nefesim duruyormuş. Çok rahatsız ediyor.",12,8,RUTIN,SABLON
+1584,"Uykuda horluyorum, nefesim duruyormuş. Artık dayanamıyorum.",12,8,RUTIN,SABLON
+1585,"Son günlerde uykuda horluyorum, nefesim duruyormuş",12,8,RUTIN,SABLON
+1586,"Son günlerde uykuda horluyorum, nefesim duruyormuş. Hangi bölüme gitmeliyim?",12,8,RUTIN,SABLON
+1587,"Son günlerde uykuda horluyorum, nefesim duruyormuş. Ne yapmalıyım?",12,8,RUTIN,SABLON
+1588,"Bir haftadır uykuda horluyorum, nefesim duruyormuş. Hangi bölüme gitmeliyim?",12,8,RUTIN,SABLON
+1589,"Bir haftadır uykuda horluyorum, nefesim duruyormuş. Randevu almak istiyorum.",12,8,RUTIN,SABLON
+1590,"Bir haftadır uykuda horluyorum, nefesim duruyormuş. Ne yapmalıyım?",12,8,RUTIN,SABLON
+1591,"Bir haftadır uykuda horluyorum, nefesim duruyormuş. Doktora görünmek istiyorum.",12,8,RUTIN,SABLON
+1592,"Bir haftadır uykuda horluyorum, nefesim duruyormuş. Artık dayanamıyorum.",12,8,RUTIN,SABLON
+1593,"Uzun zamandır uykuda horluyorum, nefesim duruyormuş. Ne yapmalıyım?",12,8,RUTIN,SABLON
+1594,"Dünden beri uykuda horluyorum, nefesim duruyormuş. Hangi bölüme gitmeliyim?",12,8,RUTIN,SABLON
+1595,"Dünden beri uykuda horluyorum, nefesim duruyormuş. Randevu almak istiyorum.",12,8,RUTIN,SABLON
+1596,"Dünden beri uykuda horluyorum, nefesim duruyormuş. Ne yapmalıyım?",12,8,RUTIN,SABLON
+1597,"Dünden beri uykuda horluyorum, nefesim duruyormuş. Doktora görünmek istiyorum.",12,8,RUTIN,SABLON
+1598,"Dünden beri uykuda horluyorum, nefesim duruyormuş. Çok rahatsız ediyor.",12,8,RUTIN,SABLON
+1599,"Dünden beri uykuda horluyorum, nefesim duruyormuş. Artık dayanamıyorum.",12,8,RUTIN,SABLON
+1600,"Son zamanlarda uykuda horluyorum, nefesim duruyormuş. Hangi bölüme gitmeliyim?",12,8,RUTIN,SABLON
+1601,"Son zamanlarda uykuda horluyorum, nefesim duruyormuş. Randevu almak istiyorum.",12,8,RUTIN,SABLON
+1602,"Son zamanlarda uykuda horluyorum, nefesim duruyormuş. Ne yapmalıyım?",12,8,RUTIN,SABLON
+1603,"Son zamanlarda uykuda horluyorum, nefesim duruyormuş. Doktora görünmek istiyorum.",12,8,RUTIN,SABLON
+1604,"Son zamanlarda uykuda horluyorum, nefesim duruyormuş. Çok rahatsız ediyor.",12,8,RUTIN,SABLON
+1605,"Birkaç gündür uykuda horluyorum, nefesim duruyormuş",12,8,RUTIN,SABLON
+1606,"Birkaç gündür uykuda horluyorum, nefesim duruyormuş. Randevu almak istiyorum.",12,8,RUTIN,SABLON
+1607,"Birkaç gündür uykuda horluyorum, nefesim duruyormuş. Doktora görünmek istiyorum.",12,8,RUTIN,SABLON
+1608,"Birkaç gündür uykuda horluyorum, nefesim duruyormuş. Çok rahatsız ediyor.",12,8,RUTIN,SABLON
+1609,"Birkaç gündür uykuda horluyorum, nefesim duruyormuş. Artık dayanamıyorum.",12,8,RUTIN,SABLON
+1610,"Aylardır uykuda horluyorum, nefesim duruyormuş",12,8,RUTIN,SABLON
+1611,"Aylardır uykuda horluyorum, nefesim duruyormuş. Randevu almak istiyorum.",12,8,RUTIN,SABLON
+1612,"Aylardır uykuda horluyorum, nefesim duruyormuş. Ne yapmalıyım?",12,8,RUTIN,SABLON
+1613,"Aylardır uykuda horluyorum, nefesim duruyormuş. Artık dayanamıyorum.",12,8,RUTIN,SABLON
+1614,"Balgamım çok, sigarayı bırakmak istiyorum",12,,RUTIN,SABLON
+1615,"Balgamım çok, sigarayı bırakmak istiyorum. Hangi bölüme gitmeliyim?",12,,RUTIN,SABLON
+1616,Uzun zamandır hiçbir şeyden keyif alamıyorum,13,,RUTIN,SABLON
+1617,Uzun zamandır hiçbir şeyden keyif alamıyorum. Hangi bölüme gitmeliyim?,13,,RUTIN,SABLON
+1618,Uzun zamandır hiçbir şeyden keyif alamıyorum. Doktora görünmek istiyorum.,13,,RUTIN,SABLON
+1619,Uzun zamandır hiçbir şeyden keyif alamıyorum. Çok rahatsız ediyor.,13,,RUTIN,SABLON
+1620,Uzun zamandır hiçbir şeyden keyif alamıyorum. Artık dayanamıyorum.,13,,RUTIN,SABLON
+1621,Son günlerde uzun zamandır hiçbir şeyden keyif alamıyorum,13,,RUTIN,SABLON
+1622,Son günlerde uzun zamandır hiçbir şeyden keyif alamıyorum. Hangi bölüme gitmeliyim?,13,,RUTIN,SABLON
+1623,Son günlerde uzun zamandır hiçbir şeyden keyif alamıyorum. Randevu almak istiyorum.,13,,RUTIN,SABLON
+1624,Bir haftadır uzun zamandır hiçbir şeyden keyif alamıyorum,13,,RUTIN,SABLON
+1625,Bir haftadır uzun zamandır hiçbir şeyden keyif alamıyorum. Hangi bölüme gitmeliyim?,13,,RUTIN,SABLON
+1626,Bir haftadır uzun zamandır hiçbir şeyden keyif alamıyorum. Randevu almak istiyorum.,13,,RUTIN,SABLON
+1627,Bir haftadır uzun zamandır hiçbir şeyden keyif alamıyorum. Doktora görünmek istiyorum.,13,,RUTIN,SABLON
+1628,Uzun zamandır uzun zamandır hiçbir şeyden keyif alamıyorum,13,,RUTIN,SABLON
+1629,Uzun zamandır uzun zamandır hiçbir şeyden keyif alamıyorum. Doktora görünmek istiyorum.,13,,RUTIN,SABLON
+1630,Dünden beri uzun zamandır hiçbir şeyden keyif alamıyorum,13,,RUTIN,SABLON
+1631,Dünden beri uzun zamandır hiçbir şeyden keyif alamıyorum. Hangi bölüme gitmeliyim?,13,,RUTIN,SABLON
+1632,Dünden beri uzun zamandır hiçbir şeyden keyif alamıyorum. Randevu almak istiyorum.,13,,RUTIN,SABLON
+1633,Dünden beri uzun zamandır hiçbir şeyden keyif alamıyorum. Doktora görünmek istiyorum.,13,,RUTIN,SABLON
+1634,Dünden beri uzun zamandır hiçbir şeyden keyif alamıyorum. Artık dayanamıyorum.,13,,RUTIN,SABLON
+1635,Son zamanlarda uzun zamandır hiçbir şeyden keyif alamıyorum,13,,RUTIN,SABLON
+1636,Son zamanlarda uzun zamandır hiçbir şeyden keyif alamıyorum. Hangi bölüme gitmeliyim?,13,,RUTIN,SABLON
+1637,Son zamanlarda uzun zamandır hiçbir şeyden keyif alamıyorum. Randevu almak istiyorum.,13,,RUTIN,SABLON
+1638,Son zamanlarda uzun zamandır hiçbir şeyden keyif alamıyorum. Ne yapmalıyım?,13,,RUTIN,SABLON
+1639,Son zamanlarda uzun zamandır hiçbir şeyden keyif alamıyorum. Doktora görünmek istiyorum.,13,,RUTIN,SABLON
+1640,Son zamanlarda uzun zamandır hiçbir şeyden keyif alamıyorum. Çok rahatsız ediyor.,13,,RUTIN,SABLON
+1641,Birkaç gündür uzun zamandır hiçbir şeyden keyif alamıyorum. Hangi bölüme gitmeliyim?,13,,RUTIN,SABLON
+1642,Birkaç gündür uzun zamandır hiçbir şeyden keyif alamıyorum. Randevu almak istiyorum.,13,,RUTIN,SABLON
+1643,Birkaç gündür uzun zamandır hiçbir şeyden keyif alamıyorum. Ne yapmalıyım?,13,,RUTIN,SABLON
+1644,Birkaç gündür uzun zamandır hiçbir şeyden keyif alamıyorum. Doktora görünmek istiyorum.,13,,RUTIN,SABLON
+1645,Aylardır uzun zamandır hiçbir şeyden keyif alamıyorum,13,,RUTIN,SABLON
+1646,Aylardır uzun zamandır hiçbir şeyden keyif alamıyorum. Hangi bölüme gitmeliyim?,13,,RUTIN,SABLON
+1647,Aylardır uzun zamandır hiçbir şeyden keyif alamıyorum. Ne yapmalıyım?,13,,RUTIN,SABLON
+1648,Aylardır uzun zamandır hiçbir şeyden keyif alamıyorum. Artık dayanamıyorum.,13,,RUTIN,SABLON
+1649,"Uyuyamıyorum, kaygılarım çok arttı",13,,RUTIN,SABLON
+1650,"Uyuyamıyorum, kaygılarım çok arttı. Ne yapmalıyım?",13,,RUTIN,SABLON
+1651,"Uyuyamıyorum, kaygılarım çok arttı. Doktora görünmek istiyorum.",13,,RUTIN,SABLON
+1652,"Uyuyamıyorum, kaygılarım çok arttı. Çok rahatsız ediyor.",13,,RUTIN,SABLON
+1653,"Uyuyamıyorum, kaygılarım çok arttı. Artık dayanamıyorum.",13,,RUTIN,SABLON
+1654,"Son günlerde uyuyamıyorum, kaygılarım çok arttı",13,,RUTIN,SABLON
+1655,"Son günlerde uyuyamıyorum, kaygılarım çok arttı. Hangi bölüme gitmeliyim?",13,,RUTIN,SABLON
+1656,"Son günlerde uyuyamıyorum, kaygılarım çok arttı. Randevu almak istiyorum.",13,,RUTIN,SABLON
+1657,"Son günlerde uyuyamıyorum, kaygılarım çok arttı. Ne yapmalıyım?",13,,RUTIN,SABLON
+1658,"Son günlerde uyuyamıyorum, kaygılarım çok arttı. Çok rahatsız ediyor.",13,,RUTIN,SABLON
+1659,"Son günlerde uyuyamıyorum, kaygılarım çok arttı. Artık dayanamıyorum.",13,,RUTIN,SABLON
+1660,"Bir haftadır uyuyamıyorum, kaygılarım çok arttı. Randevu almak istiyorum.",13,,RUTIN,SABLON
+1661,"Bir haftadır uyuyamıyorum, kaygılarım çok arttı. Ne yapmalıyım?",13,,RUTIN,SABLON
+1662,"Bir haftadır uyuyamıyorum, kaygılarım çok arttı. Doktora görünmek istiyorum.",13,,RUTIN,SABLON
+1663,"Bir haftadır uyuyamıyorum, kaygılarım çok arttı. Çok rahatsız ediyor.",13,,RUTIN,SABLON
+1664,"Bir haftadır uyuyamıyorum, kaygılarım çok arttı. Artık dayanamıyorum.",13,,RUTIN,SABLON
+1665,"Uzun zamandır uyuyamıyorum, kaygılarım çok arttı",13,,RUTIN,SABLON
+1666,"Uzun zamandır uyuyamıyorum, kaygılarım çok arttı. Hangi bölüme gitmeliyim?",13,,RUTIN,SABLON
+1667,"Uzun zamandır uyuyamıyorum, kaygılarım çok arttı. Doktora görünmek istiyorum.",13,,RUTIN,SABLON
+1668,"Uzun zamandır uyuyamıyorum, kaygılarım çok arttı. Artık dayanamıyorum.",13,,RUTIN,SABLON
+1669,"Dünden beri uyuyamıyorum, kaygılarım çok arttı",13,,RUTIN,SABLON
+1670,"Dünden beri uyuyamıyorum, kaygılarım çok arttı. Randevu almak istiyorum.",13,,RUTIN,SABLON
+1671,"Dünden beri uyuyamıyorum, kaygılarım çok arttı. Ne yapmalıyım?",13,,RUTIN,SABLON
+1672,"Dünden beri uyuyamıyorum, kaygılarım çok arttı. Doktora görünmek istiyorum.",13,,RUTIN,SABLON
+1673,"Dünden beri uyuyamıyorum, kaygılarım çok arttı. Artık dayanamıyorum.",13,,RUTIN,SABLON
+1674,"Son zamanlarda uyuyamıyorum, kaygılarım çok arttı",13,,RUTIN,SABLON
+1675,"Son zamanlarda uyuyamıyorum, kaygılarım çok arttı. Hangi bölüme gitmeliyim?",13,,RUTIN,SABLON
+1676,"Son zamanlarda uyuyamıyorum, kaygılarım çok arttı. Randevu almak istiyorum.",13,,RUTIN,SABLON
+1677,"Son zamanlarda uyuyamıyorum, kaygılarım çok arttı. Ne yapmalıyım?",13,,RUTIN,SABLON
+1678,"Birkaç gündür uyuyamıyorum, kaygılarım çok arttı",13,,RUTIN,SABLON
+1679,"Birkaç gündür uyuyamıyorum, kaygılarım çok arttı. Hangi bölüme gitmeliyim?",13,,RUTIN,SABLON
+1680,"Birkaç gündür uyuyamıyorum, kaygılarım çok arttı. Doktora görünmek istiyorum.",13,,RUTIN,SABLON
+1681,"Birkaç gündür uyuyamıyorum, kaygılarım çok arttı. Artık dayanamıyorum.",13,,RUTIN,SABLON
+1682,"Aylardır uyuyamıyorum, kaygılarım çok arttı",13,,RUTIN,SABLON
+1683,"Aylardır uyuyamıyorum, kaygılarım çok arttı. Hangi bölüme gitmeliyim?",13,,RUTIN,SABLON
+1684,"Aylardır uyuyamıyorum, kaygılarım çok arttı. Randevu almak istiyorum.",13,,RUTIN,SABLON
+1685,"Aylardır uyuyamıyorum, kaygılarım çok arttı. Ne yapmalıyım?",13,,RUTIN,SABLON
+1686,"Aylardır uyuyamıyorum, kaygılarım çok arttı. Artık dayanamıyorum.",13,,RUTIN,SABLON
+1687,"Durduk yere kalbim sıkışıyor, panik atak geçiriyor olabilirim",13,2,RUTIN,SABLON
+1688,"Durduk yere kalbim sıkışıyor, panik atak geçiriyor olabilirim. Doktora görünmek istiyorum.",13,2,RUTIN,SABLON
+1689,"Durduk yere kalbim sıkışıyor, panik atak geçiriyor olabilirim. Çok rahatsız ediyor.",13,2,RUTIN,SABLON
+1690,"Durduk yere kalbim sıkışıyor, panik atak geçiriyor olabilirim. Artık dayanamıyorum.",13,2,RUTIN,SABLON
+1691,"Son günlerde durduk yere kalbim sıkışıyor, panik atak geçiriyor olabilirim. Randevu almak istiyorum.",13,2,RUTIN,SABLON
+1692,"Son günlerde durduk yere kalbim sıkışıyor, panik atak geçiriyor olabilirim. Ne yapmalıyım?",13,2,RUTIN,SABLON
+1693,"Son günlerde durduk yere kalbim sıkışıyor, panik atak geçiriyor olabilirim. Çok rahatsız ediyor.",13,2,RUTIN,SABLON
+1694,"Son günlerde durduk yere kalbim sıkışıyor, panik atak geçiriyor olabilirim. Artık dayanamıyorum.",13,2,RUTIN,SABLON
+1695,"Bir haftadır durduk yere kalbim sıkışıyor, panik atak geçiriyor olabilirim",13,2,RUTIN,SABLON
+1696,"Bir haftadır durduk yere kalbim sıkışıyor, panik atak geçiriyor olabilirim. Hangi bölüme gitmeliyim?",13,2,RUTIN,SABLON
+1697,"Bir haftadır durduk yere kalbim sıkışıyor, panik atak geçiriyor olabilirim. Artık dayanamıyorum.",13,2,RUTIN,SABLON
+1698,"Uzun zamandır durduk yere kalbim sıkışıyor, panik atak geçiriyor olabilirim",13,2,RUTIN,SABLON
+1699,"Uzun zamandır durduk yere kalbim sıkışıyor, panik atak geçiriyor olabilirim. Hangi bölüme gitmeliyim?",13,2,RUTIN,SABLON
+1700,"Uzun zamandır durduk yere kalbim sıkışıyor, panik atak geçiriyor olabilirim. Ne yapmalıyım?",13,2,RUTIN,SABLON
+1701,"Uzun zamandır durduk yere kalbim sıkışıyor, panik atak geçiriyor olabilirim. Doktora görünmek istiyorum.",13,2,RUTIN,SABLON
+1702,"Uzun zamandır durduk yere kalbim sıkışıyor, panik atak geçiriyor olabilirim. Çok rahatsız ediyor.",13,2,RUTIN,SABLON
+1703,"Uzun zamandır durduk yere kalbim sıkışıyor, panik atak geçiriyor olabilirim. Artık dayanamıyorum.",13,2,RUTIN,SABLON
+1704,"Dünden beri durduk yere kalbim sıkışıyor, panik atak geçiriyor olabilirim. Randevu almak istiyorum.",13,2,RUTIN,SABLON
+1705,"Dünden beri durduk yere kalbim sıkışıyor, panik atak geçiriyor olabilirim. Ne yapmalıyım?",13,2,RUTIN,SABLON
+1706,"Dünden beri durduk yere kalbim sıkışıyor, panik atak geçiriyor olabilirim. Çok rahatsız ediyor.",13,2,RUTIN,SABLON
+1707,"Son zamanlarda durduk yere kalbim sıkışıyor, panik atak geçiriyor olabilirim",13,2,RUTIN,SABLON
+1708,"Son zamanlarda durduk yere kalbim sıkışıyor, panik atak geçiriyor olabilirim. Randevu almak istiyorum.",13,2,RUTIN,SABLON
+1709,"Son zamanlarda durduk yere kalbim sıkışıyor, panik atak geçiriyor olabilirim. Doktora görünmek istiyorum.",13,2,RUTIN,SABLON
+1710,"Son zamanlarda durduk yere kalbim sıkışıyor, panik atak geçiriyor olabilirim. Çok rahatsız ediyor.",13,2,RUTIN,SABLON
+1711,"Son zamanlarda durduk yere kalbim sıkışıyor, panik atak geçiriyor olabilirim. Artık dayanamıyorum.",13,2,RUTIN,SABLON
+1712,"Birkaç gündür durduk yere kalbim sıkışıyor, panik atak geçiriyor olabilirim",13,2,RUTIN,SABLON
+1713,"Birkaç gündür durduk yere kalbim sıkışıyor, panik atak geçiriyor olabilirim. Hangi bölüme gitmeliyim?",13,2,RUTIN,SABLON
+1714,"Birkaç gündür durduk yere kalbim sıkışıyor, panik atak geçiriyor olabilirim. Randevu almak istiyorum.",13,2,RUTIN,SABLON
+1715,"Birkaç gündür durduk yere kalbim sıkışıyor, panik atak geçiriyor olabilirim. Ne yapmalıyım?",13,2,RUTIN,SABLON
+1716,"Birkaç gündür durduk yere kalbim sıkışıyor, panik atak geçiriyor olabilirim. Doktora görünmek istiyorum.",13,2,RUTIN,SABLON
+1717,"Birkaç gündür durduk yere kalbim sıkışıyor, panik atak geçiriyor olabilirim. Artık dayanamıyorum.",13,2,RUTIN,SABLON
+1718,"Aylardır durduk yere kalbim sıkışıyor, panik atak geçiriyor olabilirim",13,2,RUTIN,SABLON
+1719,"Aylardır durduk yere kalbim sıkışıyor, panik atak geçiriyor olabilirim. Hangi bölüme gitmeliyim?",13,2,RUTIN,SABLON
+1720,"Aylardır durduk yere kalbim sıkışıyor, panik atak geçiriyor olabilirim. Randevu almak istiyorum.",13,2,RUTIN,SABLON
+1721,"Aylardır durduk yere kalbim sıkışıyor, panik atak geçiriyor olabilirim. Ne yapmalıyım?",13,2,RUTIN,SABLON
+1722,"Aylardır durduk yere kalbim sıkışıyor, panik atak geçiriyor olabilirim. Çok rahatsız ediyor.",13,2,RUTIN,SABLON
+1723,"Aylardır durduk yere kalbim sıkışıyor, panik atak geçiriyor olabilirim. Artık dayanamıyorum.",13,2,RUTIN,SABLON
+1724,Kontrol edemediğim takıntılı düşüncelerim var,13,,RUTIN,SABLON
+1725,Kontrol edemediğim takıntılı düşüncelerim var. Randevu almak istiyorum.,13,,RUTIN,SABLON
+1726,Kontrol edemediğim takıntılı düşüncelerim var. Doktora görünmek istiyorum.,13,,RUTIN,SABLON
+1727,Kontrol edemediğim takıntılı düşüncelerim var. Çok rahatsız ediyor.,13,,RUTIN,SABLON
+1728,Kontrol edemediğim takıntılı düşüncelerim var. Artık dayanamıyorum.,13,,RUTIN,SABLON
+1729,Son günlerde kontrol edemediğim takıntılı düşüncelerim var,13,,RUTIN,SABLON
+1730,Son günlerde kontrol edemediğim takıntılı düşüncelerim var. Hangi bölüme gitmeliyim?,13,,RUTIN,SABLON
+1731,Son günlerde kontrol edemediğim takıntılı düşüncelerim var. Randevu almak istiyorum.,13,,RUTIN,SABLON
+1732,Son günlerde kontrol edemediğim takıntılı düşüncelerim var. Çok rahatsız ediyor.,13,,RUTIN,SABLON
+1733,Son günlerde kontrol edemediğim takıntılı düşüncelerim var. Artık dayanamıyorum.,13,,RUTIN,SABLON
+1734,Bir haftadır kontrol edemediğim takıntılı düşüncelerim var. Hangi bölüme gitmeliyim?,13,,RUTIN,SABLON
+1735,Bir haftadır kontrol edemediğim takıntılı düşüncelerim var. Doktora görünmek istiyorum.,13,,RUTIN,SABLON
+1736,Bir haftadır kontrol edemediğim takıntılı düşüncelerim var. Çok rahatsız ediyor.,13,,RUTIN,SABLON
+1737,Uzun zamandır kontrol edemediğim takıntılı düşüncelerim var. Randevu almak istiyorum.,13,,RUTIN,SABLON
+1738,Uzun zamandır kontrol edemediğim takıntılı düşüncelerim var. Çok rahatsız ediyor.,13,,RUTIN,SABLON
+1739,Uzun zamandır kontrol edemediğim takıntılı düşüncelerim var. Artık dayanamıyorum.,13,,RUTIN,SABLON
+1740,Dünden beri kontrol edemediğim takıntılı düşüncelerim var. Hangi bölüme gitmeliyim?,13,,RUTIN,SABLON
+1741,Dünden beri kontrol edemediğim takıntılı düşüncelerim var. Doktora görünmek istiyorum.,13,,RUTIN,SABLON
+1742,Dünden beri kontrol edemediğim takıntılı düşüncelerim var. Çok rahatsız ediyor.,13,,RUTIN,SABLON
+1743,Son zamanlarda kontrol edemediğim takıntılı düşüncelerim var,13,,RUTIN,SABLON
+1744,Son zamanlarda kontrol edemediğim takıntılı düşüncelerim var. Hangi bölüme gitmeliyim?,13,,RUTIN,SABLON
+1745,Son zamanlarda kontrol edemediğim takıntılı düşüncelerim var. Randevu almak istiyorum.,13,,RUTIN,SABLON
+1746,Son zamanlarda kontrol edemediğim takıntılı düşüncelerim var. Artık dayanamıyorum.,13,,RUTIN,SABLON
+1747,Birkaç gündür kontrol edemediğim takıntılı düşüncelerim var. Ne yapmalıyım?,13,,RUTIN,SABLON
+1748,Birkaç gündür kontrol edemediğim takıntılı düşüncelerim var. Artık dayanamıyorum.,13,,RUTIN,SABLON
+1749,Aylardır kontrol edemediğim takıntılı düşüncelerim var,13,,RUTIN,SABLON
+1750,Aylardır kontrol edemediğim takıntılı düşüncelerim var. Hangi bölüme gitmeliyim?,13,,RUTIN,SABLON
+1751,Aylardır kontrol edemediğim takıntılı düşüncelerim var. Randevu almak istiyorum.,13,,RUTIN,SABLON
+1752,Aylardır kontrol edemediğim takıntılı düşüncelerim var. Çok rahatsız ediyor.,13,,RUTIN,SABLON
+1753,Aylardır kontrol edemediğim takıntılı düşüncelerim var. Artık dayanamıyorum.,13,,RUTIN,SABLON
+1754,İlaç kontrolüm için randevu almak istiyorum,13,,RUTIN,SABLON
+1755,İlaç kontrolüm için randevu almak istiyorum. Ne yapmalıyım?,13,,RUTIN,SABLON
+1756,"Boynum tutuluyor, kollarıma yayılıyor",14,10,RUTIN,SABLON
+1757,"Boynum tutuluyor, kollarıma yayılıyor. Hangi bölüme gitmeliyim?",14,10,RUTIN,SABLON
+1758,"Boynum tutuluyor, kollarıma yayılıyor. Randevu almak istiyorum.",14,10,RUTIN,SABLON
+1759,"Boynum tutuluyor, kollarıma yayılıyor. Ne yapmalıyım?",14,10,RUTIN,SABLON
+1760,"Boynum tutuluyor, kollarıma yayılıyor. Doktora görünmek istiyorum.",14,10,RUTIN,SABLON
+1761,"Boynum tutuluyor, kollarıma yayılıyor. Artık dayanamıyorum.",14,10,RUTIN,SABLON
+1762,"Son günlerde boynum tutuluyor, kollarıma yayılıyor",14,10,RUTIN,SABLON
+1763,"Son günlerde boynum tutuluyor, kollarıma yayılıyor. Randevu almak istiyorum.",14,10,RUTIN,SABLON
+1764,"Son günlerde boynum tutuluyor, kollarıma yayılıyor. Ne yapmalıyım?",14,10,RUTIN,SABLON
+1765,"Son günlerde boynum tutuluyor, kollarıma yayılıyor. Doktora görünmek istiyorum.",14,10,RUTIN,SABLON
+1766,"Bir haftadır boynum tutuluyor, kollarıma yayılıyor. Hangi bölüme gitmeliyim?",14,10,RUTIN,SABLON
+1767,"Bir haftadır boynum tutuluyor, kollarıma yayılıyor. Randevu almak istiyorum.",14,10,RUTIN,SABLON
+1768,"Bir haftadır boynum tutuluyor, kollarıma yayılıyor. Ne yapmalıyım?",14,10,RUTIN,SABLON
+1769,"Bir haftadır boynum tutuluyor, kollarıma yayılıyor. Doktora görünmek istiyorum.",14,10,RUTIN,SABLON
+1770,"Bir haftadır boynum tutuluyor, kollarıma yayılıyor. Artık dayanamıyorum.",14,10,RUTIN,SABLON
+1771,"Uzun zamandır boynum tutuluyor, kollarıma yayılıyor. Hangi bölüme gitmeliyim?",14,10,RUTIN,SABLON
+1772,"Uzun zamandır boynum tutuluyor, kollarıma yayılıyor. Ne yapmalıyım?",14,10,RUTIN,SABLON
+1773,"Uzun zamandır boynum tutuluyor, kollarıma yayılıyor. Doktora görünmek istiyorum.",14,10,RUTIN,SABLON
+1774,"Uzun zamandır boynum tutuluyor, kollarıma yayılıyor. Çok rahatsız ediyor.",14,10,RUTIN,SABLON
+1775,"Uzun zamandır boynum tutuluyor, kollarıma yayılıyor. Artık dayanamıyorum.",14,10,RUTIN,SABLON
+1776,"Dünden beri boynum tutuluyor, kollarıma yayılıyor",14,10,RUTIN,SABLON
+1777,"Dünden beri boynum tutuluyor, kollarıma yayılıyor. Ne yapmalıyım?",14,10,RUTIN,SABLON
+1778,"Dünden beri boynum tutuluyor, kollarıma yayılıyor. Çok rahatsız ediyor.",14,10,RUTIN,SABLON
+1779,"Son zamanlarda boynum tutuluyor, kollarıma yayılıyor",14,10,RUTIN,SABLON
+1780,"Son zamanlarda boynum tutuluyor, kollarıma yayılıyor. Randevu almak istiyorum.",14,10,RUTIN,SABLON
+1781,"Son zamanlarda boynum tutuluyor, kollarıma yayılıyor. Doktora görünmek istiyorum.",14,10,RUTIN,SABLON
+1782,"Birkaç gündür boynum tutuluyor, kollarıma yayılıyor",14,10,RUTIN,SABLON
+1783,"Birkaç gündür boynum tutuluyor, kollarıma yayılıyor. Hangi bölüme gitmeliyim?",14,10,RUTIN,SABLON
+1784,"Birkaç gündür boynum tutuluyor, kollarıma yayılıyor. Çok rahatsız ediyor.",14,10,RUTIN,SABLON
+1785,"Birkaç gündür boynum tutuluyor, kollarıma yayılıyor. Artık dayanamıyorum.",14,10,RUTIN,SABLON
+1786,"Aylardır boynum tutuluyor, kollarıma yayılıyor",14,10,RUTIN,SABLON
+1787,"Aylardır boynum tutuluyor, kollarıma yayılıyor. Hangi bölüme gitmeliyim?",14,10,RUTIN,SABLON
+1788,"Aylardır boynum tutuluyor, kollarıma yayılıyor. Randevu almak istiyorum.",14,10,RUTIN,SABLON
+1789,"Aylardır boynum tutuluyor, kollarıma yayılıyor. Ne yapmalıyım?",14,10,RUTIN,SABLON
+1790,"Aylardır boynum tutuluyor, kollarıma yayılıyor. Doktora görünmek istiyorum.",14,10,RUTIN,SABLON
+1791,"Aylardır boynum tutuluyor, kollarıma yayılıyor. Çok rahatsız ediyor.",14,10,RUTIN,SABLON
+1792,"Aylardır boynum tutuluyor, kollarıma yayılıyor. Artık dayanamıyorum.",14,10,RUTIN,SABLON
+1793,Bel fıtığım için fizik tedavi görmek istiyorum,14,,RUTIN,SABLON
+1794,Bel fıtığım için fizik tedavi görmek istiyorum. Hangi bölüme gitmeliyim?,14,,RUTIN,SABLON
+1795,Eklemlerim sabahları sertleşiyor,14,,RUTIN,SABLON
+1796,Eklemlerim sabahları sertleşiyor. Hangi bölüme gitmeliyim?,14,,RUTIN,SABLON
+1797,Eklemlerim sabahları sertleşiyor. Randevu almak istiyorum.,14,,RUTIN,SABLON
+1798,Eklemlerim sabahları sertleşiyor. Ne yapmalıyım?,14,,RUTIN,SABLON
+1799,Eklemlerim sabahları sertleşiyor. Doktora görünmek istiyorum.,14,,RUTIN,SABLON
+1800,Eklemlerim sabahları sertleşiyor. Çok rahatsız ediyor.,14,,RUTIN,SABLON
+1801,Eklemlerim sabahları sertleşiyor. Artık dayanamıyorum.,14,,RUTIN,SABLON
+1802,Son günlerde eklemlerim sabahları sertleşiyor,14,,RUTIN,SABLON
+1803,Son günlerde eklemlerim sabahları sertleşiyor. Artık dayanamıyorum.,14,,RUTIN,SABLON
+1804,Bir haftadır eklemlerim sabahları sertleşiyor. Hangi bölüme gitmeliyim?,14,,RUTIN,SABLON
+1805,Bir haftadır eklemlerim sabahları sertleşiyor. Ne yapmalıyım?,14,,RUTIN,SABLON
+1806,Bir haftadır eklemlerim sabahları sertleşiyor. Doktora görünmek istiyorum.,14,,RUTIN,SABLON
+1807,Bir haftadır eklemlerim sabahları sertleşiyor. Çok rahatsız ediyor.,14,,RUTIN,SABLON
+1808,Bir haftadır eklemlerim sabahları sertleşiyor. Artık dayanamıyorum.,14,,RUTIN,SABLON
+1809,Uzun zamandır eklemlerim sabahları sertleşiyor. Hangi bölüme gitmeliyim?,14,,RUTIN,SABLON
+1810,Uzun zamandır eklemlerim sabahları sertleşiyor. Randevu almak istiyorum.,14,,RUTIN,SABLON
+1811,Uzun zamandır eklemlerim sabahları sertleşiyor. Ne yapmalıyım?,14,,RUTIN,SABLON
+1812,Uzun zamandır eklemlerim sabahları sertleşiyor. Doktora görünmek istiyorum.,14,,RUTIN,SABLON
+1813,Uzun zamandır eklemlerim sabahları sertleşiyor. Çok rahatsız ediyor.,14,,RUTIN,SABLON
+1814,Uzun zamandır eklemlerim sabahları sertleşiyor. Artık dayanamıyorum.,14,,RUTIN,SABLON
+1815,Dünden beri eklemlerim sabahları sertleşiyor,14,,RUTIN,SABLON
+1816,Dünden beri eklemlerim sabahları sertleşiyor. Doktora görünmek istiyorum.,14,,RUTIN,SABLON
+1817,Dünden beri eklemlerim sabahları sertleşiyor. Artık dayanamıyorum.,14,,RUTIN,SABLON
+1818,Son zamanlarda eklemlerim sabahları sertleşiyor,14,,RUTIN,SABLON
+1819,Son zamanlarda eklemlerim sabahları sertleşiyor. Hangi bölüme gitmeliyim?,14,,RUTIN,SABLON
+1820,Son zamanlarda eklemlerim sabahları sertleşiyor. Randevu almak istiyorum.,14,,RUTIN,SABLON
+1821,Birkaç gündür eklemlerim sabahları sertleşiyor. Randevu almak istiyorum.,14,,RUTIN,SABLON
+1822,Birkaç gündür eklemlerim sabahları sertleşiyor. Ne yapmalıyım?,14,,RUTIN,SABLON
+1823,Birkaç gündür eklemlerim sabahları sertleşiyor. Doktora görünmek istiyorum.,14,,RUTIN,SABLON
+1824,Aylardır eklemlerim sabahları sertleşiyor. Hangi bölüme gitmeliyim?,14,,RUTIN,SABLON
+1825,Aylardır eklemlerim sabahları sertleşiyor. Randevu almak istiyorum.,14,,RUTIN,SABLON
+1826,Aylardır eklemlerim sabahları sertleşiyor. Doktora görünmek istiyorum.,14,,RUTIN,SABLON
+1827,Aylardır eklemlerim sabahları sertleşiyor. Çok rahatsız ediyor.,14,,RUTIN,SABLON
+1828,Aylardır eklemlerim sabahları sertleşiyor. Artık dayanamıyorum.,14,,RUTIN,SABLON
+1829,Felç sonrası rehabilitasyon için başvuruyorum,14,,ONCELIKLI,SABLON
+1830,Felç sonrası rehabilitasyon için başvuruyorum. Randevu almak istiyorum.,14,,ONCELIKLI,SABLON
+1831,Felç sonrası rehabilitasyon için başvuruyorum. Ne yapmalıyım?,14,,ONCELIKLI,SABLON
+1832,Felç sonrası rehabilitasyon için başvuruyorum. Doktora görünmek istiyorum.,14,,ONCELIKLI,SABLON
+1833,Kas ağrılarım geçmiyor,14,,RUTIN,SABLON
+1834,Kas ağrılarım geçmiyor. Doktora görünmek istiyorum.,14,,RUTIN,SABLON
+1835,Son günlerde kas ağrılarım geçmiyor,14,,RUTIN,SABLON
+1836,Son günlerde kas ağrılarım geçmiyor. Hangi bölüme gitmeliyim?,14,,RUTIN,SABLON
+1837,Son günlerde kas ağrılarım geçmiyor. Randevu almak istiyorum.,14,,RUTIN,SABLON
+1838,Son günlerde kas ağrılarım geçmiyor. Ne yapmalıyım?,14,,RUTIN,SABLON
+1839,Son günlerde kas ağrılarım geçmiyor. Doktora görünmek istiyorum.,14,,RUTIN,SABLON
+1840,Son günlerde kas ağrılarım geçmiyor. Çok rahatsız ediyor.,14,,RUTIN,SABLON
+1841,Son günlerde kas ağrılarım geçmiyor. Artık dayanamıyorum.,14,,RUTIN,SABLON
+1842,Bir haftadır kas ağrılarım geçmiyor. Hangi bölüme gitmeliyim?,14,,RUTIN,SABLON
+1843,Bir haftadır kas ağrılarım geçmiyor. Doktora görünmek istiyorum.,14,,RUTIN,SABLON
+1844,Bir haftadır kas ağrılarım geçmiyor. Çok rahatsız ediyor.,14,,RUTIN,SABLON
+1845,Bir haftadır kas ağrılarım geçmiyor. Artık dayanamıyorum.,14,,RUTIN,SABLON
+1846,Uzun zamandır kas ağrılarım geçmiyor,14,,RUTIN,SABLON
+1847,Uzun zamandır kas ağrılarım geçmiyor. Randevu almak istiyorum.,14,,RUTIN,SABLON
+1848,Uzun zamandır kas ağrılarım geçmiyor. Ne yapmalıyım?,14,,RUTIN,SABLON
+1849,Uzun zamandır kas ağrılarım geçmiyor. Doktora görünmek istiyorum.,14,,RUTIN,SABLON
+1850,Uzun zamandır kas ağrılarım geçmiyor. Çok rahatsız ediyor.,14,,RUTIN,SABLON
+1851,Dünden beri kas ağrılarım geçmiyor,14,,RUTIN,SABLON
+1852,Dünden beri kas ağrılarım geçmiyor. Ne yapmalıyım?,14,,RUTIN,SABLON
+1853,Dünden beri kas ağrılarım geçmiyor. Doktora görünmek istiyorum.,14,,RUTIN,SABLON
+1854,Dünden beri kas ağrılarım geçmiyor. Artık dayanamıyorum.,14,,RUTIN,SABLON
+1855,Son zamanlarda kas ağrılarım geçmiyor. Hangi bölüme gitmeliyim?,14,,RUTIN,SABLON
+1856,Son zamanlarda kas ağrılarım geçmiyor. Randevu almak istiyorum.,14,,RUTIN,SABLON
+1857,Son zamanlarda kas ağrılarım geçmiyor. Ne yapmalıyım?,14,,RUTIN,SABLON
+1858,Son zamanlarda kas ağrılarım geçmiyor. Çok rahatsız ediyor.,14,,RUTIN,SABLON
+1859,Birkaç gündür kas ağrılarım geçmiyor,14,,RUTIN,SABLON
+1860,Birkaç gündür kas ağrılarım geçmiyor. Ne yapmalıyım?,14,,RUTIN,SABLON
+1861,Birkaç gündür kas ağrılarım geçmiyor. Doktora görünmek istiyorum.,14,,RUTIN,SABLON
+1862,Birkaç gündür kas ağrılarım geçmiyor. Çok rahatsız ediyor.,14,,RUTIN,SABLON
+1863,Birkaç gündür kas ağrılarım geçmiyor. Artık dayanamıyorum.,14,,RUTIN,SABLON
+1864,Aylardır kas ağrılarım geçmiyor,14,,RUTIN,SABLON
+1865,Aylardır kas ağrılarım geçmiyor. Hangi bölüme gitmeliyim?,14,,RUTIN,SABLON
+1866,Aylardır kas ağrılarım geçmiyor. Randevu almak istiyorum.,14,,RUTIN,SABLON
+1867,Aylardır kas ağrılarım geçmiyor. Ne yapmalıyım?,14,,RUTIN,SABLON
+1868,Aylardır kas ağrılarım geçmiyor. Doktora görünmek istiyorum.,14,,RUTIN,SABLON
+1869,Aylardır kas ağrılarım geçmiyor. Çok rahatsız ediyor.,14,,RUTIN,SABLON
+1870,Aylardır kas ağrılarım geçmiyor. Artık dayanamıyorum.,14,,RUTIN,SABLON
+1871,"Şekerim yüksek çıktı, çok su içiyorum",15,1,ONCELIKLI,SABLON
+1872,"Şekerim yüksek çıktı, çok su içiyorum. Randevu almak istiyorum.",15,1,ONCELIKLI,SABLON
+1873,"Şekerim yüksek çıktı, çok su içiyorum. Doktora görünmek istiyorum.",15,1,ONCELIKLI,SABLON
+1874,"Boynumda şişlik var, tiroidim olabilir",15,,RUTIN,SABLON
+1875,"Boynumda şişlik var, tiroidim olabilir. Hangi bölüme gitmeliyim?",15,,RUTIN,SABLON
+1876,"Boynumda şişlik var, tiroidim olabilir. Randevu almak istiyorum.",15,,RUTIN,SABLON
+1877,"Boynumda şişlik var, tiroidim olabilir. Doktora görünmek istiyorum.",15,,RUTIN,SABLON
+1878,"Boynumda şişlik var, tiroidim olabilir. Artık dayanamıyorum.",15,,RUTIN,SABLON
+1879,"Son günlerde boynumda şişlik var, tiroidim olabilir. Hangi bölüme gitmeliyim?",15,,RUTIN,SABLON
+1880,"Son günlerde boynumda şişlik var, tiroidim olabilir. Randevu almak istiyorum.",15,,RUTIN,SABLON
+1881,"Son günlerde boynumda şişlik var, tiroidim olabilir. Ne yapmalıyım?",15,,RUTIN,SABLON
+1882,"Son günlerde boynumda şişlik var, tiroidim olabilir. Artık dayanamıyorum.",15,,RUTIN,SABLON
+1883,"Bir haftadır boynumda şişlik var, tiroidim olabilir",15,,RUTIN,SABLON
+1884,"Bir haftadır boynumda şişlik var, tiroidim olabilir. Hangi bölüme gitmeliyim?",15,,RUTIN,SABLON
+1885,"Bir haftadır boynumda şişlik var, tiroidim olabilir. Randevu almak istiyorum.",15,,RUTIN,SABLON
+1886,"Bir haftadır boynumda şişlik var, tiroidim olabilir. Doktora görünmek istiyorum.",15,,RUTIN,SABLON
+1887,"Bir haftadır boynumda şişlik var, tiroidim olabilir. Artık dayanamıyorum.",15,,RUTIN,SABLON
+1888,"Uzun zamandır boynumda şişlik var, tiroidim olabilir",15,,RUTIN,SABLON
+1889,"Uzun zamandır boynumda şişlik var, tiroidim olabilir. Hangi bölüme gitmeliyim?",15,,RUTIN,SABLON
+1890,"Uzun zamandır boynumda şişlik var, tiroidim olabilir. Randevu almak istiyorum.",15,,RUTIN,SABLON
+1891,"Uzun zamandır boynumda şişlik var, tiroidim olabilir. Doktora görünmek istiyorum.",15,,RUTIN,SABLON
+1892,"Uzun zamandır boynumda şişlik var, tiroidim olabilir. Çok rahatsız ediyor.",15,,RUTIN,SABLON
+1893,"Uzun zamandır boynumda şişlik var, tiroidim olabilir. Artık dayanamıyorum.",15,,RUTIN,SABLON
+1894,"Dünden beri boynumda şişlik var, tiroidim olabilir. Randevu almak istiyorum.",15,,RUTIN,SABLON
+1895,"Dünden beri boynumda şişlik var, tiroidim olabilir. Ne yapmalıyım?",15,,RUTIN,SABLON
+1896,"Dünden beri boynumda şişlik var, tiroidim olabilir. Doktora görünmek istiyorum.",15,,RUTIN,SABLON
+1897,"Son zamanlarda boynumda şişlik var, tiroidim olabilir. Hangi bölüme gitmeliyim?",15,,RUTIN,SABLON
+1898,"Son zamanlarda boynumda şişlik var, tiroidim olabilir. Ne yapmalıyım?",15,,RUTIN,SABLON
+1899,"Son zamanlarda boynumda şişlik var, tiroidim olabilir. Çok rahatsız ediyor.",15,,RUTIN,SABLON
+1900,"Son zamanlarda boynumda şişlik var, tiroidim olabilir. Artık dayanamıyorum.",15,,RUTIN,SABLON
+1901,"Birkaç gündür boynumda şişlik var, tiroidim olabilir",15,,RUTIN,SABLON
+1902,"Birkaç gündür boynumda şişlik var, tiroidim olabilir. Hangi bölüme gitmeliyim?",15,,RUTIN,SABLON
+1903,"Birkaç gündür boynumda şişlik var, tiroidim olabilir. Randevu almak istiyorum.",15,,RUTIN,SABLON
+1904,"Birkaç gündür boynumda şişlik var, tiroidim olabilir. Ne yapmalıyım?",15,,RUTIN,SABLON
+1905,"Birkaç gündür boynumda şişlik var, tiroidim olabilir. Doktora görünmek istiyorum.",15,,RUTIN,SABLON
+1906,"Birkaç gündür boynumda şişlik var, tiroidim olabilir. Çok rahatsız ediyor.",15,,RUTIN,SABLON
+1907,"Aylardır boynumda şişlik var, tiroidim olabilir",15,,RUTIN,SABLON
+1908,"Aylardır boynumda şişlik var, tiroidim olabilir. Hangi bölüme gitmeliyim?",15,,RUTIN,SABLON
+1909,"Aylardır boynumda şişlik var, tiroidim olabilir. Randevu almak istiyorum.",15,,RUTIN,SABLON
+1910,"Aylardır boynumda şişlik var, tiroidim olabilir. Ne yapmalıyım?",15,,RUTIN,SABLON
+1911,"Aylardır boynumda şişlik var, tiroidim olabilir. Doktora görünmek istiyorum.",15,,RUTIN,SABLON
+1912,"Aylardır boynumda şişlik var, tiroidim olabilir. Çok rahatsız ediyor.",15,,RUTIN,SABLON
+1913,Durduk yere kilo alıyorum ve üşüyorum,15,,RUTIN,SABLON
+1914,Durduk yere kilo alıyorum ve üşüyorum. Hangi bölüme gitmeliyim?,15,,RUTIN,SABLON
+1915,Durduk yere kilo alıyorum ve üşüyorum. Randevu almak istiyorum.,15,,RUTIN,SABLON
+1916,Durduk yere kilo alıyorum ve üşüyorum. Doktora görünmek istiyorum.,15,,RUTIN,SABLON
+1917,Durduk yere kilo alıyorum ve üşüyorum. Çok rahatsız ediyor.,15,,RUTIN,SABLON
+1918,Durduk yere kilo alıyorum ve üşüyorum. Artık dayanamıyorum.,15,,RUTIN,SABLON
+1919,Son günlerde durduk yere kilo alıyorum ve üşüyorum,15,,RUTIN,SABLON
+1920,Son günlerde durduk yere kilo alıyorum ve üşüyorum. Randevu almak istiyorum.,15,,RUTIN,SABLON
+1921,Son günlerde durduk yere kilo alıyorum ve üşüyorum. Ne yapmalıyım?,15,,RUTIN,SABLON
+1922,Son günlerde durduk yere kilo alıyorum ve üşüyorum. Doktora görünmek istiyorum.,15,,RUTIN,SABLON
+1923,Son günlerde durduk yere kilo alıyorum ve üşüyorum. Çok rahatsız ediyor.,15,,RUTIN,SABLON
+1924,Bir haftadır durduk yere kilo alıyorum ve üşüyorum. Randevu almak istiyorum.,15,,RUTIN,SABLON
+1925,Bir haftadır durduk yere kilo alıyorum ve üşüyorum. Ne yapmalıyım?,15,,RUTIN,SABLON
+1926,Bir haftadır durduk yere kilo alıyorum ve üşüyorum. Doktora görünmek istiyorum.,15,,RUTIN,SABLON
+1927,Bir haftadır durduk yere kilo alıyorum ve üşüyorum. Çok rahatsız ediyor.,15,,RUTIN,SABLON
+1928,Bir haftadır durduk yere kilo alıyorum ve üşüyorum. Artık dayanamıyorum.,15,,RUTIN,SABLON
+1929,Uzun zamandır durduk yere kilo alıyorum ve üşüyorum. Hangi bölüme gitmeliyim?,15,,RUTIN,SABLON
+1930,Uzun zamandır durduk yere kilo alıyorum ve üşüyorum. Ne yapmalıyım?,15,,RUTIN,SABLON
+1931,Uzun zamandır durduk yere kilo alıyorum ve üşüyorum. Doktora görünmek istiyorum.,15,,RUTIN,SABLON
+1932,Uzun zamandır durduk yere kilo alıyorum ve üşüyorum. Artık dayanamıyorum.,15,,RUTIN,SABLON
+1933,Dünden beri durduk yere kilo alıyorum ve üşüyorum. Hangi bölüme gitmeliyim?,15,,RUTIN,SABLON
+1934,Dünden beri durduk yere kilo alıyorum ve üşüyorum. Ne yapmalıyım?,15,,RUTIN,SABLON
+1935,Dünden beri durduk yere kilo alıyorum ve üşüyorum. Doktora görünmek istiyorum.,15,,RUTIN,SABLON
+1936,Dünden beri durduk yere kilo alıyorum ve üşüyorum. Artık dayanamıyorum.,15,,RUTIN,SABLON
+1937,Son zamanlarda durduk yere kilo alıyorum ve üşüyorum. Randevu almak istiyorum.,15,,RUTIN,SABLON
+1938,Son zamanlarda durduk yere kilo alıyorum ve üşüyorum. Ne yapmalıyım?,15,,RUTIN,SABLON
+1939,Son zamanlarda durduk yere kilo alıyorum ve üşüyorum. Çok rahatsız ediyor.,15,,RUTIN,SABLON
+1940,Birkaç gündür durduk yere kilo alıyorum ve üşüyorum. Hangi bölüme gitmeliyim?,15,,RUTIN,SABLON
+1941,Birkaç gündür durduk yere kilo alıyorum ve üşüyorum. Doktora görünmek istiyorum.,15,,RUTIN,SABLON
+1942,Birkaç gündür durduk yere kilo alıyorum ve üşüyorum. Artık dayanamıyorum.,15,,RUTIN,SABLON
+1943,Aylardır durduk yere kilo alıyorum ve üşüyorum,15,,RUTIN,SABLON
+1944,Aylardır durduk yere kilo alıyorum ve üşüyorum. Hangi bölüme gitmeliyim?,15,,RUTIN,SABLON
+1945,Aylardır durduk yere kilo alıyorum ve üşüyorum. Doktora görünmek istiyorum.,15,,RUTIN,SABLON
+1946,Diyabet ilaçlarımı ayarlatmak istiyorum,15,,RUTIN,SABLON
+1947,Diyabet ilaçlarımı ayarlatmak istiyorum. Hangi bölüme gitmeliyim?,15,,RUTIN,SABLON
+1948,Guatr kontrolüm var,15,,RUTIN,SABLON
+1949,Guatr kontrolüm var. Ne yapmalıyım?,15,,RUTIN,SABLON
+1950,Oğlumun kasığında şişlik fark ettim,16,,ONCELIKLI,SABLON
+1951,Oğlumun kasığında şişlik fark ettim. Hangi bölüme gitmeliyim?,16,,ONCELIKLI,SABLON
+1952,Oğlumun kasığında şişlik fark ettim. Randevu almak istiyorum.,16,,ONCELIKLI,SABLON
+1953,Oğlumun kasığında şişlik fark ettim. Doktora görünmek istiyorum.,16,,ONCELIKLI,SABLON
+1954,Çocuğumun sünnet için görüşme yapmak istiyorum,16,,RUTIN,SABLON
+1955,Bebeğimin göbeğinde fıtık var,16,,RUTIN,SABLON
+1956,Bebeğimin göbeğinde fıtık var. Randevu almak istiyorum.,16,,RUTIN,SABLON
+1957,Bebeğimin göbeğinde fıtık var. Ne yapmalıyım?,16,,RUTIN,SABLON
+1958,Bebeğimin göbeğinde fıtık var. Doktora görünmek istiyorum.,16,,RUTIN,SABLON
+1959,Bebeğimin göbeğinde fıtık var. Çok rahatsız ediyor.,16,,RUTIN,SABLON
+1960,Bebeğimin göbeğinde fıtık var. Artık dayanamıyorum.,16,,RUTIN,SABLON
+1961,Son günlerde bebeğimin göbeğinde fıtık var,16,,RUTIN,SABLON
+1962,Son günlerde bebeğimin göbeğinde fıtık var. Hangi bölüme gitmeliyim?,16,,RUTIN,SABLON
+1963,Son günlerde bebeğimin göbeğinde fıtık var. Randevu almak istiyorum.,16,,RUTIN,SABLON
+1964,Son günlerde bebeğimin göbeğinde fıtık var. Doktora görünmek istiyorum.,16,,RUTIN,SABLON
+1965,Bir haftadır bebeğimin göbeğinde fıtık var. Hangi bölüme gitmeliyim?,16,,RUTIN,SABLON
+1966,Bir haftadır bebeğimin göbeğinde fıtık var. Çok rahatsız ediyor.,16,,RUTIN,SABLON
+1967,Bir haftadır bebeğimin göbeğinde fıtık var. Artık dayanamıyorum.,16,,RUTIN,SABLON
+1968,Uzun zamandır bebeğimin göbeğinde fıtık var,16,,RUTIN,SABLON
+1969,Uzun zamandır bebeğimin göbeğinde fıtık var. Hangi bölüme gitmeliyim?,16,,RUTIN,SABLON
+1970,Uzun zamandır bebeğimin göbeğinde fıtık var. Doktora görünmek istiyorum.,16,,RUTIN,SABLON
+1971,Uzun zamandır bebeğimin göbeğinde fıtık var. Çok rahatsız ediyor.,16,,RUTIN,SABLON
+1972,Dünden beri bebeğimin göbeğinde fıtık var,16,,RUTIN,SABLON
+1973,Dünden beri bebeğimin göbeğinde fıtık var. Hangi bölüme gitmeliyim?,16,,RUTIN,SABLON
+1974,Dünden beri bebeğimin göbeğinde fıtık var. Randevu almak istiyorum.,16,,RUTIN,SABLON
+1975,Dünden beri bebeğimin göbeğinde fıtık var. Ne yapmalıyım?,16,,RUTIN,SABLON
+1976,Dünden beri bebeğimin göbeğinde fıtık var. Artık dayanamıyorum.,16,,RUTIN,SABLON
+1977,Son zamanlarda bebeğimin göbeğinde fıtık var. Hangi bölüme gitmeliyim?,16,,RUTIN,SABLON
+1978,Son zamanlarda bebeğimin göbeğinde fıtık var. Doktora görünmek istiyorum.,16,,RUTIN,SABLON
+1979,Son zamanlarda bebeğimin göbeğinde fıtık var. Çok rahatsız ediyor.,16,,RUTIN,SABLON
+1980,Son zamanlarda bebeğimin göbeğinde fıtık var. Artık dayanamıyorum.,16,,RUTIN,SABLON
+1981,Birkaç gündür bebeğimin göbeğinde fıtık var,16,,RUTIN,SABLON
+1982,Birkaç gündür bebeğimin göbeğinde fıtık var. Hangi bölüme gitmeliyim?,16,,RUTIN,SABLON
+1983,Birkaç gündür bebeğimin göbeğinde fıtık var. Ne yapmalıyım?,16,,RUTIN,SABLON
+1984,Birkaç gündür bebeğimin göbeğinde fıtık var. Artık dayanamıyorum.,16,,RUTIN,SABLON
+1985,Aylardır bebeğimin göbeğinde fıtık var,16,,RUTIN,SABLON
+1986,Aylardır bebeğimin göbeğinde fıtık var. Hangi bölüme gitmeliyim?,16,,RUTIN,SABLON
+1987,Aylardır bebeğimin göbeğinde fıtık var. Ne yapmalıyım?,16,,RUTIN,SABLON
+1988,Aylardır bebeğimin göbeğinde fıtık var. Doktora görünmek istiyorum.,16,,RUTIN,SABLON
+1989,Aylardır bebeğimin göbeğinde fıtık var. Çok rahatsız ediyor.,16,,RUTIN,SABLON
+1990,Çocuğumda inmemiş testis olduğu söylendi,16,,RUTIN,SABLON
+1991,Çocuğumda inmemiş testis olduğu söylendi. Hangi bölüme gitmeliyim?,16,,RUTIN,SABLON
+1992,Çocuğumda inmemiş testis olduğu söylendi. Randevu almak istiyorum.,16,,RUTIN,SABLON
+1993,Çocuğumda inmemiş testis olduğu söylendi. Ne yapmalıyım?,16,,RUTIN,SABLON
+1994,Çocuğumda inmemiş testis olduğu söylendi. Doktora görünmek istiyorum.,16,,RUTIN,SABLON
+1995,"Sol kolum uyuştu, şiddetli göğüs ağrım var",,,ACIL,SABLON
+1996,"Sol kolum uyuştu, şiddetli göğüs ağrım var. Ne yapmalıyım?",,,ACIL,SABLON
+1997,"Sol kolum uyuştu, şiddetli göğüs ağrım var. Çok korkuyorum.",,,ACIL,SABLON
+1998,"Sol kolum uyuştu, şiddetli göğüs ağrım var. Yardım edin.",,,ACIL,SABLON
+1999,"Sol kolum uyuştu, şiddetli göğüs ağrım var. Randevu alabilir miyim?",,,ACIL,SABLON
+2000,"Az önce sol kolum uyuştu, şiddetli göğüs ağrım var",,,ACIL,SABLON
+2001,"Az önce sol kolum uyuştu, şiddetli göğüs ağrım var. Ne yapmalıyım?",,,ACIL,SABLON
+2002,"Az önce sol kolum uyuştu, şiddetli göğüs ağrım var. Çok korkuyorum.",,,ACIL,SABLON
+2003,"Az önce sol kolum uyuştu, şiddetli göğüs ağrım var. Yardım edin.",,,ACIL,SABLON
+2004,"Az önce sol kolum uyuştu, şiddetli göğüs ağrım var. Randevu alabilir miyim?",,,ACIL,SABLON
+2005,"Göğsümde ezici bir ağrı var, soğuk soğuk terliyorum",,,ACIL,SABLON
+2006,"Göğsümde ezici bir ağrı var, soğuk soğuk terliyorum. Ne yapmalıyım?",,,ACIL,SABLON
+2007,"Göğsümde ezici bir ağrı var, soğuk soğuk terliyorum. Çok korkuyorum.",,,ACIL,SABLON
+2008,"Göğsümde ezici bir ağrı var, soğuk soğuk terliyorum. Yardım edin.",,,ACIL,SABLON
+2009,"Göğsümde ezici bir ağrı var, soğuk soğuk terliyorum. Randevu alabilir miyim?",,,ACIL,SABLON
+2010,"Şu an göğsümde ezici bir ağrı var, soğuk soğuk terliyorum",,,ACIL,SABLON
+2011,"Şu an göğsümde ezici bir ağrı var, soğuk soğuk terliyorum. Ne yapmalıyım?",,,ACIL,SABLON
+2012,"Şu an göğsümde ezici bir ağrı var, soğuk soğuk terliyorum. Çok korkuyorum.",,,ACIL,SABLON
+2013,"Şu an göğsümde ezici bir ağrı var, soğuk soğuk terliyorum. Yardım edin.",,,ACIL,SABLON
+2014,"Şu an göğsümde ezici bir ağrı var, soğuk soğuk terliyorum. Randevu alabilir miyim?",,,ACIL,SABLON
+2015,"Az önce başladı, göğsümde ezici bir ağrı var, soğuk soğuk terliyorum",,,ACIL,SABLON
+2016,"Az önce başladı, göğsümde ezici bir ağrı var, soğuk soğuk terliyorum. Ne yapmalıyım?",,,ACIL,SABLON
+2017,"Az önce başladı, göğsümde ezici bir ağrı var, soğuk soğuk terliyorum. Çok korkuyorum.",,,ACIL,SABLON
+2018,"Az önce başladı, göğsümde ezici bir ağrı var, soğuk soğuk terliyorum. Yardım edin.",,,ACIL,SABLON
+2019,"Az önce başladı, göğsümde ezici bir ağrı var, soğuk soğuk terliyorum. Randevu alabilir miyim?",,,ACIL,SABLON
+2020,"Nefes alamıyorum, dudaklarım morardı",,,ACIL,SABLON
+2021,"Nefes alamıyorum, dudaklarım morardı. Ne yapmalıyım?",,,ACIL,SABLON
+2022,"Nefes alamıyorum, dudaklarım morardı. Çok korkuyorum.",,,ACIL,SABLON
+2023,"Nefes alamıyorum, dudaklarım morardı. Yardım edin.",,,ACIL,SABLON
+2024,"Nefes alamıyorum, dudaklarım morardı. Randevu alabilir miyim?",,,ACIL,SABLON
+2025,"Az önce nefes alamıyorum, dudaklarım morardı",,,ACIL,SABLON
+2026,"Az önce nefes alamıyorum, dudaklarım morardı. Ne yapmalıyım?",,,ACIL,SABLON
+2027,"Az önce nefes alamıyorum, dudaklarım morardı. Çok korkuyorum.",,,ACIL,SABLON
+2028,"Az önce nefes alamıyorum, dudaklarım morardı. Yardım edin.",,,ACIL,SABLON
+2029,"Az önce nefes alamıyorum, dudaklarım morardı. Randevu alabilir miyim?",,,ACIL,SABLON
+2030,"Konuşmam bozuldu, yüzümün bir tarafı kaydı",,,ACIL,SABLON
+2031,"Konuşmam bozuldu, yüzümün bir tarafı kaydı. Ne yapmalıyım?",,,ACIL,SABLON
+2032,"Konuşmam bozuldu, yüzümün bir tarafı kaydı. Çok korkuyorum.",,,ACIL,SABLON
+2033,"Konuşmam bozuldu, yüzümün bir tarafı kaydı. Yardım edin.",,,ACIL,SABLON
+2034,"Konuşmam bozuldu, yüzümün bir tarafı kaydı. Randevu alabilir miyim?",,,ACIL,SABLON
+2035,"Az önce konuşmam bozuldu, yüzümün bir tarafı kaydı",,,ACIL,SABLON
+2036,"Az önce konuşmam bozuldu, yüzümün bir tarafı kaydı. Ne yapmalıyım?",,,ACIL,SABLON
+2037,"Az önce konuşmam bozuldu, yüzümün bir tarafı kaydı. Çok korkuyorum.",,,ACIL,SABLON
+2038,"Az önce konuşmam bozuldu, yüzümün bir tarafı kaydı. Yardım edin.",,,ACIL,SABLON
+2039,"Az önce konuşmam bozuldu, yüzümün bir tarafı kaydı. Randevu alabilir miyim?",,,ACIL,SABLON
+2040,Bir anda kolumu ve bacağımı hareket ettiremez oldum,,,ACIL,SABLON
+2041,Bir anda kolumu ve bacağımı hareket ettiremez oldum. Ne yapmalıyım?,,,ACIL,SABLON
+2042,Bir anda kolumu ve bacağımı hareket ettiremez oldum. Çok korkuyorum.,,,ACIL,SABLON
+2043,Bir anda kolumu ve bacağımı hareket ettiremez oldum. Yardım edin.,,,ACIL,SABLON
+2044,Bir anda kolumu ve bacağımı hareket ettiremez oldum. Randevu alabilir miyim?,,,ACIL,SABLON
+2045,Hayatımın en şiddetli baş ağrısı aniden başladı,,,ACIL,SABLON
+2046,Hayatımın en şiddetli baş ağrısı aniden başladı. Ne yapmalıyım?,,,ACIL,SABLON
+2047,Hayatımın en şiddetli baş ağrısı aniden başladı. Çok korkuyorum.,,,ACIL,SABLON
+2048,Hayatımın en şiddetli baş ağrısı aniden başladı. Yardım edin.,,,ACIL,SABLON
+2049,Hayatımın en şiddetli baş ağrısı aniden başladı. Randevu alabilir miyim?,,,ACIL,SABLON
+2050,"Kanamam durmuyor, başım dönüyor",,,ACIL,SABLON
+2051,"Kanamam durmuyor, başım dönüyor. Ne yapmalıyım?",,,ACIL,SABLON
+2052,"Kanamam durmuyor, başım dönüyor. Çok korkuyorum.",,,ACIL,SABLON
+2053,"Kanamam durmuyor, başım dönüyor. Yardım edin.",,,ACIL,SABLON
+2054,"Kanamam durmuyor, başım dönüyor. Randevu alabilir miyim?",,,ACIL,SABLON
+2055,"Şu an kanamam durmuyor, başım dönüyor",,,ACIL,SABLON
+2056,"Şu an kanamam durmuyor, başım dönüyor. Ne yapmalıyım?",,,ACIL,SABLON
+2057,"Şu an kanamam durmuyor, başım dönüyor. Çok korkuyorum.",,,ACIL,SABLON
+2058,"Şu an kanamam durmuyor, başım dönüyor. Yardım edin.",,,ACIL,SABLON
+2059,"Şu an kanamam durmuyor, başım dönüyor. Randevu alabilir miyim?",,,ACIL,SABLON
+2060,"Az önce başladı, kanamam durmuyor, başım dönüyor",,,ACIL,SABLON
+2061,"Az önce başladı, kanamam durmuyor, başım dönüyor. Ne yapmalıyım?",,,ACIL,SABLON
+2062,"Az önce başladı, kanamam durmuyor, başım dönüyor. Çok korkuyorum.",,,ACIL,SABLON
+2063,"Az önce başladı, kanamam durmuyor, başım dönüyor. Yardım edin.",,,ACIL,SABLON
+2064,"Az önce başladı, kanamam durmuyor, başım dönüyor. Randevu alabilir miyim?",,,ACIL,SABLON
+2065,"Kan kustum, siyah dışkı yaptım",,,ACIL,SABLON
+2066,"Kan kustum, siyah dışkı yaptım. Ne yapmalıyım?",,,ACIL,SABLON
+2067,"Kan kustum, siyah dışkı yaptım. Çok korkuyorum.",,,ACIL,SABLON
+2068,"Kan kustum, siyah dışkı yaptım. Yardım edin.",,,ACIL,SABLON
+2069,"Kan kustum, siyah dışkı yaptım. Randevu alabilir miyim?",,,ACIL,SABLON
+2070,"Az önce kan kustum, siyah dışkı yaptım",,,ACIL,SABLON
+2071,"Az önce kan kustum, siyah dışkı yaptım. Ne yapmalıyım?",,,ACIL,SABLON
+2072,"Az önce kan kustum, siyah dışkı yaptım. Çok korkuyorum.",,,ACIL,SABLON
+2073,"Az önce kan kustum, siyah dışkı yaptım. Yardım edin.",,,ACIL,SABLON
+2074,"Az önce kan kustum, siyah dışkı yaptım. Randevu alabilir miyim?",,,ACIL,SABLON
+2075,Bayıldım ve kendime gelmekte zorlanıyorum,,,ACIL,SABLON
+2076,Bayıldım ve kendime gelmekte zorlanıyorum. Ne yapmalıyım?,,,ACIL,SABLON
+2077,Bayıldım ve kendime gelmekte zorlanıyorum. Çok korkuyorum.,,,ACIL,SABLON
+2078,Bayıldım ve kendime gelmekte zorlanıyorum. Yardım edin.,,,ACIL,SABLON
+2079,Bayıldım ve kendime gelmekte zorlanıyorum. Randevu alabilir miyim?,,,ACIL,SABLON
+2080,Az önce bayıldım ve kendime gelmekte zorlanıyorum,,,ACIL,SABLON
+2081,Az önce bayıldım ve kendime gelmekte zorlanıyorum. Ne yapmalıyım?,,,ACIL,SABLON
+2082,Az önce bayıldım ve kendime gelmekte zorlanıyorum. Çok korkuyorum.,,,ACIL,SABLON
+2083,Az önce bayıldım ve kendime gelmekte zorlanıyorum. Yardım edin.,,,ACIL,SABLON
+2084,Az önce bayıldım ve kendime gelmekte zorlanıyorum. Randevu alabilir miyim?,,,ACIL,SABLON
+2085,"Yüksekten düştüm, başımı çarptım ve kusuyorum",,,ACIL,SABLON
+2086,"Yüksekten düştüm, başımı çarptım ve kusuyorum. Ne yapmalıyım?",,,ACIL,SABLON
+2087,"Yüksekten düştüm, başımı çarptım ve kusuyorum. Çok korkuyorum.",,,ACIL,SABLON
+2088,"Yüksekten düştüm, başımı çarptım ve kusuyorum. Yardım edin.",,,ACIL,SABLON
+2089,"Yüksekten düştüm, başımı çarptım ve kusuyorum. Randevu alabilir miyim?",,,ACIL,SABLON
+2090,"Az önce yüksekten düştüm, başımı çarptım ve kusuyorum",,,ACIL,SABLON
+2091,"Az önce yüksekten düştüm, başımı çarptım ve kusuyorum. Ne yapmalıyım?",,,ACIL,SABLON
+2092,"Az önce yüksekten düştüm, başımı çarptım ve kusuyorum. Çok korkuyorum.",,,ACIL,SABLON
+2093,"Az önce yüksekten düştüm, başımı çarptım ve kusuyorum. Yardım edin.",,,ACIL,SABLON
+2094,"Az önce yüksekten düştüm, başımı çarptım ve kusuyorum. Randevu alabilir miyim?",,,ACIL,SABLON
+2095,"Karnımda dayanılmaz bir ağrı var, sertleşti",,,ACIL,SABLON
+2096,"Karnımda dayanılmaz bir ağrı var, sertleşti. Ne yapmalıyım?",,,ACIL,SABLON
+2097,"Karnımda dayanılmaz bir ağrı var, sertleşti. Çok korkuyorum.",,,ACIL,SABLON
+2098,"Karnımda dayanılmaz bir ağrı var, sertleşti. Yardım edin.",,,ACIL,SABLON
+2099,"Karnımda dayanılmaz bir ağrı var, sertleşti. Randevu alabilir miyim?",,,ACIL,SABLON
+2100,"Şu an karnımda dayanılmaz bir ağrı var, sertleşti",,,ACIL,SABLON
+2101,"Şu an karnımda dayanılmaz bir ağrı var, sertleşti. Ne yapmalıyım?",,,ACIL,SABLON
+2102,"Şu an karnımda dayanılmaz bir ağrı var, sertleşti. Çok korkuyorum.",,,ACIL,SABLON
+2103,"Şu an karnımda dayanılmaz bir ağrı var, sertleşti. Yardım edin.",,,ACIL,SABLON
+2104,"Şu an karnımda dayanılmaz bir ağrı var, sertleşti. Randevu alabilir miyim?",,,ACIL,SABLON
+2105,"Az önce başladı, karnımda dayanılmaz bir ağrı var, sertleşti",,,ACIL,SABLON
+2106,"Az önce başladı, karnımda dayanılmaz bir ağrı var, sertleşti. Ne yapmalıyım?",,,ACIL,SABLON
+2107,"Az önce başladı, karnımda dayanılmaz bir ağrı var, sertleşti. Çok korkuyorum.",,,ACIL,SABLON
+2108,"Az önce başladı, karnımda dayanılmaz bir ağrı var, sertleşti. Yardım edin.",,,ACIL,SABLON
+2109,"Az önce başladı, karnımda dayanılmaz bir ağrı var, sertleşti. Randevu alabilir miyim?",,,ACIL,SABLON
+2110,"Yüzüm ve dilim şişti, nefesim daralıyor",,,ACIL,SABLON
+2111,"Yüzüm ve dilim şişti, nefesim daralıyor. Ne yapmalıyım?",,,ACIL,SABLON
+2112,"Yüzüm ve dilim şişti, nefesim daralıyor. Çok korkuyorum.",,,ACIL,SABLON
+2113,"Yüzüm ve dilim şişti, nefesim daralıyor. Yardım edin.",,,ACIL,SABLON
+2114,"Yüzüm ve dilim şişti, nefesim daralıyor. Randevu alabilir miyim?",,,ACIL,SABLON
+2115,"Az önce yüzüm ve dilim şişti, nefesim daralıyor",,,ACIL,SABLON
+2116,"Az önce yüzüm ve dilim şişti, nefesim daralıyor. Ne yapmalıyım?",,,ACIL,SABLON
+2117,"Az önce yüzüm ve dilim şişti, nefesim daralıyor. Çok korkuyorum.",,,ACIL,SABLON
+2118,"Az önce yüzüm ve dilim şişti, nefesim daralıyor. Yardım edin.",,,ACIL,SABLON
+2119,"Az önce yüzüm ve dilim şişti, nefesim daralıyor. Randevu alabilir miyim?",,,ACIL,SABLON
+2120,"Çocuğum nöbet geçiriyor, tepki vermiyor",,,ACIL,SABLON
+2121,"Çocuğum nöbet geçiriyor, tepki vermiyor. Ne yapmalıyım?",,,ACIL,SABLON
+2122,"Çocuğum nöbet geçiriyor, tepki vermiyor. Çok korkuyorum.",,,ACIL,SABLON
+2123,"Çocuğum nöbet geçiriyor, tepki vermiyor. Yardım edin.",,,ACIL,SABLON
+2124,"Çocuğum nöbet geçiriyor, tepki vermiyor. Randevu alabilir miyim?",,,ACIL,SABLON
+2125,"Bebeğim morardı, nefes almakta zorlanıyor",,,ACIL,SABLON
+2126,"Bebeğim morardı, nefes almakta zorlanıyor. Ne yapmalıyım?",,,ACIL,SABLON
+2127,"Bebeğim morardı, nefes almakta zorlanıyor. Çok korkuyorum.",,,ACIL,SABLON
+2128,"Bebeğim morardı, nefes almakta zorlanıyor. Yardım edin.",,,ACIL,SABLON
+2129,"Bebeğim morardı, nefes almakta zorlanıyor. Randevu alabilir miyim?",,,ACIL,SABLON
+2130,"Hamileyim, şiddetli kanama ve ağrım var",,,ACIL,SABLON
+2131,"Hamileyim, şiddetli kanama ve ağrım var. Ne yapmalıyım?",,,ACIL,SABLON
+2132,"Hamileyim, şiddetli kanama ve ağrım var. Çok korkuyorum.",,,ACIL,SABLON
+2133,"Hamileyim, şiddetli kanama ve ağrım var. Yardım edin.",,,ACIL,SABLON
+2134,"Hamileyim, şiddetli kanama ve ağrım var. Randevu alabilir miyim?",,,ACIL,SABLON
+2135,Aşırı dozda ilaç aldım,,,ACIL,SABLON
+2136,Aşırı dozda ilaç aldım. Ne yapmalıyım?,,,ACIL,SABLON
+2137,Aşırı dozda ilaç aldım. Çok korkuyorum.,,,ACIL,SABLON
+2138,Aşırı dozda ilaç aldım. Yardım edin.,,,ACIL,SABLON
+2139,Aşırı dozda ilaç aldım. Randevu alabilir miyim?,,,ACIL,SABLON
+2140,Az önce aşırı dozda ilaç aldım,,,ACIL,SABLON
+2141,Az önce aşırı dozda ilaç aldım. Ne yapmalıyım?,,,ACIL,SABLON
+2142,Az önce aşırı dozda ilaç aldım. Çok korkuyorum.,,,ACIL,SABLON
+2143,Az önce aşırı dozda ilaç aldım. Yardım edin.,,,ACIL,SABLON
+2144,Az önce aşırı dozda ilaç aldım. Randevu alabilir miyim?,,,ACIL,SABLON
+2145,Kendime zarar vermeyi düşünüyorum,,,ACIL,SABLON
+2146,Kendime zarar vermeyi düşünüyorum. Ne yapmalıyım?,,,ACIL,SABLON
+2147,Kendime zarar vermeyi düşünüyorum. Çok korkuyorum.,,,ACIL,SABLON
+2148,Kendime zarar vermeyi düşünüyorum. Yardım edin.,,,ACIL,SABLON
+2149,Kendime zarar vermeyi düşünüyorum. Randevu alabilir miyim?,,,ACIL,SABLON
+2150,"Gözüme kimyasal madde sıçradı, göremiyorum",,,ACIL,SABLON
+2151,"Gözüme kimyasal madde sıçradı, göremiyorum. Ne yapmalıyım?",,,ACIL,SABLON
+2152,"Gözüme kimyasal madde sıçradı, göremiyorum. Çok korkuyorum.",,,ACIL,SABLON
+2153,"Gözüme kimyasal madde sıçradı, göremiyorum. Yardım edin.",,,ACIL,SABLON
+2154,"Gözüme kimyasal madde sıçradı, göremiyorum. Randevu alabilir miyim?",,,ACIL,SABLON
+2155,"Az önce gözüme kimyasal madde sıçradı, göremiyorum",,,ACIL,SABLON
+2156,"Az önce gözüme kimyasal madde sıçradı, göremiyorum. Ne yapmalıyım?",,,ACIL,SABLON
+2157,"Az önce gözüme kimyasal madde sıçradı, göremiyorum. Çok korkuyorum.",,,ACIL,SABLON
+2158,"Az önce gözüme kimyasal madde sıçradı, göremiyorum. Yardım edin.",,,ACIL,SABLON
+2159,"Az önce gözüme kimyasal madde sıçradı, göremiyorum. Randevu alabilir miyim?",,,ACIL,SABLON
+2160,"Derin bir kesiğim var, kan fışkırıyor",,,ACIL,SABLON
+2161,"Derin bir kesiğim var, kan fışkırıyor. Ne yapmalıyım?",,,ACIL,SABLON
+2162,"Derin bir kesiğim var, kan fışkırıyor. Çok korkuyorum.",,,ACIL,SABLON
+2163,"Derin bir kesiğim var, kan fışkırıyor. Yardım edin.",,,ACIL,SABLON
+2164,"Derin bir kesiğim var, kan fışkırıyor. Randevu alabilir miyim?",,,ACIL,SABLON
+2165,"Şu an derin bir kesiğim var, kan fışkırıyor",,,ACIL,SABLON
+2166,"Şu an derin bir kesiğim var, kan fışkırıyor. Ne yapmalıyım?",,,ACIL,SABLON
+2167,"Şu an derin bir kesiğim var, kan fışkırıyor. Çok korkuyorum.",,,ACIL,SABLON
+2168,"Şu an derin bir kesiğim var, kan fışkırıyor. Yardım edin.",,,ACIL,SABLON
+2169,"Şu an derin bir kesiğim var, kan fışkırıyor. Randevu alabilir miyim?",,,ACIL,SABLON
+2170,"Az önce başladı, derin bir kesiğim var, kan fışkırıyor",,,ACIL,SABLON
+2171,"Az önce başladı, derin bir kesiğim var, kan fışkırıyor. Ne yapmalıyım?",,,ACIL,SABLON
+2172,"Az önce başladı, derin bir kesiğim var, kan fışkırıyor. Çok korkuyorum.",,,ACIL,SABLON
+2173,"Az önce başladı, derin bir kesiğim var, kan fışkırıyor. Yardım edin.",,,ACIL,SABLON
+2174,"Az önce başladı, derin bir kesiğim var, kan fışkırıyor. Randevu alabilir miyim?",,,ACIL,SABLON
+2175,"Elektrik çarptı, göğsüm ağrıyor",,,ACIL,SABLON
+2176,"Elektrik çarptı, göğsüm ağrıyor. Ne yapmalıyım?",,,ACIL,SABLON
+2177,"Elektrik çarptı, göğsüm ağrıyor. Çok korkuyorum.",,,ACIL,SABLON
+2178,"Elektrik çarptı, göğsüm ağrıyor. Yardım edin.",,,ACIL,SABLON
+2179,"Elektrik çarptı, göğsüm ağrıyor. Randevu alabilir miyim?",,,ACIL,SABLON
+2180,"Az önce elektrik çarptı, göğsüm ağrıyor",,,ACIL,SABLON
+2181,"Az önce elektrik çarptı, göğsüm ağrıyor. Ne yapmalıyım?",,,ACIL,SABLON
+2182,"Az önce elektrik çarptı, göğsüm ağrıyor. Çok korkuyorum.",,,ACIL,SABLON
+2183,"Az önce elektrik çarptı, göğsüm ağrıyor. Yardım edin.",,,ACIL,SABLON
+2184,"Az önce elektrik çarptı, göğsüm ağrıyor. Randevu alabilir miyim?",,,ACIL,SABLON

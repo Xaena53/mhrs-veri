@@ -4,7 +4,8 @@ Kullanım:
     python schema/kurulum.py                  # boş veritabanı: cikti/mhrs.db
     python schema/kurulum.py --ornek          # + elle yazılmış test verisi
     python schema/kurulum.py --csv cikti/csv  # + Sentetik Veri ekibinin ürettiği CSV'ler
-    python schema/kurulum.py --ornek --disa-aktar cikti/ornek_csv   # tabloları CSV'ye yaz
+    python schema/kurulum.py --ornek --disa-aktar cikti/disa        # tabloları CSV'ye yaz
+    python schema/kurulum.py --csv cikti/csv --gorunum-aktar cikti/gorunum   # hazır görünümleri CSV'ye yaz
 
 CSV sözleşmesi: her tablo için <tablo_adi>.csv, ilk satır sütun adları (schema.sql ile aynı),
 UTF-8, boş hücre = NULL. Yükleme sırası yabancı anahtarlara göre aşağıdaki TABLOLAR listesidir.
@@ -27,7 +28,7 @@ EN_FAZLA_HATA = 10
 ONDALIK_VIRGUL = re.compile(r"^(-?\d+),(\d+)$")
 
 TABLOLAR = [
-    "branslar", "hastaneler", "doktorlar", "hastalar", "hava_durumu", "tatiller",
+    "veri_bilgisi", "branslar", "hastaneler", "doktorlar", "hastalar", "hava_durumu", "tatiller",
     "doktor_takvimi", "sikayetler", "yanit_ornekleri", "randevular", "yedek_liste", "bildirimler",
 ]
 
@@ -304,12 +305,45 @@ DENETIMLER = {
     "Hatırlatmaya IPTAL cevabı verilmiş ama randevu iptal edilmemiş":
         """SELECT COUNT(*) FROM bildirimler b JOIN randevular r USING(randevu_id)
            WHERE b.tur = 'HATIRLATMA' AND b.yanit_niyeti = 'IPTAL' AND r.durum <> 'IPTAL'""",
+    "Hatırlatmaya ONAY cevabı verilmiş ama katilim_teyidi ONAYLADI değil":
+        """SELECT COUNT(*) FROM bildirimler b JOIN randevular r USING(randevu_id)
+           WHERE b.tur = 'HATIRLATMA' AND b.yanit_niyeti = 'ONAY' AND r.katilim_teyidi <> 'ONAYLADI'""",
+    "Teyit durumu iptal bilgisiyle uyuşmuyor (REDDETTI/SURE_ASIMI, onay süresi dolan iptal)":
+        """SELECT COUNT(*) FROM randevular
+           WHERE (katilim_teyidi IN ('REDDETTI','SURE_ASIMI') AND durum <> 'IPTAL')
+              OR ((katilim_teyidi = 'SURE_ASIMI') <> (iptal_nedeni IS 'ONAY_SURESI_DOLDU'))
+              OR (iptal_nedeni = 'ONAY_SURESI_DOLDU' AND iptal_kanali <> 'SISTEM')""",
+    "Onay süresi dolduğu için iptal edilmiş ama hatırlatma yok ya da hasta cevap vermiş":
+        """SELECT COUNT(*) FROM randevular r
+           WHERE r.iptal_nedeni = 'ONAY_SURESI_DOLDU' AND (
+               NOT EXISTS (SELECT 1 FROM bildirimler b WHERE b.randevu_id = r.randevu_id
+                             AND b.tur = 'HATIRLATMA' AND b.gonderim_zamani <= r.iptal_zamani)
+               OR EXISTS (SELECT 1 FROM bildirimler b WHERE b.randevu_id = r.randevu_id
+                            AND b.tur = 'HATIRLATMA' AND b.yanit_metni IS NOT NULL))""",
     "CHATBOT ile iptal edilmiş ama öncesinde hastadan IPTAL/ERTELEME cevabı yok":
         """SELECT COUNT(*) FROM randevular r
            WHERE r.iptal_kanali = 'CHATBOT' AND NOT EXISTS (
                SELECT 1 FROM bildirimler b WHERE b.randevu_id = r.randevu_id
                  AND b.yanit_niyeti IN ('IPTAL','ERTELEME') AND b.yanit_zamani <= r.iptal_zamani)""",
 }
+
+
+# Sorgularda 'şu an': veri setinin anı, yoksa bilgisayarın saati (veri_bilgisi tablosuna bakın).
+SIMDI = "COALESCE((SELECT veri_ani FROM veri_bilgisi), datetime('now','localtime'))"
+DENETIMLER = {ad: sql.replace("date('now','localtime')", "date(@)").replace("datetime('now','localtime')", "@")
+                     .replace("@", SIMDI)
+              for ad, sql in DENETIMLER.items()}
+
+
+def gorunum_aktar(con: sqlite3.Connection, klasor: Path) -> None:
+    klasor.mkdir(parents=True, exist_ok=True)
+    for (ad,) in con.execute("SELECT name FROM sqlite_master WHERE type = 'view' ORDER BY name").fetchall():
+        cur = con.execute(f"SELECT * FROM {ad}")
+        with (klasor / f"{ad}.csv").open("w", encoding="utf-8", newline="") as f:
+            w = csv.writer(f)
+            w.writerow([d[0] for d in cur.description])
+            w.writerows(cur)
+    print(f"Görünüm CSV'leri yazıldı: {klasor}")
 
 
 def denetle(con: sqlite3.Connection) -> bool:
@@ -329,13 +363,15 @@ def denetle(con: sqlite3.Connection) -> bool:
 
 
 def main() -> int:
-    if hasattr(sys.stdout, "reconfigure"):
-        sys.stdout.reconfigure(encoding="utf-8")
+    for akis in (sys.stdout, sys.stderr):  # Windows konsolunda Türkçe hata mesajları bozulmasın
+        if hasattr(akis, "reconfigure"):
+            akis.reconfigure(encoding="utf-8")
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument("--db", type=Path, default=KOK / "cikti" / "mhrs.db")
     p.add_argument("--ornek", action="store_true", help="elle yazılmış test verisini yükle")
     p.add_argument("--csv", type=Path, help="CSV klasörünü yükle")
     p.add_argument("--disa-aktar", type=Path, help="tabloları bu klasöre CSV olarak yaz")
+    p.add_argument("--gorunum-aktar", type=Path, help="hazır görünümleri bu klasöre CSV olarak yaz")
     a = p.parse_args()
 
     # Yeni veritabanı önce yanına kurulur; yükleme reddedilirse çalışan eski mhrs.db olduğu gibi kalır.
@@ -359,6 +395,8 @@ def main() -> int:
     temiz = denetle(con)
     if a.disa_aktar:
         disa_aktar(con, a.disa_aktar)
+    if a.gorunum_aktar:
+        gorunum_aktar(con, a.gorunum_aktar)
     surum = sema_surumu(con)
     con.close()
     try:

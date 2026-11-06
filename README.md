@@ -18,26 +18,37 @@ KVKK nedeniyle gerçek hasta verisi kullanılamadığından, MHRS otomasyon sist
 ```
 schema/    → schema.sql, ER diyagramı, kurulum.py, referans/ (branşlar, tatiller)
 tests/     → otomatik testler
-uretici/   → Faker ile veri üreten Python kodları
+uretici/   → uret.py (veri üreticisi), metinler.py (şikayet ve cevap metinleri), ilk_surum/ (ilk deneme)
 docs/      → veri sözlüğü, toplantı notları, diğer grupların istekleri
-cikti/     → üretilen CSV / SQLite dosyaları
+cikti/     → üretilen dosyalar; ornek_csv/ ve ornek_gorunum/ repoda hazır küçük örnek
 ```
 
 ## Kurulum ve Kullanım
 
-Gerekli: Python 3.10+ (veritabanı kurulumu için ek kütüphane gerekmez). Veritabanı SQLite'tır;
+Gerekli: Python 3.10+. Veritabanı kurulumu ek kütüphane istemez, veri üretmek için `pip install -r requirements.txt`. Veritabanı SQLite'tır;
 `.db` dosyası [DB Browser for SQLite](https://sqlitebrowser.org/) ile açılıp incelenebilir.
 
 ```bash
-python schema/kurulum.py --ornek          # örnek veriyle cikti/mhrs.db oluşturur ve denetler
-python schema/kurulum.py --csv cikti/csv  # üretilen CSV'leri yükler ve denetler
+python uretici/uret.py                    # 5000 hasta, 12 aylık veri → cikti/csv (birkaç saniye)
+python schema/kurulum.py --csv cikti/csv  # CSV'leri yükler, denetler → cikti/mhrs.db
+python schema/kurulum.py --csv cikti/csv --gorunum-aktar cikti/gorunum   # hazır görünümleri de CSV yazar
+
+python schema/kurulum.py --csv cikti/ornek_csv   # Faker kurmadan: repodaki küçük örnekle dene
 ```
 
-- Şema: [`schema/schema.sql`](schema/schema.sql) — **v1.0**, 12 tablo, 7 hazır görünüm, biçim ve tutarlılık kuralları
+- Şema: [`schema/schema.sql`](schema/schema.sql) — **v1.1**, 13 tablo, 10 hazır görünüm, biçim ve tutarlılık kuralları
 - ER diyagramı: [`schema/ER.md`](schema/ER.md)
 - Veri sözlüğü: [`docs/veri_sozlugu.md`](docs/veri_sozlugu.md) · Değişiklikler: [`docs/degisiklikler.md`](docs/degisiklikler.md)
 
 Şemaya ya da `kurulum.py`'ye dokunduktan sonra testleri çalıştırın: `python -m unittest discover tests -v`
+
+### Üretici ayarları
+
+`python uretici/uret.py --hasta 8000 --ay 12 --tohum 42 --veri-ani "2026-11-06 09:00:00" --cikti cikti/csv`
+
+Aynı tohum, veri anı ve Faker sürümü aynı veriyi üretir; gruplar aynı veri üzerinde çalışabilir. Gelmeme olasılığına gömülü
+desenler: geçmiş gelmemeler, yağmur/kar, uzun bekleme, genç yaş, mesafe, tatil yakınlığı, hatırlatma ve hastanın onayı
+(`gelmeme_olasiligi()`). Basit bir modelle AUC yaklaşık 0,70 çıkar; yani öğrenilebilir ama ezberlenemez.
 
 ### Sentetik Veri ekibi için CSV sözleşmesi
 
@@ -65,10 +76,9 @@ Pandas ile yazarken `df.to_csv(yol, index=False, encoding="utf-8")` yeterli. Ör
 - [x] Hafta 1 — Repo, şema v0 (12 tablo + 4 görünüm), ER diyagramı, veri sözlüğü
 - [x] Hafta 1 — Şema diğer 5 gruba iletildi, ilk dönüşlerde eksik yok ([notlar](docs/toplanti_notlari.md)); kalan gruplardan dönüş bekleniyor
 - [x] Hafta 2 — Şema v1.0 sabitlendi, ER diyagramı tüm sütunlarla, branş/tatil referansları, 3 yeni görünüm, 65 test ([değişiklikler](docs/degisiklikler.md))
-- [ ] Hafta 2 — Hasta/hastane/doktor verisi (Sentetik Veri ekibi)
-- [ ] Hafta 3 — Randevu geçmişi + no-show desenleri, 100 satırlık örnek veri
-- [ ] Hafta 4 — Şikayet metinleri, yedek liste, mesajlar
-- [ ] Hafta 5 — Tam veri seti, doğrulama, veri sözlüğü
+- [x] Hafta 2–5 — Üretici tüm tabloları yazıyor: hasta/hastane/doktor, randevu geçmişi ve no-show desenleri, şikayet metinleri, yedek liste, mesajlar; örnek veri repoda; 90 test ([değişiklikler](docs/degisiklikler.md))
+- [ ] Chatbot grubunun sütun isteklerinin ve 2 saat kuralının teyidi (koordinasyon)
+- [ ] Metinlerin ve desenlerin ekipçe gözden geçirilmesi, diğer grupların geri bildirimi
 - [ ] Sonrası — Geri bildirime göre düzeltmeler, rapor ve sunum
 
 > Tüm veriler yapaydır; gerçek kişilerle ilgisi yoktur.

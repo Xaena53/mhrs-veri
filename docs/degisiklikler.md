@@ -10,6 +10,29 @@ Sürüm veritabanında da yazılıdır: `PRAGMA user_version;` → `100` = v1.0,
   değişiklik bu dosyaya "ne değişti, ne yapmanız gerekir" diye yazılır.
 - Diğer gruplardan gelen istekler `docs/toplanti_notlari.md`'ye işlenir, şemaya Veritabanı ekibi (Bedirhan Ç., Eylül Y.) uygular.
 
+## v1.1 — 6 Kasım 2026
+
+Yalnızca ekleme: v1.0'a göre yazılmış kod ve CSV'ler aynen çalışır. Tek davranış farkı, aynı slota artık bir çifte randevu yazılabilmesi.
+
+**Eklenenler**
+- `randevular`: `katilim_teyidi`, `onay_zamani`, `iptal_nedeni` (Chatbot grubunun teyit akışı ve 2 saat kuralı) ve `cifte_randevu`.
+  Kılavuzun 3. modülü çifte randevuyu açıkça istiyor; v1.0'daki tekil indeks bunu engelliyordu.
+- `veri_bilgisi`: verinin "şu an"ı. Denetimler ve görünümler bunu kullanır, veri seti zamanla eskiyip hataya düşmez.
+- Görünümler: `v_hasta_profili`, `v_chatbot_hastalar`, `v_chatbot_randevular`. Chatbot grubu istediği sütun adlarıyla, ortak veriden okur.
+- `uretici/uret.py`: 12 tablonun hepsini üreten sentetik veri üreticisi. `cikti/ornek_csv/` ve `cikti/ornek_gorunum/`: hazır küçük örnek.
+- `kurulum.py --gorunum-aktar KLASOR`; teyit ve onay süresi için 3 yeni denetim.
+- `tests/`: üretici testleri dahil 90 test.
+
+**Düzeltilenler**
+- Windows konsolunda stderr'e yazılan Türkçe hata mesajları bozuk kodlanıyordu.
+
+**Üretici, ilk sürümdeki (`uretici/ilk_surum/`, Ceyda O.) şu sorunları giderir**
+- Şemayla uyuşmayan sütunlar yüzünden `kurulum.py` dosyaları reddediyordu.
+- `GELMEDI` durumu yoktu; No-Show modeli eğitilemezdi. `no_show_sayisi` randevulardan bağımsız rastgele bir sayıydı.
+- 297 randevunun hepsi mesai dışındaydı (saat ayarlanmıyor, o anki saate ekleniyordu); hepsi aynı dakikadaydı.
+- Hafta sonu ve 29 Ekim'e randevu, aynı doktora aynı saatte çakışma, gelecek tarihli `Tamamlandı` / onay / iptal.
+- Hasta adlarında `Öğr.`, `Doç.`, `Av.` gibi unvanlar; 200 hasta (kılavuz "binlerce" diyor); telefon yok; tekrar üretilemez veri.
+
 ## v1.0 — 27 Ekim 2026
 
 Şema sabitlendi. v0.1.1'deki 12 tablonun **hiçbir sütunu değişmedi**; v0.1.1'e göre yazılmış kod aynen çalışır.

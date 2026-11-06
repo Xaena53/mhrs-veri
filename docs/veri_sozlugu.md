@@ -1,4 +1,4 @@
-# Veri Sözlüğü (Şema v1.0)
+# Veri Sözlüğü (Şema v1.1)
 
 Kaynak: [`schema/schema.sql`](../schema/schema.sql). Tarih alanları `YYYY-MM-DD`, zaman alanları `YYYY-MM-DD HH:MM:SS` biçimindedir.
 **Tüm veriler sentetiktir.** TC kimlik no tutulmaz, hastalar yalnızca `hasta_id` ile tanınır.
@@ -9,7 +9,7 @@ Telefonlar `0500XXXXXXX` biçimindedir; 0500 ön eki GSM operatörlerine atanmı
 `kurulum.py` Türkçe Excel'in noktalı virgüllü CSV'sini ve ondalık virgülünü (`4,2`) de okur; dosya UTF-8 olmalıdır.
 
 **SQLite notu:** Yabancı anahtar kontrolü bağlantı başına açılır. Kendi kodunuzda bağlandıktan sonra `PRAGMA foreign_keys = ON;` çalıştırın.
-Şema sürümü `PRAGMA user_version;` ile okunur (`100` = v1.0). Sürümler arası farklar: [`degisiklikler.md`](degisiklikler.md).
+Şema sürümü `PRAGMA user_version;` ile okunur (`101` = v1.1). Sürümler arası farklar: [`degisiklikler.md`](degisiklikler.md).
 
 **Referans listeler:** Branşlar ([`schema/referans/branslar.csv`](../schema/referans/branslar.csv), 16 branş) ve
 2025–2026 resmî tatilleri ([`schema/referans/tatiller.csv`](../schema/referans/tatiller.csv)) sabittir, üretilmez.
@@ -22,7 +22,8 @@ Telefonlar `0500XXXXXXX` biçimindedir; 0500 ön eki GSM operatörlerine atanmı
 | `sikayetler`, `v_triyaj_veri` | ● | | | ● | |
 | `v_noshow_ozellikleri` | | ● | | | ● |
 | `randevular` | | ● | ● | ● | ● |
-| `v_bekleyen_randevular` | | | ● | | |
+| `v_bekleyen_randevular`, `v_chatbot_randevular`, `v_chatbot_hastalar` | | | ● | | |
+| `v_hasta_profili` | | ● | ● | ● | ● |
 | `hastalar` | | ● | ● | ● | ● |
 | `doktor_takvimi`, `v_doluluk` | | ● | | ● | ● |
 | `hava_durumu`, `tatiller` | | ● | | | |
@@ -31,6 +32,17 @@ Telefonlar `0500XXXXXXX` biçimindedir; 0500 ön eki GSM operatörlerine atanmı
 | `v_aylik_ozet`, `v_aylik_brans_ozet` | | | | | ● |
 
 ---
+
+## Veri seti bilgisi
+
+### `veri_bilgisi` (tek satır)
+| Sütun | Tip | Açıklama | Örnek |
+|---|---|---|---|
+| tek | INTEGER PK | Her zaman 1 | 1 |
+| veri_ani | TEXT | Verinin "şu an"ı: öncesi geçmiş, sonrası gelecek. Denetimler ve görünümler bilgisayarın saati yerine bunu kullanır | 2026-11-06 09:00:00 |
+| tohum | INTEGER | Üreticinin rastgelelik tohumu | 42 |
+
+Sorgularınızda "şimdi" gerektiğinde `(SELECT veri_ani FROM veri_bilgisi)` kullanın, `date('now')` değil.
 
 ## Ana tablolar
 
@@ -141,8 +153,12 @@ Kural: `aciliyet` ACIL değilse `brans_id` boş olamaz.
 | kaynak | TEXT | `NORMAL`, `YEDEK_LISTE`, `CHATBOT` | NORMAL |
 | hatirlatma_gonderildi | 0/1 | 24 saat önce mesaj gitti mi | 1 |
 | mesafe_km | REAL | Ev ile hastane arası | 4.2 |
+| katilim_teyidi | TEXT | `BEKLENIYOR`, `ONAYLADI`, `REDDETTI`, `SURE_ASIMI` (v1.1) | ONAYLADI |
+| onay_zamani | TEXT | Hastanın onayladığı an; yalnızca ONAYLADI ise dolu (v1.1) | 2026-03-03 14:20:00 |
+| iptal_nedeni | TEXT | `HASTA_ISTEGI`, `ERTELEME`, `ONAY_SURESI_DOLDU` (Chatbot grubunun 2 saat kuralı), `DOKTOR_IZNI` (v1.1) | HASTA_ISTEGI |
+| cifte_randevu | 0/1 | 1 = overbooking ile aynı slota yazılan ek randevu (3. grup, v1.1) | 0 |
 
-Kurallar: `randevu_zamani ≥ olusturma_zamani`. Aynı doktor ve saate, ya da aynı hastaya aynı saatte iki aktif randevu olamaz.
+Kurallar: `randevu_zamani ≥ olusturma_zamani`. Aynı doktor ve saate bir normal ve en fazla bir çifte randevu verilebilir; aynı hastaya aynı saatte iki aktif randevu olamaz.
 `IPTAL` ⇔ `iptal_zamani` ve `iptal_kanali` dolu. Randevu saati doktorun mesaisinde, öğle arası dışında ve slot ızgarasında olmalıdır (denetim).
 `hatirlatma_gonderildi = 1` ise `bildirimler` tablosunda o randevu için bir `HATIRLATMA` kaydı bulunmalıdır (denetim).
 Resmî tatil ve bayram günlerine, arifelerde 13:00'ten sonrasına randevu verilmez (denetim).
@@ -187,6 +203,7 @@ Testleri: [`tests/test_denetimler.py`](../tests/test_denetimler.py).
 | Zaman | Hasta kaydı bugünden sonra olamaz. Hasta, kayıt tarihinden önce randevu alamaz ya da yedek listeye giremez. Geçmiş randevu BEKLIYOR kalmaz, gelecekteki randevunun GELDI/GELMEDI sonucu olmaz. Oluşturma, iptal, mesaj, yanıt ve yedek kayıt zamanları şu andan sonra olamaz |
 | Yedek liste | Hasta aynı branş için en fazla bir BEKLIYOR kaydına sahiptir (şema zorlar). ATANDI kaydın randevusu aynı hasta ve branştadır, kaynağı `YEDEK_LISTE`dir ve kayıttan sonra oluşturulmuştur; kayıt, randevu oluşturulduktan sonra ATANDI olur. Kaynağı `YEDEK_LISTE` olan her randevunun bir yedek kaydı vardır |
 | Bildirim | `HATIRLATMA` ve `IPTAL_ONAYI` randevu sahibine gider. Hatırlatma randevu alındıktan sonra, randevudan ve varsa iptalden önce gider. İptal onayı yalnız iptal edilmiş randevuya, iptalden sonra gider. `BOS_RANDEVU_TEKLIFI` iptal edilmiş randevu için, iptalden sonra, iptal eden hasta dışında ve o branşın yedek listesine teklif anından önce girmiş birine gider |
+| Teyit | Hatırlatmaya `ONAY` cevabı verilen randevunun teyidi `ONAYLADI` olur. `REDDETTI` ve `SURE_ASIMI` yalnız iptal edilmiş randevuda bulunur. `SURE_ASIMI` ⇔ `iptal_nedeni = ONAY_SURESI_DOLDU`; bu iptal `SISTEM` kanalındandır, cevapsız bir hatırlatmadan sonra gelir |
 | Chatbot | Hatırlatmaya `IPTAL` cevabı verilen randevu iptal edilir. `iptal_kanali = CHATBOT` olan iptalden önce hastanın `IPTAL` ya da `ERTELEME` cevabı vardır |
 
 ## Hazır görünümler
@@ -198,5 +215,10 @@ Testleri: [`tests/test_denetimler.py`](../tests/test_denetimler.py).
 | `v_doluluk` | 6. grup | Doktor-gün başına doluluk yüzdesi |
 | `v_bekleyen_yedek` | 5. grup | Bekleyen yedek liste kayıtları, hasta konumu ve iletişim kanalıyla birlikte, aciliyete göre sıralı |
 | `v_triyaj_veri` | 2. grup | Şikayet metni, aciliyet, doğru branşın id'si **ve adı**, varsa alternatif branş. ACIL vakada branş boştur |
-| `v_bekleyen_randevular` | 4. grup | Durumu BEKLIYOR olan randevular: hasta adı, telefon, iletişim kanalı, branş, doktor (unvanıyla), hastane, hatırlatma gitti mi. Zaman süzmesi sorguda yapılır, ör. yarınkiler: `WHERE date(randevu_zamani) = date('now','localtime','+1 day')` |
+| `v_bekleyen_randevular` | 4. grup | Durumu BEKLIYOR olan randevular: hasta adı, telefon, iletişim kanalı, branş, doktor (unvanıyla), hastane, hatırlatma gitti mi. Zaman süzmesi sorguda yapılır, ör. yarınkiler: `WHERE date(randevu_zamani) = date((SELECT veri_ani FROM veri_bilgisi),'+1 day')` |
 | `v_aylik_brans_ozet` | 6. grup | `v_aylik_ozet` ile aynı sayılar, ay × hastane × branş kırılımında (adlarıyla) |
+| `v_hasta_profili` | Herkes | Kılavuzdaki profil: yaş, son 1 yılda randevu/gelmeme/iptal sayısı, en sık başvurulan branş |
+| `v_chatbot_hastalar` | 4. grup | Grubun istediği biçimde: `hasta_id` (H001), `ad_soyad`, `yas`, `cinsiyet` (Kadın/Erkek), `no_show_sayisi`; ek olarak `telefon`, `iletisim_kanali` |
+| `v_chatbot_randevular` | 4. grup | Grubun istediği sütun adları: `randevu_id` (R0001), `hasta_id`, `randevu_tarih_saat`, `saat_dilimi`, `hastane`, `bolum`, `doktor`, `randevu_durumu`, `katilim_teyidi`, `onay_zamani`, `iptal_zamani_ve_nedeni` |
+
+CSV isteyen gruplar için: `python schema/kurulum.py --csv cikti/csv --gorunum-aktar cikti/gorunum`. Hazır küçük örnek: [`cikti/ornek_gorunum/`](../cikti/ornek_gorunum/).

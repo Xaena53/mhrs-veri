@@ -1,0 +1,31 @@
+randevu_id,randevu_zamani,hasta_id,ad,soyad,telefon,iletisim_kanali,brans_adi,doktor,hastane_adi,hatirlatma_gonderildi
+375,2026-11-06 11:00:00,49,Berkal,Zorlu,05002564251,WEB,Çocuk Sağlığı ve Hastalıkları,Uzm. Dr. Akgöl Yıldırım,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),1
+376,2026-11-06 15:15:00,11,Nevsale,Durdu,05006366205,WHATSAPP,Çocuk Sağlığı ve Hastalıkları,Uzm. Dr. Akgöl Yıldırım,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),1
+377,2026-11-06 11:10:00,298,Dorukhan,Zorlu,05009255661,SMS,Kulak Burun Boğaz,Uzm. Dr. Yağızkurt Şensoy,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),1
+380,2026-11-09 08:45:00,275,Gülkadın,Arsoy,05001795765,SMS,Kadın Hastalıkları ve Doğum,Uzm. Dr. Büşranur Bilir,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),0
+381,2026-11-09 11:00:00,65,Sebigül,Aksu,05001871534,WEB,Dermatoloji,Doç. Dr. Zubeyde Seven,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),0
+382,2026-11-09 10:45:00,161,Açılay,Zorlu,05005692553,SMS,Fiziksel Tıp ve Rehabilitasyon,Uzm. Dr. Fermuta Sezer,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),0
+383,2026-11-09 11:15:00,159,Sunay,Zorlu,05001016911,WHATSAPP,Fiziksel Tıp ve Rehabilitasyon,Uzm. Dr. Fermuta Sezer,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),0
+384,2026-11-09 15:45:00,37,Gülüs,Çamurcuoğlu,,WEB,Fiziksel Tıp ve Rehabilitasyon,Uzm. Dr. Fermuta Sezer,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),0
+385,2026-11-10 10:00:00,73,Demirok,Manço,05002997281,WHATSAPP,Dahiliye,Uzm. Dr. Dilfeza Yıldırım,Odunpazarı Devlet Hastanesi (sentetik),0
+386,2026-11-10 13:45:00,229,Neslinur,Bilir,05009974376,WHATSAPP,Dahiliye,Uzm. Dr. Dilfeza Yıldırım,Odunpazarı Devlet Hastanesi (sentetik),0
+387,2026-11-10 09:00:00,118,Rebihat,Akar,05004159166,WEB,Göz Hastalıkları,Uzm. Dr. Zihni Akçay,Odunpazarı Devlet Hastanesi (sentetik),0
+388,2026-11-10 15:00:00,161,Açılay,Zorlu,05005692553,SMS,Göz Hastalıkları,Uzm. Dr. Zihni Akçay,Odunpazarı Devlet Hastanesi (sentetik),0
+389,2026-11-10 13:45:00,26,Saba,Gül,05003567281,WHATSAPP,Genel Cerrahi,Doç. Dr. Harbinaz Zorlu,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),0
+390,2026-11-11 13:00:00,214,Güçyeter,Öcalan,05008910817,WHATSAPP,Dahiliye,Uzm. Dr. Sancak Çorlu,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),0
+391,2026-11-11 10:30:00,32,Öge,Öcalan,05002342608,SMS,Üroloji,Op. Dr. İnsaf Aslan,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),0
+392,2026-11-11 15:45:00,227,Nezize,Akçay,05004130808,WEB,Üroloji,Op. Dr. İnsaf Aslan,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),0
+393,2026-11-12 13:15:00,64,Dilfeza,Arslan,05005707197,WHATSAPP,Kadın Hastalıkları ve Doğum,Doç. Dr. Hezniye Bilgin,Odunpazarı Devlet Hastanesi (sentetik),0
+394,2026-11-12 10:15:00,88,Bağdaş,Yaman,05001876828,WHATSAPP,Kardiyoloji,Uzm. Dr. İrfan Şafak,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),0
+395,2026-11-12 08:20:00,222,Aybet,Karadeniz,05001140194,WHATSAPP,Göz Hastalıkları,Uzm. Dr. Övün Akar,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),0
+396,2026-11-12 10:50:00,249,Gülnaziye,Alemdar,05007688755,SMS,Göz Hastalıkları,Uzm. Dr. Övün Akar,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),0
+397,2026-11-12 14:40:00,146,Kibar,Eraslan,05004076817,WHATSAPP,Göz Hastalıkları,Uzm. Dr. Övün Akar,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),0
+398,2026-11-16 08:45:00,218,Salimet,Durmuş,05001344047,SMS,Ortopedi ve Travmatoloji,Uzm. Dr. Açıkel Tarhan,Odunpazarı Devlet Hastanesi (sentetik),0
+399,2026-11-16 13:30:00,40,Ticen,Gülen,05006700828,WHATSAPP,Kadın Hastalıkları ve Doğum,Uzm. Dr. Büşranur Bilir,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),0
+400,2026-11-16 08:50:00,84,Aslanhan,Çorlu,05000009594,SMS,Dermatoloji,Doç. Dr. Zubeyde Seven,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),0
+401,2026-11-16 10:00:00,161,Açılay,Zorlu,05005692553,SMS,Kadın Hastalıkları ve Doğum,Uzm. Dr. Büreyre Kısakürek,Sivrihisar İlçe Hastanesi (sentetik),0
+402,2026-11-17 09:50:00,173,Özge,Fırat,05004191056,WHATSAPP,Göz Hastalıkları,Uzm. Dr. Zihni Akçay,Odunpazarı Devlet Hastanesi (sentetik),0
+403,2026-11-17 08:15:00,217,Selime,Durmuş,05008519948,SMS,Genel Cerrahi,Doç. Dr. Harbinaz Zorlu,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),0
+404,2026-11-17 13:20:00,92,Tamaydın,Şafak,05000971823,WHATSAPP,Nöroloji,Doç. Dr. Gürten Dumanlı,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),0
+405,2026-11-17 15:30:00,160,Yurtseven,Aksu,05006754864,WHATSAPP,Endokrinoloji,Uzm. Dr. Sadiye Şama,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),0
+406,2026-11-18 15:15:00,62,Ertuncay,Öcalan,05009008867,WHATSAPP,Üroloji,Op. Dr. İnsaf Aslan,Tepebaşı Eğitim ve Araştırma Hastanesi (sentetik),0

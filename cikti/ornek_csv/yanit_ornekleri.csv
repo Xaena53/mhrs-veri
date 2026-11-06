@@ -1,0 +1,363 @@
+ornek_id,metin,niyet
+1,Evet,ONAY
+2,evet,ONAY
+3,Evet.,ONAY
+4,"Merhaba, evet",ONAY
+5,"Evet, kolay gelsin",ONAY
+6,Evet geleceğim,ONAY
+7,evet geleceğim,ONAY
+8,Evet geleceğim.,ONAY
+9,"Merhaba, evet geleceğim",ONAY
+10,"Evet geleceğim, kolay gelsin",ONAY
+11,evet gelecegim,ONAY
+12,Geleceğim,ONAY
+13,geleceğim,ONAY
+14,Geleceğim.,ONAY
+15,"Merhaba, geleceğim",ONAY
+16,"Geleceğim, kolay gelsin",ONAY
+17,gelecegim,ONAY
+18,Tamam,ONAY
+19,tamam,ONAY
+20,Tamam.,ONAY
+21,"Merhaba, tamam",ONAY
+22,"Tamam, kolay gelsin",ONAY
+23,Tamamdır gelirim,ONAY
+24,tamamdır gelirim,ONAY
+25,Tamamdır gelirim.,ONAY
+26,"Merhaba, tamamdır gelirim",ONAY
+27,"Tamamdır gelirim, kolay gelsin",ONAY
+28,tamamdir gelirim,ONAY
+29,Onaylıyorum,ONAY
+30,onaylıyorum,ONAY
+31,Onaylıyorum.,ONAY
+32,"Merhaba, onaylıyorum",ONAY
+33,"Onaylıyorum, kolay gelsin",ONAY
+34,onayliyorum,ONAY
+35,"Evet, orada olacağım",ONAY
+36,"evet, orada olacağım",ONAY
+37,"Evet, orada olacağım.",ONAY
+38,"Merhaba, evet, orada olacağım",ONAY
+39,"Evet, orada olacağım, kolay gelsin",ONAY
+40,"evet, orada olacagim",ONAY
+41,Olur,ONAY
+42,olur,ONAY
+43,Olur.,ONAY
+44,"Merhaba, olur",ONAY
+45,"Olur, kolay gelsin",ONAY
+46,Gelirim,ONAY
+47,gelirim,ONAY
+48,Gelirim.,ONAY
+49,"Merhaba, gelirim",ONAY
+50,"Gelirim, kolay gelsin",ONAY
+51,Evet teşekkürler,ONAY
+52,evet teşekkürler,ONAY
+53,Evet teşekkürler.,ONAY
+54,"Merhaba, evet teşekkürler",ONAY
+55,"Evet teşekkürler, kolay gelsin",ONAY
+56,evet tesekkurler,ONAY
+57,Kesinlikle geleceğim,ONAY
+58,kesinlikle geleceğim,ONAY
+59,Kesinlikle geleceğim.,ONAY
+60,"Merhaba, kesinlikle geleceğim",ONAY
+61,"Kesinlikle geleceğim, kolay gelsin",ONAY
+62,kesinlikle gelecegim,ONAY
+63,Evet hocam,ONAY
+64,evet hocam,ONAY
+65,Evet hocam.,ONAY
+66,"Merhaba, evet hocam",ONAY
+67,"Evet hocam, kolay gelsin",ONAY
+68,Geliyorum,ONAY
+69,geliyorum,ONAY
+70,Geliyorum.,ONAY
+71,"Merhaba, geliyorum",ONAY
+72,"Geliyorum, kolay gelsin",ONAY
+73,Tamam oradayım,ONAY
+74,tamam oradayım,ONAY
+75,Tamam oradayım.,ONAY
+76,"Merhaba, tamam oradayım",ONAY
+77,"Tamam oradayım, kolay gelsin",ONAY
+78,tamam oradayim,ONAY
+79,Randevuma geleceğim,ONAY
+80,randevuma geleceğim,ONAY
+81,Randevuma geleceğim.,ONAY
+82,"Merhaba, randevuma geleceğim",ONAY
+83,"Randevuma geleceğim, kolay gelsin",ONAY
+84,randevuma gelecegim,ONAY
+85,Evet onaylıyorum,ONAY
+86,evet onaylıyorum,ONAY
+87,Evet onaylıyorum.,ONAY
+88,"Merhaba, evet onaylıyorum",ONAY
+89,"Evet onaylıyorum, kolay gelsin",ONAY
+90,evet onayliyorum,ONAY
+91,Ok geleceğim,ONAY
+92,ok geleceğim,ONAY
+93,Ok geleceğim.,ONAY
+94,"Merhaba, ok geleceğim",ONAY
+95,"Ok geleceğim, kolay gelsin",ONAY
+96,ok gelecegim,ONAY
+97,İnşallah geleceğim,ONAY
+98,inşallah geleceğim,ONAY
+99,İnşallah geleceğim.,ONAY
+100,"Merhaba, inşallah geleceğim",ONAY
+101,"İnşallah geleceğim, kolay gelsin",ONAY
+102,insallah gelecegim,ONAY
+103,Evet uygun,ONAY
+104,evet uygun,ONAY
+105,Evet uygun.,ONAY
+106,"Merhaba, evet uygun",ONAY
+107,"Evet uygun, kolay gelsin",ONAY
+108,Gelemeyeceğim,IPTAL
+109,gelemeyeceğim,IPTAL
+110,Gelemeyeceğim.,IPTAL
+111,"Merhaba, gelemeyeceğim",IPTAL
+112,"Gelemeyeceğim, kolay gelsin",IPTAL
+113,gelemeyecegim,IPTAL
+114,İptal Et,IPTAL
+115,iptal et,IPTAL
+116,İptal Et.,IPTAL
+117,"Merhaba, iptal et",IPTAL
+118,"İptal Et, kolay gelsin",IPTAL
+119,İptal,IPTAL
+120,iptal,IPTAL
+121,İptal.,IPTAL
+122,"Merhaba, iptal",IPTAL
+123,"İptal, kolay gelsin",IPTAL
+124,Hayır gelemem,IPTAL
+125,hayır gelemem,IPTAL
+126,Hayır gelemem.,IPTAL
+127,"Merhaba, hayır gelemem",IPTAL
+128,"Hayır gelemem, kolay gelsin",IPTAL
+129,hayir gelemem,IPTAL
+130,Randevumu iptal edin,IPTAL
+131,randevumu iptal edin,IPTAL
+132,Randevumu iptal edin.,IPTAL
+133,"Merhaba, randevumu iptal edin",IPTAL
+134,"Randevumu iptal edin, kolay gelsin",IPTAL
+135,Maalesef gelemiyorum,IPTAL
+136,maalesef gelemiyorum,IPTAL
+137,Maalesef gelemiyorum.,IPTAL
+138,"Merhaba, maalesef gelemiyorum",IPTAL
+139,"Maalesef gelemiyorum, kolay gelsin",IPTAL
+140,Gelmeyeceğim,IPTAL
+141,gelmeyeceğim,IPTAL
+142,Gelmeyeceğim.,IPTAL
+143,"Merhaba, gelmeyeceğim",IPTAL
+144,"Gelmeyeceğim, kolay gelsin",IPTAL
+145,gelmeyecegim,IPTAL
+146,Vazgeçtim,IPTAL
+147,vazgeçtim,IPTAL
+148,Vazgeçtim.,IPTAL
+149,"Merhaba, vazgeçtim",IPTAL
+150,"Vazgeçtim, kolay gelsin",IPTAL
+151,vazgectim,IPTAL
+152,İşim çıktı gelemem,IPTAL
+153,işim çıktı gelemem,IPTAL
+154,İşim çıktı gelemem.,IPTAL
+155,"Merhaba, işim çıktı gelemem",IPTAL
+156,"İşim çıktı gelemem, kolay gelsin",IPTAL
+157,isim cikti gelemem,IPTAL
+158,İptal etmek istiyorum,IPTAL
+159,iptal etmek istiyorum,IPTAL
+160,İptal etmek istiyorum.,IPTAL
+161,"Merhaba, iptal etmek istiyorum",IPTAL
+162,"İptal etmek istiyorum, kolay gelsin",IPTAL
+163,Hayır,IPTAL
+164,hayır,IPTAL
+165,Hayır.,IPTAL
+166,"Merhaba, hayır",IPTAL
+167,"Hayır, kolay gelsin",IPTAL
+168,hayir,IPTAL
+169,Şehir dışındayım gelemem,IPTAL
+170,şehir dışındayım gelemem,IPTAL
+171,Şehir dışındayım gelemem.,IPTAL
+172,"Merhaba, şehir dışındayım gelemem",IPTAL
+173,"Şehir dışındayım gelemem, kolay gelsin",IPTAL
+174,sehir disindayim gelemem,IPTAL
+175,Hastanelik bir durum kalmadı iptal edin,IPTAL
+176,hastanelik bir durum kalmadı iptal edin,IPTAL
+177,Hastanelik bir durum kalmadı iptal edin.,IPTAL
+178,"Merhaba, hastanelik bir durum kalmadı iptal edin",IPTAL
+179,"Hastanelik bir durum kalmadı iptal edin, kolay gelsin",IPTAL
+180,hastanelik bir durum kalmadi iptal edin,IPTAL
+181,Lütfen iptal edin,IPTAL
+182,lütfen iptal edin,IPTAL
+183,Lütfen iptal edin.,IPTAL
+184,"Merhaba, lütfen iptal edin",IPTAL
+185,"Lütfen iptal edin, kolay gelsin",IPTAL
+186,lutfen iptal edin,IPTAL
+187,Gelmem mümkün değil,IPTAL
+188,gelmem mümkün değil,IPTAL
+189,Gelmem mümkün değil.,IPTAL
+190,"Merhaba, gelmem mümkün değil",IPTAL
+191,"Gelmem mümkün değil, kolay gelsin",IPTAL
+192,gelmem mumkun degil,IPTAL
+193,Yetişemem iptal olsun,IPTAL
+194,yetişemem iptal olsun,IPTAL
+195,Yetişemem iptal olsun.,IPTAL
+196,"Merhaba, yetişemem iptal olsun",IPTAL
+197,"Yetişemem iptal olsun, kolay gelsin",IPTAL
+198,yetisemem iptal olsun,IPTAL
+199,Başka bir güne alabilir miyiz?,ERTELEME
+200,başka bir güne alabilir miyiz?,ERTELEME
+201,"Merhaba, başka bir güne alabilir miyiz?",ERTELEME
+202,Başka bir güne alabilir miyiz? Kolay gelsin,ERTELEME
+203,baska bir gune alabilir miyiz?,ERTELEME
+204,Ertelemek istiyorum,ERTELEME
+205,ertelemek istiyorum,ERTELEME
+206,Ertelemek istiyorum.,ERTELEME
+207,"Merhaba, ertelemek istiyorum",ERTELEME
+208,"Ertelemek istiyorum, kolay gelsin",ERTELEME
+209,Daha ileri bir tarihe alın,ERTELEME
+210,daha ileri bir tarihe alın,ERTELEME
+211,Daha ileri bir tarihe alın.,ERTELEME
+212,"Merhaba, daha ileri bir tarihe alın",ERTELEME
+213,"Daha ileri bir tarihe alın, kolay gelsin",ERTELEME
+214,daha ileri bir tarihe alin,ERTELEME
+215,"Yarın olmaz, haftaya uygunum",ERTELEME
+216,"yarın olmaz, haftaya uygunum",ERTELEME
+217,"Yarın olmaz, haftaya uygunum.",ERTELEME
+218,"Merhaba, yarın olmaz, haftaya uygunum",ERTELEME
+219,"Yarın olmaz, haftaya uygunum, kolay gelsin",ERTELEME
+220,"yarin olmaz, haftaya uygunum",ERTELEME
+221,Saatini değiştirebilir miyiz?,ERTELEME
+222,saatini değiştirebilir miyiz?,ERTELEME
+223,"Merhaba, saatini değiştirebilir miyiz?",ERTELEME
+224,Saatini değiştirebilir miyiz? Kolay gelsin,ERTELEME
+225,saatini degistirebilir miyiz?,ERTELEME
+226,Başka güne alın lütfen,ERTELEME
+227,başka güne alın lütfen,ERTELEME
+228,Başka güne alın lütfen.,ERTELEME
+229,"Merhaba, başka güne alın lütfen",ERTELEME
+230,"Başka güne alın lütfen, kolay gelsin",ERTELEME
+231,baska gune alin lutfen,ERTELEME
+232,Öğleden sonraya alabilir miyiz?,ERTELEME
+233,öğleden sonraya alabilir miyiz?,ERTELEME
+234,"Merhaba, öğleden sonraya alabilir miyiz?",ERTELEME
+235,Öğleden sonraya alabilir miyiz? Kolay gelsin,ERTELEME
+236,ogleden sonraya alabilir miyiz?,ERTELEME
+237,Randevuyu ileri atın,ERTELEME
+238,randevuyu ileri atın,ERTELEME
+239,Randevuyu ileri atın.,ERTELEME
+240,"Merhaba, randevuyu ileri atın",ERTELEME
+241,"Randevuyu ileri atın, kolay gelsin",ERTELEME
+242,randevuyu ileri atin,ERTELEME
+243,Başka saat var mı?,ERTELEME
+244,başka saat var mı?,ERTELEME
+245,"Merhaba, başka saat var mı?",ERTELEME
+246,Başka saat var mı? Kolay gelsin,ERTELEME
+247,baska saat var mi?,ERTELEME
+248,Pazartesiye alabilir misiniz?,ERTELEME
+249,pazartesiye alabilir misiniz?,ERTELEME
+250,"Merhaba, pazartesiye alabilir misiniz?",ERTELEME
+251,Pazartesiye alabilir misiniz? Kolay gelsin,ERTELEME
+252,Hangi binaya gideceğim?,SORU
+253,hangi binaya gideceğim?,SORU
+254,"Merhaba, hangi binaya gideceğim?",SORU
+255,Hangi binaya gideceğim? Kolay gelsin,SORU
+256,hangi binaya gidecegim?,SORU
+257,Yanımda ne getirmeliyim?,SORU
+258,yanımda ne getirmeliyim?,SORU
+259,"Merhaba, yanımda ne getirmeliyim?",SORU
+260,Yanımda ne getirmeliyim? Kolay gelsin,SORU
+261,yanimda ne getirmeliyim?,SORU
+262,Aç mı gelmeliyim?,SORU
+263,aç mı gelmeliyim?,SORU
+264,"Merhaba, aç mı gelmeliyim?",SORU
+265,Aç mı gelmeliyim? Kolay gelsin,SORU
+266,ac mi gelmeliyim?,SORU
+267,Doktorum kim?,SORU
+268,doktorum kim?,SORU
+269,"Merhaba, doktorum kim?",SORU
+270,Doktorum kim? Kolay gelsin,SORU
+271,Kaç dakika önce orada olmalıyım?,SORU
+272,kaç dakika önce orada olmalıyım?,SORU
+273,"Merhaba, kaç dakika önce orada olmalıyım?",SORU
+274,Kaç dakika önce orada olmalıyım? Kolay gelsin,SORU
+275,kac dakika once orada olmaliyim?,SORU
+276,Tahlil sonuçlarımı getireyim mi?,SORU
+277,tahlil sonuçlarımı getireyim mi?,SORU
+278,"Merhaba, tahlil sonuçlarımı getireyim mi?",SORU
+279,Tahlil sonuçlarımı getireyim mi? Kolay gelsin,SORU
+280,tahlil sonuclarimi getireyim mi?,SORU
+281,Otopark var mı?,SORU
+282,otopark var mı?,SORU
+283,"Merhaba, otopark var mı?",SORU
+284,Otopark var mı? Kolay gelsin,SORU
+285,otopark var mi?,SORU
+286,Sevk gerekiyor mu?,SORU
+287,sevk gerekiyor mu?,SORU
+288,"Merhaba, sevk gerekiyor mu?",SORU
+289,Sevk gerekiyor mu? Kolay gelsin,SORU
+290,Randevu saatim kaçtı?,SORU
+291,randevu saatim kaçtı?,SORU
+292,"Merhaba, randevu saatim kaçtı?",SORU
+293,Randevu saatim kaçtı? Kolay gelsin,SORU
+294,randevu saatim kacti?,SORU
+295,Refakatçi gelebilir mi?,SORU
+296,refakatçi gelebilir mi?,SORU
+297,"Merhaba, refakatçi gelebilir mi?",SORU
+298,Refakatçi gelebilir mi? Kolay gelsin,SORU
+299,refakatci gelebilir mi?,SORU
+300,Bakacağım,BELIRSIZ
+301,bakacağım,BELIRSIZ
+302,Bakacağım.,BELIRSIZ
+303,"Merhaba, bakacağım",BELIRSIZ
+304,"Bakacağım, kolay gelsin",BELIRSIZ
+305,bakacagim,BELIRSIZ
+306,Bilmiyorum,BELIRSIZ
+307,bilmiyorum,BELIRSIZ
+308,Bilmiyorum.,BELIRSIZ
+309,"Merhaba, bilmiyorum",BELIRSIZ
+310,"Bilmiyorum, kolay gelsin",BELIRSIZ
+311,Belki,BELIRSIZ
+312,belki,BELIRSIZ
+313,Belki.,BELIRSIZ
+314,"Merhaba, belki",BELIRSIZ
+315,"Belki, kolay gelsin",BELIRSIZ
+316,Emin değilim,BELIRSIZ
+317,emin değilim,BELIRSIZ
+318,Emin değilim.,BELIRSIZ
+319,"Merhaba, emin değilim",BELIRSIZ
+320,"Emin değilim, kolay gelsin",BELIRSIZ
+321,emin degilim,BELIRSIZ
+322,Sonra haber veririm,BELIRSIZ
+323,sonra haber veririm,BELIRSIZ
+324,Sonra haber veririm.,BELIRSIZ
+325,"Merhaba, sonra haber veririm",BELIRSIZ
+326,"Sonra haber veririm, kolay gelsin",BELIRSIZ
+327,Hmm,BELIRSIZ
+328,hmm,BELIRSIZ
+329,Hmm.,BELIRSIZ
+330,"Merhaba, hmm",BELIRSIZ
+331,"Hmm, kolay gelsin",BELIRSIZ
+332,Duruma göre,BELIRSIZ
+333,duruma göre,BELIRSIZ
+334,Duruma göre.,BELIRSIZ
+335,"Merhaba, duruma göre",BELIRSIZ
+336,"Duruma göre, kolay gelsin",BELIRSIZ
+337,duruma gore,BELIRSIZ
+338,Yazarım size,BELIRSIZ
+339,yazarım size,BELIRSIZ
+340,Yazarım size.,BELIRSIZ
+341,"Merhaba, yazarım size",BELIRSIZ
+342,"Yazarım size, kolay gelsin",BELIRSIZ
+343,yazarim size,BELIRSIZ
+344,Bir sorayım,BELIRSIZ
+345,bir sorayım,BELIRSIZ
+346,Bir sorayım.,BELIRSIZ
+347,"Merhaba, bir sorayım",BELIRSIZ
+348,"Bir sorayım, kolay gelsin",BELIRSIZ
+349,bir sorayim,BELIRSIZ
+350,...,BELIRSIZ
+351,"Merhaba, ...",BELIRSIZ
+352,... Kolay gelsin,BELIRSIZ
+353,Kim bu?,BELIRSIZ
+354,kim bu?,BELIRSIZ
+355,"Merhaba, kim bu?",BELIRSIZ
+356,Kim bu? Kolay gelsin,BELIRSIZ
+357,Yanlış numara galiba,BELIRSIZ
+358,yanlış numara galiba,BELIRSIZ
+359,Yanlış numara galiba.,BELIRSIZ
+360,"Merhaba, yanlış numara galiba",BELIRSIZ
+361,"Yanlış numara galiba, kolay gelsin",BELIRSIZ
+362,yanlis numara galiba,BELIRSIZ

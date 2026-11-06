@@ -1,0 +1,301 @@
+hasta_id,ad,soyad,yas,cinsiyet,kronik_hastalik,son_1_yil_randevu,son_1_yil_gelmeme,son_1_yil_iptal,en_sik_brans
+1,Canseven,Ergül,53,K,Migren,0,0,0,
+2,Nazende,Tevetoğlu,7,K,,1,1,0,Kulak Burun Boğaz
+3,Erseç,Sezgin,45,E,,1,1,0,Göz Hastalıkları
+4,Aynilhayat,Gül,29,K,,3,0,0,Ortopedi ve Travmatoloji
+5,Mülâyim,Duran,67,E,Kalp Yetmezliği,1,0,0,Dermatoloji
+6,Bayzettin,İhsanoğlu,48,E,,3,1,1,Üroloji
+7,Karlukhan,Çorlu,45,E,,2,1,0,Göğüs Hastalıkları
+8,Çalım,Arslan,30,K,,1,0,1,Kadın Hastalıkları ve Doğum
+9,İnançlı,Şener,32,E,,0,0,0,
+10,Tatu,Akgündüz,60,E,,0,0,0,
+11,Nevsale,Durdu,4,K,,0,0,0,
+12,Dalkılıç,Demirel,30,E,,1,1,0,Göz Hastalıkları
+13,Belgizar,Türk,14,K,,2,0,0,Ortopedi ve Travmatoloji
+14,Haliye,Öcalan,26,K,,0,0,0,
+15,Ferzi,Çorlu,58,E,,1,0,0,Üroloji
+16,Şuayp,Bilgin,39,E,,0,0,0,
+17,Cevale,Kısakürek,29,K,,0,0,0,
+18,Ezgütekin,Ertaş,32,E,,0,0,0,
+19,Tenvir,Karadeniz,81,E,Tiroid,0,0,0,
+20,Nezize,Aksu,78,K,Diyabet,1,0,0,Göğüs Hastalıkları
+21,Niğmet,Ergül,16,K,,3,0,0,Kadın Hastalıkları ve Doğum
+22,Dinçsü,Ülker,33,E,KOAH,1,0,0,Endokrinoloji
+23,Kerime,Sezer,21,K,,2,0,0,Dahiliye
+24,Benek,Tevetoğlu,7,K,,4,0,1,Çocuk Cerrahisi
+25,Tenvir,Aksu,31,E,Migren,0,0,0,
+26,Saba,Gül,66,E,"Migren,Kalp Yetmezliği",0,0,0,
+27,Ercihan,Aksu,54,E,Tiroid,0,0,0,
+28,Seyhan,Kısakürek,68,K,"KOAH,Migren",0,0,0,
+29,Kitan,İhsanoğlu,79,K,Astım,1,0,0,Dahiliye
+30,Çolpan,Bilgin,43,K,,0,0,0,
+31,Mübetcel,Karadeniz,59,K,"KOAH,Astım",0,0,0,
+32,Öge,Öcalan,19,E,,3,0,0,Dahiliye
+33,Azize,Bilgin,14,K,,1,0,1,Çocuk Cerrahisi
+34,İlgi,Türk,15,E,,0,0,0,
+35,Misra,Gülen,0,K,,2,0,1,Ortopedi ve Travmatoloji
+36,Kezban,Erdoğan,18,K,,1,0,0,Dahiliye
+37,Gülüs,Çamurcuoğlu,33,K,,3,0,2,Kadın Hastalıkları ve Doğum
+38,Semender,Akgündüz,55,E,"Tiroid,Hipertansiyon",2,0,0,Ortopedi ve Travmatoloji
+39,Miray,Bilir,81,K,Tiroid,4,0,0,Genel Cerrahi
+40,Ticen,Gülen,29,K,,0,0,0,
+41,Sevican,Manço,55,K,Hipertansiyon,1,0,0,Dahiliye
+42,Ertan,Yaman,54,E,,1,0,0,Üroloji
+43,Erdibay,Korutürk,29,E,,0,0,0,
+44,Seha,Duran,35,E,,0,0,0,
+45,Ersel,Korutürk,47,E,"KOAH,Kalp Yetmezliği",1,0,0,Dahiliye
+46,İlklima,Şafak,85,K,KOAH,1,0,0,Kadın Hastalıkları ve Doğum
+47,İlkbahar,Gülen,48,K,,0,0,0,
+48,Nevsale,Bilgin,14,K,,4,0,0,Çocuk Sağlığı ve Hastalıkları
+49,Berkal,Zorlu,17,E,,1,0,1,Çocuk Sağlığı ve Hastalıkları
+50,Tayyibe,Çorlu,29,K,,4,0,0,Kadın Hastalıkları ve Doğum
+51,Çağveren,Yorulmaz,44,E,"KOAH,Hipertansiyon",3,0,0,Dahiliye
+52,Dilara,Manço,10,K,,2,0,1,Çocuk Sağlığı ve Hastalıkları
+53,Fermuta,Çetin,33,K,Diyabet,0,0,0,
+54,Sadiye,Tevetoğlu,77,K,Kalp Yetmezliği,1,0,0,Kadın Hastalıkları ve Doğum
+55,Andiç,Kısakürek,11,E,,2,0,0,Göz Hastalıkları
+56,Kayagün,Tevetoğlu,11,E,,0,0,0,
+57,Nasuf,Fırat,10,E,,2,0,1,Çocuk Sağlığı ve Hastalıkları
+58,Hüda,Durmuş,88,K,"KOAH,Kalp Yetmezliği",1,0,0,Dahiliye
+59,Aksoy,Tarhan,52,K,,2,0,0,Genel Cerrahi
+60,Dilşat,Tarhan,38,K,,4,1,0,Göz Hastalıkları
+61,Sadittin,İnönü,20,E,,1,0,0,Dahiliye
+62,Ertuncay,Öcalan,75,E,"Migren,Kalp Yetmezliği",1,0,0,Ortopedi ve Travmatoloji
+63,Tiğin,Şama,32,E,,0,0,0,
+64,Dilfeza,Arslan,53,K,,2,1,0,Dahiliye
+65,Sebigül,Aksu,18,K,,0,0,0,
+66,Mutluhan,Yılmaz,64,E,"Kalp Yetmezliği,Migren",0,0,0,
+67,Yetişal,Akgündüz,61,E,,2,0,1,Ortopedi ve Travmatoloji
+68,Kandef,Zorlu,77,K,Astım,3,0,0,Kardiyoloji
+69,Gözem,Zorlu,17,K,,0,0,0,
+70,Deha,Bilge,44,K,"Astım,Migren",0,0,0,
+71,Meleknur,Karadeniz,33,K,,1,0,0,Dahiliye
+72,Türknur,Tevetoğlu,50,K,,0,0,0,
+73,Demirok,Manço,63,E,,0,0,0,
+74,Nurda,İnönü,34,K,,4,0,2,Kadın Hastalıkları ve Doğum
+75,Feyha,Duran,9,K,,0,0,0,
+76,Yurtseven,Çamurcuoğlu,61,K,Hipertansiyon,0,0,0,
+77,Abiye,Tevetoğlu,30,K,,4,1,0,Dahiliye
+78,Güngördü,Soylu,4,E,,0,0,0,
+79,Adlan,Demir,4,E,,1,0,0,Çocuk Sağlığı ve Hastalıkları
+80,Neyran,Akgündüz,51,K,,0,0,0,
+81,Mesude,Yüksel,46,K,,0,0,0,
+82,Alsoy,Yüksel,28,E,,0,0,0,
+83,Semender,Akça,45,E,KOAH,1,0,0,Ortopedi ve Travmatoloji
+84,Aslanhan,Çorlu,52,E,,3,0,0,Ortopedi ve Travmatoloji
+85,Sırriye,Alemdar,16,K,,3,0,2,Göz Hastalıkları
+86,Behiza,İnönü,51,K,,4,0,1,Genel Cerrahi
+87,Rüşen,Öcalan,59,E,,1,0,0,Nöroloji
+88,Bağdaş,Yaman,84,E,"KOAH,Kalp Yetmezliği",2,0,1,Dahiliye
+89,Tuğcan,Güçlü,33,E,,3,0,2,Göz Hastalıkları
+90,Sarıcabay,Aksu,76,E,KOAH,0,0,0,
+91,Kaver,Fırat,43,K,Tiroid,1,0,1,Dermatoloji
+92,Tamaydın,Şafak,66,E,,2,0,1,Dermatoloji
+93,Dirlik,İhsanoğlu,88,E,Astım,0,0,0,
+94,Zerafet,İnönü,55,K,,1,0,0,Göğüs Hastalıkları
+95,Gülper,Demirel,21,K,,0,0,0,
+96,Mihrab,Gülen,48,K,,0,0,0,
+97,Ufukay,Şensoy,82,E,,0,0,0,
+98,Nurda,Dumanlı,42,K,Tiroid,0,0,0,
+99,Pirahmet,Dumanlı,48,E,,1,0,1,Dahiliye
+100,Baykan,Yüksel,29,E,,3,0,1,Üroloji
+101,Hadrey,Erdoğan,65,K,Diyabet,4,0,0,Kadın Hastalıkları ve Doğum
+102,Hami,Yıldırım,0,E,,0,0,0,
+103,İncifir,Durmuş,74,K,"Kalp Yetmezliği,Tiroid",2,0,1,Genel Cerrahi
+104,Efser,Zengin,31,E,,0,0,0,
+105,Gürten,Yılmaz,2,K,,0,0,0,
+106,Belkize,Demirel,0,K,,3,2,0,Çocuk Sağlığı ve Hastalıkları
+107,Aşhan,Bilgin,29,K,,4,0,0,Kadın Hastalıkları ve Doğum
+108,Begim,Akçay,24,K,,0,0,0,
+109,Akgöl,Bilge,59,E,,0,0,0,
+110,Münezzer,Erdoğan,36,K,,0,0,0,
+111,Vacibe,Yüksel,3,K,,0,0,0,
+112,Laze,Ülker,56,K,,3,0,0,Kadın Hastalıkları ve Doğum
+113,Sırriye,Bilir,64,K,Kalp Yetmezliği,4,0,0,Dahiliye
+114,Sakip,Yaman,61,E,Migren,0,0,0,
+115,Ülke,Durdu,32,K,,0,0,0,
+116,Sonnur,Yüksel,12,K,,1,0,0,Kulak Burun Boğaz
+117,Sonnur,Sezgin,2,K,,0,0,0,
+118,Rebihat,Akar,49,K,,1,0,0,Dahiliye
+119,Aykutalp,Sakarya,46,E,,0,0,0,
+120,Tuyuğ,Şafak,48,E,,1,0,0,Dahiliye
+121,Hükümdar,Şafak,2,E,,3,0,0,Çocuk Sağlığı ve Hastalıkları
+122,Kılıçbay,Ertaş,20,E,,1,0,0,Ortopedi ve Travmatoloji
+123,Ayşenur,Tarhan,43,K,,2,0,0,Kulak Burun Boğaz
+124,Canur,Yorulmaz,34,K,Migren,3,1,0,Kadın Hastalıkları ve Doğum
+125,Koşukhan,Gül,7,E,,0,0,0,
+126,Nalân,Sezgin,44,K,,4,0,0,Dahiliye
+127,Baki,Yüksel,30,E,,2,0,1,Nöroloji
+128,Gülfeza,Akar,55,K,,1,0,0,Dahiliye
+129,Zehranur,Dumanlı,1,K,,0,0,0,
+130,Esengün,Şafak,45,K,,1,0,0,Kadın Hastalıkları ve Doğum
+131,Gülbiye,Aslan,39,K,,4,0,2,Üroloji
+132,Müslum,Yüksel,55,E,,1,0,0,Dermatoloji
+133,Arıkol,Dumanlı,22,E,,0,0,0,
+134,Ünlen,Bilge,50,E,,3,0,0,Kulak Burun Boğaz
+135,Zümre,Sakarya,20,K,,4,0,2,Kadın Hastalıkları ve Doğum
+136,Ayyaruk,Şensoy,14,K,,0,0,0,
+137,Salami,Karadeniz,19,E,,1,0,1,Göz Hastalıkları
+138,Algış,Çorlu,12,K,,0,0,0,
+139,Çağdan,Akdeniz,32,E,,0,0,0,
+140,Havali,Aksu,53,K,,1,0,0,Fiziksel Tıp ve Rehabilitasyon
+141,Rebihat,Soylu,33,K,,4,0,0,Kardiyoloji
+142,Noman,Bilir,2,E,,0,0,0,
+143,Koçak,Akçay,22,E,,0,0,0,
+144,Aşhan,Aksu,57,K,,1,0,0,Kadın Hastalıkları ve Doğum
+145,Nurmelek,Yılmaz,21,K,,0,0,0,
+146,Kibar,Eraslan,3,E,,2,1,0,Çocuk Sağlığı ve Hastalıkları
+147,Özdal,Çetin,78,E,"Tiroid,Hipertansiyon",0,0,0,
+148,Sevcan,Arslan,32,K,,2,1,0,Kadın Hastalıkları ve Doğum
+149,Mansurali,Sezer,18,E,,3,0,0,Ortopedi ve Travmatoloji
+150,Yönetmen,Çetin,66,E,"Hipertansiyon,Kalp Yetmezliği",0,0,0,
+151,Sayın,Ülker,73,E,Diyabet,0,0,0,
+152,Tagangül,Manço,24,K,,1,0,1,Göz Hastalıkları
+153,Gülev,Arslan,52,K,,1,0,0,Göz Hastalıkları
+154,Duracan,Yorulmaz,8,E,,2,0,0,Çocuk Sağlığı ve Hastalıkları
+155,İde,Korutürk,31,K,,0,0,0,
+156,Zeyno,Yorulmaz,85,K,"Migren,KOAH",0,0,0,
+157,Minibe,Yorulmaz,61,K,,0,0,0,
+158,Aliihsan,Zengin,23,E,,3,0,0,Dahiliye
+159,Sunay,Zorlu,19,K,,0,0,0,
+160,Yurtseven,Aksu,38,K,,2,0,0,Göz Hastalıkları
+161,Açılay,Zorlu,43,K,,1,0,0,Kadın Hastalıkları ve Doğum
+162,Atagün,Akdeniz,21,E,,0,0,0,
+163,Gülder,Erdoğan,18,K,,1,0,0,Kadın Hastalıkları ve Doğum
+164,Şadıman,Erdoğan,27,K,,2,0,1,Ortopedi ve Travmatoloji
+165,Uluman,Bilge,23,E,,1,0,0,Göğüs Hastalıkları
+166,Hasret,Gülen,45,K,"Astım,Hipertansiyon",2,1,1,Kadın Hastalıkları ve Doğum
+167,Dursadiye,Akça,76,K,Diyabet,0,0,0,
+168,Serda,Yüksel,35,E,,1,1,0,Endokrinoloji
+169,Seyithan,Tevetoğlu,4,E,,1,0,0,Çocuk Sağlığı ve Hastalıkları
+170,Aygönenç,Mansız,8,K,,1,0,0,Üroloji
+171,Atalay,Seven,19,E,,1,0,0,Göğüs Hastalıkları
+172,Tutkun,Zengin,80,E,"KOAH,Astım",1,0,0,Genel Cerrahi
+173,Özge,Fırat,63,K,,0,0,0,
+174,Misra,İhsanoğlu,44,K,Kalp Yetmezliği,3,0,0,Dahiliye
+175,Kader,Bilir,41,K,,1,0,0,Kadın Hastalıkları ve Doğum
+176,Minibe,Yüksel,44,K,,0,0,0,
+177,Ertan,Gülen,86,E,"Hipertansiyon,KOAH",2,0,1,Kardiyoloji
+178,Emal,Ülker,61,K,Tiroid,0,0,0,
+179,Tolonbay,Hançer,28,E,,0,0,0,
+180,Müfit,Hayrioğlu,28,E,,3,0,0,Dermatoloji
+181,Çavuldur,İhsanoğlu,68,E,,1,0,0,Kardiyoloji
+182,Benice,Yılmaz,6,K,,1,0,0,Göz Hastalıkları
+183,Sevican,Mansız,42,K,,1,0,0,Üroloji
+184,Selatin,Sakarya,86,E,,0,0,0,
+185,Beray,Duran,30,K,Tiroid,2,0,1,Göz Hastalıkları
+186,Dorukhan,Zorlu,0,E,,0,0,0,
+187,Kaver,Yaman,81,K,Diyabet,4,0,0,Ortopedi ve Travmatoloji
+188,Nebiha,Akgündüz,38,K,,0,0,0,
+189,Argu,Akgündüz,10,E,,1,0,0,Kulak Burun Boğaz
+190,Hezniye,Arsoy,62,K,,0,0,0,
+191,Fenni,Aksu,32,E,,0,0,0,
+192,Metinkaya,Karadeniz,52,E,Tiroid,2,0,0,Genel Cerrahi
+193,Zilfa,Demirel,80,K,Hipertansiyon,0,0,0,
+194,Gökay,Mansız,38,E,,2,0,1,Kardiyoloji
+195,Ünek,Şensoy,14,E,,1,0,0,Kulak Burun Boğaz
+196,Risalet,Yılmaz,52,E,,1,0,0,Dahiliye
+197,Türkalp,Alemdar,10,E,,4,2,2,Çocuk Sağlığı ve Hastalıkları
+198,Çevregül,Hançer,60,K,"Kalp Yetmezliği,Astım",3,0,1,Dahiliye
+199,Cuheyna,Akça,10,K,,0,0,0,
+200,Enfes,Eraslan,85,K,Migren,3,0,2,Kadın Hastalıkları ve Doğum
+201,Barışcan,Akgündüz,26,E,,0,0,0,
+202,Bahaddin,Korutürk,84,E,Kalp Yetmezliği,0,0,0,
+203,Saydam,Manço,37,E,,2,1,1,Nöroloji
+204,Esenbay,Arslan,9,E,,4,0,0,Çocuk Sağlığı ve Hastalıkları
+205,Talayer,Bilir,40,E,,2,0,0,Kulak Burun Boğaz
+206,Naz,Bilir,35,K,,2,0,0,Dahiliye
+207,Uzsoy,Şener,19,E,,2,0,2,Ortopedi ve Travmatoloji
+208,Kardelen,Zorlu,60,K,,4,1,0,Genel Cerrahi
+209,Odkanlı,Eraslan,36,E,,1,0,0,Üroloji
+210,Ayçan,Çorlu,36,K,,1,0,0,Psikiyatri
+211,Temuçin,Şafak,48,E,,0,0,0,
+212,İnançlı,Aslan,42,E,,0,0,0,
+213,Alaeddin,Yılmaz,50,E,"KOAH,Astım",1,1,0,Göz Hastalıkları
+214,Güçyeter,Öcalan,22,E,,2,0,0,Dahiliye
+215,Elvan,Şener,9,K,,0,0,0,
+216,Kadınana,Aksu,24,K,,0,0,0,
+217,Selime,Durmuş,72,K,Diyabet,0,0,0,
+218,Salimet,Durmuş,2,K,,3,0,0,Çocuk Sağlığı ve Hastalıkları
+219,Abdülhadi,Demir,23,E,,1,0,0,Göz Hastalıkları
+220,Beriye,Akça,4,K,,2,0,1,Çocuk Sağlığı ve Hastalıkları
+221,Faize,Duran,15,K,,4,1,1,Kadın Hastalıkları ve Doğum
+222,Aybet,Karadeniz,27,K,,1,0,0,Kadın Hastalıkları ve Doğum
+223,Kanpulat,Zengin,10,E,,4,2,1,Çocuk Sağlığı ve Hastalıkları
+224,Savni,Manço,17,E,,3,0,0,Çocuk Sağlığı ve Hastalıkları
+225,Sanur,Yaman,47,K,Migren,1,0,0,Kardiyoloji
+226,Aykut,Hançer,56,K,"Astım,Migren",3,0,0,Kadın Hastalıkları ve Doğum
+227,Nezize,Akçay,35,K,,2,0,0,Kadın Hastalıkları ve Doğum
+228,Aygönenç,Akçay,61,K,,2,0,0,Kadın Hastalıkları ve Doğum
+229,Neslinur,Bilir,55,K,,2,0,0,Kadın Hastalıkları ve Doğum
+230,Hurican,Ülker,58,K,Hipertansiyon,1,0,1,Göz Hastalıkları
+231,Ağakişi,Ergül,53,E,,0,0,0,
+232,Özalpsan,Durmuş,46,E,,2,1,1,Göz Hastalıkları
+233,Köker,Mansız,0,E,,2,1,1,Çocuk Sağlığı ve Hastalıkları
+234,Çamok,Manço,20,E,,1,0,0,Göğüs Hastalıkları
+235,Havali,Bilge,11,K,,0,0,0,
+236,Feyzin,Sezgin,48,K,,2,1,0,Ortopedi ve Travmatoloji
+237,Görsev,Akgündüz,16,K,,1,1,0,Çocuk Sağlığı ve Hastalıkları
+238,Risalet,Yıldırım,29,K,,1,0,0,Göz Hastalıkları
+239,Gül,Korutürk,4,K,,0,0,0,
+240,Müsemma,Çetin,8,K,,1,0,0,Çocuk Sağlığı ve Hastalıkları
+241,Kınel,Sezgin,47,E,"Astım,KOAH",2,0,0,Üroloji
+242,Tüzeer,Bilge,23,E,,2,0,0,Genel Cerrahi
+243,Huban,Aslan,5,K,,1,0,0,Çocuk Sağlığı ve Hastalıkları
+244,Bozerk,Çetin,3,E,,1,0,0,Çocuk Sağlığı ve Hastalıkları
+245,Vâlâ,Sakarya,82,E,"KOAH,Tiroid",1,0,0,Ortopedi ve Travmatoloji
+246,Nursim,Bilge,9,K,,1,0,0,Dermatoloji
+247,Ayduru,Akdeniz,55,K,,0,0,0,
+248,Sirap,Bilgin,56,K,Hipertansiyon,1,0,0,Ortopedi ve Travmatoloji
+249,Gülnaziye,Alemdar,18,K,,0,0,0,
+250,Sevla,Ergül,37,K,,1,0,0,Göğüs Hastalıkları
+251,Göknur,Alemdar,14,E,,0,0,0,
+252,Haliye,Bilgin,19,K,,3,0,1,Dahiliye
+253,Akalan,Ülker,43,E,,0,0,0,
+254,Danış,Gülen,11,E,,2,1,1,Ortopedi ve Travmatoloji
+255,Gürarda,Aslan,44,E,,2,0,0,Dahiliye
+256,Arifcan,Öcalan,42,E,,1,0,0,Üroloji
+257,Eşref,Ergül,6,E,,2,0,0,Çocuk Sağlığı ve Hastalıkları
+258,Ufukay,Gülen,13,K,,4,1,1,Çocuk Cerrahisi
+259,Zehranur,Şama,85,K,"Kalp Yetmezliği,Astım",1,0,0,Göz Hastalıkları
+260,Akboğa,Demir,64,E,,0,0,0,
+261,Ermutlu,Akçay,78,E,Hipertansiyon,3,0,1,Dahiliye
+262,Sezginbaş,Eraslan,3,E,,0,0,0,
+263,Ayduru,Sakarya,91,K,Hipertansiyon,4,1,0,Dahiliye
+264,Sözer,Şafak,84,E,"Hipertansiyon,Astım",1,0,1,Ortopedi ve Travmatoloji
+265,Hazrat,Gül,34,E,,0,0,0,
+266,Özel,Hayrioğlu,15,E,,3,2,0,Çocuk Sağlığı ve Hastalıkları
+267,Seblâ,Tevetoğlu,41,K,,0,0,0,
+268,Umuşan,Demir,46,K,"Diyabet,Migren",0,0,0,
+269,Kaşif,Akçay,16,E,,3,0,0,Çocuk Sağlığı ve Hastalıkları
+270,Ünsever,Akar,81,K,Diyabet,2,0,0,Dahiliye
+271,Ergün,Türk,29,E,,1,0,0,Göz Hastalıkları
+272,Yamin,Şafak,59,E,Kalp Yetmezliği,0,0,0,
+273,Acarkan,Fırat,24,K,,3,0,1,Kadın Hastalıkları ve Doğum
+274,Zemzem,Tarhan,75,K,,1,0,0,Genel Cerrahi
+275,Gülkadın,Arsoy,25,K,,3,1,0,Kadın Hastalıkları ve Doğum
+276,Sarya,Erdoğan,18,K,,0,0,0,
+277,Münezzer,Mansız,55,K,,2,0,0,Genel Cerrahi
+278,Gücal,Ülker,19,E,,1,1,0,Kulak Burun Boğaz
+279,Edaviye,Gül,41,K,,0,0,0,
+280,Ginyas,Zorlu,38,E,,2,0,0,Göz Hastalıkları
+281,Mevlüdiye,Ülker,10,K,,2,1,0,Çocuk Sağlığı ve Hastalıkları
+282,Rehime,Hayrioğlu,61,K,KOAH,0,0,0,
+283,Koşukhan,Sezer,6,E,,0,0,0,
+284,Galip,Durmuş,50,E,,1,0,0,Göz Hastalıkları
+285,Elamiye,Akar,52,K,,1,0,0,Ortopedi ve Travmatoloji
+286,Mahir,Ülker,55,E,,0,0,0,
+287,Kasim,Tarhan,56,E,,4,0,0,Kardiyoloji
+288,Gökperi,Mansız,51,K,,3,0,0,Dahiliye
+289,Seracettin,Hançer,28,E,,3,0,0,Kardiyoloji
+290,Rayla,Durmuş,49,K,"Astım,Diyabet",1,0,0,Kadın Hastalıkları ve Doğum
+291,Abiye,Hançer,75,K,,0,0,0,
+292,Mahigül,Bilir,79,K,"Migren,Astım",1,0,0,Genel Cerrahi
+293,Sanur,Çetin,26,K,,0,0,0,
+294,Sezal,Tevetoğlu,10,E,,1,0,0,Çocuk Sağlığı ve Hastalıkları
+295,Tunçkılıç,Hayrioğlu,11,E,,1,0,0,Dermatoloji
+296,Nafii,Dumanlı,14,E,,1,0,0,Çocuk Sağlığı ve Hastalıkları
+297,Selime,Tarhan,11,K,,1,0,1,Çocuk Sağlığı ve Hastalıkları
+298,Dorukhan,Zorlu,17,E,,0,0,0,
+299,Necmettin,Çetin,21,E,,1,0,0,Fiziksel Tıp ve Rehabilitasyon
+300,Ganiye,Ülker,60,K,,1,0,0,Ortopedi ve Travmatoloji

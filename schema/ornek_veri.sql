@@ -46,11 +46,11 @@ INSERT INTO yanit_ornekleri (ornek_id, metin, niyet) VALUES
 -- boşalan slot yedek listedeki Zeynep'e verildi; Ahmet 4 Mart'a geldi.
 INSERT INTO randevular (randevu_id, hasta_id, doktor_id, brans_id, hastane_id, sikayet_id,
                         olusturma_zamani, randevu_zamani, durum, iptal_zamani, iptal_kanali,
-                        kaynak, hatirlatma_gonderildi, mesafe_km) VALUES
- (1,1,2,2,2,1,'2026-02-10 10:00:00','2026-03-02 09:00:00','GELMEDI',NULL,NULL,'NORMAL',1,4.2),
- (2,1,2,2,2,1,'2026-02-20 11:30:00','2026-03-03 10:00:00','IPTAL','2026-03-02 10:05:00','CHATBOT','NORMAL',1,4.2),
- (3,2,2,2,2,NULL,'2026-03-02 10:06:00','2026-03-03 10:00:00','GELDI',NULL,NULL,'YEDEK_LISTE',0,1.1),
- (4,1,2,2,2,1,'2026-03-03 12:00:00','2026-03-04 14:00:00','GELDI',NULL,NULL,'NORMAL',1,4.2);
+                        kaynak, hatirlatma_gonderildi, mesafe_km, katilim_teyidi, onay_zamani, iptal_nedeni) VALUES
+ (1,1,2,2,2,1,'2026-02-10 10:00:00','2026-03-02 09:00:00','GELMEDI',NULL,NULL,'NORMAL',1,4.2,'BEKLENIYOR',NULL,NULL),
+ (2,1,2,2,2,1,'2026-02-20 11:30:00','2026-03-03 10:00:00','IPTAL','2026-03-02 10:05:00','CHATBOT','NORMAL',1,4.2,'REDDETTI',NULL,'HASTA_ISTEGI'),
+ (3,2,2,2,2,NULL,'2026-03-02 10:06:00','2026-03-03 10:00:00','GELDI',NULL,NULL,'YEDEK_LISTE',0,1.1,'BEKLENIYOR',NULL,NULL),
+ (4,1,2,2,2,1,'2026-03-03 12:00:00','2026-03-04 14:00:00','GELDI',NULL,NULL,'NORMAL',1,4.2,'ONAYLADI','2026-03-03 14:20:00',NULL);
 
 INSERT INTO yedek_liste (kayit_id, hasta_id, brans_id, hastane_id, sikayet_id, aciliyet_puani,
                          tercih_zaman, kayit_zamani, durum, atanan_randevu_id, guncelleme_zamani) VALUES

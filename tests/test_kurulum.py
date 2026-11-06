@@ -18,7 +18,8 @@ sys.path.insert(0, str(KOK / "schema"))
 import kurulum  # noqa: E402
 
 GORUNUMLER = ["v_noshow_ozellikleri", "v_aylik_ozet", "v_doluluk", "v_bekleyen_yedek",
-              "v_aylik_brans_ozet", "v_triyaj_veri", "v_bekleyen_randevular"]
+              "v_aylik_brans_ozet", "v_triyaj_veri", "v_bekleyen_randevular",
+              "v_hasta_profili", "v_chatbot_hastalar", "v_chatbot_randevular"]
 
 
 def sessiz(fn, *args):
@@ -62,7 +63,7 @@ class KurulumTesti(unittest.TestCase):
 
     def test_sema_surumu(self):
         con = self.yukle()
-        self.assertEqual(kurulum.sema_surumu(con), "v1.0")
+        self.assertEqual(kurulum.sema_surumu(con), "v1.1")
 
     def test_csv_gidis_donus_satir_sayilari_ayni(self):
         con = self.yukle()
@@ -205,7 +206,7 @@ class KurulumTesti(unittest.TestCase):
 
     def test_sayi_sutununa_metin(self):
         # SQLite tip zorlamaz; '4.2 km' typeof CHECK'i olmadan REAL sütuna metin olarak girerdi.
-        self.degistir("randevular", ",4.2\n", ",4.2 km\n")
+        self.degistir("randevular", ",4.2,", ",4.2 km,")
         self.reddedilmeli("randevular.csv satır 2", "typeof(mesafe_km)")
 
     def test_tam_sayi_sutununa_ondalik(self):
@@ -284,7 +285,7 @@ class KurulumTesti(unittest.TestCase):
         self.denetimde_yalniz({"Branşın yaş alt sınırının altında hasta (randevu / yedek liste)": 1})
 
     def test_yedek_kaydi_olmayan_yedek_randevu(self):
-        self.degistir("randevular", "NORMAL,1,4.2\n", "YEDEK_LISTE,1,4.2\n")
+        self.degistir("randevular", "NORMAL,1,4.2,", "YEDEK_LISTE,1,4.2,")
         self.denetimde_yalniz({"Kaynağı YEDEK_LISTE ama hiçbir yedek kaydına atanmamış randevu": 1})
 
     def test_hatirlatma_bayragi_bildirimle_uyusmuyor(self):

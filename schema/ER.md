@@ -1,4 +1,4 @@
-# ER Diyagramı (Şema v1.0)
+# ER Diyagramı (Şema v1.1)
 
 GitHub bu diyagramı otomatik çizer. Tüm sütunlar gösterilir; kurallar ve açıklamalar için
 [veri sözlüğüne](../docs/veri_sozlugu.md) bakın.
@@ -97,6 +97,10 @@ erDiagram
         text kaynak
         int hatirlatma_gonderildi
         real mesafe_km
+        text katilim_teyidi
+        text onay_zamani
+        text iptal_nedeni
+        int cifte_randevu
     }
     yedek_liste {
         int kayit_id PK
@@ -134,6 +138,11 @@ erDiagram
         text ad
         text tur
     }
+    veri_bilgisi {
+        int tek PK
+        text veri_ani
+        int tohum
+    }
     yanit_ornekleri {
         int ornek_id PK
         text metin
@@ -143,7 +152,7 @@ erDiagram
 
 `sikayetler.alternatif_brans_id` de `branslar` tablosuna bağlıdır (diyagramı sade tutmak için çizilmedi).
 `hava_durumu` ve `tatiller` tablolarına yabancı anahtar ile değil, **tarih** (ve hastanenin ili) üzerinden bağlanılır;
-bu bağlantıyı `v_noshow_ozellikleri` görünümü yapar. `yanit_ornekleri` bağımsız bir eğitim korpusudur.
+bu bağlantıyı `v_noshow_ozellikleri` görünümü yapar. `yanit_ornekleri` bağımsız bir eğitim korpusudur. `veri_bilgisi` tek satırlıktır: verinin "şu an"ını tutar.
 
 ## Görünümler
 
@@ -151,6 +160,7 @@ bu bağlantıyı `v_noshow_ozellikleri` görünümü yapar. `yanit_ornekleri` ba
 |---|---|---|
 | `v_triyaj_veri` | sikayetler, branslar | 2. grup (Triyaj) |
 | `v_noshow_ozellikleri` | randevular, hastalar, hastaneler, hava_durumu, tatiller | 3. grup (No-Show) |
-| `v_bekleyen_randevular` | randevular, hastalar, branslar, doktorlar, hastaneler | 4. grup (Chatbot) |
+| `v_bekleyen_randevular`, `v_chatbot_randevular`, `v_chatbot_hastalar` | randevular, hastalar, branslar, doktorlar, hastaneler | 4. grup (Chatbot) |
+| `v_hasta_profili` | hastalar, randevular, branslar | Herkes (kılavuzdaki hasta profili) |
 | `v_bekleyen_yedek` | yedek_liste, hastalar | 5. grup (Yedek Liste) |
 | `v_aylik_ozet`, `v_aylik_brans_ozet`, `v_doluluk` | randevular, hastaneler, branslar, doktor_takvimi | 6. grup (Dashboard) |
